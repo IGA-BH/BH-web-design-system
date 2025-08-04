@@ -1,0 +1,270 @@
+<!doctype html test>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
+    <title>Textarea | Bahrain Government Guidelines Design System - Components</title>
+    <meta name="author" content="Bahrain Government Guidlines Design System">
+    <meta name="copyright" content="Bahrain Government Guidlines Design System">
+    <meta name="keywords" content="Bahrain Government Guidlines Design System">
+    <meta name="description" content="Bahrain Government Guidlines Design System">
+    <!-- Social Media Meta Start -->
+    <meta property="og:description" content="Bahrain Government Guidlines Design System">
+    <meta property="og:image" content="http://boxondemo.net/2025/BHGOV/html_v1/images/og-image.png">
+    <meta property="og:site_name" content="Bahrain Government Guidlines Design System">
+    <meta property="og:title" content="Bahrain Government Guidlines Design System">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boxondemo.net/2025/BHGOVTEMP/html_v1/php/index.php">
+    <!-- Logo Icon Starts -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png">
+    <link rel="manifest" href="../images/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Public Sans Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+                    
+                <!-- Style -->
+    <link rel="stylesheet" href="../css/style.min.css" media="all">
+</head>
+<body>
+<header>
+
+</header>
+<!-- Main Section Starts -->
+<main id="govbh-main" aria-label="Main content">    <div class="govbh-section">
+        <div class="container">
+            <!--Component Textarea:Default Floating Label Starts -->
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
+                    <div class="govbh-form-control form-floating">
+                        <textarea class="form-control form-textarea" name="textareablock-001" id="textareablock-001" placeholder="Message" aria-label="Enter your message" maxlength="300"></textarea>
+                        <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        <label for="textareablock-001">Floating Label<span>*</span></label>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">With Value</div>
+                    <div class="govbh-form-control form-floating">
+                        <textarea class="form-control form-textarea" name="textareablock-002" id="textareablock-002" placeholder="Message" aria-label="Enter your message" maxlength="300">A form control for editing multi-line text.</textarea>
+                        <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        <label for="textareablock-002">Floating Label<span>*</span></label>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
+                    <div class="govbh-form-control form-floating govbh-form-control--invalid">
+                        <textarea class="form-control form-textarea" name="textareablock-003" id="textareablock-003" placeholder="Message" aria-label="Enter your message" maxlength="300">Text</textarea>
+                        <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        <label for="textareablock-003">Floating Label<span>*</span></label>                      
+                        <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
+                    <div class="govbh-form-control form-floating govbh-form-control--success">
+                        <textarea class="form-control form-textarea" name="textareablock-004" id="textareablock-004" placeholder="Message" aria-label="Enter your message" maxlength="300">Text</textarea>
+                        <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        <label for="textareablock-004">Floating Label<span>*</span></label>                       
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
+                    <div class="govbh-form-control form-floating govbh-form-control--disabled">
+                        <textarea class="form-control form-textarea" name="textareablock-005" id="textareablock-005" placeholder="Message" aria-label="Enter your message" maxlength="300">Text</textarea>
+                        <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        <label for="textareablock-005">Floating Label<span>*</span></label>                                        
+                    </div>
+                </div>
+            </div>
+            <!--Component Textarea:Default Floating Label Ends -->
+
+            <div class="hr"></div>
+
+            <!--Component Textarea:Default Top Label Starts -->
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
+                    <div class="govbh-form-control form-group row g-0">
+                        <div class="col-12">
+                            <label for="textareablock-006">Label<span>*</span></label>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control form-textarea" name="textareablock-006" id="textareablock-006" placeholder="Message" aria-label="Enter your message" maxlength="300"></textarea>
+                            <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">With Value</div>
+                    <div class="govbh-form-control form-group row g-0">
+                        <div class="col-12">
+                            <label for="textareablock-007">Label<span>*</span></label>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control form-textarea" name="textareablock-007" id="textareablock-007" placeholder="Message" aria-label="Enter your message" maxlength="300">A form control for editing multi-line text.</textarea>
+                            <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
+                    <div class="govbh-form-control form-group row g-0 govbh-form-control--invalid">
+                        <div class="col-12">
+                            <label for="textareablock-008">Label<span>*</span></label>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control form-textarea" name="textareablock-008" id="textareablock-008" placeholder="Message" aria-label="Enter your message" maxlength="300">Text</textarea>
+                            <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                            <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
+                    <div class="govbh-form-control form-group row g-0 govbh-form-control--success">
+                        <div class="col-12">
+                            <label for="textareablock-009">Label<span>*</span></label>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control form-textarea" name="textareablock-009" id="textareablock-009" placeholder="Message" aria-label="Enter your message" maxlength="300">Text</textarea>
+                            <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
+                    <div class="govbh-form-control form-group row g-0 govbh-form-control--disabled">
+                        <div class="col-12">
+                            <label for="textareablock-010">Label<span>*</span></label>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control form-textarea" name="textareablock-010" id="textareablock-010" placeholder="Message" aria-label="Enter your message" maxlength="300">Text</textarea>
+                            <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Component Textarea:Default Top Label Ends -->
+
+            <div class="hr"></div>
+
+            <!--Component Textarea:Default Side Label Starts -->
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
+                    <div class="row form-group govbh-form-control g-0">
+                        <div class="col-lg-3 col-sm-3 col-12">
+                            <label for="input-011">Label<span>*</span></label>
+                        </div>
+                        <div class="col-lg-9 col-sm-9 col-12">
+                            <textarea class="form-control form-textarea" name="textareablock-011" id="textareablock-011" placeholder="Message" aria-label="Enter your message" maxlength="300"></textarea>
+                            <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">With Value</div>
+                    <div class="row form-group govbh-form-control g-0">
+                        <div class="col-lg-3 col-sm-3 col-12">
+                            <label for="input-012">Label<span>*</span></label>
+                        </div>
+                        <div class="col-lg-9 col-sm-9 col-12">
+                            <textarea class="form-control form-textarea" name="textareablock-012" id="textareablock-012" placeholder="Message" aria-label="Enter your message" maxlength="300">A form control for editing multi-line text.</textarea>
+                            <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
+                    <div class="row form-group govbh-form-control govbh-form-control--invalid g-0">
+                        <div class="col-lg-3 col-sm-3 col-12">
+                            <label for="input-013">Label<span>*</span></label>
+                        </div>
+                        <div class="col-lg-9 col-sm-9 col-12">
+                            <textarea class="form-control form-textarea" name="textareablock-013" id="textareablock-013" placeholder="Message" aria-label="Enter your message" maxlength="300">Text</textarea>
+                            <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                            <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
+                    <div class="row form-group govbh-form-control govbh-form-control--success g-0">
+                        <div class="col-lg-3 col-sm-3 col-12">
+                            <label for="input-014">Label<span>*</span></label>
+                        </div>
+                        <div class="col-lg-9 col-sm-9 col-12">
+                            <textarea class="form-control form-textarea" name="textareablock-014" id="textareablock-014" placeholder="Message" aria-label="Enter your message" maxlength="300">Text</textarea>
+                            <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
+                    <div class="row form-group govbh-form-control govbh-form-control--disabled g-0">
+                        <div class="col-lg-3 col-sm-3 col-12">
+                            <label for="input-015">Label<span>*</span></label>
+                        </div>
+                        <div class="col-lg-9 col-sm-9 col-12">
+                             <textarea class="form-control form-textarea" name="textareablock-015" id="textareablock-015" placeholder="Message" aria-label="Enter your message" maxlength="300">Text</textarea>
+                            <div class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> characters remaining</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Component Textarea:Default Side Label Ends -->
+        </div>
+    </div>
+</main>
+<!-- Main Section Ends -->
+ <footer>
+	
+ </footer>
+
+<!-- Script Starts -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+	integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+	crossorigin="anonymous"></script>
+<!-- Icons -->
+<script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
+<!-- Accessibility Widget -->
+<!-- <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script> -->
+<!-- Header Sticky -->
+<script src="../js/govbh-menu-sticky.js"></script>
+<!-- Text Localization -->
+<script src="../js/govbh-lang.js"></script>
+<!-- Library -->
+<script src="../js/govbh-library.min.js"></script>
+<!-- Utils -->
+<script src="../js/govbh-utils.js"></script>
+<!-- smartmenus -->
+<script src="../js/jquery.smartmenus.min.js"></script>
+<!-- Themes -->
+<script src="../js/govbh-themes-0.0.1.js"></script>
+<!-- Script Ends -->
+</body>
+
+</html>
