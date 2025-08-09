@@ -76,7 +76,7 @@
                 <div class="row">
                     <div class="col-12 d-flex flex-nowrap gap-1 align-items-start">
                         <img loading="lazy" src="../images/bahrain-flag.svg" alt="Flag - Kingdom of Barhain" width="66" height="70">
-                        <p><span>Official government website of the Kingdom of Bahrain</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" data-aria-expanded-text=" " aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">How to identify?<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
+                        <p><span>Official government website of the Kingdom of Bahrain</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">How to identify?<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
                     </div>
                 </div>
             </div>
@@ -172,10 +172,10 @@
     <!-- Search Section Starts -->
 	<div class="govbh-search">
 		<div class="container">
-			<form action="search-result.php">
+			<form action="search-result.html" autocomplete="on">
                 <label for="txtSearch" class="visually-hidden">Search</label>
-				<input id="txtSearch" type="text" value="" autocomplete="name" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
-				<button type="button" onclick="window.location='search-result.php'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+				<input id="txtSearch" type="search" value="" name="searchQuery" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
+				<button type="button" onclick="window.location='search-result.html'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
 			</form>
 		</div>
 	</div>
@@ -471,7 +471,7 @@
                     </ul>
                 </nav>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-12">
-                    <h1>Data Acquisition and Processing</h1>
+                    <h1>Report Details</h1>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-md-end justify-content-sm-start justify-content-start">
                     <div class="govbh-sharethis govbh-sharethis--vertical theme--dark">
@@ -492,7 +492,7 @@
     <!-- Breadcrumbs Ends -->
 
     <!-- Content Banner Section Starts -->
-    <div class="govbh-section">
+    <section class="govbh-section" aria-labelledby="report-page-title">
         <div class="container">
             <!-- Content Starts -->
             <div class="row g-lg-4 g-md-3 g-3">
@@ -509,6 +509,7 @@
 					</div>
                     <div class="govbh-content-block">
                         <div class="govbh-date-content mb-2"><i class="ph ph-calendar-check" aria-hidden="true"></i> 2025</div>
+                        <h2 id="report-page-title">Data Acquisition and Processing</h2>
                         <div class="govbh-abstract">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet arcu volutpat, dictum lorem sollicitudin, finibus mauris. Quisque nisi nulla, imperdiet a consequat a, auctor elementum augue. Etiam sed lorem et enim aliquet sagittis porttitor sit amet odio. Maecenas et nisl a velit euismod pellentesque ac quis eros.</p>
                         </div>
@@ -526,7 +527,7 @@
                         </ul>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat quis dolor non ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent tempor fringilla fringilla. Vestibulum nec malesuada nisl, ac gravida dolor. Vivamus efficitur facilisis mauris, vitae sagittis nibh semper in.</p>
                         <a href="../images/samplepdf.pdf" class="govbh-btn govbh-btn--primary" target="_blank" aria-label="Download: Resolution on Regulating the Work of Energy Efficiency Specialised Companies, PDF, 13 MB, 8 pages">Download Report <i class="ph ph-download-simple" aria-hidden="true"></i></a>
-                        <div class="govbh-date-content govbh-date-content--small mt-2"><i class="ph ph-file-pdf" aria-hidden="true"></i> 13MB, 8 pages</div>
+                        <div class="govbh-date-content govbh-date-content--small mt-2 d-flex"><i class="ph ph-file-pdf" aria-hidden="true"></i> 13MB, 8 pages</div>
                     </div>
                 </div>
             </div>
@@ -556,7 +557,7 @@
             <!-- Share & Last updated content Ends -->
 
         </div>
-    </div>
+    </section>
     <!-- Content Banner Section Ends -->
 
     <!-- Related pages Section Starts -->
@@ -666,11 +667,11 @@
 				</div>
 				<div class="govbh-user-rating__head-button">
 					<button type="button" class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon"
-						aria-label="Is this page useful to you?" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
+						aria-label="Is this page useful to you? - Yes" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
 						Yes</button>
 					<button type="button"
 						class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon govbh-toggler"
-						data-target-on="#sharethoughts" aria-label="Is this page useful to you?"><i
+						data-target-on="#sharethoughts" aria-label="Is this page useful to you? - No" aria-controls="sharethoughts" aria-expanded="false"><i
 							class="ph ph-thumbs-down" aria-hidden="true"></i>
 						No</button><!-- The govbh-toggler and data-target-on attributes are used to target the visibility of the govbh-user-rating__body -->
 				</div>

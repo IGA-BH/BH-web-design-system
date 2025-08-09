@@ -136,13 +136,18 @@ jQuery(document).ready(function ($) {
 	//Masthead Starts
 	$(".privacyhead").click(function(){
 		$(this).toggleClass('active');
+		if ($(this).hasClass('active')) {
+			$(this).attr('aria-expanded','true');
+		} else {
+			$(this).attr('aria-expanded','false');
+		}
 	});
 	//Masthead Ends
 
 	//Head Search Starts
 	$("#searchbtn").click(function(){
 		$(this).toggleClass('active');
-		$(".govbh-search").slideToggle("").find('input[type="text"]')[0].focus();
+		$(".govbh-search").slideToggle("").find('input[type="search"]')[0].focus();
 	});
 	//Head Search Ends
 
@@ -914,6 +919,7 @@ jQuery(document).ready(function ($) {
 	const filesArray = Array.from(files);	
 	filesArray.forEach((file) => {
 		const fileSize = (file.size / 1024).toFixed(2); // Convert size to KB and format to 2 decimal places
+		//const fileerrorIcon = '<i class="ph ph-file-pdf"></i>';
 		// Create a new span for the selected file with a close button
 		const $fileSpan = $(`
 					<div class="form-group__selected-files-items">
@@ -958,6 +964,7 @@ jQuery(document).ready(function ($) {
 		const MAX_SIZE_MB = 5;
 		const MAX_FILES = 2;
 		const errorElement = document.getElementById('file-error');
+		const errorIcon = '<i class="ph ph-warning"></i>';
 		const files = e.target.files;
 		let errors = [];
 
@@ -968,20 +975,20 @@ jQuery(document).ready(function ($) {
 		// Check file count
 		if (files.length > MAX_FILES) {
 			$(this).parents('.form-group').addClass('govbh-form-control--invalid');
-			errors.push(`Maximum ${MAX_FILES} files allowed`);
+			errors.push(`${errorIcon} Maximum ${MAX_FILES} files allowed`);
 		}
 
 		// Check each file's size
 		Array.from(files).forEach((file, index) => {
 			if (file.size > MAX_SIZE_MB * 1024 * 1024) {
 			$(this).parents('.form-group').addClass('govbh-form-control--invalid');
-			errors.push(`File #${index + 1} "${file.name}" exceeds ${MAX_SIZE_MB}MB`);
+			errors.push(`${errorIcon} File #${index + 1} "${file.name}" exceeds ${MAX_SIZE_MB}MB`);
 			}
 		});
 
 		// Display errors
 		if (errors.length > 0) {
-			errorElement.textContent = errors.join('. ');
+			errorElement.innerHTML = errors.join('. ');
 			this.setAttribute('aria-invalid', 'true');
 			this.value = ''; // Clear invalid selection
 		}
@@ -1385,119 +1392,6 @@ $(document).ready(function () {
 });
 //Image Parallax Ends
 
-//Headroom Starts
-// jQuery(document).ready(function () {
-    
-//     function adjustMainMargin() {
-//         const headerlength = document.getElementById("govbh-header");
-//         const main = document.getElementById("govbh-main");
-        
-//         const headerHeight = headerlength.offsetHeight;
-//         main.style.marginTop = (headerHeight - 2) + "px";
-
-//         return headerHeight; // Return the header height for further use
-//     }
-
-//     // Get the dynamic header height
-//     const dynamicOffset = adjustMainMargin();
-
-//     // Initialize Headroom with dynamic offset
-//     var header = new Headroom(document.querySelector(".govbh-header"), {
-//         tolerance: 1,
-//         offset: (dynamicOffset - 20), // Use the calculated value
-//         classes: {
-//             initial: "animated",
-//             pinned: "slideDown",
-//             unpinned: "slideUp"
-//         }
-//     });
-//     header.init();
-	
-//     // Adjust margin on screen resize
-//     window.addEventListener("resize", function () {
-// 		setTimeout(function () {
-// 			const newOffset = adjustMainMargin();
-// 			header.offset = newOffset; // Update offset dynamically
-// 		}, 100); 
-//     });
-
-//     function checkHeaderClass() {
-//         if ($(".govbh-header").hasClass("headroom--not-top")) {
-//             $(".masthead").slideUp();
-//         } else {
-//             $(".masthead").slideDown();
-//         }
-//     }
-
-//     // Run the function on page load
-//     checkHeaderClass();
-
-//     // Observe class changes in the header dynamically
-//     var observer = new MutationObserver(function (mutations) {
-//         mutations.forEach(function (mutation) {
-//             checkHeaderClass();
-//         });
-//     });
-
-//     observer.observe(document.querySelector(".govbh-header"), {
-//         attributes: true,
-//         attributeFilter: ["class"],
-//     });
-
-//     // Also trigger on window resize just in case
-//     $(window).on("resize", checkHeaderClass);
-// });
-// $(document).ready(function() {
-// 	$('.govbh-header').each(function () {
-// 		if ($(this).children('.govbh-masthead').length) {
-// 			$(this).addClass('has-masthead');
-// 			$('#govbh-main').addClass('active-masthead');
-// 		}
-// 	});
-// });
-// (function () {
-//     var header;
-
-//     function getOffset() {
-//         if (window.matchMedia("(max-width: 575px)").matches) {
-//             return 95; // Offset for xxxs
-//         } else if (window.matchMedia("(max-width: 767px)").matches) {
-//             return 95; // Offset for xxs
-//         } else if (window.matchMedia("(max-width: 991px)").matches) {
-//             return 100; // Offset for xs
-//         } else if (window.matchMedia("(max-width: 1199px)").matches) {
-//             return 110; // Offset for md
-//         } else if (window.matchMedia("(max-width: 1399px)").matches) {
-//             return 165; // Offset for lg
-//         } else {
-//             return 185; // Offset for xxl
-//         }
-//     }
-
-//     function initializeHeadroom() {
-       
-//         header = new Headroom(document.querySelector(".govbh-header"), {
-//             tolerance: 1,
-//             offset: getOffset(), // Use the calculated value based on the current breakpoint
-//             classes: {
-//                 initial: "animated",
-//                 pinned: "slideDown",
-//                 unpinned: "slideUp"
-//             }
-//         });
-//         header.init();
-//     }
-
-//     // Initialize Headroom on page load
-//     initializeHeadroom();
-
-//     // Update Headroom on window resize
-//     window.addEventListener('resize', () => {
-//         initializeHeadroom(); // Reinitialize Headroom with the new offset
-//     });
-// }());
-//Headroom Ends
-
 //Input Keyup Starts
 $(document).ready(function() {
 	jQuery.expr[':'].Contains = function (a, i, m) {
@@ -1589,12 +1483,16 @@ $(document).ready(function() {
 	});
 
 	$('.govbh-open-user-rating').click(function() {
-		var top = $('.govbh-user-rating').offset().top,
-		menu_height = $('.govbh-menu').height();
+		
 		$('[data-target-on="#sharethoughts"]').click();
-		$('html, body').animate({
-            scrollTop: top-menu_height,
-        }, 500);
+		setTimeout(function() {
+			var top = $('.govbh-user-rating').offset().top,
+			//main_header_height = $(window).width() > 1199 ? $('.govbh-menu').height() : $('.govbh-head').height();
+			menu_height = $(window).width() > 1199 ? $('.govbh-menu').height() : $('.govbh-head').height();
+			$('html, body').animate({
+				scrollTop: top-menu_height,
+			}, 500);
+		}, 500);
 	});
 });
 //Footer hide content on mobile ends
@@ -1692,6 +1590,25 @@ if ($('.govbh-accordion__expand').length > 0) {
 		// Additional logic to expand or collapse content goes here
 	});
 }
+if ($('.govbh-breadcrumb__group').length > 0) {
+	$(document).ready(function(){
+		// Select the breadcrumb list
+		const $breadcrumbList = $(".govbh-breadcrumb__group");
+		// Count the number of <li> elements
+		const itemCount = $breadcrumbList.find('li').length;
+		// Check if there are more than 4 items
+		if (itemCount > 3) {
+			// Create the new <li> element for "Show more"
+			const showMoreItem = $(`<li class="govbh-breadcrumb__item-show-more-toggle"><button aria-label="${lang.showmoretext}" type="button">…</button></li>`);
+
+			// Insert the new <li> after the first <li> (home item)
+			$breadcrumbList.find('.govbh-breadcrumb__item-home').after(showMoreItem);
+		}
+	});
+	$(document).on('click','.govbh-breadcrumb__item-show-more-toggle',function(){
+		$('.govbh-breadcrumb__group').addClass('active');
+	});
+}
 
 //Form Swtich Starts
 document.addEventListener('DOMContentLoaded', function() {
@@ -1716,3 +1633,60 @@ String.prototype.format = function() {
 	}
 	return formatted;
 };
+// Side menu sticky #tags
+if ($('.govbh-side-widget__content').length > 0) {
+	$(document).on('click', '.govbh-side-widget__content > ul > li > a', function (e) {
+		e.preventDefault();
+		var thisref = this;
+		setTimeout(function () {
+			var href_attr = $(thisref).attr('href'),
+				//menu_height = $('.govbh-menu').height();
+				main_header_height = $(window).width() > 1199 ? $('.govbh-menu').height() : $('.govbh-head').height();
+			$("html, body").animate({ scrollTop: ($(href_attr).offset().top - main_header_height) }, "fast");
+		}, 100);
+	});
+}
+
+//STEPS SCRIPT STARTS
+if ($('ul.govbh-steps').length) {
+	activate_mobile_step(false);
+}
+function activate_mobile_step(update) {
+	$('ul.govbh-steps').each(function() {
+		if (!update)
+			var return_html = '<div class="govbh-mobile-steps d-md-none d-sm-flex d-flex mb-4">';
+		else
+			var return_html = '';
+
+		var steps = $(this),
+			steps_num = steps.find('li').length,
+			active_step = steps.find('li.active').index(),
+			percentage = ((active_step + 1) / steps_num)*100,
+			current_step_text = '<h3> <span>'+ steps.find('li.active').find('.govbh-steps__item-content span').text() +'</span>' + steps.find('li.active').find('.govbh-steps__item-content .govbh-steps__item-content-title').text() + '</h3>';
+			console.log(active_step);
+
+		
+		var next_step_text = '';
+		if (percentage != 100) {
+			next_step_text = '<p><strong>'+ lang.dt_next_text +':</strong> '+ steps.find('li:eq('+ (active_step+1) +')').find('.govbh-steps__item-content-title').text() +'</p>';
+		}
+
+		var step_def = '<span>'+ (active_step+1) + '</span><span>' + lang.of_text + '</span><span>' + steps_num +'</span>';
+
+		return_html += '<div class="pie-container"><div class="pie animate no-round" style="--p:'+ percentage +';--c:lightgreen">'+ step_def +'</div></div>';
+		return_html += '<div class="govbh-mobile-steps__text">';
+		return_html += current_step_text;
+		return_html += next_step_text;
+		return_html += '</div>';
+
+		if (!update) {
+			return_html += '</div>';
+
+			$(return_html).insertAfter(this);
+		} else {
+			$('.govbh-mobile-steps').html(return_html);
+		}
+		
+	})
+}
+//STEPS SCRIPT ENDS

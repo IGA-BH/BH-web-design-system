@@ -1175,7 +1175,7 @@
               width: 28px;
             }
             i{
-              color: var(--bh-brand);
+              color: var(--bh-accent);
               font-size: 23px;
               margin-top: 4px;
               @media #{$xm}{
@@ -1188,6 +1188,9 @@
           }
           dd{
             width: calc(100% - 30px);
+            p{
+              font-weight: var(--bh-fw-semibold);
+            }
             @media #{$xss}{
               width: calc(100% - 28px);
             }

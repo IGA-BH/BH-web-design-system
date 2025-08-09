@@ -77,7 +77,7 @@
                 <div class="row">
                     <div class="col-12 d-flex flex-nowrap gap-1 align-items-center">
                         <img loading="lazy" src="../images/bahrain-flag.svg" alt="Flag - Kingdom of Barhain" width="66" height="70">
-                        <p><span>موقع حكومي رسمي تابع لحكومة مملكة البحرين</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" data-aria-expanded-text=" " aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">كيف تعرف؟<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
+                        <p><span>موقع حكومي رسمي تابع لحكومة مملكة البحرين</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">كيف تعرف؟<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@
                         </ul>
                     </div>
                     <!-- Login -->
-                    <a href="login-ar.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--medium d-lg-inline-flex d-md-none d-none" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول</a>
+                    <a href="login.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--medium d-lg-inline-flex d-md-none d-none" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول</a>
                     <!-- Language Switcher -->
                     <a class="govbh-head__lang-switcher" href="../html/awards-and-achievements.html" lang="en-US" aria-label="اضغط هنا للتحول للنسخة العربية من هذه الصفحة ">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                     <!-- Dark Mode -->
@@ -173,10 +173,10 @@
     <!-- Search Section Starts -->
 	<div class="govbh-search">
 		<div class="container">
-			<form action="search-result-ar.php">
+			<form action="search-result.html" autocomplete="on">
                 <label for="txtSearch" class="visually-hidden">Search</label>
-				<input id="txtSearch" type="text" value="" autocomplete="name" placeholder="ما الذي تبحث عنه؟" aria-label="Start typing to find what you're looking for.">
-				<button type="button" onclick="window.location='search-result-ar.php'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+				<input id="txtSearch" type="search" value="" name="searchQuery" placeholder="ما الذي تبحث عنه؟" aria-label="Start typing to find what you're looking for.">
+				<button type="button" onclick="window.location='search-result.html'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
 			</form>
 		</div>
 	</div>
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                     <div class="govbh-menu__switchers-col">
-                        <a href="login-ar.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--small d-xl-none d-lg-inline-flex d-inline-flex" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول </a><!-- Login -->
+                        <a href="login.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--small d-xl-none d-lg-inline-flex d-inline-flex" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول </a><!-- Login -->
                         <!-- Mobile Language Switcher -->
                         <a class="govbh-head__lang-switcher" href="../html/awards-and-achievements.html" lang="en-US" aria-label="Click here to switch to the Arabic version of this page.">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                     </div>
@@ -224,7 +224,7 @@
             <!-- Main Navigation -->
             <nav id="main-nav" class="govbh-menu__navmenu" aria-label="Main navigation">
                 <div class="govbh-menu__navmenu-home">
-                    <a href="index-ar.html" aria-label="Home"><i class="ph ph-house" aria-hidden="true"></i></a>
+                    <a href="index.html" aria-label="Home"><i class="ph ph-house" aria-hidden="true"></i></a>
                 </div>
                 <ul id="main-menu" class="sm sm-rtl">
                     <li>
@@ -455,12 +455,12 @@
 <main id="govbh-main">
 
 <!-- Breadcrumb Starts -->
-<div class="govbh-section govbh-breadcrumb theme--dark bg--brand">
+<section class="govbh-section govbh-breadcrumb theme--dark bg--brand">
     <div class="container">
         <div class="row g-2 align-items-center">
             <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" aria-label="Breadcrumbs">
                 <ul class="govbh-breadcrumb__group">
-                    <li class="govbh-breadcrumb__item-home"><a href="index-ar.html" aria-label="Go to home"><i
+                    <li class="govbh-breadcrumb__item-home"><a href="index.html" aria-label="Go to home"><i
                                 class="ph ph-house" aria-hidden="true"></i> الصفحة الرئيسية</a></li>
                     <li class="govbh-breadcrumb__item-last" aria-current="page">الجوائز والإنجازات</li>
                 </ul>
@@ -490,10 +490,12 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-- Breadcrumbs Ends -->
 
-<div class="govbh-section">
+<!-- Awards Section Starts -->
+<section class="govbh-section" aria-labelledby="awards-page-title">
+    <h2 id="awards-page-title" class="visually-hidden">Awards and Achievements</h2>
     <div class="container">
         <!-- Two Column Starts -->
         <div class="row">
@@ -552,51 +554,54 @@
                                     المتقدم
                                 </button>
                                 <div class="govbh-advanced-search__body" id="advancesearch" style="display:none;">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-sm-12 col-12">
-                                            <div
-                                                class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
-                                                <select class="with-search" data-placeholder-search="نوع البحث"
-                                                    data-placeholder="اختر الفئة" data-columns="1"
-                                                    data-select-all="yes" data-select-all-text="حدد الكل"
-                                                    data-unselect-all-text="إلغاء تحديد الكل"
-                                                    data-selected-option-text="selected" multiple id="select-003">
-                                                    <option value="1">الجوائز</option>
-                                                    <option value="2">قيمة 1</option>
-                                                    <option value="3">قيمة 3</option>
-                                                    <option value="4">قيمة 4</option>
-                                                    <option value="5">قيمة 5</option>
-                                                    <option value="6">قيمة 6</option>
-                                                    <option value="7">قيمة 7</option>
-                                                </select>
-                                                <label for="select-003">النوع</label>
+                                    <fieldset>
+                                        <legend class="visually-hidden">Advanced Search Field</legend>
+                                        <div class="row g-4">
+                                            <div class="col-md-6 col-sm-12 col-12">
+                                                <div
+                                                    class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
+                                                    <select class="with-search" data-placeholder-search="نوع البحث"
+                                                        data-placeholder="اختر الفئة" data-columns="1"
+                                                        data-select-all="yes" data-select-all-text="حدد الكل"
+                                                        data-unselect-all-text="إلغاء تحديد الكل"
+                                                        data-selected-option-text="selected" multiple id="select-003">
+                                                        <option value="1">الجوائز</option>
+                                                        <option value="2">قيمة 1</option>
+                                                        <option value="3">قيمة 3</option>
+                                                        <option value="4">قيمة 4</option>
+                                                        <option value="5">قيمة 5</option>
+                                                        <option value="6">قيمة 6</option>
+                                                        <option value="7">قيمة 7</option>
+                                                    </select>
+                                                    <label for="select-003">النوع</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-12">
+                                                <div
+                                                    class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
+                                                    <select class="with-search" data-placeholder-search="البحث عن سنة"
+                                                        data-placeholder="اختر السنة" data-columns="1"
+                                                        data-select-all="yes" data-select-all-text="حدد الكل"
+                                                        data-unselect-all-text="إلغاء تحديد الكل"
+                                                        data-selected-option-text="selected" multiple id="select-002">
+                                                        <option value="1">12 مايو 2025</option>
+                                                        <option value="2">2024</option>
+                                                        <option value="3">2023</option>
+                                                        <option value="4">2022</option>
+                                                        <option value="5">2021</option>
+                                                        <option value="6">2020</option>
+                                                        <option value="7">2019</option>
+                                                    </select>
+                                                    <label for="select-002">تصفية حسب السنة</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="button" class="govbh-btn govbh-btn--primary"
+                                                    aria-label="Click here to search">بحث <i class="ph ph-arrow-right"
+                                                        aria-hidden="true"></i></button>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-sm-12 col-12">
-                                            <div
-                                                class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
-                                                <select class="with-search" data-placeholder-search="البحث عن سنة"
-                                                    data-placeholder="اختر السنة" data-columns="1"
-                                                    data-select-all="yes" data-select-all-text="حدد الكل"
-                                                    data-unselect-all-text="إلغاء تحديد الكل"
-                                                    data-selected-option-text="selected" multiple id="select-002">
-                                                    <option value="1">12 مايو 2025</option>
-                                                    <option value="2">2024</option>
-                                                    <option value="3">2023</option>
-                                                    <option value="4">2022</option>
-                                                    <option value="5">2021</option>
-                                                    <option value="6">2020</option>
-                                                    <option value="7">2019</option>
-                                                </select>
-                                                <label for="select-002">تصفية حسب السنة</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="button" class="govbh-btn govbh-btn--primary"
-                                                aria-label="Click here to search">بحث <i class="ph ph-arrow-right"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                    </div>
+                                    </fieldset>
                                 </div>
                             </div>
                         </div>
@@ -604,166 +609,283 @@
                 </div>
                 <!-- Search Container Ends -->
 
-                <!-- Title and Sort by Starts -->
-                <div class="row align-items-center g-3 mt-4 mb-4">
-                    <div class="col-xxl-8 col-xl-5 col-lg-5 col-md-4 col-sm-12 col-12 mt-md-3 mt-sm-0 mt-0">
-                        <h2 class="m-0">جميع الجوائز</h2>
+                <!-- List Grid Starts -->
+                <div role="region" aria-label="جميع الجوائز">
+                    <!-- Title and Sort by Starts -->
+                    <div class="row align-items-center g-3 mt-4 mb-4">
+                        <div class="col-xxl-8 col-xl-5 col-lg-5 col-md-4 col-sm-12 col-12 mt-md-3 mt-sm-0 mt-0">
+                            <h2 class="m-0" id="list-heading">جميع الجوائز</h2>
+                        </div>
+                        <div class="col-xxl-4 col-xl-7 col-lg-7 col-md-8 col-sm-12 col-12" aria-labelledby="sort-options">
+                            <div class="d-flex justify-content-end gap-2">
+                                <div class="visually-hidden" id="sort-options">خيار الفرز</div>
+                                <div class="govbh-form-control form-floating govbh-form-control--select"
+                                    aria-labelledby="sort-options">
+                                    <select class="form-select select2" id="select-001" name="select-001">
+                                        <option value="0">اختر خيار الفرز</option>
+                                        <option value="1">الاسم تصاعديًا</option>
+                                        <option value="2">الاسم تنازليًا</option>
+                                    </select>
+                                    <label for="select-001">الترتيب حسب</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xxl-4 col-xl-7 col-lg-7 col-md-8 col-sm-12 col-12" aria-labelledby="sort-options">
-                        <div class="d-flex justify-content-end gap-2">
-                            <div class="visually-hidden" id="sort-options">خيار الفرز</div>
-                            <div class="govbh-form-control form-floating govbh-form-control--select"
-                                aria-labelledby="sort-options">
-                                <select class="form-select select2" id="select-001" name="select-001">
-                                    <option value="0">اختر خيار الفرز</option>
-                                    <option value="1">الاسم تصاعديًا</option>
-                                    <option value="2">الاسم تنازليًا</option>
-                                </select>
-                                <label for="select-001">الترتيب حسب</label>
+                    <!-- Title and Sort by Ends -->
+                    <!-- List Starts -->
+                    <div class="govbh-newscard-list govbh-popup-wrapper__item" aria-labelledby="list-heading">
+                        <a href="#" aria-labelledby="awards-and-achievements-01" class="govbh-newscard-listview govbh-popup-wrapper__items">
+                            <div class="govbh-newscard__image">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="../images/banner-033.webp">
+                                    <!--1600*750 Default image-->
+                                    <source media="(min-width: 992px)" srcset="../images/banner-033.webp"><!--1199*500-->
+                                    <source media="(min-width: 768px)" srcset="../images/banner-033.webp"> <!--991*413-->
+                                    <img loading="lazy" src="../images/banner-033.webp"
+                                        alt="Bahrain Smart Cities Awards 2020" width="582" height="328"><!--767*320-->
+                                </picture>
                             </div>
+                            <div class="govbh-newscard__content">
+                                <div class="govbh-newscard__content-head">
+                                    <div class="govbh-newscard__date govbh-newscard__date--dotseparation">12 مايو 2025 <span
+                                            aria-disabled="true">.</span> الجوائز</div>
+                                    <h3 id="awards-and-achievements-01" class="govbh-newscard__title">جوائز المدن الذكية بحرين 2020</h3>
+                                    <div class="govbh-newscard__paragraph">فئة التقدّم في الأمن الغذائي والتقنيات الزراعية – مشروع الأطلس النباتي</div>
+                                </div>
+                                <div class="govbh-newscard__content-foot">
+                                    <div class="govbh-btn govbh-btn--withoutline govbh-btn--medium">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" aria-labelledby="awards-and-achievements-02" class="govbh-newscard-listview govbh-popup-wrapper__items">
+                            <div class="govbh-newscard__image">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="../images/banner-033.webp">
+                                    <!--1600*750 Default image-->
+                                    <source media="(min-width: 992px)" srcset="../images/banner-033.webp"><!--1199*500-->
+                                    <source media="(min-width: 768px)" srcset="../images/banner-033.webp"> <!--991*413-->
+                                    <img loading="lazy" src="../images/banner-033.webp"
+                                        alt="Government Service Centers Evaluation Award 2021" width="582"
+                                        height="328"><!--767*320-->
+                                </picture>
+                            </div>
+                            <div class="govbh-newscard__content">
+                                <div class="govbh-newscard__content-head">
+                                    <div class="govbh-newscard__date govbh-newscard__date--dotseparation">12 مايو 2025 <span
+                                            aria-disabled="true">.</span> الجوائز</div>
+                                    <h3 id="awards-and-achievements-02" class="govbh-newscard__title">جائزة تقييم مراكز الخدمات الحكومية 2021</h3>
+                                    <div class="govbh-newscard__paragraph">فرع مركز بطاقة الهوية – مدينة عيسى، المصنف ضمن الفئة الذهبية</div>
+                                </div>
+                                <div class="govbh-newscard__content-foot">
+                                    <div class="govbh-btn govbh-btn--withoutline govbh-btn--medium">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" aria-labelledby="awards-and-achievements-03" class="govbh-newscard-listview govbh-popup-wrapper__items">
+                            <div class="govbh-newscard__image">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="../images/banner-033.webp">
+                                    <!--1600*750 Default image-->
+                                    <source media="(min-width: 992px)" srcset="../images/banner-033.webp"><!--1199*500-->
+                                    <source media="(min-width: 768px)" srcset="../images/banner-033.webp"> <!--991*413-->
+                                    <img loading="lazy" src="../images/banner-033.webp"
+                                        alt="Bahrain Digital Content Award 2023" width="582" height="328"><!--767*320-->
+                                </picture>
+                            </div>
+                            <div class="govbh-newscard__content">
+                                <div class="govbh-newscard__content-head">
+                                    <div class="govbh-newscard__date govbh-newscard__date--dotseparation">12 مايو 2025 <span
+                                            aria-disabled="true">.</span> الجوائز</div>
+                                    <h3 id="awards-and-achievements-03" class="govbh-newscard__title">جائزة البحرين للمحتوى الرقمي 2023</h3>
+                                    <div class="govbh-newscard__paragraph">فئة التفاعل بين الحكومة والمواطن – تطبيق تواصل، وفئة الأعمال والتجارة – تطبيق التاجر، وفئة الصحة والرفاه – تطبيق صحتي</div>
+                                </div>
+                                <div class="govbh-newscard__content-foot">
+                                    <div class="govbh-btn govbh-btn--withoutline govbh-btn--medium">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" aria-labelledby="awards-and-achievements-04" class="govbh-newscard-listview govbh-popup-wrapper__items">
+                            <div class="govbh-newscard__image">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="../images/banner-033.webp">
+                                    <!--1600*750 Default image-->
+                                    <source media="(min-width: 992px)" srcset="../images/banner-033.webp"><!--1199*500-->
+                                    <source media="(min-width: 768px)" srcset="../images/banner-033.webp"> <!--991*413-->
+                                    <img loading="lazy" src="../images/banner-033.webp"
+                                        alt="Customer Service Excellence Award 2021" width="582" height="328"><!--767*320-->
+                                </picture>
+                            </div>
+                            <div class="govbh-newscard__content">
+                                <div class="govbh-newscard__content-head">
+                                    <div class="govbh-newscard__date govbh-newscard__date--dotseparation">12 مايو 2025 <span
+                                            aria-disabled="true">.</span> الجوائز</div>
+                                    <h3 id="awards-and-achievements-04" class="govbh-newscard__title">جائزة التميز في خدمة العملاء 2021</h3>
+                                    <div class="govbh-newscard__paragraph">النظام الوطني للاقتراحات والشكاوى "تواصل"</div>
+                                </div>
+                                <div class="govbh-newscard__content-foot">
+                                    <div class="govbh-btn govbh-btn--withoutline govbh-btn--medium">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" aria-labelledby="awards-and-achievements-05" class="govbh-newscard-listview govbh-popup-wrapper__items">
+                            <div class="govbh-newscard__image">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="../images/banner-033.webp">
+                                    <!--1600*750 Default image-->
+                                    <source media="(min-width: 992px)" srcset="../images/banner-033.webp"><!--1199*500-->
+                                    <source media="(min-width: 768px)" srcset="../images/banner-033.webp"> <!--991*413-->
+                                    <img loading="lazy" src="../images/banner-033.webp"
+                                        alt="Bahrain Smart Cities Awards 2021" width="582" height="328"><!--767*320-->
+                                </picture>
+                            </div>
+                            <div class="govbh-newscard__content">
+                                <div class="govbh-newscard__content-head">
+                                    <div class="govbh-newscard__date govbh-newscard__date--dotseparation">12 مايو 2025 <span
+                                            aria-disabled="true">.</span> الجوائز</div>
+                                    <h3 id="awards-and-achievements-05" class="govbh-newscard__title">جوائز المدن الذكية بحرين 2021</h3>
+                                    <div class="govbh-newscard__paragraph">جائزة الابتكار خلال جائحة كوفيد-19 – تطبيق كن واعياً البحرين</div>
+                                </div>
+                                <div class="govbh-newscard__content-foot">
+                                    <div class="govbh-btn govbh-btn--withoutline govbh-btn--medium">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
+                    <!-- List Ends -->
+
+                    <!-- Popup Slider Section Starts -->
+                    <div id="awardspopup" class="govbh-popup-model-slider" role="dialog" aria-hidden="true" aria-modal="true" aria-labelledby="awardspopup" tabindex="-1">
+                        <div class="govbh-popup-model-slider__overlay"></div>
+                        <div class="govbh-popup-model-slider__container">
+                            <div class="govbh-popup-model-slider__head">
+                                <button class="govbh-popup-model-slider__close" aria-label="Model Pop Close"><i class="ph ph-x"></i></button>
+                            </div>
+                            <div class="govbh-popup-model-slider__body">
+                                <div class="govbh-popup-model-slider-swiper" aria-roledescription="carousel" role="region" aria-label="Executive Profile Slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" tabindex="0" role="group">
+                                            <div class="row govbh-popup-model-slider__content">
+                                                <div class="col-12">
+                                                    <div class="col-lg-6 col-md-12 float-md-end ms-lg-5 ms-md-0 ms-0 mb-lg-4 mb-md-3 mb-3 z-1 position-relative">
+                                                        <div class="govbh-image-block" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="1.05">
+                                                            <img src="../images/banner-033.webp" alt="Bahrain Smart Cities Awards 2020" width="954" height="717" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                    <div class="govbh-content-block" data-swiper-parallax-x="-5%" data-swiper-parallax-opacity="0">
+                                                        <h3 class="text--brand mb-2">جوائز المدن الذكية بحرين 2020</h3>
+                                                        <div class="govbh-popup-model-slider__content-date mb-3">12 مايو 2025 <span aria-disabled="true">.</span> الجوائز</div>
+                                                        <p><strong>يعدّ كورنيش البسيتين من اماكن الترفيه في المحرق حيث يحظى بشعبية كبيرة، حيث ينجذب لزيارته عشاق التنزه بجانب البحر والراغبين في.</strong></p>
+                                                        <p>الاستمتاع بإطلالات الأفق الساحرة، وتجول على طول الكورنيش، مع توافر عدد من الكراسي المخصصة للجلوس الموزعة على امتداد الكورنيش المسطحات الخضراء وأماكن المخصصة الألعاب الرياضية والعاب الأطفال.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" tabindex="0" role="group">
+                                            <div class="row govbh-popup-model-slider__content">
+                                                <div class="col-12">
+                                                    <div class="col-lg-6 col-md-12 float-md-end ms-lg-5 ms-md-0 ms-0 mb-lg-4 mb-md-3 mb-3 z-1 position-relative">
+                                                        <div class="govbh-image-block" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="1.05">
+                                                            <img src="../images/banner-033.webp" alt="Government Service Centers Evaluation Award 2021" width="954" height="717" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                    <div class="govbh-content-block" data-swiper-parallax-x="-5%" data-swiper-parallax-opacity="0">
+                                                        <h3 class="text--brand mb-2">جائزة تقييم مراكز الخدمات الحكومية 2021</h3>
+                                                        <div class="govbh-popup-model-slider__content-date mb-3">12 مايو 2025 <span aria-disabled="true">.</span> الجوائز</div>
+                                                        <p><strong>يعدّ كورنيش البسيتين من اماكن الترفيه في المحرق حيث يحظى بشعبية كبيرة، حيث ينجذب لزيارته عشاق التنزه بجانب البحر والراغبين في.</strong></p>
+                                                        <p>الاستمتاع بإطلالات الأفق الساحرة، وتجول على طول الكورنيش، مع توافر عدد من الكراسي المخصصة للجلوس الموزعة على امتداد الكورنيش المسطحات الخضراء وأماكن المخصصة الألعاب الرياضية والعاب الأطفال.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" tabindex="0" role="group">
+                                            <div class="row govbh-popup-model-slider__content">
+                                                <div class="col-12">
+                                                    <div class="col-lg-6 col-md-12 float-md-end ms-lg-5 ms-md-0 ms-0 mb-lg-4 mb-md-3 mb-3 z-1 position-relative">
+                                                        <div class="govbh-image-block" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="1.05">
+                                                            <img src="../images/banner-033.webp" alt="Bahrain Digital Content Award 2023" width="954" height="717" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                    <div class="govbh-content-block" data-swiper-parallax-x="-5%" data-swiper-parallax-opacity="0">
+                                                        <h3 class="text--brand mb-2">جائزة البحرين للمحتوى الرقمي 2023</h3>
+                                                        <div class="govbh-popup-model-slider__content-date mb-3">12 مايو 2025 <span aria-disabled="true">.</span> الجوائز</div>
+                                                        <p><strong>يعدّ كورنيش البسيتين من اماكن الترفيه في المحرق حيث يحظى بشعبية كبيرة، حيث ينجذب لزيارته عشاق التنزه بجانب البحر والراغبين في.</strong></p>
+                                                        <p>الاستمتاع بإطلالات الأفق الساحرة، وتجول على طول الكورنيش، مع توافر عدد من الكراسي المخصصة للجلوس الموزعة على امتداد الكورنيش المسطحات الخضراء وأماكن المخصصة الألعاب الرياضية والعاب الأطفال.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" tabindex="0" role="group">
+                                            <div class="row govbh-popup-model-slider__content">
+                                                <div class="col-12">
+                                                    <div class="col-lg-6 col-md-12 float-md-end ms-lg-5 ms-md-0 ms-0 mb-lg-4 mb-md-3 mb-3 z-1 position-relative">
+                                                        <div class="govbh-image-block" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="1.05">
+                                                            <img src="../images/banner-033.webp" alt="Customer Service Excellence Award 2021" width="954" height="717" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                    <div class="govbh-content-block" data-swiper-parallax-x="-5%" data-swiper-parallax-opacity="0">
+                                                        <h3 class="text--brand mb-2">جائزة التميز في خدمة العملاء 2021</h3>
+                                                        <div class="govbh-popup-model-slider__content-date mb-3">12 مايو 2025 <span aria-disabled="true">.</span> الجوائز</div>
+                                                        <p><strong>يعدّ كورنيش البسيتين من اماكن الترفيه في المحرق حيث يحظى بشعبية كبيرة، حيث ينجذب لزيارته عشاق التنزه بجانب البحر والراغبين في.</strong></p>
+                                                        <p>الاستمتاع بإطلالات الأفق الساحرة، وتجول على طول الكورنيش، مع توافر عدد من الكراسي المخصصة للجلوس الموزعة على امتداد الكورنيش المسطحات الخضراء وأماكن المخصصة الألعاب الرياضية والعاب الأطفال.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" tabindex="0" role="group">
+                                            <div class="row govbh-popup-model-slider__content">
+                                                <div class="col-12">
+                                                    <div class="col-lg-6 col-md-12 float-md-end ms-lg-5 ms-md-0 ms-0 mb-lg-4 mb-md-3 mb-3 z-1 position-relative">
+                                                        <div class="govbh-image-block" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="1.05">
+                                                            <img src="../images/banner-033.webp" alt="Bahrain Smart Cities Awards 2021" width="954" height="717" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                    <div class="govbh-content-block" data-swiper-parallax-x="-5%" data-swiper-parallax-opacity="0">
+                                                        <h3 class="text--brand mb-2">جوائز المدن الذكية بحرين 2021</h3>
+                                                        <div class="govbh-popup-model-slider__content-date mb-3">12 مايو 2025 <span aria-disabled="true">.</span> الجوائز</div>
+                                                        <p><strong>يعدّ كورنيش البسيتين من اماكن الترفيه في المحرق حيث يحظى بشعبية كبيرة، حيث ينجذب لزيارته عشاق التنزه بجانب البحر والراغبين في.</strong></p>
+                                                        <p>الاستمتاع بإطلالات الأفق الساحرة، وتجول على طول الكورنيش، مع توافر عدد من الكراسي المخصصة للجلوس الموزعة على امتداد الكورنيش المسطحات الخضراء وأماكن المخصصة الألعاب الرياضية والعاب الأطفال.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="govbh-popup-model-slider__foot">
+                                <button type="button" class="govbh-btn govbh-btn--outline" aria-label="Model Pop Close">إغلاق</button>
+                            </div>
+                            <!-- Navigation -->
+                            <div class="govbh-popup-model-slider-prev"><i class="ph ph-caret-left"></i> السابق</div>
+                            <div class="govbh-popup-model-slider-next">التالي <i class="ph ph-caret-right"></i></div>
+                        </div>
+                    </div>
+                    <!-- Popup Slider Section Ends -->
                 </div>
-                <!-- Title and Sort by Ends -->
-                <!-- List Starts -->
-                <div class="govbh-newscard-list">
-                    <a href="#" aria-labelledby="awards-and-achievements-01" class="govbh-newscard-listview">
-                        <div class="govbh-newscard__image">
-                            <picture>
-                                <source media="(min-width: 1200px)" srcset="../images/banner-033.webp">
-                                <!--1600*750 Default image-->
-                                <source media="(min-width: 992px)" srcset="../images/banner-033.webp"><!--1199*500-->
-                                <source media="(min-width: 768px)" srcset="../images/banner-033.webp"> <!--991*413-->
-                                <img loading="lazy" src="../images/banner-033.webp"
-                                    alt="Bahrain Smart Cities Awards 2020" width="582" height="328"><!--767*320-->
-                            </picture>
-                        </div>
-                        <div class="govbh-newscard__content">
-                            <div class="govbh-newscard__content-head">
-                                <div class="govbh-newscard__date govbh-newscard__date--dotseparation">12 مايو 2025 <span
-                                        aria-disabled="true">.</span> الجوائز</div>
-                                <h3 id="awards-and-achievements-01" class="govbh-newscard__title">جوائز المدن الذكية بحرين 2020</h3>
-                                <div class="govbh-newscard__paragraph">فئة التقدّم في الأمن الغذائي والتقنيات الزراعية – مشروع الأطلس النباتي</div>
-                            </div>
-                            <div class="govbh-newscard__content-foot">
-                                <div class="govbh-btn govbh-btn--withoutline govbh-btn--medium">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" aria-labelledby="awards-and-achievements-02" class="govbh-newscard-listview">
-                        <div class="govbh-newscard__image">
-                            <picture>
-                                <source media="(min-width: 1200px)" srcset="../images/banner-033.webp">
-                                <!--1600*750 Default image-->
-                                <source media="(min-width: 992px)" srcset="../images/banner-033.webp"><!--1199*500-->
-                                <source media="(min-width: 768px)" srcset="../images/banner-033.webp"> <!--991*413-->
-                                <img loading="lazy" src="../images/banner-033.webp"
-                                    alt="Government Service Centers Evaluation Award 2021" width="582"
-                                    height="328"><!--767*320-->
-                            </picture>
-                        </div>
-                        <div class="govbh-newscard__content">
-                            <div class="govbh-newscard__content-head">
-                                <div class="govbh-newscard__date govbh-newscard__date--dotseparation">12 مايو 2025 <span
-                                        aria-disabled="true">.</span> الجوائز</div>
-                                <h3 id="awards-and-achievements-02" class="govbh-newscard__title">جائزة تقييم مراكز الخدمات الحكومية 2021</h3>
-                                <div class="govbh-newscard__paragraph">فرع مركز بطاقة الهوية – مدينة عيسى، المصنف ضمن الفئة الذهبية</div>
-                            </div>
-                            <div class="govbh-newscard__content-foot">
-                                <div class="govbh-btn govbh-btn--withoutline govbh-btn--medium">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" aria-labelledby="awards-and-achievements-03" class="govbh-newscard-listview">
-                        <div class="govbh-newscard__image">
-                            <picture>
-                                <source media="(min-width: 1200px)" srcset="../images/banner-033.webp">
-                                <!--1600*750 Default image-->
-                                <source media="(min-width: 992px)" srcset="../images/banner-033.webp"><!--1199*500-->
-                                <source media="(min-width: 768px)" srcset="../images/banner-033.webp"> <!--991*413-->
-                                <img loading="lazy" src="../images/banner-033.webp"
-                                    alt="Bahrain Digital Content Award 2023" width="582" height="328"><!--767*320-->
-                            </picture>
-                        </div>
-                        <div class="govbh-newscard__content">
-                            <div class="govbh-newscard__content-head">
-                                <div class="govbh-newscard__date govbh-newscard__date--dotseparation">12 مايو 2025 <span
-                                        aria-disabled="true">.</span> الجوائز</div>
-                                <h3 id="awards-and-achievements-03" class="govbh-newscard__title">جائزة البحرين للمحتوى الرقمي 2023</h3>
-                                <div class="govbh-newscard__paragraph">فئة التفاعل بين الحكومة والمواطن – تطبيق تواصل، وفئة الأعمال والتجارة – تطبيق التاجر، وفئة الصحة والرفاه – تطبيق صحتي</div>
-                            </div>
-                            <div class="govbh-newscard__content-foot">
-                                <div class="govbh-btn govbh-btn--withoutline govbh-btn--medium">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" aria-labelledby="awards-and-achievements-04" class="govbh-newscard-listview">
-                        <div class="govbh-newscard__image">
-                            <picture>
-                                <source media="(min-width: 1200px)" srcset="../images/banner-033.webp">
-                                <!--1600*750 Default image-->
-                                <source media="(min-width: 992px)" srcset="../images/banner-033.webp"><!--1199*500-->
-                                <source media="(min-width: 768px)" srcset="../images/banner-033.webp"> <!--991*413-->
-                                <img loading="lazy" src="../images/banner-033.webp"
-                                    alt="Customer Service Excellence Award 2021" width="582" height="328"><!--767*320-->
-                            </picture>
-                        </div>
-                        <div class="govbh-newscard__content">
-                            <div class="govbh-newscard__content-head">
-                                <div class="govbh-newscard__date govbh-newscard__date--dotseparation">12 مايو 2025 <span
-                                        aria-disabled="true">.</span> الجوائز</div>
-                                <h3 id="awards-and-achievements-04" class="govbh-newscard__title">جائزة التميز في خدمة العملاء 2021</h3>
-                                <div class="govbh-newscard__paragraph">النظام الوطني للاقتراحات والشكاوى "تواصل"</div>
-                            </div>
-                            <div class="govbh-newscard__content-foot">
-                                <div class="govbh-btn govbh-btn--withoutline govbh-btn--medium">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" aria-labelledby="awards-and-achievements-05" class="govbh-newscard-listview">
-                        <div class="govbh-newscard__image">
-                            <picture>
-                                <source media="(min-width: 1200px)" srcset="../images/banner-033.webp">
-                                <!--1600*750 Default image-->
-                                <source media="(min-width: 992px)" srcset="../images/banner-033.webp"><!--1199*500-->
-                                <source media="(min-width: 768px)" srcset="../images/banner-033.webp"> <!--991*413-->
-                                <img loading="lazy" src="../images/banner-033.webp"
-                                    alt="Bahrain Smart Cities Awards 2021" width="582" height="328"><!--767*320-->
-                            </picture>
-                        </div>
-                        <div class="govbh-newscard__content">
-                            <div class="govbh-newscard__content-head">
-                                <div class="govbh-newscard__date govbh-newscard__date--dotseparation">12 مايو 2025 <span
-                                        aria-disabled="true">.</span> الجوائز</div>
-                                <h3 id="awards-and-achievements-05" class="govbh-newscard__title">جوائز المدن الذكية بحرين 2021</h3>
-                                <div class="govbh-newscard__paragraph">جائزة الابتكار خلال جائحة كوفيد-19 – تطبيق كن واعياً البحرين</div>
-                            </div>
-                            <div class="govbh-newscard__content-foot">
-                                <div class="govbh-btn govbh-btn--withoutline govbh-btn--medium">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- List Ends -->
+                <!-- List Grid Ends -->
+
                 <!-- Pagination Starts -->
                 <div class="govbh-pagination">
-                    <ul>
-                        <li class="govbh-pagination__prev"><a href="#" aria-label="First Page" rel="first"><i
-                                    class="ph ph-caret-double-left"></i> <span>الأولى</span></a></li>
-                        <li class="govbh-pagination__prev"><a href="#" aria-label="Previous Page" rel="prev"><i
-                                    class="ph ph-caret-left"></i> <span>السابقة</span></a></li>
-                        <li><a href="#" aria-label="Page 1">1</a></li>
-                        <li><a href="#" aria-label="Page 2">2</a></li>
-                        <li class="govbh-pagination__current" aria-current="page" title="Page 3">3</li>
-                        <li class="govbh-pagination__truncate" title="Pages">...</li>
-                        <li><a href="#" aria-label="Page 4">4</a></li>
-                        <li class="govbh-pagination__next"><a href="#" aria-label="Next Page"
-                                rel="next"><span>التالية</span> <i class="ph ph-caret-right"></i></a></li>
-                        <li class="govbh-pagination__next"><a href="#" aria-label="Last Page"
-                                rel="last"><span>الأخيرة</span> <i class="ph ph-caret-double-right"></i></a></li>
-                    </ul>
+                    <nav aria-label="تصفح الصفحات">
+                        <ul>
+                            <li class="govbh-pagination__prev"><a href="#" aria-label="First Page" rel="first"><i
+                                        class="ph ph-caret-double-left"></i> <span>الأولى</span></a></li>
+                            <li class="govbh-pagination__prev"><a href="#" aria-label="Previous Page" rel="prev"><i
+                                        class="ph ph-caret-left"></i> <span>السابقة</span></a></li>
+                            <li><a href="#" aria-label="Page 1">1</a></li>
+                            <li><a href="#" aria-label="Page 2">2</a></li>
+                            <li class="govbh-pagination__current" aria-current="page" title="Page 3">3</li>
+                            <li class="govbh-pagination__truncate" title="Pages">...</li>
+                            <li><a href="#" aria-label="Page 4">4</a></li>
+                            <li class="govbh-pagination__next"><a href="#" aria-label="Next Page"
+                                    rel="next"><span>التالية</span> <i class="ph ph-caret-right"></i></a></li>
+                            <li class="govbh-pagination__next"><a href="#" aria-label="Last Page"
+                                    rel="last"><span>الأخيرة</span> <i class="ph ph-caret-double-right"></i></a></li>
+                        </ul>
+                    </nav>
                     <div class="govbh-pagination__info">عرض 2 إلى 10 من 100 سجل</div>
                 </div>
                 <!-- Pagination Ends -->
+                 
             </div>
         </div>
         <!-- Two Column Ends -->
@@ -797,7 +919,8 @@
         </div>
         <!-- Share & Last updated content Ends -->
     </div>
-</div>
+</section>
+<!-- Awards Section Ends -->
 
 <!-- Related pages Section Starts -->
 <div class="govbh-section bg--grey">
@@ -1134,11 +1257,11 @@
 					<p><i class="ph ph-clock" aria-hidden="true"></i> آخر تحديث للموقع: 29 مايو 2025</p>
 				</div>
 				<ul>
-					<li><a href="terms-of-use-ar.html">شروط الاستخدام</a></li>
-					<li><a href="privacy-policy-ar.html">سياسة الخصوصية</a></li>
-					<li><a href="accessibility-ar.html">سياسة تسهيل الوصول</a></li>
-					<li><a href="eparticipation-ar.html">المشاركة الإلكترونية</a></li>
-					<li><a href="sitemap-ar.html">خريطة الموقع</a></li>
+					<li><a href="terms-of-use.html">شروط الاستخدام</a></li>
+					<li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+					<li><a href="accessibility.html">سهولة الوصول</a></li>
+					<li><a href="eparticipation.html">المشاركة الإلكترونية</a></li>
+					<li><a href="sitemap.html">خريطة الموقع</a></li>
 				</ul>
 			</div>
 			<div class="govbh-footer__copyrights">

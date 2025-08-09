@@ -76,7 +76,7 @@
                 <div class="row">
                     <div class="col-12 d-flex flex-nowrap gap-1 align-items-start">
                         <img loading="lazy" src="../images/bahrain-flag.svg" alt="Flag - Kingdom of Barhain" width="66" height="70">
-                        <p><span>Official government website of the Kingdom of Bahrain</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" data-aria-expanded-text=" " aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">How to identify?<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
+                        <p><span>Official government website of the Kingdom of Bahrain</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">How to identify?<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
                     </div>
                 </div>
             </div>
@@ -172,10 +172,10 @@
     <!-- Search Section Starts -->
 	<div class="govbh-search">
 		<div class="container">
-			<form action="search-result.php">
+			<form action="search-result.html" autocomplete="on">
                 <label for="txtSearch" class="visually-hidden">Search</label>
-				<input id="txtSearch" type="text" value="" autocomplete="name" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
-				<button type="button" onclick="window.location='search-result.php'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+				<input id="txtSearch" type="search" value="" name="searchQuery" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
+				<button type="button" onclick="window.location='search-result.html'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
 			</form>
 		</div>
 	</div>
@@ -455,7 +455,7 @@
 <!-- Main Section Starts -->
 <main id="govbh-main" aria-label="Main content">
 <!-- Breadcrumb Starts -->
-<div class="govbh-section govbh-breadcrumb theme--dark bg--brand">
+<section class="govbh-section govbh-breadcrumb theme--dark bg--brand">
     <div class="container">
         <div class="row g-2 align-items-center">
             <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" aria-label="Breadcrumbs">
@@ -492,14 +492,14 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-- Breadcrumbs Ends -->
 
 <!-- Application Form Section Starts -->
-<div class="govbh-section">
+<section class="govbh-section" aria-labelledby="application-form-page-title">
     <div class="container">
         <div class="govbh-content-block pb-4">
-            <h2 class="govbh-fs-h6">Licensing Application Form to Establish Early Childhood Education Institution
+            <h2 id="application-form-page-title" class="govbh-fs-h6">Licensing Application Form to Establish Early Childhood Education Institution
                 (Nursery)</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat quis dolor non ultricies.
                 Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent tempor fringilla fringilla.
@@ -508,45 +508,41 @@
         </div>
 
         <!-- Steps Head Starts - update the "done" in govbh-steps__item once the form is filled and moved to next tab-->
-        <ul class="govbh-steps mb-5">
-            <li class="govbh-steps__item active">
+        <ul class="govbh-steps govbh-no-li mb-5 d-md-flex d-sm-none d-none" role="tablist">
+            <li class="govbh-steps__item active" role="presentation">
                 <div class="govbh-steps__item-progress"></div>
                 <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg"
                         alt="Step 1 - Personal Information"></a>
                 <div class="govbh-steps__item-content">
                     <span>Step 1</span>
-                    <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">Personal Information</div>
-                    <!-- used boostrap class name for hiding in mobile -->
+                    <div class="govbh-steps__item-content-title">Personal Information</div>
                 </div>
             </li>
-            <li class="govbh-steps__item" aria-disabled="true">
+            <li class="govbh-steps__item" role="presentation" aria-disabled="true">
                 <div class="govbh-steps__item-progress"></div>
                 <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg"
                         alt="Step 2 - Property Details"></a>
                 <div class="govbh-steps__item-content">
                     <span>Step 2</span>
-                    <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">Property Details</div>
-                    <!-- used boostrap class name for hiding in mobile -->
+                    <div class="govbh-steps__item-content-title">Property Details</div>
                 </div>
             </li>
-            <li class="govbh-steps__item" aria-disabled="true">
+            <li class="govbh-steps__item" role="presentation" aria-disabled="true">
                 <div class="govbh-steps__item-progress"></div>
                 <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg"
                         alt="Step 3 - Documents Upload"></a>
                 <div class="govbh-steps__item-content">
                     <span>Step 3</span>
-                    <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">Documents Upload</div>
-                    <!-- used boostrap class name for hiding in mobile -->
+                    <div class="govbh-steps__item-content-title">Documents Upload</div>
                 </div>
             </li>
-            <li class="govbh-steps__item" aria-disabled="true">
+            <li class="govbh-steps__item" role="presentation" aria-disabled="true">
                 <div class="govbh-steps__item-progress"></div>
                 <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg"
                         alt="Step 4 - Review & Submit"></a>
                 <div class="govbh-steps__item-content">
                     <span>Step 4</span>
-                    <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">Review & Submit</div>
-                    <!-- used boostrap class name for hiding in mobile -->
+                    <div class="govbh-steps__item-content-title">Review & Submit</div>
                 </div>
             </li>
         </ul>
@@ -889,7 +885,7 @@
         </div>
         <!-- Share & Last updated content Ends -->
     </div>
-</div>
+</section>
 <!-- Application Form Section Ends -->
 
 </main>
@@ -907,11 +903,11 @@
 				</div>
 				<div class="govbh-user-rating__head-button">
 					<button type="button" class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon"
-						aria-label="Is this page useful to you?" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
+						aria-label="Is this page useful to you? - Yes" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
 						Yes</button>
 					<button type="button"
 						class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon govbh-toggler"
-						data-target-on="#sharethoughts" aria-label="Is this page useful to you?"><i
+						data-target-on="#sharethoughts" aria-label="Is this page useful to you? - No" aria-controls="sharethoughts" aria-expanded="false"><i
 							class="ph ph-thumbs-down" aria-hidden="true"></i>
 						No</button><!-- The govbh-toggler and data-target-on attributes are used to target the visibility of the govbh-user-rating__body -->
 				</div>

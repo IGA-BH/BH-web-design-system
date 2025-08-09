@@ -760,8 +760,11 @@
       justify-content: end;
       padding: 30px 35px 20px;
       z-index: 4;
+      @media #{$xl}{
+        padding: 20px 20px 20px;
+      }
       @media #{$xm}{
-        padding: 15px 30px 20px;
+        padding: 15px 20px 20px;
       }
       @media #{$xss}{
         padding: 15px 15px 20px;
@@ -811,12 +814,34 @@
       background: var(--bh-bg-primary);
       position: relative;
       overflow: hidden;
+      @media #{$xl}{
+        padding: 0px 20px 20px;
+      }
       @media #{$xss}{
         padding:0px 15px 20px;
       }
       .govbh-image-block{
         background-color: var(--bh-bg-quartenary);
         //padding: 0 50px;
+      }
+      .govbh-popup-model-slider__content-date{
+        display: flex;
+        align-items: center;
+        font-size: var(--bh-fs-p-l);
+        font-weight: var(--bh-fw-semibold);
+        color: var(--bh-secondary);
+        @include transition(0.4s);
+        gap: 10px;
+        opacity: 0.8;
+        span{
+          font-size: 20px;
+          position: relative;
+          overflow: hidden;
+          width: 3px;
+          height: 3px;
+          border-radius: 100%;
+          background-color: var(--bh-tertiary);
+        }
       }
       .govbh-popup-model-slider__content-map {
         position: relative;

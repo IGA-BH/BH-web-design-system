@@ -406,6 +406,12 @@ section, .govbh-section {
   min-width: 50% !important;
 }
 
+div[tabindex="0"]:focus-visible {
+  box-shadow: 0 0px 0px 3px var(--bh-focus) inset;
+  border-radius: var(--bh-border-radius-xss);
+  outline: none;
+}
+
 html, body {
   direction: rtl;
   letter-spacing: 0px;
@@ -816,14 +822,9 @@ p {
   }
 }
 
-table.dataTable thead > tr > th.dt-orderable-asc, table.dataTable thead > tr > th.dt-orderable-desc, table.dataTable thead > tr > th.dt-ordering-asc, table.dataTable thead > tr > th.dt-ordering-desc, table.dataTable thead > tr > td.dt-orderable-asc, table.dataTable thead > tr > td.dt-orderable-desc, table.dataTable thead > tr > td.dt-ordering-asc, table.dataTable thead > tr > td.dt-ordering-desc {
-  padding-right: 12px;
-  padding-left: 30px;
-}
-
 table.dataTable thead > tr > th.dt-orderable-asc span.dt-column-order, table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order, table.dataTable thead > tr > th.dt-ordering-asc span.dt-column-order, table.dataTable thead > tr > th.dt-ordering-desc span.dt-column-order, table.dataTable thead > tr > td.dt-orderable-asc span.dt-column-order, table.dataTable thead > tr > td.dt-orderable-desc span.dt-column-order, table.dataTable thead > tr > td.dt-ordering-asc span.dt-column-order, table.dataTable thead > tr > td.dt-ordering-desc span.dt-column-order {
   right: auto;
-  left: 12px;
+  left: 0px;
 }
 
 .govbh-steps.govbh-steps--vertical .govbh-steps__item .govbh-steps__item-progress {
@@ -1368,4 +1369,13 @@ table.dataTable thead > tr > th.dt-orderable-asc span.dt-column-order, table.dat
 .govbh-side-widget__social a i {
   left: auto;
   right: 0;
+}
+
+.govbh-profile-card.govbh-contact-card .govbh-card-profile__text address dl dt i {
+  margin-top: 7px;
+}
+@media (max-width: 575.98px) {
+  .govbh-profile-card.govbh-contact-card .govbh-card-profile__text address dl dt i {
+    margin-top: 5px;
+  }
 }/*# sourceMappingURL=style-ar.css.map */

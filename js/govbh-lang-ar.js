@@ -7,6 +7,7 @@ var lang = {
     dt_search: 'البحث...',
     dt_datatable_pagination_info: 'عرض _START_ ل _END_ ل _TOTAL_ المدخلات',
     dt_next: 'التالية <i class="ph ph-caret-right"></i>',
+    dt_next_text: 'التالية',
     dt_previous: '<i class="ph ph-caret-left"></i> السابقة',
     dt_first: '<i class="ph ph-caret-double-left"></i> الأولى',
     dt_last: 'الأخيرة <i class="ph ph-caret-double-right"></i>',
@@ -36,4 +37,5 @@ var lang = {
     show_image: 'Show image',
     govbh_yes: 'نعم',
     govbh_no: 'لا',
+    showmoretext:'عرض المزيد من فتات الخبز',
 }

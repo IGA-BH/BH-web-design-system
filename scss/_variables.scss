@@ -380,3 +380,10 @@ section,.govbh-section{
 .min-w-50{
     min-width: 50% !important;
 }
+div[tabindex="0"]{
+    &:focus-visible{
+        box-shadow: 0 0px 0px 3px var(--bh-focus) inset;
+        border-radius: var(--bh-border-radius-xss);
+        outline: none;
+    }
+}

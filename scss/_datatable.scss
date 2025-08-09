@@ -103,6 +103,7 @@ table.table.dataTable.fixedHeader-floating > :not(caption) > * > *{
         font-size: var(--bh-fs-p-m);
         padding: 12px;
         border: 1px solid var(--bh-bg-secondary);   
+        background: var(--bh-bg-primary);
         .content{
           height: auto!important;
         }
@@ -380,6 +381,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control::before, tabl
   box-shadow: 0px 0px 2px 0px rgba(0,0,0,.95);
   width: 15px;
   content: "\E3D4";
+  margin: 0;
+  margin-inline-end: .8em;
+  padding: 9px;
 }
 table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control::before, table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > th.dtr-control::before {
   content: "\E32A";
@@ -442,4 +446,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
         color: var(--bh-accent);
     }
   }
+}
+table.dataTable thead > tr > th.dt-orderable-asc span.dt-column-order::before, table.dataTable thead > tr > th.dt-ordering-asc span.dt-column-order::before, table.dataTable thead > tr > td.dt-orderable-asc span.dt-column-order::before, table.dataTable thead > tr > td.dt-ordering-asc span.dt-column-order::before {
+  content: "▲";
+}
+table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order::after, table.dataTable thead > tr > th.dt-ordering-desc span.dt-column-order::after, table.dataTable thead > tr > td.dt-orderable-desc span.dt-column-order::after, table.dataTable thead > tr > td.dt-ordering-desc span.dt-column-order::after {
+  content: "▼";
 }

@@ -76,7 +76,7 @@
                 <div class="row">
                     <div class="col-12 d-flex flex-nowrap gap-1 align-items-start">
                         <img loading="lazy" src="../images/bahrain-flag.svg" alt="Flag - Kingdom of Barhain" width="66" height="70">
-                        <p><span>Official government website of the Kingdom of Bahrain</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" data-aria-expanded-text=" " aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">How to identify?<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
+                        <p><span>Official government website of the Kingdom of Bahrain</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">How to identify?<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
                     </div>
                 </div>
             </div>
@@ -172,10 +172,10 @@
     <!-- Search Section Starts -->
 	<div class="govbh-search">
 		<div class="container">
-			<form action="search-result.php">
+			<form action="search-result.html" autocomplete="on">
                 <label for="txtSearch" class="visually-hidden">Search</label>
-				<input id="txtSearch" type="text" value="" autocomplete="name" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
-				<button type="button" onclick="window.location='search-result.php'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+				<input id="txtSearch" type="search" value="" name="searchQuery" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
+				<button type="button" onclick="window.location='search-result.html'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
 			</form>
 		</div>
 	</div>
@@ -456,7 +456,7 @@
 <main id="govbh-main" aria-label="Main content">
 
 <!-- Breadcrumb Starts -->
-<div class="govbh-section govbh-breadcrumb theme--dark bg--brand">
+<section class="govbh-section govbh-breadcrumb theme--dark bg--brand">
     <div class="container">
         <div class="row g-2 align-items-center">
             <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" aria-label="Breadcrumbs">
@@ -494,10 +494,12 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-- Breadcrumbs Ends -->
 
-<div class="govbh-section">
+<!-- News Section Starts -->
+<section class="govbh-section" aria-labelledby="news-section-title">
+    <h2 id="news-section-title" class="visually-hidden">News</h2>
     <div class="container">
         <!-- Search Container Starts -->
         <div class="govbh-search-card bg--grey mb-lg-5 mb-md-4 mb-4">
@@ -519,49 +521,52 @@
                             <i class="ph-fill ph-caret-down" aria-hidden="true"></i> <span>Show</span> Advanced Search
                         </button>
                         <div class="govbh-advanced-search__body" id="advancesearch" style="display:none;">
-                            <div class="row g-4">
-                                <div class="col-md-6 col-sm-12 col-12">
-                                    <div
-                                        class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
-                                        <select class="with-search" data-placeholder-search="Search a Year"
-                                            data-placeholder="All Years" data-columns="1" data-select-all="yes"
-                                            data-select-all-text="Select All" data-unselect-all-text="Unselect All"
-                                            data-selected-option-text=" selected" multiple id="select-002">
-                                            <option value="1">2025</option>
-                                            <option value="2">2024</option>
-                                            <option value="3">2023</option>
-                                            <option value="4">2022</option>
-                                            <option value="5">2021</option>
-                                            <option value="6">2020</option>
-                                            <option value="7">2019</option>
-                                        </select>
-                                        <label for="select-002">Year</label>
+                            <fieldset>
+                                <legend class="visually-hidden">Advanced Search Field</legend>
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-sm-12 col-12">
+                                        <div
+                                            class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
+                                            <select class="with-search" data-placeholder-search="Search a Year"
+                                                data-placeholder="All Years" data-columns="1" data-select-all="yes"
+                                                data-select-all-text="Select All" data-unselect-all-text="Unselect All"
+                                                data-selected-option-text=" selected" multiple id="select-002">
+                                                <option value="1">2025</option>
+                                                <option value="2">2024</option>
+                                                <option value="3">2023</option>
+                                                <option value="4">2022</option>
+                                                <option value="5">2021</option>
+                                                <option value="6">2020</option>
+                                                <option value="7">2019</option>
+                                            </select>
+                                            <label for="select-002">Year</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12">
+                                        <div
+                                            class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
+                                            <select class="with-search" data-placeholder-search="Search Category"
+                                                data-placeholder="All Categories" data-columns="1" data-select-all="yes"
+                                                data-select-all-text="Select All" data-unselect-all-text="Unselect All"
+                                                data-selected-option-text="selected" multiple id="select-003">
+                                                <option value="1">Value 1</option>
+                                                <option value="2">Value 1</option>
+                                                <option value="3">Value 3</option>
+                                                <option value="4">Value 4</option>
+                                                <option value="5">Value 5</option>
+                                                <option value="6">Value 6</option>
+                                                <option value="7">Value 7</option>
+                                            </select>
+                                            <label for="select-003">Category</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="button" class="govbh-btn govbh-btn--primary"
+                                            aria-label="Click here to search">Search <i class="ph ph-arrow-right"
+                                                aria-hidden="true"></i></button>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-12 col-12">
-                                    <div
-                                        class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
-                                        <select class="with-search" data-placeholder-search="Search Category"
-                                            data-placeholder="All Categories" data-columns="1" data-select-all="yes"
-                                            data-select-all-text="Select All" data-unselect-all-text="Unselect All"
-                                            data-selected-option-text="selected" multiple id="select-003">
-                                            <option value="1">Value 1</option>
-                                            <option value="2">Value 1</option>
-                                            <option value="3">Value 3</option>
-                                            <option value="4">Value 4</option>
-                                            <option value="5">Value 5</option>
-                                            <option value="6">Value 6</option>
-                                            <option value="7">Value 7</option>
-                                        </select>
-                                        <label for="select-003">Category</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="button" class="govbh-btn govbh-btn--primary"
-                                        aria-label="Click here to search">Search <i class="ph ph-arrow-right"
-                                            aria-hidden="true"></i></button>
-                                </div>
-                            </div>
+                            </fieldset>
                         </div>
                     </div>
                 </div>
@@ -844,25 +849,26 @@
         <!-- List Ends -->
         <!-- Pagination Starts -->
         <div class="govbh-pagination">
-            <ul aria-label="Browse pages">
-                <li class="govbh-pagination__prev"><a href="#" aria-label="First Page" rel="first"><i
-                            class="ph ph-caret-double-left"></i> <span>First</span></a></li>
-                <li class="govbh-pagination__prev"><a href="#" aria-label="Previous Page" rel="prev"><i
-                            class="ph ph-caret-left"></i> <span>Prev</span></a></li>
-                <li><a href="#" aria-label="Page 1">1</a></li>
-                <li><a href="#" aria-label="Page 2">2</a></li>
-                <li class="govbh-pagination__current" aria-current="page" title="Page 3">3</li>
-                <li class="govbh-pagination__truncate" title="Pages">...</li>
-                <li><a href="#" aria-label="Page 4">4</a></li>
-                <li class="govbh-pagination__next"><a href="#" aria-label="Next Page" rel="next"><span>Next</span> <i
-                            class="ph ph-caret-right"></i></a></li>
-                <li class="govbh-pagination__next"><a href="#" aria-label="Last Page" rel="last"><span>Last</span> <i
-                            class="ph ph-caret-double-right"></i></a></li>
-            </ul>
+            <nav aria-label="Browse pages">
+                <ul>
+                    <li class="govbh-pagination__prev"><a href="#" aria-label="First Page" rel="first"><i
+                                class="ph ph-caret-double-left"></i> <span>First</span></a></li>
+                    <li class="govbh-pagination__prev"><a href="#" aria-label="Previous Page" rel="prev"><i
+                                class="ph ph-caret-left"></i> <span>Prev</span></a></li>
+                    <li><a href="#" aria-label="Page 1">1</a></li>
+                    <li><a href="#" aria-label="Page 2">2</a></li>
+                    <li class="govbh-pagination__current" aria-current="page" title="Page 3">3</li>
+                    <li class="govbh-pagination__truncate" title="Pages">...</li>
+                    <li><a href="#" aria-label="Page 4">4</a></li>
+                    <li class="govbh-pagination__next"><a href="#" aria-label="Next Page" rel="next"><span>Next</span> <i
+                                class="ph ph-caret-right"></i></a></li>
+                    <li class="govbh-pagination__next"><a href="#" aria-label="Last Page" rel="last"><span>Last</span> <i
+                                class="ph ph-caret-double-right"></i></a></li>
+                </ul>
+            </nav>
             <div class="govbh-pagination__info">Showing 2 to 10 of 100 records</div>
         </div>
         <!-- Pagination Ends -->
-        <!-- E-Services List Ends -->
 
         <div class="hr mb-3"></div><!-- Horizontal Line -->
         <!-- Share & Last updated content Starts -->
@@ -893,7 +899,8 @@
         </div>
         <!-- Share & Last updated content Ends -->
     </div>
-</div>
+</section>
+<!-- News Section Ends -->
 
 <!-- Related pages Section Starts -->
 <section class="govbh-section bg--grey">
@@ -1019,11 +1026,11 @@
 				</div>
 				<div class="govbh-user-rating__head-button">
 					<button type="button" class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon"
-						aria-label="Is this page useful to you?" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
+						aria-label="Is this page useful to you? - Yes" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
 						Yes</button>
 					<button type="button"
 						class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon govbh-toggler"
-						data-target-on="#sharethoughts" aria-label="Is this page useful to you?"><i
+						data-target-on="#sharethoughts" aria-label="Is this page useful to you? - No" aria-controls="sharethoughts" aria-expanded="false"><i
 							class="ph ph-thumbs-down" aria-hidden="true"></i>
 						No</button><!-- The govbh-toggler and data-target-on attributes are used to target the visibility of the govbh-user-rating__body -->
 				</div>

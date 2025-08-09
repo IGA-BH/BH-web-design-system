@@ -7,6 +7,7 @@ var lang = {
     dt_search: 'Search...',
     dt_datatable_pagination_info: 'Showing _START_ to _END_ of _TOTAL_ entries',
     dt_next: 'Next <i class="ph ph-caret-right"></i>',
+    dt_next_text: 'Next',
     dt_previous: '<i class="ph ph-caret-left"></i> Prev',
     dt_first: '<i class="ph ph-caret-double-left"></i> First',
     dt_last: 'Last <i class="ph ph-caret-double-right"></i>',
@@ -36,4 +37,5 @@ var lang = {
     show_image: 'Show image',
     govbh_yes: 'Yes',
     govbh_no: 'No',
+    showmoretext:'Show more breadcrumbs',
 }

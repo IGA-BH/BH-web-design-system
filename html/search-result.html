@@ -76,7 +76,7 @@
                 <div class="row">
                     <div class="col-12 d-flex flex-nowrap gap-1 align-items-start">
                         <img loading="lazy" src="../images/bahrain-flag.svg" alt="Flag - Kingdom of Barhain" width="66" height="70">
-                        <p><span>Official government website of the Kingdom of Bahrain</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" data-aria-expanded-text=" " aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">How to identify?<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
+                        <p><span>Official government website of the Kingdom of Bahrain</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">How to identify?<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
                     </div>
                 </div>
             </div>
@@ -172,10 +172,10 @@
     <!-- Search Section Starts -->
 	<div class="govbh-search">
 		<div class="container">
-			<form action="search-result.php">
+			<form action="search-result.html" autocomplete="on">
                 <label for="txtSearch" class="visually-hidden">Search</label>
-				<input id="txtSearch" type="text" value="" autocomplete="name" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
-				<button type="button" onclick="window.location='search-result.php'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+				<input id="txtSearch" type="search" value="" name="searchQuery" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
+				<button type="button" onclick="window.location='search-result.html'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
 			</form>
 		</div>
 	</div>
@@ -456,7 +456,7 @@
 <main id="govbh-main" aria-label="Main content">
 
 <!-- Breadcrumb Starts -->
-<div class="govbh-section govbh-breadcrumb theme--dark bg--brand">
+<section class="govbh-section govbh-breadcrumb theme--dark bg--brand">
     <div class="container">
         <div class="row g-2 align-items-center">
             <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" aria-label="Breadcrumbs">
@@ -493,10 +493,12 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-- Breadcrumbs Ends -->
 
-<div class="govbh-section">
+<!-- Search Result Section Starts -->
+<section class="govbh-section" aria-labelledby="search-result-page-title">
+    <h2 id="search-result-page-title" class="visually-hidden">Your search “Financial Balance Program ” found 18 results</h2>
     <div class="container">
         <!-- Search Container Starts -->
         <div class="govbh-search-card bg--grey mb-0">
@@ -532,6 +534,16 @@
 </span>” found <span class="text--accent">18</span> results</div>
         <!-- Search Container Ends -->
 
+        <!-- Alert Message Starts -->
+        <div role="alert" class="govbh-alert govbh-alert--warning mb-4">
+            <div class="govbh-alert__icon"><i class="ph-fill ph-warning" aria-hidden="true"></i></div>
+            <div class="govbh-alert__content">
+                <div class="abstract">No results</div>
+                <p>Try entering a different keyword to find what you’re looking for</p>
+            </div>
+        </div>
+        <!-- Alert Message Ends -->
+        
         <!-- Search List Starts -->
         <ul class="govbh-search-list">
             <li>
@@ -646,7 +658,8 @@
         </div>
         <!-- Share & Last updated content Ends -->
     </div>
-</div>
+</section>
+<!-- Search Result Section Ends -->
 
 
 </main>
@@ -664,11 +677,11 @@
 				</div>
 				<div class="govbh-user-rating__head-button">
 					<button type="button" class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon"
-						aria-label="Is this page useful to you?" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
+						aria-label="Is this page useful to you? - Yes" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
 						Yes</button>
 					<button type="button"
 						class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon govbh-toggler"
-						data-target-on="#sharethoughts" aria-label="Is this page useful to you?"><i
+						data-target-on="#sharethoughts" aria-label="Is this page useful to you? - No" aria-controls="sharethoughts" aria-expanded="false"><i
 							class="ph ph-thumbs-down" aria-hidden="true"></i>
 						No</button><!-- The govbh-toggler and data-target-on attributes are used to target the visibility of the govbh-user-rating__body -->
 				</div>

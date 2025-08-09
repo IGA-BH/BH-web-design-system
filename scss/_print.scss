@@ -1,0 +1,8 @@
+@media print {
+    header,footer,.govbh-user-rating,.govbh-floatinglist-vertical,.govbh-scrollToTopBtn{
+        display: none!important;
+    }
+    .swiper-wrapper{
+        display: block!important;
+    }
+}

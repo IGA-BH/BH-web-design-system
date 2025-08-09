@@ -77,7 +77,7 @@
                 <div class="row">
                     <div class="col-12 d-flex flex-nowrap gap-1 align-items-center">
                         <img loading="lazy" src="../images/bahrain-flag.svg" alt="Flag - Kingdom of Barhain" width="66" height="70">
-                        <p><span>موقع حكومي رسمي تابع لحكومة مملكة البحرين</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" data-aria-expanded-text=" " aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">كيف تعرف؟<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
+                        <p><span>موقع حكومي رسمي تابع لحكومة مملكة البحرين</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">كيف تعرف؟<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@
                         </ul>
                     </div>
                     <!-- Login -->
-                    <a href="login-ar.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--medium d-lg-inline-flex d-md-none d-none" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول</a>
+                    <a href="login.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--medium d-lg-inline-flex d-md-none d-none" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول</a>
                     <!-- Language Switcher -->
                     <a class="govbh-head__lang-switcher" href="../html/about.html" lang="en-US" aria-label="اضغط هنا للتحول للنسخة العربية من هذه الصفحة ">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                     <!-- Dark Mode -->
@@ -173,10 +173,10 @@
     <!-- Search Section Starts -->
 	<div class="govbh-search">
 		<div class="container">
-			<form action="search-result-ar.php">
+			<form action="search-result.html" autocomplete="on">
                 <label for="txtSearch" class="visually-hidden">Search</label>
-				<input id="txtSearch" type="text" value="" autocomplete="name" placeholder="ما الذي تبحث عنه؟" aria-label="Start typing to find what you're looking for.">
-				<button type="button" onclick="window.location='search-result-ar.php'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+				<input id="txtSearch" type="search" value="" name="searchQuery" placeholder="ما الذي تبحث عنه؟" aria-label="Start typing to find what you're looking for.">
+				<button type="button" onclick="window.location='search-result.html'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
 			</form>
 		</div>
 	</div>
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                     <div class="govbh-menu__switchers-col">
-                        <a href="login-ar.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--small d-xl-none d-lg-inline-flex d-inline-flex" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول </a><!-- Login -->
+                        <a href="login.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--small d-xl-none d-lg-inline-flex d-inline-flex" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول </a><!-- Login -->
                         <!-- Mobile Language Switcher -->
                         <a class="govbh-head__lang-switcher" href="../html/about.html" lang="en-US" aria-label="Click here to switch to the Arabic version of this page.">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                     </div>
@@ -224,7 +224,7 @@
             <!-- Main Navigation -->
             <nav id="main-nav" class="govbh-menu__navmenu" aria-label="Main navigation">
                 <div class="govbh-menu__navmenu-home">
-                    <a href="index-ar.html" aria-label="Home"><i class="ph ph-house" aria-hidden="true"></i></a>
+                    <a href="index.html" aria-label="Home"><i class="ph ph-house" aria-hidden="true"></i></a>
                 </div>
                 <ul id="main-menu" class="sm sm-rtl">
                     <li>
@@ -491,11 +491,11 @@
     <!-- Breadcrumbs Ends -->
 
     <!-- Content Banner Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-page-title-01">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-9 col-md-8 col-sm-12 col-12 order-md-1 order-sm-2 order-2">
-                    <h2 class="govbh-abstract m-0">تتولى الوزارة مسؤولية رسم السياسات لمملكة البحرين ورسمها بما يتفق مع رؤية الحكومة الموقرة. إذ تقوم الوزارة بالتعاون والتنسيق مع الوزارات والجهات الحكومية لتحسين عملها. وتحرص الوزارة على تعزيز سبل التعاون المشترك مع الدول الشقيقة والصديقة في نفس المجال. وذلك من خلال التوقيع على الاتفاقيات التي من شأنها توفير الإطار القانوني لهذه العلاقات.</h2>
+                    <h2 id="section-page-title-01" class="govbh-abstract m-0">تتولى الوزارة مسؤولية رسم السياسات لمملكة البحرين ورسمها بما يتفق مع رؤية الحكومة الموقرة. إذ تقوم الوزارة بالتعاون والتنسيق مع الوزارات والجهات الحكومية لتحسين عملها. وتحرص الوزارة على تعزيز سبل التعاون المشترك مع الدول الشقيقة والصديقة في نفس المجال. وذلك من خلال التوقيع على الاتفاقيات التي من شأنها توفير الإطار القانوني لهذه العلاقات.</h2>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12 col-12 order-md-2 order-sm-1 order-1 mb-md-0 mb-sm-3 mb-3">
                     <div class="govbh-odometer govbh-odometer--large text-md-center text-sm-start text-start" dir="ltr" aria-live="polite">
@@ -544,7 +544,8 @@
     <!-- Content Banner Section Ends -->
 
     <!-- Vision Mission Section Starts -->
-    <section class="govbh-section bg--grey">
+    <section class="govbh-section bg--grey" aria-labelledby="section-page-title-02">
+        <h2 id="section-page-title-02" class="visually-hidden">Vision & Mission</h2>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12">
@@ -571,7 +572,7 @@
     <!-- Vision Mission Section Ends -->
 
     <!-- Strategic Goals Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-page-title-02">
         <div class="container position-relative z-2">
              <div class="row g-lg-4 g-md-3 g-3">
                 <div class="col-12">
@@ -586,7 +587,7 @@
                         </div>
 					</div>
                     <div class="govbh-content-block">
-                        <h2 class="text--brand">الأهداف الاستراتيجية</h2>
+                        <h2 id="section-page-title-03" class="text--brand">الأهداف الاستراتيجية</h2>
                         <ul class="govbh-content-block__list">
                             <li>ضمان استدامة الموارد الوطنية.</li>
                             <li>تعزيز التخطيط والاستقرار.</li>
@@ -603,13 +604,13 @@
     <!-- Strategic Goals Section Ends -->
 
     <!-- Bahrain 2030 Section Starts -->
-    <section class="govbh-section govbh-parallax bg-dark-linear govbh-bg-image-fixed" style="background:#012E5D url(../images/banner-015.webp) no-repeat fixed top center / cover;">
+    <section aria-label="منظر أفق في البحرين" class="govbh-section govbh-parallax bg-dark-linear govbh-bg-image-fixed" style="background:#012E5D url(../images/banner-015.webp) no-repeat fixed top center / cover;">
         <div class="container">
             <div class="govbh-content-block bg--light text-center">
                 <h2>البحرين 2030</h2>
                 <p>إن الرؤية الاقتصادية الشاملة لمملكة البحرين، والتي أطلقها حضرة صاحب الجلالة الملك حمد بن عيسى آل خليفة، ملك البلاد المعظم حفظه الله ورعاه، في أكتوبر 2008، تعتبر نبراساً وتوجهاً واضحاً نحو التنمية الاقتصادية المستدامة للمملكة والمتمثلة في بناء حياة أفضل لكل مواطن.</p>
                 <div class="d-flex flex-wrap gap-3 justify-content-center">
-                    <a href="https://www.bahrain.bh/wps/portal/en/BNP/BahrainAtAGlance/Bahrain2030" target="_blank" class="govbh-btn govbh-btn--outline" aria-label="Bahrain 2030 - Open in a new window" rel="noopener noreferrer">عرض المزيد <i class="ph ph-arrow-square-out" aria-hidden="true"></i></a>
+                    <a href="https://www.bahrain.bh/wps/portal/en/BNP/BahrainAtAGlance/Bahrain2030" target="_blank" class="govbh-btn govbh-btn--outline" aria-label="Bahrain 2030 - Open in a new window" rel="noopener noreferrer">اقرأ المزيد عن البحرين 2030<i class="ph ph-arrow-square-out" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -617,9 +618,9 @@
     <!-- Bahrain 2030 Section Ends -->
 
     <!-- Our Values Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-page-title-04">
         <div class="container">
-            <h2 class="text--brand">قيمنا</h2>
+            <h2 id="section-page-title-04" class="text--brand">قيمنا</h2>
             <!-- Carousel Starts -->
             <div class="govbh-carousel"
                 data-carousel="custom" 
@@ -707,7 +708,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-12 d-flex justify-content-md-end justify-content-sm-start justify-content-start">
-                    <p class="govbh-text--medium m-0">شارك هذه الصفحة: <b>29 يونيو, 2025</b></p>
+                    <p class="govbh-text--medium m-0">شارك هذه الصفحة: <b>29 يونيو 2025</b></p>
                 </div>
             </div>
             <!-- Share & Last updated content Ends -->
@@ -716,7 +717,7 @@
     <!-- Our Values Section Ends -->
 
     <!-- Related pages Section Starts -->
-    <section class="govbh-section bg--grey">
+    <section class="govbh-section bg--grey" aria-labelledby="related-page-title" tabindex="0">
         <div class="container">
             <!-- Carousel Starts -->
             <div class="govbh-carousel"
@@ -728,7 +729,7 @@
                 data-slidesperview-lg="3" 
                 data-slidesperview-xl="3">
                 <div class="row align-items-center mb-3">
-                    <div class="col-md-6 col-sm-8 col-9"><h2 class="m-0">الصفحات ذات الصلة</h2></div>
+                    <div class="col-md-6 col-sm-8 col-9"><h2 id="related-page-title" class="m-0">الصفحات ذات الصلة</h2></div>
                     <div class="col-md-6 col-sm-4 col-3">
                         <!-- Navigation -->
                         <div class="govbh-general__navigation justify-content-end">
@@ -1044,11 +1045,11 @@
 					<p><i class="ph ph-clock" aria-hidden="true"></i> آخر تحديث للموقع: 29 مايو 2025</p>
 				</div>
 				<ul>
-					<li><a href="terms-of-use-ar.html">شروط الاستخدام</a></li>
-					<li><a href="privacy-policy-ar.html">سياسة الخصوصية</a></li>
-					<li><a href="accessibility-ar.html">سياسة تسهيل الوصول</a></li>
-					<li><a href="eparticipation-ar.html">المشاركة الإلكترونية</a></li>
-					<li><a href="sitemap-ar.html">خريطة الموقع</a></li>
+					<li><a href="terms-of-use.html">شروط الاستخدام</a></li>
+					<li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+					<li><a href="accessibility.html">سهولة الوصول</a></li>
+					<li><a href="eparticipation.html">المشاركة الإلكترونية</a></li>
+					<li><a href="sitemap.html">خريطة الموقع</a></li>
 				</ul>
 			</div>
 			<div class="govbh-footer__copyrights">

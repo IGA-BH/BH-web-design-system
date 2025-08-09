@@ -79,7 +79,7 @@
                 <div class="row">
                     <div class="col-12 d-flex flex-nowrap gap-1 align-items-center">
                         <img loading="lazy" src="../images/bahrain-flag.svg" alt="Flag - Kingdom of Barhain" width="66" height="70">
-                        <p><span>موقع حكومي رسمي تابع لحكومة مملكة البحرين</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" data-aria-expanded-text=" " aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">كيف تعرف؟<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
+                        <p><span>موقع حكومي رسمي تابع لحكومة مملكة البحرين</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">كيف تعرف؟<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@
                         </ul>
                     </div>
                     <!-- Login -->
-                    <a href="login-ar.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--medium d-lg-inline-flex d-md-none d-none" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول</a>
+                    <a href="login.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--medium d-lg-inline-flex d-md-none d-none" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول</a>
                     <!-- Language Switcher -->
                     <a class="govbh-head__lang-switcher" href="../html/general-template.html" lang="en-US" aria-label="اضغط هنا للتحول للنسخة العربية من هذه الصفحة ">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                     <!-- Dark Mode -->
@@ -175,10 +175,10 @@
     <!-- Search Section Starts -->
 	<div class="govbh-search">
 		<div class="container">
-			<form action="search-result-ar.php">
+			<form action="search-result.html" autocomplete="on">
                 <label for="txtSearch" class="visually-hidden">Search</label>
-				<input id="txtSearch" type="text" value="" autocomplete="name" placeholder="ما الذي تبحث عنه؟" aria-label="Start typing to find what you're looking for.">
-				<button type="button" onclick="window.location='search-result-ar.php'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+				<input id="txtSearch" type="search" value="" name="searchQuery" placeholder="ما الذي تبحث عنه؟" aria-label="Start typing to find what you're looking for.">
+				<button type="button" onclick="window.location='search-result.html'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
 			</form>
 		</div>
 	</div>
@@ -217,7 +217,7 @@
                         </div>
                     </div>
                     <div class="govbh-menu__switchers-col">
-                        <a href="login-ar.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--small d-xl-none d-lg-inline-flex d-inline-flex" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول </a><!-- Login -->
+                        <a href="login.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--small d-xl-none d-lg-inline-flex d-inline-flex" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول </a><!-- Login -->
                         <!-- Mobile Language Switcher -->
                         <a class="govbh-head__lang-switcher" href="../html/general-template.html" lang="en-US" aria-label="Click here to switch to the Arabic version of this page.">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                     </div>
@@ -226,7 +226,7 @@
             <!-- Main Navigation -->
             <nav id="main-nav" class="govbh-menu__navmenu" aria-label="Main navigation">
                 <div class="govbh-menu__navmenu-home">
-                    <a href="index-ar.html" aria-label="Home"><i class="ph ph-house" aria-hidden="true"></i></a>
+                    <a href="index.html" aria-label="Home"><i class="ph ph-house" aria-hidden="true"></i></a>
                 </div>
                 <ul id="main-menu" class="sm sm-rtl">
                     <li>
@@ -462,8 +462,8 @@
             <div class="row g-2 align-items-center">
                 <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" aria-label="Breadcrumbs">
                     <ul class="govbh-breadcrumb__group">
-                        <li class="govbh-breadcrumb__item-home"><a href="index-ar.html" aria-label="Go to home"><i class="ph ph-house" aria-hidden="true"></i> الصفحة الرئيسية</a></li>
-                        <li class="govbh-breadcrumb__item-last" aria-current="page">نموذج عام</li>
+                        <li class="govbh-breadcrumb__item-home"><a href="index.html" aria-label="Go to home"><i class="ph ph-house" aria-hidden="true"></i> الصفحة الرئيسية</a></li>
+                        <li class="govbh-breadcrumb__item-last" aria-current="page">برنامج الحكومة</li>
                     </ul>
                 </nav>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-12">
@@ -488,8 +488,9 @@
     <!-- Breadcrumbs Ends -->
 
     <!-- Content Banner Section Starts -->
-    <div class="govbh-section">
+    <section class="govbh-section" aria-labelledby="general-page-title">
         <div class="container">
+            <h2 class="text--brand" id="general-page-title">برنامج الحكومة</h2>
             <!-- Slider Starts -->
             <div class="govbh-carousel-block mb-3 mt-3">
                 <div class="govbh-carousel"
@@ -569,7 +570,7 @@
                                 </picture>
                             </div>
                         </div>
-                        <h2 class="text--brand">برنامج الحكومة </h2>
+                        <h3 class="text--brand">برنامج الحكومة </h3>
                         <div class="govbh-abstract">
                             <p>ترتكز منهجية العمل الحكومي على ترسيخ مبادئ الاستدامة، والتنافسية، والعدالة، لتنفيذ جميع برامج التطوير وفق أعلى المعايير، فضلاً عن تعزيز مكانة مملكة البحرين في الريادة والابتكار، ومواصلة العمل بروح الفريق الواحد (فريق البحرين) تحت شعار (حب التحدي وعشق الإنجاز).</p>
                         </div>
@@ -701,8 +702,8 @@
                     <li>تعزيز تقدم المرأة البحرينية وزيادة إسهاماتها في الحياة العامة والاقتصاد الوطني.</li>
                 </ol>
 
-                <a href="../images/samplepdf.pdf" class="govbh-btn govbh-btn--primary" aria-label="Download: Resolution on Regulating the Work of Energy Efficiency Specialised Companies, PDF, 13 MB, 8 pages">خيار التنزيل <i class="ph ph-download-simple" aria-hidden="true"></i></a>
-                <div class="govbh-date-content govbh-date-content--small mt-2"><i class="ph ph-file-pdf" aria-hidden="true"></i>  13 ميجابايت، 8 صفحات</div>
+                <a href="../images/samplepdf.pdf" class="govbh-btn govbh-btn--primary" aria-label="Download: Resolution on Regulating the Work of Energy Efficiency Specialised Companies, PDF, 13 MB, 8 pages">تحميل <i class="ph ph-download-simple" aria-hidden="true"></i></a>
+                <div class="govbh-date-content govbh-date-content--small mt-2 w-100"><i class="ph ph-file-pdf" aria-hidden="true"></i>  13 ميجابايت، 8 صفحات</div>
             </div>
             <!-- Content Ends -->
 
@@ -724,13 +725,13 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-12 d-flex justify-content-md-end justify-content-sm-start justify-content-start">
-                    <p class="govbh-text--medium m-0">آخر تحديث للمحتوى: <b>29 يونيو, 2025</b></p>
+                    <p class="govbh-text--medium m-0">آخر تحديث للمحتوى: <b>29 يونيو 2025</b></p>
                 </div>
             </div>
             <!-- Share & Last updated content Ends -->
 
         </div>
-    </div>
+    </section>
     <!-- Content Banner Section Ends -->
 
     <!-- Related pages Section Starts -->
@@ -1078,11 +1079,11 @@
 					<p><i class="ph ph-clock" aria-hidden="true"></i> آخر تحديث للموقع: 29 مايو 2025</p>
 				</div>
 				<ul>
-					<li><a href="terms-of-use-ar.html">شروط الاستخدام</a></li>
-					<li><a href="privacy-policy-ar.html">سياسة الخصوصية</a></li>
-					<li><a href="accessibility-ar.html">سياسة تسهيل الوصول</a></li>
-					<li><a href="eparticipation-ar.html">المشاركة الإلكترونية</a></li>
-					<li><a href="sitemap-ar.html">خريطة الموقع</a></li>
+					<li><a href="terms-of-use.html">شروط الاستخدام</a></li>
+					<li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+					<li><a href="accessibility.html">سهولة الوصول</a></li>
+					<li><a href="eparticipation.html">المشاركة الإلكترونية</a></li>
+					<li><a href="sitemap.html">خريطة الموقع</a></li>
 				</ul>
 			</div>
 			<div class="govbh-footer__copyrights">

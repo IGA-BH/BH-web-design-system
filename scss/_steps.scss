@@ -313,3 +313,91 @@
         }
     }
 }
+.govbh-mobile-steps {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--bh-border-radius-xs);
+  background-color: var(--bh-bg-secondary);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+    @media #{$xss}{
+        padding: 12px;
+        gap: 10px;
+    }
+  .govbh-mobile-steps__text{
+    h3{
+        color: var(--bh-brand);
+        margin:0 0 4px;
+        font-size: var(--bh-fs-h5);
+        span {
+            display: block;
+            font-size: var(--bh-fs-p-xs);
+            color: var(--bh-secondary);
+        }
+    }
+    p{
+        margin: 0;
+        font-size: var(--bh-fs-p-m);
+    }
+  }
+  .pie-container{
+    position: relative;
+    .pie{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+    }
+  }
+}
+//Pie Chart with Percentage Styles
+@property --p{
+syntax: '<number>';
+    inherits: true;
+    initial-value: 1;
+}
+
+.pie {
+--p:20;      /* the percentage */
+--b:5px;    /* the thickness */
+--c:darkred; /* the color */
+--w:75px;   /* the size*/
+
+width:var(--w);
+aspect-ratio:1/1;
+position:relative;
+margin:5px;
+}
+.pie:before,
+.pie:after {
+content:"";
+position:absolute;
+border-radius:50%;
+}
+.pie:before {
+inset:0;
+background:
+radial-gradient(farthest-side,#C63B2B 98%,#0000) top/var(--b) var(--b) no-repeat,
+conic-gradient(#C63B2B calc(var(--p)*1%),#0000 0);
+-webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
+.pie:after {
+inset:calc(50% - var(--b)/2);
+background:#C63B2B;
+transform:rotate(calc(var(--p)*3.6deg - 90deg)) translate(calc(var(--w)/2 - 50%));
+}
+.animate {
+animation:p 1s .5s both;
+}
+.no-round:before {
+background-size:0 0,auto;
+}
+.no-round:after {
+content:none;
+}
+@keyframes p{
+from{--p:0;}
+}
