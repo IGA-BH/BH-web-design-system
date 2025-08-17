@@ -44,6 +44,9 @@ All components and templates are provided with their respective Arabic translate
 
 By leveraging the Arabic translated versions, developers can build compliant, user-friendly websites that cater effectively to the needs of all users in Bahrain.
 
+
+[Go to top ↑](#bahrain-web-design-system)
+
 ## Web Design Architecture
 
 - **Bootstrap**: The design system utilizes [**Bootstrap 5.3**](https://getbootstrap.com/), a popular front-end framework that provides a responsive grid system and extensive pre-built components for faster web development. For detailed information on the grid system, refer to the [grid guidelines](https://www.figma.com/proto/CiMVuUjJE1iesZmIw9rVHc/Bahrain-Government-Design-System-1.0?page-id=17%3A1583&node-id=4649-126491&viewport=-1663%2C-4864%2C0.2&t=FcDAyjtQT6kyMKqw-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=4214%3A82288&hide-ui=1).
@@ -65,6 +68,8 @@ By leveraging the Arabic translated versions, developers can build compliant, us
 - **CSS Selectors**: CSS selectors within the design system are prefixed with `govbh-btn` (e.g., `.govbh-btn`). This unique identifier helps prevent conflicts with other styles on a site that are not part of the govbh-btn design system.
 
 - **BEM**: The design system employs a [**BEM**](http://getbem.com/introduction/) approach for naming CSS selectors. Blocks are separated from elements using two underscores (**), for example: `.govbh-btn**elem`. Modifier classes consist of the base class plus a modifier suffix, separated by two dashes (--), such as `.govbh-btn--disabled`or`.govbh-btn\_\_secondary--disabled`.
+
+[Go to top ↑](#bahrain-web-design-system)
 
 ## Design System Organization
 
@@ -189,6 +194,7 @@ The JS folder contains a collection of JavaScript libraries that are downloaded 
 │   ├── leaflet.min.js
 
 ```
+[Go to top ↑](#bahrain-web-design-system)
 
 ## Installation
 
@@ -242,6 +248,8 @@ BH-web-design-system/
 This structure is designed to be intuitive and self-explanatory, enabling you to navigate and understand the components easily.
 
 By starting with this design system, you can ensure a consistent design language across your project while saving time in the development process.
+
+[Go to top ↑](#bahrain-web-design-system)
 
 ## How to Use
 
@@ -342,3 +350,6 @@ First Release 2025 - Web Design System v1.0
 Suggestions & feedback on the website design guidelines are welcome. Any suggestion/feedback will help in enhancing/refining the guidelines further thus making this document more comprehensive and relevant.
 
 Suggestions, feedback, clarifications and queries on this guideline may be sent to [standards@pmo.gov.bh](standards@pmo.gov.bh)
+
+
+[Go to top ↑](#bahrain-web-design-system)
