@@ -6,6 +6,7 @@ The Bahrain Web Design System is a comprehensive guide designed to streamline th
 
 ## In this page
 
+- [**Features**](#features)
 - [**Components and Templates**](#components-and-templates)
     * [Arabic Translated Versions](#arabic-translated-versions)
 - [**Web Design System Architecture**](#web-design-architecture)
@@ -19,6 +20,22 @@ The Bahrain Web Design System is a comprehensive guide designed to streamline th
     * [Integrate Directly to CMS or Framework](#integrate-directly-to-cms-or-framework)
 - [**Release Summary**](#release-summary)
 - [**Suggestions and Feedback**](#suggestions-and-feedback)
+
+## Features
+
+This design system is built with a focus on usability and accessibility, ensuring that it meets the needs of all users, including those with disabilities. Key features include:
+
+- **Accessibility Compliance**: The design system adheres to government guidelines for accessibility, ensuring that all users can navigate and interact with the content effectively. This includes proper use of ARIA roles, keyboard navigation support, and clear visual contrast.
+
+- **49 Components**: A comprehensive library of reusable components, such as buttons, forms, modals, and navigation elements, that are designed for consistency and ease of use.
+
+- **45 Pre-defined Templates**: Ready-to-use templates that cover a variety of common web pages, allowing for quick deployment and customization. These templates serve as a solid foundation for building out your project.
+
+- **Responsive Design**: All components and templates are designed to be responsive, ensuring optimal viewing experiences across a range of devices, from desktops to mobile phones.
+
+- **Performance Optimization**: The design system is optimized for performance, ensuring fast load times and efficient resource use, which is critical for government websites.
+
+[Go to top ↑](#bahrain-web-design-system)
 
 ## Components and Templates
 
