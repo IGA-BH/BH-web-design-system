@@ -1025,7 +1025,7 @@
   }
   .govbh-general__navigation{
     display: flex;
-    gap: 8px;
+    gap: 12px;
   }
 }
 .govbh-card-horizontal:has(a:focus-visible) {
@@ -1138,13 +1138,14 @@
     }
   }
 }
+
 .govbh-profile-card {
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   border-radius: var(--bh-border-radius-xs);
-  background: var(--bh-bg-light-brand);
+  background: var(--bh-bg-light-brand1);
   text-decoration: none;
   @media #{$xs}{
     align-items: start;
@@ -1488,6 +1489,61 @@ a.govbh-profile-card {
     }
     @media #{$xs}{
       max-width: 100%;
+    }
+  }
+}
+.govbh-card--contact {
+  display: inherit;
+  address {
+    margin: 0;
+    dl{
+      display: flex;
+      align-items: start;
+      flex-wrap: wrap;
+      gap: 0px 0px;
+      margin: 0;
+      dt {
+        width: 30px;
+        @media #{$xss}{
+          width: 28px;
+        }
+        i{
+          color: var(--bh-accent);
+          font-size: 20px;
+          margin-top: 4px;
+          @media #{$xm}{
+            font-size: 18px;
+          }
+          @media #{$xss}{
+            font-size: 17px;
+          }
+        }
+      }
+      dd{
+        width: calc(100% - 30px);
+        p,a{
+          font-weight: var(--bh-fw-bold);
+          font-size: var(--bh-fs-p-m);
+          color: var(--bh-brand);
+          cursor: pointer;
+        }
+        @media #{$xss}{
+          width: calc(100% - 28px);
+        }
+      }
+    }
+  }
+  .govbh-card--contact__title{
+    color: var(--bh-brand);
+    font-size: var(--bh-fs-h6);
+    @include transition(0.3s);
+  }
+  &:hover{
+    .govbh-card--contact__title{
+      color: var(--bh-light);
+    }
+    a{
+      color: var(--bh-light);
     }
   }
 }

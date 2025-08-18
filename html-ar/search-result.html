@@ -136,7 +136,7 @@
                     <!-- Language Switcher -->
                     <a class="govbh-head__lang-switcher" href="../html/search-result.html" lang="en-US" aria-label="اضغط هنا للتحول للنسخة العربية من هذه الصفحة ">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                     <!-- Dark Mode -->
-                    <a href="#" class="govbh-head__darkmode d-md-flex d-sm-none d-none" data-tooltip="tooltip" title="اضغط هنا للتحول لنسخة بخلفية بيضاء" role="button" aria-label="اضغط هنا للتحول لنسخة بخلفية بيضاء"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
+                    <a href="#" class="govbh-head__darkmode d-md-flex d-sm-none d-none" data-tooltip="tooltip" title="اضغط هنا للتبديل بين الوضع الفاتح والداكن" role="button" aria-label="اضغط هنا للتبديل بين الوضع الفاتح والداكن"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
                     <!-- Text Resize -->
                     <div class="govbh-head__textsize">
                         <a href="#" id="textsize" class="govbh-head__textsize-btn" data-tooltip="tooltip" title="اضغط هنا للتحكم في حجم الخط" role="button" aria-label="Click here to resize text size."><span class="icon-resize" aria-hidden="true"></span></a>
@@ -458,7 +458,7 @@
 <section class="govbh-section govbh-breadcrumb theme--dark bg--brand">
     <div class="container">
         <div class="row g-2 align-items-center">
-            <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" aria-label="Breadcrumbs">
+            <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" tabindex="0" aria-label="Breadcrumbs">
                 <ul class="govbh-breadcrumb__group">
                     <li class="govbh-breadcrumb__item-home"><a href="index.html" aria-label="Go to home"><i
                                 class="ph ph-house" aria-hidden="true"></i> الصفحة الرئيسية</a></li>
@@ -470,21 +470,21 @@
             </div>
             <div
                 class="col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-md-end justify-content-sm-start justify-content-start">
-                <div class="govbh-sharethis govbh-sharethis--vertical theme--dark">
+                <div class="govbh-sharethis govbh-sharethis--vertical theme--dark" role="region" aria-label="Share this page on Social Media" tabindex="0">
                     <div class="govbh-sharethis__title">شارك هذه الصفحة:</div>
                     <ul>
                         <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn"
-                                rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-linkedin" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Facebook"
-                                rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-facebook" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp"
-                                rel="noopener noreferrer"><span class="icon-whatsapp"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-whatsapp" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Twitter"
-                                rel="noopener noreferrer"><span class="icon-twitter"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-twitter" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Telegram"
-                                rel="noopener noreferrer"><span class="icon-telegram"></span></a></li>
-                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer"></i></a></li>
-                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy"></i></a></li>
+                                rel="noopener noreferrer"><span class="icon-telegram" aria-hidden="true" role="presentation"></span></a></li>
+                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer" aria-hidden="true" role="presentation"></i></a></li>
+                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy" aria-hidden="true" role="presentation"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -500,7 +500,7 @@
         <!-- Search Container Starts -->
         <div class="govbh-search-card bg--grey mb-0">
             <h2 class="govbh-search-card__title govbh-fs-h5 text--brand">البحث</h2>
-            <div class="govbh-search-card__head">
+            <form action="#" autocomplete="on" class="govbh-search-card__head">
                 <div class="govbh-form-control form-floating govbh-form-control--icon-left">
                     <div class="form-floating__ico"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></div>
                     <input type="search" class="form-control" id="floatingInput" aria-label="أدخل كلمتك الرئيسية" placeholder="أدخل كلمتك الرئيسية" value="برنامج التوازن المالي">
@@ -508,7 +508,7 @@
                 </div>
                 <button type="button" class="govbh-btn govbh-btn--primary" aria-label="Click here to search">بحث <i
                         class="ph ph-arrow-right" aria-hidden="true"></i></button>
-            </div>
+            </form>
             <div class="row g-2">
                 <div class="col-12">
                     <div class="govbh-advanced-search__content mt-3 pt-2">
@@ -614,21 +614,21 @@
         <!-- Share & Last updated content Starts -->
         <div class="row g-2">
             <div class="col-md-6 col-sm-12 col-12">
-                <div class="govbh-sharethis">
+                <div class="govbh-sharethis" role="region" aria-label="Share this page on Social Media" tabindex="0">
                     <div class="govbh-sharethis__title">شارك هذه الصفحة:</div>
                     <ul>
                         <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn"
-                                rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-linkedin" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Facebook"
-                                rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-facebook" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp"
-                                rel="noopener noreferrer"><span class="icon-whatsapp"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-whatsapp" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Twitter"
-                                rel="noopener noreferrer"><span class="icon-twitter"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-twitter" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Telegram"
-                                rel="noopener noreferrer"><span class="icon-telegram"></span></a></li>
-                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer"></i></a></li>
-                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy"></i></a></li>
+                                rel="noopener noreferrer"><span class="icon-telegram" aria-hidden="true" role="presentation"></span></a></li>
+                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer" aria-hidden="true" role="presentation"></i></a></li>
+                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy" aria-hidden="true" role="presentation"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -654,11 +654,11 @@
 				</div>
 				<div class="govbh-user-rating__head-button">
 					<button type="button" class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon"
-						aria-label="Is this page useful to you?" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
+						aria-label="Is this page useful to you? - Yes" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
 						نعم</button>
 					<button type="button"
 						class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon govbh-toggler"
-						data-target-on="#sharethoughts" aria-label="Is this page useful to you?"><i
+						data-target-on="#sharethoughts" aria-label="Is this page useful to you? - No" aria-controls="sharethoughts" aria-expanded="false"><i
 							class="ph ph-thumbs-down" aria-hidden="true"></i>
 						لا</button><!-- The govbh-toggler and data-target-on attributes are used to target the visibility of the govbh-user-rating__body -->
 				</div>

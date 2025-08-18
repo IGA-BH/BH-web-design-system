@@ -3,6 +3,8 @@
         display: none!important;
     }
     .swiper-wrapper{
-        display: block!important;
+        display: grid!important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        max-width: 100%!important;
     }
 }

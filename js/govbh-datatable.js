@@ -21,7 +21,7 @@ $(document).ready( function () {
                         ordering: dt_single_conf.dt_ordering ? true : dt_single_conf.dt_ordering,
                         paging: dt_single_conf.dt_paging ? true : dt_single_conf.dt_paging,
                         info: dt_single_conf.dt_info ? true : dt_single_conf.dt_info,
-                        responsive: true,
+                        responsive: dt_single_conf.dt_responsive ? false : dt_single_conf.dt_responsive,
                         fixedHeader: true,
                         autoWidth: false,
                         language: {
@@ -174,6 +174,22 @@ $(document).ready( function () {
                                 search_filter.parents('label')
                                     .append('<span style="display:none">Search...</span>');
                             }
+                        },
+                        drawCallback: function (settings) {
+                            setTimeout(function() {
+                                //get breadcrumb container
+                                var pc = $( dt_single_conf.dt_table_id + '_wrapper ul.pagination');
+                                //get all pagination buttons
+                                pc.find('button').each(function() {
+                                    //get the text of each button
+                                    var dt_idx = $(this).data('dt-idx');
+                                    //if the text is not equal to the default text, then replace it with the default text
+                                    if (dt_idx >=0 && typeof dt_idx === 'number') {
+                                       var aria_label = lang.dt_pagination_label.replace('{0}', dt_idx + 1);
+                                       $(this).attr('aria-label', aria_label);
+                                    }
+                                });
+                            },500);
                         }
                     } );
                     
@@ -294,6 +310,7 @@ $(document).ready( function () {
             dt_ordering: $(this).data('show-ordering'),
             dt_paging: $(this).data('show-paging'),
             dt_info: $(this).data('show-info'),
+            dt_responsive: $(this).data('responsive'),
             dt_width_declaration: [ //leave the square brackets empty for columns autowidth
             ], 
             dt_show_buttons: false,

@@ -1306,6 +1306,23 @@ if ($('.govbh-tabs__head-tabs').length > 0) {
 		});
 		});
 	});
+	$(window).resize(function() {
+		setHeightToNavTabContainer();
+	});
+	function setHeightToNavTabContainer() {
+		//loop through each .nav-tab-container .nav-tabs and get the height + border-bottom
+		$('.govbh-tabs__head .govbh-tabs__head-tabs').each(function() {
+			let totalHeight = $(this).height() + parseInt($(this).css('border-bottom-width')),
+				parentContainer = $(this).parent('.govbh-tabs__head');
+			//get the scrollbar details (width and height)
+			let scrollbar = getScrollbarWidthAndHeight(this);
+				
+			parentContainer.css({
+				//deduct the scrollbar height, this hides the scrollbar in the scrolling tabs
+				height: (totalHeight - scrollbar.height) + 'px'
+			})
+		})
+	}
 }
 //scrollintoview tabs ends
 

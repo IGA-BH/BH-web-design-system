@@ -1046,6 +1046,9 @@ img {
   overflow: hidden;
   max-width: 500px;
 }
+.govbh-breadcrumb .govbh-breadcrumb__group li.govbh-breadcrumb__item-last a {
+  text-decoration: none;
+}
 .govbh-breadcrumb .govbh-breadcrumb__group li.govbh-breadcrumb__item-show-more-toggle {
   display: none;
 }
@@ -2864,6 +2867,12 @@ img {
 }
 .govbh-date-content.govbh-date-content--small {
   font-size: var(--bh-fs-p-s);
+  gap: 15px;
+}
+.govbh-date-content.govbh-date-content--small div {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 .govbh-date-content i {
   color: var(--bh-accent);
@@ -6615,7 +6624,7 @@ MENU SECTION ENDS
 }
 .govbh-carousel .govbh-general__navigation {
   display: flex;
-  gap: 8px;
+  gap: 12px;
 }
 
 .govbh-card-horizontal:has(a:focus-visible) {
@@ -6744,7 +6753,7 @@ MENU SECTION ENDS
   display: flex;
   align-items: center;
   border-radius: var(--bh-border-radius-xs);
-  background: var(--bh-bg-light-brand);
+  background: var(--bh-bg-light-brand1);
   text-decoration: none;
 }
 @media (max-width: 767.98px) {
@@ -7155,6 +7164,72 @@ a.govbh-profile-card:hover:before {
   .govbh-carousel-block .govbh-carousel {
     max-width: 100%;
   }
+}
+
+.govbh-card--contact {
+  display: inherit;
+}
+.govbh-card--contact address {
+  margin: 0;
+}
+.govbh-card--contact address dl {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 0px 0px;
+  margin: 0;
+}
+.govbh-card--contact address dl dt {
+  width: 30px;
+}
+@media (max-width: 575.98px) {
+  .govbh-card--contact address dl dt {
+    width: 28px;
+  }
+}
+.govbh-card--contact address dl dt i {
+  color: var(--bh-accent);
+  font-size: 20px;
+  margin-top: 4px;
+}
+@media (max-width: 991.98px) {
+  .govbh-card--contact address dl dt i {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575.98px) {
+  .govbh-card--contact address dl dt i {
+    font-size: 17px;
+  }
+}
+.govbh-card--contact address dl dd {
+  width: calc(100% - 30px);
+}
+.govbh-card--contact address dl dd p, .govbh-card--contact address dl dd a {
+  font-weight: var(--bh-fw-bold);
+  font-size: var(--bh-fs-p-m);
+  color: var(--bh-brand);
+  cursor: pointer;
+}
+@media (max-width: 575.98px) {
+  .govbh-card--contact address dl dd {
+    width: calc(100% - 28px);
+  }
+}
+.govbh-card--contact .govbh-card--contact__title {
+  color: var(--bh-brand);
+  font-size: var(--bh-fs-h6);
+  -webkit-transition: all 0.3s ease 0s !important;
+  -moz-transition: all 0.3s ease 0s !important;
+  -ms-transition: all 0.3s ease 0s !important;
+  -o-transition: all 0.3s ease 0s !important;
+  transition: all 0.3s ease 0s !important;
+}
+.govbh-card--contact:hover .govbh-card--contact__title {
+  color: var(--bh-light);
+}
+.govbh-card--contact:hover a {
+  color: var(--bh-light);
 }
 
 .govbh-tabs {
@@ -8171,6 +8246,13 @@ a.govbh-profile-card:hover:before {
 }
 .govbh-form-control--select.form-textarea {
   height: 210px;
+}
+.govbh-form-control--select .form-select:not(.select2) {
+  padding: 0px 15px !important;
+  min-height: 50px !important;
+  height: 50px !important;
+  border: none;
+  font-size: var(--bh-fw-bh-fs-p-l);
 }
 
 .formlabel {
@@ -9850,6 +9932,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .govbh-datatable__table thead tr th:last-child {
   border-top-right-radius: var(--bh-border-radius-xs);
+}
+
+.dt-layout-table .dt-layout-full {
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 table.table.dataTable.fixedHeader-floating > :not(caption) > * > * {
@@ -13455,6 +13542,7 @@ table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order::after, t
   left: 0;
   width: 100%;
   background-color: var(--bh-bg-primary);
+  z-index: 1;
 }
 .govbh-map .govbh-map__wrapper .govbh-map__filter .govbh-map__filter-form .govbh-map__filter-input {
   position: relative;
@@ -14260,7 +14348,7 @@ table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order::after, t
   display: grid;
   align-items: start;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px 20px;
+  grid-gap: 20px;
 }
 @media (max-width: 991.98px) {
   .govbh-partners-list {
@@ -14270,12 +14358,12 @@ table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order::after, t
 @media (max-width: 575.98px) {
   .govbh-partners-list {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px 10px;
+    grid-gap: 10px;
   }
 }
 @media (max-width: 480px) {
   .govbh-partners-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .govbh-partners-list li {
@@ -14290,6 +14378,11 @@ table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order::after, t
   width: 100%;
   position: relative;
   text-wrap: balance;
+  height: 100%;
+  background: var(--bh-primary-inverse);
+  border-radius: var(--bh-border-radius-xs);
+  border: 1px solid var(--bh-border-secondary);
+  padding: 10px;
 }
 @media (max-width: 767.98px) {
   .govbh-partners-list a {
@@ -14301,6 +14394,7 @@ table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order::after, t
 }
 .govbh-partners-list a span {
   text-decoration: underline;
+  margin-bottom: 10px;
 }
 .govbh-partners-list a span:after {
   content: "\e5de";
@@ -14317,16 +14411,13 @@ table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order::after, t
 }
 .govbh-partners-list .govbh-partners-list__item-img {
   position: relative;
-  background: var(--bh-primary-inverse);
-  border-radius: var(--bh-border-radius-xs);
-  border: 1px solid var(--bh-border-secondary);
   overflow: hidden;
   height: 200px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 0px;
   margin-bottom: 10px;
 }
 @media (max-width: 991.98px) {
@@ -14823,6 +14914,7 @@ table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order::after, t
 }
 .govbh-popup-model-slider .govbh-popup-model-slider__container.govbh-popup-model-slider--leftcolfull .govbh-popup-model-slider__body .govbh-popup-model-slider__content {
   padding: 0;
+  height: 100%;
 }
 .govbh-popup-model-slider .govbh-popup-model-slider__container.govbh-popup-model-slider--leftcolfull .govbh-popup-model-slider__body .govbh-popup-model-slider__content .govbh-content-block {
   padding: 65px 30px 80px;
@@ -15078,6 +15170,10 @@ table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order::after, t
   font-size: var(--bh-fs-p-xl);
   font-weight: var(--bh-fw-bold);
   margin-bottom: 10px;
+}
+
+.f-thumbs__viewport {
+  direction: ltr;
 }
 
 :root.govbh-darkmode {

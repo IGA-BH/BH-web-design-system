@@ -136,7 +136,7 @@
                     <!-- Language Switcher -->
                     <a class="govbh-head__lang-switcher" href="../html/news-detail-page.html" lang="en-US" aria-label="اضغط هنا للتحول للنسخة العربية من هذه الصفحة ">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                     <!-- Dark Mode -->
-                    <a href="#" class="govbh-head__darkmode d-md-flex d-sm-none d-none" data-tooltip="tooltip" title="اضغط هنا للتحول لنسخة بخلفية بيضاء" role="button" aria-label="اضغط هنا للتحول لنسخة بخلفية بيضاء"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
+                    <a href="#" class="govbh-head__darkmode d-md-flex d-sm-none d-none" data-tooltip="tooltip" title="اضغط هنا للتبديل بين الوضع الفاتح والداكن" role="button" aria-label="اضغط هنا للتبديل بين الوضع الفاتح والداكن"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
                     <!-- Text Resize -->
                     <div class="govbh-head__textsize">
                         <a href="#" id="textsize" class="govbh-head__textsize-btn" data-tooltip="tooltip" title="اضغط هنا للتحكم في حجم الخط" role="button" aria-label="Click here to resize text size."><span class="icon-resize" aria-hidden="true"></span></a>
@@ -458,7 +458,7 @@
     <section class="govbh-section govbh-breadcrumb theme--dark bg--brand">
         <div class="container">
             <div class="row g-2 align-items-center">
-                <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" aria-label="Breadcrumbs">
+                <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" tabindex="0" aria-label="Breadcrumbs">
                     <ul class="govbh-breadcrumb__group">
                         <li class="govbh-breadcrumb__item-home"><a href="index.html" aria-label="Go to home"><i class="ph ph-house" aria-hidden="true"></i> الصفحة الرئيسية</a></li>
                         <li><a href="#" aria-label="Go to media">المركز الإعلامي</a></li>
@@ -467,18 +467,18 @@
                     </ul>
                 </nav>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-12">
-                    <h1>الأخبار</h1>
+                    <h1>تفاصيل الخبر</h1>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-md-end justify-content-sm-start justify-content-start">
-                    <div class="govbh-sharethis govbh-sharethis--vertical theme--dark">
+                    <div class="govbh-sharethis govbh-sharethis--vertical theme--dark" role="region" aria-label="Share this page on Social Media" tabindex="0">
                         <div class="govbh-sharethis__title">شارك هذه الصفحة:</div>
                         <ul>
-                            <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn" rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li>
-    <li><a href="#" target="_blank" aria-label="Share this page on Facebook" rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>                        <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp" rel="noopener noreferrer"><span class="icon-whatsapp"></span></a></li>
-                            <li><a href="#" target="_blank" aria-label="Share this page on Twitter" rel="noopener noreferrer"><span class="icon-twitter"></span></a></li>
-                            <li><a href="#" target="_blank" aria-label="Share this page on Telegram" rel="noopener noreferrer"><span class="icon-telegram"></span></a></li>
-                            <li><a href="#" aria-label="Print this page"><i class="ph ph-printer"></i></a></li>
-                            <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy"></i></a></li>
+                            <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn" rel="noopener noreferrer"><span class="icon-linkedin" aria-hidden="true" role="presentation"></span></a></li>
+    <li><a href="#" target="_blank" aria-label="Share this page on Facebook" rel="noopener noreferrer"><span class="icon-facebook" aria-hidden="true" role="presentation"></span></a></li>                        <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp" rel="noopener noreferrer"><span class="icon-whatsapp" aria-hidden="true" role="presentation"></span></a></li>
+                            <li><a href="#" target="_blank" aria-label="Share this page on Twitter" rel="noopener noreferrer"><span class="icon-twitter" aria-hidden="true" role="presentation"></span></a></li>
+                            <li><a href="#" target="_blank" aria-label="Share this page on Telegram" rel="noopener noreferrer"><span class="icon-telegram" aria-hidden="true" role="presentation"></span></a></li>
+                            <li><a href="#" aria-label="Print this page"><i class="ph ph-printer" aria-hidden="true" role="presentation"></i></a></li>
+                            <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy" aria-hidden="true" role="presentation"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -515,6 +515,19 @@
                                     <div class="govbh-image-block__playicon"><i class="ph-fill ph-play-circle" aria-hidden="true"></i></div>
                                     <div class="govbh-image-block__caption"><strong>عن الوزارة</strong> (فيديو يوتيوب، ٨٢ ثانية، باللغة العربية فقط)</div>
                                     <a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="aboutvideo" data-caption="عن الوزارة (فيديو يوتيوب، ٨٢ ثانية، باللغة العربية فقط)" aria-label="عن الوزارة (فيديو يوتيوب، ٨٢ ثانية، باللغة العربية فقط)" class="govbh-image-block__playicon" role="button"><i class="ph-fill ph-play-circle" aria-hidden="true"></i></a>
+                                    <!-- Transcript Starts -->
+                                    <div class="govbh-image-block__transcript visually-hidden">
+                                        <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-1" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-1" role="button">Show Transcript</a>
+                                        <div id="video-transcript-1" style="display:none">
+                                        <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                            Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                            [Cut to an architect pointing at a blueprint of the plant]                                            
+                                            Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                            [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                            Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                                        </div>
+                                    </div>
+                                    <!-- Transcript Ends -->
                                 </div>
                             </div>
                             <div class="swiper-slide" tabindex="0" role="group">
@@ -546,8 +559,6 @@
                 </blockquote>
                 <p>تشكيل المجالس  على مدى الدورات السابقة شريكًا فاعلًا في تحقيق أهداف التنمية المستدامة، من خلال ما قدمته من توصيات تناولت مجالات متعددة، شملت تعديل التصنيفات والمخططات العمرانية، واقتراح مشاريع خدمية، وتطوير المرافق العامة، وتحسين البنية التحتية، إلى جانب مبادرات تنظيمية تهدف إلى تعزيز جودة الخدمات البلدية، و نأكد أن الوزارة مستمرة في دعمها للمجالس وتعزيز التعاون معها لتنفيذ المشاريع التنموية، باعتبار أن ما تحقق من إنجازات خلال المرحلة الماضية يجسد ثمرة التنسيق المشترك وتكامل الأدوار بين السلطتين التنفيذية والتشريعية.</p>
                 
-                <!-- Back to News Listing Button -->
-                <a href="news.html" class="govbh-btn govbh-btn--outline govbh-btn--left-icon mt-3" aria-label="العودة إلى الأخبار صفحة قائمة"><i class="ph ph-arrow-elbow-left-up" aria-hidden="true"></i>العودة إلى الأخبار</a>
             </div>
             <!-- Content Ends -->
             <div class="hr mb-3"></div><!-- Horizontal Line -->
@@ -555,42 +566,51 @@
             <!-- Share & Last updated content Starts -->
             <div class="row g-2">
                 <div class="col-md-6 col-sm-12 col-12">
-                    <div class="govbh-sharethis">
+                    <div class="govbh-sharethis" role="region" aria-label="Share this page on Social Media" tabindex="0">
                         <div class="govbh-sharethis__title">شارك هذه الصفحة:</div>
                         <ul>
-                            <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn" rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li>
-<li><a href="#" target="_blank" aria-label="Share this page on Facebook" rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>                        <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp" rel="noopener noreferrer"><span class="icon-whatsapp"></span></a></li>
-                        <li><a href="#" target="_blank" aria-label="Share this page on Twitter" rel="noopener noreferrer"><span class="icon-twitter"></span></a></li>
-                        <li><a href="#" target="_blank" aria-label="Share this page on Telegram" rel="noopener noreferrer"><span class="icon-telegram"></span></a></li>
-                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer"></i></a></li>
-                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy"></i></a></li>
+                            <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn" rel="noopener noreferrer"><span class="icon-linkedin" aria-hidden="true" role="presentation"></span></a></li>
+<li><a href="#" target="_blank" aria-label="Share this page on Facebook" rel="noopener noreferrer"><span class="icon-facebook" aria-hidden="true" role="presentation"></span></a></li>                        <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp" rel="noopener noreferrer"><span class="icon-whatsapp" aria-hidden="true" role="presentation"></span></a></li>
+                        <li><a href="#" target="_blank" aria-label="Share this page on Twitter" rel="noopener noreferrer"><span class="icon-twitter" aria-hidden="true" role="presentation"></span></a></li>
+                        <li><a href="#" target="_blank" aria-label="Share this page on Telegram" rel="noopener noreferrer"><span class="icon-telegram" aria-hidden="true" role="presentation"></span></a></li>
+                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer" aria-hidden="true" role="presentation"></i></a></li>
+                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy" aria-hidden="true" role="presentation"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-12 d-flex justify-content-md-end justify-content-sm-start justify-content-start">
-                    <p class="govbh-text--medium m-0">آخر تحديث للمحتوى: <b>29 يونيو 2025</b></p>
+                    <div class="govbh-last-updated" role="region" tabindex="0" aria-labelledby="last-updated-date">
+                    <p id="last-updated-date" class="govbh-text--medium m-0">شارك هذه الصفحة: <b>29 يونيو 2025</b></p>
+                </div>
                 </div>
             </div>
             <!-- Share & Last updated content Ends -->
 
-            <!-- Previous & Next Starts --> 
-            <div class="govbh-prevnext-nav mt-5">
-                <a href="#" class="govbh-prevnext-nav__item" aria-label="الخبر السابق: البحرين تشارك في الدورة العامة الثانية والتسعين للمنظمة العالمية للصحة الحيوانية في باريس" rel="prev">
-                    <div class="govbh-btn govbh-btn--withoutline govbh-btn--left-icon"><i class="ph ph-arrow-left" aria-hidden="true"></i>السابق</div>
-                    <div class="govbh-prevnext-nav__title govbh-fs-h6">البحرين تشارك في الدورة العامة الثانية والتسعين للمنظمة العالمية للصحة الحيوانية في باريس</div>
-                </a>
-                <a href="#" class="govbh-prevnext-nav__item text-md-end text-sm-start text-start" aria-label="الخبر التالي: وزير الحكومة ومدير عام مكتب الحكومة يلتقيان مدير عام المنظمة" rel="next">
-                    <div class="govbh-btn govbh-btn--withoutline">التالي<i class="ph ph-arrow-right" aria-hidden="true"></i></div>
-                    <div class="govbh-prevnext-nav__title govbh-fs-h6">وزير الحكومة ومدير عام مكتب الحكومة يلتقيان مدير عام المنظمة</div>
-                </a>
+            <!-- Navigation Helper Starts -->
+            <div class="govbh-nav-group mt-4" role="region" aria-label="Navigation Helper">
+                <!-- Back to News Listing Button -->
+                <a href="news.html" class="govbh-btn govbh-btn--withoutline govbh-btn--left-icon" aria-label="العودة إلى الأخبار صفحة قائمة"><i class="ph ph-arrow-elbow-left-up" aria-hidden="true"></i>العودة إلى الأخبار</a>
+                <!-- Previous & Next Starts --> 
+                <div class="govbh-prevnext-nav mt-4 govbh-content-box bg--light-brand">
+                    <a href="#" class="govbh-prevnext-nav__item" aria-label="الخبر السابق: البحرين تشارك في الدورة العامة الثانية والتسعين للمنظمة العالمية للصحة الحيوانية في باريس" rel="prev">
+                        <div class="govbh-btn govbh-btn--withoutline govbh-btn--left-icon"><i class="ph ph-arrow-left" aria-hidden="true"></i>السابق</div>
+                        <div class="govbh-prevnext-nav__title govbh-fs-h6">البحرين تشارك في الدورة العامة الثانية والتسعين للمنظمة العالمية للصحة الحيوانية في باريس</div>
+                    </a>
+                    <a href="#" class="govbh-prevnext-nav__item text-md-end text-sm-start text-start" aria-label="الخبر التالي: وزير الحكومة ومدير عام مكتب الحكومة يلتقيان مدير عام المنظمة" rel="next">
+                        <div class="govbh-btn govbh-btn--withoutline">التالي<i class="ph ph-arrow-right" aria-hidden="true"></i></div>
+                        <div class="govbh-prevnext-nav__title govbh-fs-h6">وزير الحكومة ومدير عام مكتب الحكومة يلتقيان مدير عام المنظمة</div>
+                    </a>
+                </div>
+                <!-- Previous & Next Ends --> 
             </div>
-            <!-- Previous & Next Ends --> 
+            <!-- Navigation Helper Ends -->
+
         </div>
     </article>
     <!-- News Details Article Ends -->
 
     <!-- Related pages Section Starts -->
-    <section class="govbh-section bg--grey">
+    <section class="govbh-section bg--grey" aria-labelledby="related-page-title" tabindex="0">
         <div class="container">
             <!-- Carousel Starts -->
             <div class="govbh-carousel"
@@ -602,7 +622,7 @@
                 data-slidesperview-lg="3" 
                 data-slidesperview-xl="3">
                 <div class="row align-items-center mb-3">
-                    <div class="col-md-6 col-sm-8 col-9"><h2 class="m-0">اخبار ذات صلة</h2></div>
+                    <div class="col-md-6 col-sm-8 col-9"><h2 id="related-page-title" class="m-0">اخبار ذات صلة</h2></div>
                     <div class="col-md-6 col-sm-4 col-3">
                         <!-- Navigation -->
                         <div class="govbh-general__navigation justify-content-end">
@@ -740,11 +760,11 @@
 				</div>
 				<div class="govbh-user-rating__head-button">
 					<button type="button" class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon"
-						aria-label="Is this page useful to you?" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
+						aria-label="Is this page useful to you? - Yes" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
 						نعم</button>
 					<button type="button"
 						class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon govbh-toggler"
-						data-target-on="#sharethoughts" aria-label="Is this page useful to you?"><i
+						data-target-on="#sharethoughts" aria-label="Is this page useful to you? - No" aria-controls="sharethoughts" aria-expanded="false"><i
 							class="ph ph-thumbs-down" aria-hidden="true"></i>
 						لا</button><!-- The govbh-toggler and data-target-on attributes are used to target the visibility of the govbh-user-rating__body -->
 				</div>

@@ -41,6 +41,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Swiper Slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     		<!-- MultiSelect -->
@@ -459,7 +461,7 @@
 <section class="govbh-section govbh-breadcrumb theme--dark bg--brand">
     <div class="container">
         <div class="row g-2 align-items-center">
-            <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" aria-label="Breadcrumbs">
+            <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" tabindex="0" aria-label="Breadcrumbs">
                 <ul class="govbh-breadcrumb__group">
                     <li class="govbh-breadcrumb__item-home">
                         <a href="index.html" aria-label="Go to home"><i class="ph ph-house"
@@ -473,21 +475,21 @@
             </div>
             <div
                 class="col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-md-end justify-content-sm-start justify-content-start">
-                <div class="govbh-sharethis govbh-sharethis--vertical theme--dark">
+                <div class="govbh-sharethis govbh-sharethis--vertical theme--dark" role="region" aria-label="Share this page on Social Media" tabindex="0">
                     <div class="govbh-sharethis__title">Share this page:</div>
                     <ul>
                         <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn"
-                                rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-linkedin" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Facebook"
-                                rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-facebook" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp"
-                                rel="noopener noreferrer"><span class="icon-whatsapp"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-whatsapp" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Twitter"
-                                rel="noopener noreferrer"><span class="icon-twitter"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-twitter" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Telegram"
-                                rel="noopener noreferrer"><span class="icon-telegram"></span></a></li>
-                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer"></i></a></li>
-                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy"></i></a></li>
+                                rel="noopener noreferrer"><span class="icon-telegram" aria-hidden="true" role="presentation"></span></a></li>
+                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer" aria-hidden="true" role="presentation"></i></a></li>
+                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy" aria-hidden="true" role="presentation"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -500,7 +502,7 @@
 <section class="govbh-section" aria-labelledby="photos-videos-title">
     <div class="container">
         <!-- Search Container Starts -->
-        <div class="govbh-search-card bg--grey mb-lg-5 mb-md-4 mb-4">
+        <form action="#" autocomplete="on" class="govbh-search-card bg--grey mb-lg-5 mb-md-4 mb-4">
             <div class="govbh-search-card__title govbh-fs-h5 text--brand">Search Photos & Videos</div>
             <div class="govbh-search-card__head">
                 <div class="govbh-form-control form-floating govbh-form-control--icon-left">
@@ -569,7 +571,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
         <!-- Search Container Ends -->
 
         <!-- List Grid Starts -->
@@ -601,49 +603,59 @@
                     <article role="region" aria-labelledby="media-title-1" class="govbh-card govbh-card--with-image">
                         <div class="govbh-card__head">
                             <div class="govbh-card__head-image">
-                                <img src="../images/banner-021.webp" alt="Photo Caption 1" loading="lazy" width="416"
+                                <img src="../images/banner-021.webp" alt="Image: Minister's visit to the Bahrain Institute for Pearls and Gemstones (DANAT)" loading="lazy" width="416"
                                     height="234">
                                 <div class="govbh-card__head-thumb"><i class="ph ph-images" aria-hidden="true"></i></div>
                                 <div class="govbh-card__head-play"><i class="ph-thin ph-plus" aria-hidden="true"></i></div>
                             </div>
                             <div class="govbh-card__head-content">
                                 <div class="govbh-card__date">29 May, 2024</div>
-                                <h3 id="media-title-1" class="govbh-card__title mb-0"><a href="../images/banner-021.webp"
-                                        data-fancybox="gallery-01" data-caption="Photo Caption 1"
-                                        aria-label="Images: Photo Caption 1">Photo Caption 1</a></h3>
+                                <h3 id="media-title-1" class="govbh-card__title mb-0"><a role="button" href="../images/banner-021.webp" data-thumb="../images/banner-021.webp"
+                                        data-fancybox="gallery-01" data-caption="Minister's visit to the Bahrain Institute for Pearls and Gemstones (DANAT)"
+                                        aria-label="Images: Minister's visit to the Bahrain Institute for Pearls and Gemstones (DANAT)">Minister's visit to the Bahrain Institute for Pearls and Gemstones (DANAT)</a></h3>
                             </div>
                         </div>
                         <div class="govbh-card__foot">
                             <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
                         </div>
                     </article>
+                    <!-- FancyBox Gallery -->
+                    <div class="d-none">
+                        <a data-fancybox="gallery-01" aria-label="Minister's visit to the Bahrain Institute for Pearls and Gemstones (DANAT)" data-caption="Minister's visit to the Bahrain Institute for Pearls and Gemstones (DANAT)" href="../images/banner-001.webp" data-thumb="../images/banner-001.webp"></a>
+                        <a data-fancybox="gallery-01" aria-label="Minister's visit to the Bahrain Institute for Pearls and Gemstones (DANAT)" data-caption="Minister's visit to the Bahrain Institute for Pearls and Gemstones (DANAT)" href="../images/banner-002.webp" data-thumb="../images/banner-002.webp"></a>
+                    </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                     <article role="region" aria-labelledby="media-title-2" class="govbh-card govbh-card--with-image">
                         <div class="govbh-card__head">
                             <div class="govbh-card__head-image">
-                                <img src="../images/banner-013.webp" alt="Photo Caption 2" loading="lazy" width="416"
+                                <img src="../images/banner-013.webp" alt="Image: Meeting of a relevant minister with a relevant minister" loading="lazy" width="416"
                                     height="234">
                                 <div class="govbh-card__head-thumb"><i class="ph ph-images" aria-hidden="true"></i></div>
                                 <div class="govbh-card__head-play"><i class="ph-thin ph-plus" aria-hidden="true"></i></div>
                             </div>
                             <div class="govbh-card__head-content">
                                 <div class="govbh-card__date">29 May, 2024</div>
-                                <h3 id="media-title-2" class="govbh-card__title mb-0"><a href="../images/banner-013.webp"
-                                        data-fancybox="gallery-02" data-caption="Photo Caption 2"
-                                        aria-label="Images: Photo Caption 2">Photo Caption 2</a></h3>
+                                <h3 id="media-title-2" class="govbh-card__title mb-0"><a role="button" href="../images/banner-013.webp" data-thumb="../images/banner-013.webp"
+                                        data-fancybox="gallery-02" data-caption="Meeting of a relevant minister with a relevant minister"
+                                        aria-label="Images: Meeting of a relevant minister with a relevant minister">Meeting of a relevant minister with a relevant minister</a></h3>
                             </div>
                         </div>
                         <div class="govbh-card__foot">
                             <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
                         </div>
                     </article>
+                    <!-- FancyBox Gallery -->
+                    <div class="d-none">
+                        <a data-fancybox="gallery-02" aria-label="Meeting of a relevant minister with a relevant minister" data-caption="Meeting of a relevant minister with a relevant minister" href="../images/banner-025.webp" data-thumb="../images/banner-025.webp"></a>
+                        <a data-fancybox="gallery-02" aria-label="Meeting of a relevant minister with a relevant minister" data-caption="Meeting of a relevant minister with a relevant minister" href="../images/banner-026.webp" data-thumb="../images/banner-026.webp"></a>
+                    </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                     <article role="region" aria-labelledby="media-title-3" class="govbh-card govbh-card--with-image">
                         <div class="govbh-card__head">
                             <div class="govbh-card__head-image">
-                                <img src="../images/banner-018.webp" alt="Video Caption 1" loading="lazy" width="416"
+                                <img src="../images/banner-018.webp" alt="Play Video: Approval to continue strengthening cooperation ties between Bahrain and the Egypt" loading="lazy" width="416"
                                     height="234">
                                 <div class="govbh-card__head-thumb"><i class="ph ph-video" aria-hidden="true"></i></div>
                                 <div class="govbh-card__head-play"><i class="ph-fill ph-play-circle" aria-hidden="true"></i>
@@ -651,32 +663,48 @@
                             </div>
                             <div class="govbh-card__head-content">
                                 <div class="govbh-card__date">29 May, 2024</div>
-                                <h3 id="media-title-3" class="govbh-card__title mb-0"><a
-                                        href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="gallery-03"
-                                        data-caption="Video Caption 1, YouTube video, 82seconds, Arabic only"
-                                        aria-label="Play video: Video Caption 1, YouTube video, 82seconds, Arabic only">Video Caption
-                                        1</a></h3>
+                                <h3 id="media-title-3" class="govbh-card__title mb-0"><a role="button"
+                                        href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-thumb="../images/banner-026.webp" data-fancybox="gallery-03"
+                                        data-caption="Approval to continue strengthening cooperation ties between Bahrain and the Egypt (YouTube video, 82 seconds, Arabic only)"
+                                        aria-label="Play video: Approval to continue strengthening cooperation ties between Bahrain and the Egypt, YouTube video, 82 seconds, Arabic only">Approval to continue strengthening cooperation ties between Bahrain and the Egypt</a></h3>
+                                <!-- Transcript Starts -->
+                                <div class="govbh-image-block__transcript visually-hidden">
+                                    <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-1" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-1" role="button">Show Transcript</a>
+                                    <div id="video-transcript-1" style="display:none">
+                                    <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                        Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                        [Cut to an architect pointing at a blueprint of the plant]                                            
+                                        Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                        [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                        Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                                    </div>
+                                </div>
+                                <!-- Transcript Ends -->
                             </div>
                         </div>
                         <div class="govbh-card__foot">
                             <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
                         </div>
                     </article>
+                    <!-- FancyBox Gallery -->
+                    <div class="d-none">
+                        <a data-fancybox="gallery-03" aria-label="Play video: Video Caption 1, YouTube video, 82 seconds, Arabic only" data-caption="Video Caption 1, YouTube video, 82 seconds, Arabic only" href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-thumb="../images/banner-025.webp"></a>
+                    </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                     <article role="region" aria-labelledby="media-title-4" class="govbh-card govbh-card--with-image">
                         <div class="govbh-card__head">
                             <div class="govbh-card__head-image">
-                                <img src="../images/banner-019.webp" alt="Photo Caption 3" loading="lazy" width="416"
+                                <img src="../images/banner-019.webp" alt="Image: His Majesty the King's approval and issuance of Law (11) of 2025" loading="lazy" width="416"
                                     height="234">
                                 <div class="govbh-card__head-thumb"><i class="ph ph-images" aria-hidden="true"></i></div>
                                 <div class="govbh-card__head-play"><i class="ph-thin ph-plus" aria-hidden="true"></i></div>
                             </div>
                             <div class="govbh-card__head-content">
                                 <div class="govbh-card__date">29 May, 2024</div>
-                                <h3 id="media-title-4" class="govbh-card__title mb-0"><a href="../images/banner-019.webp"
-                                        data-fancybox="gallery-04" data-caption="Photo Caption 3"
-                                        aria-label="Images: Photo Caption 3">Photo Caption 3</a></h3>
+                                <h3 id="media-title-4" class="govbh-card__title mb-0"><a role="button" href="../images/banner-019.webp" data-thumb="../images/banner-019.webp"
+                                        data-fancybox="gallery-04" data-caption="His Majesty the King's approval and issuance of Law (11) of 2025"
+                                        aria-label="Images: His Majesty the King's approval and issuance of Law (11) of 2025">His Majesty the King's approval and issuance of Law (11) of 2025</a></h3>
                             </div>
                         </div>
                         <div class="govbh-card__foot">
@@ -688,7 +716,7 @@
                     <article role="region" aria-labelledby="media-title-5" class="govbh-card govbh-card--with-image">
                         <div class="govbh-card__head">
                             <div class="govbh-card__head-image">
-                                <img src="../images/banner-020.webp" alt="Video Caption 2" loading="lazy" width="416"
+                                <img src="../images/banner-020.webp" alt="Play Video: Launching investment opportunities in government lands" loading="lazy" width="416"
                                     height="234">
                                 <div class="govbh-card__head-thumb"><i class="ph ph-video" aria-hidden="true"></i></div>
                                 <div class="govbh-card__head-play"><i class="ph-fill ph-play-circle" aria-hidden="true"></i>
@@ -696,11 +724,23 @@
                             </div>
                             <div class="govbh-card__head-content">
                                 <div class="govbh-card__date">29 May, 2024</div>
-                                <h3 id="media-title-5" class="govbh-card__title mb-0"><a
+                                <h3 id="media-title-5" class="govbh-card__title mb-0"><a role="button"
                                         href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="gallery-05"
-                                        data-caption="Video Caption 2, YouTube video, 82seconds, Arabic only"
-                                        aria-label="Play video: Video Caption 2, YouTube video, 82seconds, Arabic only">Video Caption
-                                        2</a></h3>
+                                        data-caption="Launching investment opportunities in government lands (YouTube video, 82 seconds, Arabic only)"
+                                        aria-label="Play video: Launching investment opportunities in government lands, YouTube video, 82 seconds, Arabic only">Launching investment opportunities in government lands</a></h3>
+                                <!-- Transcript Starts -->
+                                <div class="govbh-image-block__transcript visually-hidden">
+                                    <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-2" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-2" role="button">Show Transcript</a>
+                                    <div id="video-transcript-2" style="display:none">
+                                    <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                        Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                        [Cut to an architect pointing at a blueprint of the plant]                                            
+                                        Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                        [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                        Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                                    </div>
+                                </div>
+                                <!-- Transcript Ends -->
                             </div>
                         </div>
                         <div class="govbh-card__foot">
@@ -712,85 +752,16 @@
                     <article role="region" aria-labelledby="media-title-6" class="govbh-card govbh-card--with-image">
                         <div class="govbh-card__head">
                             <div class="govbh-card__head-image">
-                                <img src="../images/banner-011.webp" alt="Photo Caption 4" loading="lazy" width="416"
+                                <img src="../images/banner-011.webp" alt="Image: Participation of a relevant minister in the activities of the World Economic Forum" loading="lazy" width="416"
                                     height="234">
                                 <div class="govbh-card__head-thumb"><i class="ph ph-images" aria-hidden="true"></i></div>
                                 <div class="govbh-card__head-play"><i class="ph-thin ph-plus" aria-hidden="true"></i></div>
                             </div>
                             <div class="govbh-card__head-content">
                                 <div class="govbh-card__date">29 May, 2024</div>
-                                <h3 id="media-title-6" class="govbh-card__title mb-0"><a href="../images/banner-011.webp"
-                                        data-fancybox="gallery-06" data-caption="Photo Caption 4"
-                                        aria-label="Images: Photo Caption 4">Photo Caption 4</a></h3>
-                            </div>
-                        </div>
-                        <div class="govbh-card__foot">
-                            <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <article role="region" aria-labelledby="media-title-7" class="govbh-card govbh-card--with-image">
-                        <div class="govbh-card__head">
-                            <div class="govbh-card__head-image">
-                                <img src="../images/banner-022.webp" alt="Video Caption 3" loading="lazy" width="416"
-                                    height="234">
-                                <div class="govbh-card__head-thumb"><i class="ph ph-video" aria-hidden="true"></i></div>
-                                <div class="govbh-card__head-play"><i class="ph-fill ph-play-circle" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <div class="govbh-card__head-content">
-                                <div class="govbh-card__date">29 May, 2024</div>
-                                <h3 id="media-title-7" class="govbh-card__title mb-0"><a
-                                        href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="gallery-07"
-                                        data-caption="Video Caption 3, YouTube video, 82seconds, Arabic only"
-                                        aria-label="Play video: Video Caption 3, YouTube video, 82seconds, Arabic only">Video Caption
-                                        3</a></h3>
-                            </div>
-                        </div>
-                        <div class="govbh-card__foot">
-                            <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <article role="region" aria-labelledby="media-title-8" class="govbh-card govbh-card--with-image">
-                        <div class="govbh-card__head">
-                            <div class="govbh-card__head-image">
-                                <img src="../images/banner-023.webp" alt="Photo Caption 5" loading="lazy" width="416"
-                                    height="234">
-                                <div class="govbh-card__head-thumb"><i class="ph ph-images" aria-hidden="true"></i></div>
-                                <div class="govbh-card__head-play"><i class="ph-thin ph-plus" aria-hidden="true"></i></div>
-                            </div>
-                            <div class="govbh-card__head-content">
-                                <div class="govbh-card__date">29 May, 2024</div>
-                                <h3 id="media-title-8" class="govbh-card__title mb-0"><a href="../images/banner-023.webp"
-                                        data-fancybox="gallery-08" data-caption="Photo Caption 5"
-                                        aria-label="Images: Photo Caption 5">Photo Caption 5</a></h3>
-                            </div>
-                        </div>
-                        <div class="govbh-card__foot">
-                            <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <article role="region" aria-labelledby="media-title-9" class="govbh-card govbh-card--with-image">
-                        <div class="govbh-card__head">
-                            <div class="govbh-card__head-image">
-                                <img src="../images/banner-024.webp" alt="Video Caption 4" loading="lazy" width="416"
-                                    height="234">
-                                <div class="govbh-card__head-thumb"><i class="ph ph-video" aria-hidden="true"></i></div>
-                                <div class="govbh-card__head-play"><i class="ph-fill ph-play-circle" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <div class="govbh-card__head-content">
-                                <div class="govbh-card__date">29 May, 2024</div>
-                                <h3 id="media-title-9" class="govbh-card__title mb-0"><a
-                                        href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="gallery-09"
-                                        data-caption="Video Caption 4, YouTube video, 82seconds, Arabic only"
-                                        aria-label="Play video: Video Caption 4, YouTube video, 82seconds, Arabic only">Video Caption
-                                        4</a></h3>
+                                <h3 id="media-title-6" class="govbh-card__title mb-0"><a role="button" href="../images/banner-011.webp" data-thumb="../images/banner-011.webp"
+                                        data-fancybox="gallery-06" data-caption="Participation of a relevant minister in the activities of the World Economic Forum"
+                                        aria-label="Images: Participation of a relevant minister in the activities of the World Economic Forum">Participation of a relevant minister in the activities of the World Economic Forum</a></h3>
                             </div>
                         </div>
                         <div class="govbh-card__foot">
@@ -829,27 +800,29 @@
         <!-- Share & Last updated content Starts -->
         <div class="row g-2">
             <div class="col-md-6 col-sm-12 col-12">
-                <div class="govbh-sharethis">
+                <div class="govbh-sharethis" role="region" aria-label="Share this page on Social Media" tabindex="0">
                     <div class="govbh-sharethis__title">Share this page:</div>
                     <ul>
                         <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn"
-                                rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-linkedin" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Facebook"
-                                rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-facebook" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp"
-                                rel="noopener noreferrer"><span class="icon-whatsapp"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-whatsapp" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Twitter"
-                                rel="noopener noreferrer"><span class="icon-twitter"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-twitter" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Telegram"
-                                rel="noopener noreferrer"><span class="icon-telegram"></span></a></li>
-                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer"></i></a></li>
-                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy"></i></a></li>
+                                rel="noopener noreferrer"><span class="icon-telegram" aria-hidden="true" role="presentation"></span></a></li>
+                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer" aria-hidden="true" role="presentation"></i></a></li>
+                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy" aria-hidden="true" role="presentation"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div
                 class="col-md-6 col-sm-12 col-12 d-flex justify-content-md-end justify-content-sm-start justify-content-start">
-                <p class="govbh-text--medium m-0">Content last updated: <b>29 May 2025</b></p>
+                <div class="govbh-last-updated" role="region" tabindex="0" aria-labelledby="last-updated-date">
+                    <p id="last-updated-date" class="govbh-text--medium m-0">Content last updated: <b>29 May 2025</b></p>
+                </div>
             </div>
         </div>
         <!-- Share & Last updated content Ends -->
@@ -858,14 +831,14 @@
 <!-- Photos & Videos Section Ends -->
 
 <!-- Related pages Section Starts -->
-<section class="govbh-section bg--grey">
+<section class="govbh-section bg--grey" aria-labelledby="related-page-title" tabindex="0">
     <div class="container">
         <!-- Carousel Starts -->
         <div class="govbh-carousel" data-carousel="custom" data-slidesperview-xxxs="1" data-slidesperview-xxs="1"
             data-slidesperview-xs="2" data-slidesperview-md="2" data-slidesperview-lg="3" data-slidesperview-xl="3">
             <div class="row align-items-center mb-3">
                 <div class="col-md-6 col-sm-8 col-9">
-                    <h2 class="m-0">Related Pages</h2>
+                    <h2 id="related-page-title" class="m-0">Related Pages</h2>
                 </div>
                 <div class="col-md-6 col-sm-4 col-3">
                     <!-- Navigation -->

@@ -15,6 +15,10 @@
     }
   }
 }
+.dt-layout-table .dt-layout-full{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
 table.table.dataTable.fixedHeader-floating > :not(caption) > * > *{
   background: var(--bh-bg-brand);
 }

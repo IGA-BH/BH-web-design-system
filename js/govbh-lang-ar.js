@@ -16,6 +16,7 @@ var lang = {
     dt_view_less: 'View Less',
     dt_datatable_empty_table: 'No matching records found',
     dt_datatable_info_filtered: '(filtered from _MAX_ total المدخلات)',
+    dt_pagination_label: 'الصفحة {0}',
     collapse_all: 'إخفاء الكل',
     expand_all: 'إظهار الكل',
     govbh_show: 'إظهار',

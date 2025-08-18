@@ -136,7 +136,7 @@
                     <!-- Language Switcher -->
                     <a class="govbh-head__lang-switcher" href="../html/services.html" lang="en-US" aria-label="اضغط هنا للتحول للنسخة العربية من هذه الصفحة ">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                     <!-- Dark Mode -->
-                    <a href="#" class="govbh-head__darkmode d-md-flex d-sm-none d-none" data-tooltip="tooltip" title="اضغط هنا للتحول لنسخة بخلفية بيضاء" role="button" aria-label="اضغط هنا للتحول لنسخة بخلفية بيضاء"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
+                    <a href="#" class="govbh-head__darkmode d-md-flex d-sm-none d-none" data-tooltip="tooltip" title="اضغط هنا للتبديل بين الوضع الفاتح والداكن" role="button" aria-label="اضغط هنا للتبديل بين الوضع الفاتح والداكن"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
                     <!-- Text Resize -->
                     <div class="govbh-head__textsize">
                         <a href="#" id="textsize" class="govbh-head__textsize-btn" data-tooltip="tooltip" title="اضغط هنا للتحكم في حجم الخط" role="button" aria-label="Click here to resize text size."><span class="icon-resize" aria-hidden="true"></span></a>
@@ -458,7 +458,7 @@
 <section class="govbh-section govbh-breadcrumb theme--dark bg--brand">
     <div class="container">
         <div class="row g-2 align-items-center">
-            <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" aria-label="Breadcrumbs">
+            <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" tabindex="0" aria-label="Breadcrumbs">
                 <ul class="govbh-breadcrumb__group">
                     <li class="govbh-breadcrumb__item-home"><a href="index.html" aria-label="Go to home"><i
                                 class="ph ph-house" aria-hidden="true"></i> الصفحة الرئيسية</a></li>
@@ -470,21 +470,21 @@
             </div>
             <div
                 class="col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-md-end justify-content-sm-start justify-content-start">
-                <div class="govbh-sharethis govbh-sharethis--vertical theme--dark">
+                <div class="govbh-sharethis govbh-sharethis--vertical theme--dark" role="region" aria-label="Share this page on Social Media" tabindex="0">
                     <div class="govbh-sharethis__title">شارك هذه الصفحة:</div>
                     <ul>
                         <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn"
-                                rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-linkedin" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Facebook"
-                                rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-facebook" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp"
-                                rel="noopener noreferrer"><span class="icon-whatsapp"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-whatsapp" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Twitter"
-                                rel="noopener noreferrer"><span class="icon-twitter"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-twitter" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Telegram"
-                                rel="noopener noreferrer"><span class="icon-telegram"></span></a></li>
-                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer"></i></a></li>
-                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy"></i></a></li>
+                                rel="noopener noreferrer"><span class="icon-telegram" aria-hidden="true" role="presentation"></span></a></li>
+                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer" aria-hidden="true" role="presentation"></i></a></li>
+                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy" aria-hidden="true" role="presentation"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -501,7 +501,7 @@
             <p class="mb-0">الخدمات الإلكترونية التي توفرها الوزارة للمواطنين بهدف تسهيل المعاملات المتعلقة بالمدفوعات و الاستحقاقات و التراخيص التجارية</p>
         </div>
         <!-- Search Container Starts -->
-        <div class="govbh-search-card bg--grey mt-4 mb-lg-5 mb-md-4 mb-4">
+        <form action="#" autocomplete="on" class="govbh-search-card bg--grey mt-4 mb-lg-5 mb-md-4 mb-4">
             <div class="govbh-search-card__title govbh-fs-h5 text--brand">ابحث عن خدمة إلكترونية</div>
             <div class="govbh-search-card__head">
                 <div class="govbh-form-control form-floating govbh-form-control--icon-left">
@@ -570,7 +570,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
         <!-- Search Container Ends -->
 
         <!-- List Grid Starts -->
@@ -607,7 +607,7 @@
                             </div>
                             <div class="govbh-card__head-content">
                                 <h3 id="service-title-1" class="govbh-card__title"><a href="services-detail.html"
-                                        aria-label="Service: Property registration">الدفع الإلكتروني</a></h3>
+                                        aria-label="خدمة: الدفع الإلكتروني">الدفع الإلكتروني</a></h3>
                                 <div class="govbh-card__paragraph">تتيح هذه الخدمة للمواطنين الدفع إلكترونيا</div>
                             </div>
                         </div>
@@ -617,7 +617,7 @@
                                     class="govbh-btn govbh-btn--outline govbh-btn--medium z-1">ابدأ الآن <i
                                         class="ph ph-arrow-square-out" aria-hidden="true"></i></a>
                                 <a href="services-detail.html" class="govbh-btn govbh-btn--withoutline govbh-btn--medium"
-                                    aria-label="Service: Property registration">تفاصيل <i class="ph ph-arrow-right"
+                                    aria-label="خدمة: الدفع الإلكتروني">تفاصيل <i class="ph ph-arrow-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
@@ -633,7 +633,7 @@
                             </div>
                             <div class="govbh-card__head-content">
                                 <h3 id="service-title-2" class="govbh-card__title"><a href="services-detail.html"
-                                        aria-label="Service: Property registration">طلب الترخيص</a></h3>
+                                        aria-label="خدمة: طلب الترخيص">طلب الترخيص</a></h3>
                                 <div class="govbh-card__paragraph">تتيح هذه الخدمة للمواطنين مراجعة طلب الترخيص </div>
                             </div>
                         </div>
@@ -643,7 +643,7 @@
                                     class="govbh-btn govbh-btn--outline govbh-btn--medium z-1">ابدأ الآن <i
                                         class="ph ph-arrow-square-out" aria-hidden="true"></i></a>
                                 <a href="services-detail.html" class="govbh-btn govbh-btn--withoutline govbh-btn--medium"
-                                    aria-label="Service: Property registration">تفاصيل <i class="ph ph-arrow-right"
+                                    aria-label="خدمة: طلب الترخيص">تفاصيل <i class="ph ph-arrow-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
@@ -659,7 +659,7 @@
                             </div>
                             <div class="govbh-card__head-content">
                                 <h3 id="service-title-3" class="govbh-card__title"><a href="services-detail.html"
-                                        aria-label="Service: Property registration">طلب اصدار التراخيص</a></h3>
+                                        aria-label="خدمة: طلب اصدار التراخيص">طلب اصدار التراخيص</a></h3>
                                 <div class="govbh-card__paragraph">تتيح هذه الخدمة للمواطنين طلب الترخيص</div>
                             </div>
                         </div>
@@ -669,7 +669,7 @@
                                     class="govbh-btn govbh-btn--outline govbh-btn--medium z-1">ابدأ الآن <i
                                         class="ph ph-arrow-square-out" aria-hidden="true"></i></a>
                                 <a href="services-detail.html" class="govbh-btn govbh-btn--withoutline govbh-btn--medium"
-                                    aria-label="Service: Property registration">تفاصيل <i class="ph ph-arrow-right"
+                                    aria-label="خدمة: طلب اصدار التراخيص">تفاصيل <i class="ph ph-arrow-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
@@ -685,7 +685,7 @@
                             </div>
                             <div class="govbh-card__head-content">
                                 <h3 id="service-title-4" class="govbh-card__title"><a href="services-detail.html"
-                                        aria-label="Service: Property registration">الاستعلام عن الاستحقاق</a></h3>
+                                        aria-label="خدمة: الاستعلام عن الاستحقاق">الاستعلام عن الاستحقاق</a></h3>
                                 <div class="govbh-card__paragraph">تتيح هذه الخدمة للمواطنين معرفة استحقاقاتهم</div>
                             </div>
                         </div>
@@ -695,7 +695,7 @@
                                     class="govbh-btn govbh-btn--outline govbh-btn--medium z-1">ابدأ الآن <i
                                         class="ph ph-arrow-square-out" aria-hidden="true"></i></a>
                                 <a href="services-detail.html" class="govbh-btn govbh-btn--withoutline govbh-btn--medium"
-                                    aria-label="Service: Property registration">تفاصيل <i class="ph ph-arrow-right"
+                                    aria-label="خدمة: الاستعلام عن الاستحقاق">تفاصيل <i class="ph ph-arrow-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
@@ -711,7 +711,7 @@
                             </div>
                             <div class="govbh-card__head-content">
                                 <h3 id="service-title-5" class="govbh-card__title"><a href="services-detail.html"
-                                        aria-label="Service: Property registration">المركز الافتراضي للخدمات</a></h3>
+                                        aria-label="خدمة: المركز الافتراضي للخدمات">المركز الافتراضي للخدمات</a></h3>
                                 <div class="govbh-card__paragraph">تتيح هذه الخدمة للمواطنين معرفة الخدمات</div>
                             </div>
                         </div>
@@ -721,7 +721,7 @@
                                     class="govbh-btn govbh-btn--outline govbh-btn--medium z-1">ابدأ الآن <i
                                         class="ph ph-arrow-square-out" aria-hidden="true"></i></a>
                                 <a href="services-detail.html" class="govbh-btn govbh-btn--withoutline govbh-btn--medium"
-                                    aria-label="Service: Property registration">تفاصيل <i class="ph ph-arrow-right"
+                                    aria-label="خدمة: المركز الافتراضي للخدمات">تفاصيل <i class="ph ph-arrow-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
@@ -737,7 +737,7 @@
                             </div>
                             <div class="govbh-card__head-content">
                                 <h3 id="service-title-6" class="govbh-card__title"><a href="services-detail.html"
-                                        aria-label="Service: Property registration">طلب تجديد التراخيص</a></h3>
+                                        aria-label="خدمة: طلب تجديد التراخيص">طلب تجديد التراخيص</a></h3>
                                 <div class="govbh-card__paragraph">تتيح هذه الخدمة للمواطنين طلب تجديد الترخيص الصادر سابقا</div>
                             </div>
                         </div>
@@ -747,7 +747,7 @@
                                     class="govbh-btn govbh-btn--outline govbh-btn--medium z-1">ابدأ الآن <i
                                         class="ph ph-arrow-square-out" aria-hidden="true"></i></a>
                                 <a href="services-detail.html" class="govbh-btn govbh-btn--withoutline govbh-btn--medium"
-                                    aria-label="Service: Property registration">تفاصيل <i class="ph ph-arrow-right"
+                                    aria-label="خدمة: طلب تجديد التراخيص">تفاصيل <i class="ph ph-arrow-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
@@ -763,7 +763,7 @@
                             </div>
                             <div class="govbh-card__head-content">
                                 <h3 id="service-title-7" class="govbh-card__title"><a href="services-detail.html"
-                                        aria-label="Service: Property registration">خدمات المواعيد عبر الأنترنت</a></h3>
+                                        aria-label="خدمة: خدمات المواعيد عبر الأنترنت">خدمات المواعيد عبر الأنترنت</a></h3>
                                 <div class="govbh-card__paragraph">تتيح هذه الخدمة للمواطنين طلب المواعيد</div>
                             </div>
                         </div>
@@ -773,7 +773,7 @@
                                     class="govbh-btn govbh-btn--outline govbh-btn--medium z-1">ابدأ الآن <i
                                         class="ph ph-arrow-square-out" aria-hidden="true"></i></a>
                                 <a href="services-detail.html" class="govbh-btn govbh-btn--withoutline govbh-btn--medium"
-                                    aria-label="Service: Property registration">تفاصيل <i class="ph ph-arrow-right"
+                                    aria-label="خدمة: خدمات المواعيد عبر الأنترنت">تفاصيل <i class="ph ph-arrow-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
@@ -789,7 +789,7 @@
                             </div>
                             <div class="govbh-card__head-content">
                                 <h3 id="service-title-8" class="govbh-card__title"><a href="services-detail.html"
-                                        aria-label="Service: Property registration">طلب اصدار ترخيص تجاري</a></h3>
+                                        aria-label="خدمة: طلب اصدار ترخيص تجاري">طلب اصدار ترخيص تجاري</a></h3>
                                 <div class="govbh-card__paragraph">تتيح هذه الخدمة للمواطنين طلب الترخيص التجاري</div>
                             </div>
                         </div>
@@ -799,7 +799,7 @@
                                     class="govbh-btn govbh-btn--outline govbh-btn--medium z-1">ابدأ الآن <i
                                         class="ph ph-arrow-square-out" aria-hidden="true"></i></a>
                                 <a href="services-detail.html" class="govbh-btn govbh-btn--withoutline govbh-btn--medium"
-                                    aria-label="Service: Property registration">تفاصيل <i class="ph ph-arrow-right"
+                                    aria-label="خدمة: طلب اصدار ترخيص تجاري">تفاصيل <i class="ph ph-arrow-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
@@ -815,7 +815,7 @@
                             </div>
                             <div class="govbh-card__head-content">
                                 <h3 id="service-title-9" class="govbh-card__title"><a href="services-detail.html"
-                                        aria-label="Service: Property registration">طلب الغاء الترخيص</a></h3>
+                                        aria-label="خدمة: طلب الغاء الترخيص">طلب الغاء الترخيص</a></h3>
                                 <div class="govbh-card__paragraph">تتيح هذه الخدمة للمواطنين طلب الغاء الترخيص</div>
                             </div>
                         </div>
@@ -825,7 +825,7 @@
                                     class="govbh-btn govbh-btn--outline govbh-btn--medium z-1">ابدأ الآن <i
                                         class="ph ph-arrow-square-out" aria-hidden="true"></i></a>
                                 <a href="services-detail.html" class="govbh-btn govbh-btn--withoutline govbh-btn--medium"
-                                    aria-label="Service: Property registration">تفاصيل <i class="ph ph-arrow-right"
+                                    aria-label="خدمة: طلب الغاء الترخيص">تفاصيل <i class="ph ph-arrow-right"
                                         aria-hidden="true"></i></a>
                             </div>
                             <div class="govbh-card__foot-icon"><i class="ph ph-arrow-right" aria-hidden="true"></i></div>
@@ -863,27 +863,29 @@
         <!-- Share & Last updated content Starts -->
         <div class="row g-2">
             <div class="col-md-6 col-sm-12 col-12">
-                <div class="govbh-sharethis">
+                <div class="govbh-sharethis" role="region" aria-label="Share this page on Social Media" tabindex="0">
                     <div class="govbh-sharethis__title">شارك هذه الصفحة:</div>
                     <ul>
                         <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn"
-                                rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-linkedin" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Facebook"
-                                rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-facebook" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp"
-                                rel="noopener noreferrer"><span class="icon-whatsapp"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-whatsapp" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Twitter"
-                                rel="noopener noreferrer"><span class="icon-twitter"></span></a></li>
+                                rel="noopener noreferrer"><span class="icon-twitter" aria-hidden="true" role="presentation"></span></a></li>
                         <li><a href="#" target="_blank" aria-label="Share this page on Telegram"
-                                rel="noopener noreferrer"><span class="icon-telegram"></span></a></li>
-                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer"></i></a></li>
-                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy"></i></a></li>
+                                rel="noopener noreferrer"><span class="icon-telegram" aria-hidden="true" role="presentation"></span></a></li>
+                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer" aria-hidden="true" role="presentation"></i></a></li>
+                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy" aria-hidden="true" role="presentation"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div
                 class="col-md-6 col-sm-12 col-12 d-flex justify-content-md-end justify-content-sm-start justify-content-start">
-                <p class="govbh-text--medium m-0">آخر تحديث للمحتوى: <b>29 يونيو 2025</b></p>
+                <div class="govbh-last-updated" role="region" tabindex="0" aria-labelledby="last-updated-date">
+                    <p id="last-updated-date" class="govbh-text--medium m-0">شارك هذه الصفحة: <b>29 يونيو 2025</b></p>
+                </div>
             </div>
         </div>
         <!-- Share & Last updated content Ends -->
@@ -892,14 +894,14 @@
 <!-- Services Section Ends -->
 
 <!-- Related pages Section Starts -->
-<section class="govbh-section bg--grey">
+<section class="govbh-section bg--grey" aria-labelledby="related-page-title" tabindex="0">
     <div class="container">
         <!-- Carousel Starts -->
         <div class="govbh-carousel" data-carousel="custom" data-slidesperview-xxxs="1" data-slidesperview-xxs="1"
             data-slidesperview-xs="2" data-slidesperview-md="2" data-slidesperview-lg="3" data-slidesperview-xl="3">
             <div class="row align-items-center mb-3">
                 <div class="col-md-6 col-sm-8 col-9">
-                    <h2 class="m-0">الصفحات ذات الصلة</h2>
+                    <h2 id="related-page-title" class="m-0">الصفحات ذات الصلة</h2>
                 </div>
                 <div class="col-md-6 col-sm-4 col-3">
                     <!-- Navigation -->
@@ -1015,11 +1017,11 @@
 				</div>
 				<div class="govbh-user-rating__head-button">
 					<button type="button" class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon"
-						aria-label="Is this page useful to you?" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
+						aria-label="Is this page useful to you? - Yes" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
 						نعم</button>
 					<button type="button"
 						class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon govbh-toggler"
-						data-target-on="#sharethoughts" aria-label="Is this page useful to you?"><i
+						data-target-on="#sharethoughts" aria-label="Is this page useful to you? - No" aria-controls="sharethoughts" aria-expanded="false"><i
 							class="ph ph-thumbs-down" aria-hidden="true"></i>
 						لا</button><!-- The govbh-toggler and data-target-on attributes are used to target the visibility of the govbh-user-rating__body -->
 				</div>

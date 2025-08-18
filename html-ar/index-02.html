@@ -132,7 +132,7 @@
                     <!-- Language Switcher -->
                     <a class="govbh-head__lang-switcher" href="../html/index-02.html" lang="en-US" aria-label="اضغط هنا للتحول للنسخة العربية من هذه الصفحة ">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                     <!-- Dark Mode -->
-                    <a href="#" class="govbh-head__darkmode d-md-flex d-sm-none d-none" data-tooltip="tooltip" title="اضغط هنا للتحول لنسخة بخلفية بيضاء" role="button" aria-label="اضغط هنا للتحول لنسخة بخلفية بيضاء"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
+                    <a href="#" class="govbh-head__darkmode d-md-flex d-sm-none d-none" data-tooltip="tooltip" title="اضغط هنا للتبديل بين الوضع الفاتح والداكن" role="button" aria-label="اضغط هنا للتبديل بين الوضع الفاتح والداكن"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
                     <!-- Text Resize -->
                     <div class="govbh-head__textsize">
                         <a href="#" id="textsize" class="govbh-head__textsize-btn" data-tooltip="tooltip" title="اضغط هنا للتحكم في حجم الخط" role="button" aria-label="Click here to resize text size."><span class="icon-resize" aria-hidden="true"></span></a>
@@ -451,8 +451,8 @@
 <main id="govbh-main">
 
     <!-- Default Hero Banner Slider Starts -->
-    <section class="govbh-heroslider theme--dark bg--brand p-0" role="banner">
-        <h1 class="visually-hidden bg--brand">Bahrain Government Guidlines Design System</h1>
+    <section class="govbh-heroslider theme--dark bg--brand p-0" role="banner" aria-labelledby="hero-banner-title">
+        <h1 id="hero-banner-title" class="visually-hidden bg--brand">Bahrain Government Guidlines Design System</h1>
         <div class="swiper govbh-heroslider__swiper" aria-roledescription="carousel" role="group" aria-label="Hero Slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide bg--brand" data-swiper-autoplay="25000" tabindex="0">
@@ -505,6 +505,19 @@
                                     <div class="govbh-heroslider__swiper-next govbh-heroslider__navigation-arrows"><i class="ph ph-caret-right"></i></div>
                                 </div>
                             </div>
+                            <!-- Transcript Starts -->
+                            <div class="govbh-image-block__transcript visually-hidden">
+                                <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-1" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-1" role="button">Show Transcript</a>
+                                <div id="video-transcript-1" style="display:none">
+                                <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                    Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                    [Cut to an architect pointing at a blueprint of the plant]                                            
+                                    Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                    [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                    Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                                </div>
+                            </div>
+                            <!-- Transcript Ends -->
                         </div>
                     </div>
                 </div>
@@ -522,6 +535,19 @@
                                     <div data-swiper-parallax-x="-20%" class="d-flex align-items-center gap-3 flex-wrap">
                                         <a href="projects-detail.html" class="govbh-btn govbh-btn--outline theme--dark">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
                                         <a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" role="button" aria-label="Click here to play video." data-fancybox="videopop" data-caption="مبادرات طموحة للتنمية المستدامة (فيديو يوتيوب، ٨٢ ثانية، باللغة العربية فقط)" class="govbh-btn govbh-btn--withoutline theme--dark">تشغيل الفيديو <i class="ph ph-play"></i></a>
+                                        <!-- Transcript Starts -->
+                                        <div class="govbh-image-block__transcript visually-hidden">
+                                            <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-12" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-12" role="button">Show Transcript</a>
+                                            <div id="video-transcript-12" style="display:none">
+                                            <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                                Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                                [Cut to an architect pointing at a blueprint of the plant]                                            
+                                                Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                                [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                                Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                                            </div>
+                                        </div>
+                                        <!-- Transcript Ends -->
                                     </div>
                                 </div>
                             </div>
@@ -551,7 +577,7 @@
     <!-- Default Hero Banner Slider Ends -->
 
     <!-- About Section Starts -->
-    <section class="govbh-section bg-light-linear bg--primary govbh-bg-image-fixed" style="background:url(../images/banner-015.webp) no-repeat fixed top center / cover;">
+    <section class="govbh-section bg-light-linear bg--primary govbh-bg-image-fixed" style="background:url(../images/banner-015.webp) no-repeat fixed top center / cover;" aria-labelledby="section-title-01">
         <div class="container position-relative z-2">
              <div class="row g-lg-4 g-md-3 g-3">
                 <div class="col-12">
@@ -566,7 +592,7 @@
 					    </div>
 					</div>
                     <div class="govbh-content-block">
-                        <h2>نبذه عن الوزارة </h2>
+                        <h2 id="section-title-01">نبذه عن الوزارة </h2>
                         <div class="govbh-abstract text--primary">
                             <p>تتولى الوزارة مسؤولية رسم السياسات لمملكة البحرين ورسمها بما يتفق مع رؤية الحكومة الموقرة.</p>
                         </div>
@@ -582,11 +608,11 @@
     <!-- About Section Ends -->
      
     <!-- e-Services Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-title-02">
         <div class="container position-relative">
             <div class="row gy-md-3 gy-sm-2 gy-2">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <h2 class="m-0">الخدمات الإلكترونية</h2>
+                    <h2 id="section-title-02" class="m-0">الخدمات الإلكترونية</h2>
                 </div>
                 <div class="col-12">
                     <div class="govbh-tabs">
@@ -979,11 +1005,11 @@
     <!-- e-Services Section Ends -->
 
     <!-- Statistics Section Starts -->
-    <section class="govbh-section theme--dark bg--brand bg-brand-overlay govbh-bg-image-fixed" style="background:#012E5D url(../images/statistics-banner.webp) no-repeat fixed top center / cover;">
+    <section class="govbh-section theme--dark bg--brand bg-brand-overlay govbh-bg-image-fixed" style="background:#012E5D url(../images/statistics-banner.webp) no-repeat fixed top center / cover;" aria-labelledby="section-title-03">
         <div class="container position-relative z-1">
             <div class="row gy-md-3 gy-sm-2 gy-2">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <h2 class="m-0">إحصائيات </h2>
+                    <h2 id="section-title-03" class="m-0">إحصائيات </h2>
                 </div>
                 <div class="col-12">
                     <div class="govbh-tabs govbh-tabs--vertical theme--dark">
@@ -1264,11 +1290,11 @@
     <!-- Statistics Section Ends -->
     
     <!-- Laws & Regulations Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-title-04">
         <div class="container position-relative">
             <div class="row gy-md-3 gy-sm-2 gy-2">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <h2 class="m-0">القوانين و التشريعات</h2>
+                    <h2 id="section-title-04" class="m-0">القوانين و التشريعات</h2>
                 </div>
                 <div class="col-12">
                     <div class="govbh-carousel"
@@ -1285,7 +1311,10 @@
                                     <article role="region" aria-labelledby="legislation-title-1" class="govbh-card govbh-card--card-file">
                                         <div class="govbh-card__head">
                                             <h3 id="legislation-title-1" class="govbh-card__title"><a href="legislations-detail.html" aria-label="Legislation: Law No. (8) of 2021 regarding Sports Professionalism">قرار رئيس مجلس الوزراء رقم (117) لسنة 2023</a></h3>
-                                            <div class="govbh-card__date"> 23 مايو 2025</div>
+                                            <div class="govbh-card__date govbh-card__date--year">
+                                                <div><i class="ph ph-calendar-check" aria-hidden="true"></i> 23 مايو 2025</div>
+                                                <div><i class="ph ph-globe" aria-hidden="true"></i> باللغة الإنجليزية فقط</div>
+                                            </div>
                                             <div class="govbh-card__paragraph">تنظيم الخدمات المالية المشتركة</div>
                                         </div>
                                         <div class="govbh-card__foot">
@@ -1298,7 +1327,9 @@
                                     <article role="region" aria-labelledby="legislation-title-2" class="govbh-card govbh-card--card-file">
                                         <div class="govbh-card__head">
                                             <h3 id="legislation-title-2" class="govbh-card__title"><a href="legislations-detail.html" aria-label="Legislation: Law No. (8) of 2021 regarding Sports Professionalism">قانون رقم (20) لسنة 2017</a></h3>
-                                            <div class="govbh-card__date"> 23 مايو 2025</div>
+                                            <div class="govbh-card__date govbh-card__date--year">
+                                                <div><i class="ph ph-calendar-check" aria-hidden="true"></i> 23 مايو 2025</div>
+                                            </div>
                                             <div class="govbh-card__paragraph">اعتماد الميزانية العامة للدولة للسنتين الماليتين 2017 و2018</div>
                                         </div>
                                         <div class="govbh-card__foot">
@@ -1311,7 +1342,10 @@
                                     <article role="region" aria-labelledby="legislation-title-3" class="govbh-card govbh-card--card-file">
                                         <div class="govbh-card__head">
                                             <h3 id="legislation-title-3" class="govbh-card__title"><a href="legislations-detail.html" aria-label="Legislation: Law No. (8) of 2021 regarding Sports Professionalism">قانون رقم (11) لسنة 2019</a></h3>
-                                            <div class="govbh-card__date"> 23 مايو 2025</div>
+                                            <div class="govbh-card__date govbh-card__date--year">
+                                                <div><i class="ph ph-calendar-check" aria-hidden="true"></i> 23 مايو 2025</div>
+                                                <div><i class="ph ph-globe" aria-hidden="true"></i> باللغة الإنجليزية فقط</div>
+                                            </div>
                                             <div class="govbh-card__paragraph">اعتماد الميزانية العامة للدولة للسنتين الماليتين 2019 و2020</div>
                                         </div>
                                         <div class="govbh-card__foot">
@@ -1353,9 +1387,9 @@
     <!-- Sustainable Development Section Ends -->
 
     <!-- Success Stories Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-title-05">
         <div class="container">
-            <h2 class="d-lg-none d-md-block d-block mb-2">قصص النجاح</h2>
+            <h2 id="section-title-05" class="d-lg-none d-md-block d-block mb-2">قصص النجاح</h2>
             <div class="govbh-carousel"
                 data-carousel="custom" 
                 data-slidesperview-xxxs="1" 
@@ -1378,7 +1412,7 @@
                                             <div class="govbh-blockquote__title">بدر سلطان جمعة </div>
                                             <div class="govbh-blockquote__designation">الرئيس التنفيذي</div>
                                             <div class="d-flex flex-wrap gap-3 pt-4">
-                                                <a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="watchvideo" data-caption="Bader Sultan Jumma Success, YouTube video, 82seconds, Arabic only" class="govbh-btn govbh-btn--outline govbh-btn--left-icon" role="button" aria-label="Watch Video of Bader Sultan Jumma Success, YouTube video, 58 seconds, Arabic only"><i class="ph ph-video" aria-hidden="true"></i> عرض الفيديو</a>
+                                                <a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="watchvideo" data-caption="Bader Sultan Jumma Success, YouTube video, 82 seconds, Arabic only" class="govbh-btn govbh-btn--outline govbh-btn--left-icon" role="button" aria-label="Watch Video of Bader Sultan Jumma Success, YouTube video, 58 seconds, Arabic only"><i class="ph ph-video" aria-hidden="true"></i> عرض الفيديو</a>
                                                 <a href="success-stories-detail.html" class="govbh-btn govbh-btn--withoutline" aria-label="Read story of Bader Sultan Jumma Success">اقرأ القصة <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
                                             </div>
                                         </blockquote>
@@ -1433,11 +1467,11 @@
     <!-- Success Stories Section Ends -->
 
     <!-- Events Section Starts -->
-    <section class="govbh-section theme--dark bg--brand bg-brand-overlay govbh-bg-image-fixed" style="background:url(../images/banner-010.webp) no-repeat fixed top center / cover;">
+    <section class="govbh-section theme--dark bg--brand bg-brand-overlay govbh-bg-image-fixed" style="background:url(../images/banner-010.webp) no-repeat fixed top center / cover;" aria-labelledby="section-title-06">
         <div class="container position-relative z-2">
             <div class="row gy-md-3 gy-sm-2 gy-2">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <h2 class="m-0">تقويم المناسبات</h2>
+                    <h2 id="section-title-06" class="m-0">تقويم المناسبات</h2>
                 </div>
                 <div class="col-12">
                     <div class="govbh-carousel"
@@ -1572,9 +1606,9 @@
     <!-- Events Section Ends -->
 
     <!-- Knowledge Center Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-title-07">
         <div class="container">
-            <h2>مركز المعرفة</h2>
+            <h2 id="section-title-07">مركز المعرفة</h2>
             <div class="govbh-tabs">
                 <div class="govbh-tabs__head">
                     <div class="govbh-tabs__head-tabs" id="nav-tab5" role="tablist">
@@ -1676,6 +1710,7 @@
                                                     <div class="govbh-card__date govbh-card__date--year">
                                                         <div><i class="ph ph-file-pdf" aria-hidden="true"></i> 13 ميجابايت، 8 صفحات</div>
                                                         <div><i class="ph ph-calendar-check" aria-hidden="true"></i> 2024</div>
+                                                        <div><i class="ph ph-globe" aria-hidden="true"></i> باللغة الإنجليزية فقط</div>
                                                     </div>
                                                     <div class="govbh-card__paragraph">التقاط صور عالية الدقة لسطح الأرض بالمسيرات أو الأقمار الصناعية.</div>
                                                     <div class="govbh-card__foot">
@@ -1710,6 +1745,7 @@
                                                     <div class="govbh-card__date govbh-card__date--year">
                                                         <div><i class="ph ph-file-pdf" aria-hidden="true"></i> 13 ميجابايت، 8 صفحات</div>
                                                         <div><i class="ph ph-calendar-check" aria-hidden="true"></i> 2024</div>
+                                                        <div><i class="ph ph-globe" aria-hidden="true"></i> باللغة الإنجليزية فقط</div>
                                                     </div>
                                                     <div class="govbh-card__paragraph">التقاط صور عالية الدقة لسطح الأرض بالمسيرات أو الأقمار الصناعية.</div>
                                                     <div class="govbh-card__foot">
@@ -1783,10 +1819,10 @@
     <!-- Knowledge Center Section Ends -->
 
     <!-- Interactive Map Section Starts -->
-    <section class="govbh-section theme--dark bg--brand">
+    <section class="govbh-section theme--dark bg--brand" aria-labelledby="section-title-08">
         <div class="container">
             <div class="row gy-md-3 gy-sm-2 gy-2">
-                <div class="col-12"><h2 class="m-0">مواقعنا</h2></div>
+                <div class="col-12"><h2 id="section-title-08" class="m-0">مواقعنا</h2></div>
                 <div class="col-12">
                     <div class="govbh-tabs theme--dark">
                         <div class="govbh-tabs__head">
@@ -1938,19 +1974,134 @@
                                     <div class="govbh-map__wrapper">
                                         <div class="govbh-map__filter">
                                             <div class="govbh-map__filter-close" role="button" aria-label="Click here to close list"><i class="ph-bold ph-list"></i></div>
-                                            <form class="govbh-map__filter-form">
+                                            <form class="govbh-map__filter-form" aria-labelledby="search-map-title" action="#" autocomplete="on">
+                                                <h3 id="search-map-title" class="visually-hidden">البحث عن موقع</h3>
                                                 <div class="govbh-map__filter-input">
-                                                    <input type="text" id="mapfilter" aria-label="Enter your keyword" placeholder="أدخل كلمة البحث">
+                                                    <input type="search" id="mapfilter" aria-label="Enter your keyword" placeholder="أدخل كلمة البحث">
                                                     <button type="button" aria-label="Click here to إرسال"><i class="ph-bold ph-magnifying-glass" aria-hidden="true"></i></button>
                                                 </div>
                                             </form>
                                             <ul>
-                                                <li class="active"><button type="button" aria-label="الفرع الرئيسي">الفرع الرئيسي<span class="govbh-map__filter--open"></span></button></li>
-                                                <li><button type="button" aria-label="فرع المحرق">فرع المحرق<span class="govbh-map__filter--open"></span></button></li>
-                                                <li><button type="button" aria-label="فرع المنطقة الدبلوماسية">فرع المنطقة الدبلوماسية<span class="govbh-map__filter--open"></span></button></li>
-                                                <li><button type="button" aria-label="فرع مجمع البحرين">فرع مجمع البحرين<span class="govbh-map__filter--open"></span></button></li>
-                                                <li><button type="button" aria-label="فرع مدينة عيسى">فرع مدينة عيسى<span class="govbh-map__filter--closed"></span></button></li>
-                                                <li><button type="button" aria-label="فرع ضاحية السيف">فرع ضاحية السيف<span class="govbh-map__filter--closed"></span></button></li>
+                                                <li class="active">
+                                                    <button type="button" aria-labelledby="map-list-01">الفرع الرئيسي<span class="govbh-map__filter--open"></span></button>
+                                                    <!-- Only for screen reader purpose starts -->
+                                                    <div id="map-list-01" aria-live="polite" role="alert" class="visually-hidden">
+                                                        <h3>الفرع الرئيسي - يفتح</h3>
+                                                        <address>
+                                                            <dl>
+                                                                <dt>عنوان</dt>
+                                                                <dd>
+                                                                    <p>مبنى 517، طريق 1010، المنامة 410، محافظة العاصمة، مملكة البحرين</p>
+                                                                </dd>
+                                                                <dt>هاتف</dt>
+                                                                <dd><p dir="ltr">+973 17204050</p></dd>
+                                                                <dt>بريد إلكتروني</dt>
+                                                                <dd><p>info@slrb.gov.bh</p></dd>
+                                                            </dl>
+                                                        </address>
+                                                    </div>
+                                                    <!-- Only for screen reader purpose ends -->
+                                                </li>
+                                                <li>
+                                                    <button type="button" aria-labelledby="map-list-02">فرع المحرق<span class="govbh-map__filter--open"></span></button>
+                                                    <!-- Only for screen reader purpose starts -->
+                                                    <div id="map-list-02" aria-live="polite" role="alert" class="visually-hidden">
+                                                        <h3>فرع المحرق - يفتح</h3>
+                                                        <address>
+                                                            <dl>
+                                                                <dt>عنوان</dt>
+                                                                <dd>
+                                                                    <p>مبنى 517، طريق 1010، المنامة 410، محافظة العاصمة، مملكة البحرين</p>
+                                                                </dd>
+                                                                <dt>هاتف</dt>
+                                                                <dd><p dir="ltr">+973 17204050</p></dd>
+                                                                <dt>بريد إلكتروني</dt>
+                                                                <dd><p>info@slrb.gov.bh</p></dd>
+                                                            </dl>
+                                                        </address>
+                                                    </div>
+                                                    <!-- Only for screen reader purpose ends -->
+                                                </li>
+                                                <li>
+                                                    <button type="button" aria-labelledby="map-list-03">فرع المنطقة الدبلوماسية<span class="govbh-map__filter--open"></span></button>
+                                                    <!-- Only for screen reader purpose starts -->
+                                                    <div id="map-list-03" aria-live="polite" role="alert" class="visually-hidden">
+                                                        <h3>فرع المنطقة الدبلوماسية - يفتح</h3>
+                                                        <address>
+                                                            <dl>
+                                                                <dt>عنوان</dt>
+                                                                <dd>
+                                                                    <p>مبنى 517، طريق 1010، المنامة 410، محافظة العاصمة، مملكة البحرين</p>
+                                                                </dd>
+                                                                <dt>هاتف</dt>
+                                                                <dd><p dir="ltr">+973 17204050</p></dd>
+                                                                <dt>بريد إلكتروني</dt>
+                                                                <dd><p>info@slrb.gov.bh</p></dd>
+                                                            </dl>
+                                                        </address>
+                                                    </div>
+                                                    <!-- Only for screen reader purpose ends -->
+                                                </li>
+                                                <li>
+                                                    <button type="button" aria-labelledby="map-list-04">فرع مجمع البحرين<span class="govbh-map__filter--open"></span></button>
+                                                    <!-- Only for screen reader purpose starts -->
+                                                    <div id="map-list-04" aria-live="polite" role="alert" class="visually-hidden">
+                                                        <h3>فرع مجمع البحرين - يفتح</h3>
+                                                        <address>
+                                                            <dl>
+                                                                <dt>عنوان</dt>
+                                                                <dd>
+                                                                    <p>مبنى 517، طريق 1010، المنامة 410، محافظة العاصمة، مملكة البحرين</p>
+                                                                </dd>
+                                                                <dt>هاتف</dt>
+                                                                <dd><p dir="ltr">+973 17204050</p></dd>
+                                                                <dt>بريد إلكتروني</dt>
+                                                                <dd><p>info@slrb.gov.bh</p></dd>
+                                                            </dl>
+                                                        </address>
+                                                    </div>
+                                                    <!-- Only for screen reader purpose ends -->
+                                                </li>
+                                                <li>
+                                                    <button type="button" aria-labelledby="map-list-05">فرع مدينة عيسى<span class="govbh-map__filter--closed"></span></button>
+                                                    <!-- Only for screen reader purpose starts -->
+                                                    <div id="map-list-05" aria-live="polite" role="alert" class="visually-hidden">
+                                                        <h3>فرع مدينة عيسى - مغلق</h3>
+                                                        <address>
+                                                            <dl>
+                                                                <dt>عنوان</dt>
+                                                                <dd>
+                                                                    <p>مبنى 517، طريق 1010، المنامة 410، محافظة العاصمة، مملكة البحرين</p>
+                                                                </dd>
+                                                                <dt>هاتف</dt>
+                                                                <dd><p dir="ltr">+973 17204050</p></dd>
+                                                                <dt>بريد إلكتروني</dt>
+                                                                <dd><p>info@slrb.gov.bh</p></dd>
+                                                            </dl>
+                                                        </address>
+                                                    </div>
+                                                    <!-- Only for screen reader purpose ends -->
+                                                </li>
+                                                <li>
+                                                    <button type="button" aria-labelledby="map-list-06">فرع ضاحية السيف<span class="govbh-map__filter--closed"></span></button>
+                                                    <!-- Only for screen reader purpose starts -->
+                                                    <div id="map-list-06" aria-live="polite" role="alert" class="visually-hidden">
+                                                        <h3>فرع ضاحية السيف - مغلق</h3>
+                                                        <address>
+                                                            <dl>
+                                                                <dt>عنوان</dt>
+                                                                <dd>
+                                                                    <p>مبنى 517، طريق 1010، المنامة 410، محافظة العاصمة، مملكة البحرين</p>
+                                                                </dd>
+                                                                <dt>هاتف</dt>
+                                                                <dd><p dir="ltr">+973 17204050</p></dd>
+                                                                <dt>بريد إلكتروني</dt>
+                                                                <dd><p>info@slrb.gov.bh</p></dd>
+                                                            </dl>
+                                                        </address>
+                                                    </div>
+                                                    <!-- Only for screen reader purpose ends -->
+                                                </li>
                                             </ul>
                                         </div>
                                         <div id="govbh-map__render" class="govbh-map__output">
@@ -2060,9 +2211,9 @@
     <!-- Interactive Map Section Ends -->
 
     <!-- Engage with Us Section Starts -->
-    <section class="govbh-section govbh-section--padding-l bg--grey">
+    <section class="govbh-section govbh-section--padding-l bg--grey" aria-labelledby="section-title-09">
         <div class="container">
-            <h2>تواصل معنا</h2>
+            <h2 id="section-title-09">تواصل معنا</h2>
             <p>نحن هنا من أجلك، فلا تتردد في الاتصال بنا من خلال القنوات التالية:</p>
         </div>
         <div class="govbh-carousel pt-3"
@@ -2121,7 +2272,8 @@
     <!-- Engage with Us Section Ends -->
 
     <!-- Media Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-title-10">
+        <h2 id="section-title-10" class="visually-hidden">Opinion Poll, Media Center, Photos & Videos, IGA Instagram, IGA Twitter and IGA Youtube</h2>
         <div class="container">
             <!-- Polls Section Starts -->
             <div class="govbh-polls theme--dark bg--brand mb-md-5 mb-sm-4 mb-3">
@@ -2288,6 +2440,19 @@
                                             </div>
                                         </div>
                                     </article>
+                                    <!-- Transcript Starts -->
+                                    <div class="govbh-image-block__transcript visually-hidden">
+                                        <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-2" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-2" role="button">Show Transcript</a>
+                                        <div id="video-transcript-2" style="display:none">
+                                        <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                            Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                            [Cut to an architect pointing at a blueprint of the plant]                                            
+                                            Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                            [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                            Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                                        </div>
+                                    </div>
+                                    <!-- Transcript Ends -->
                                 </div>
                                 <div class="swiper-slide" tabindex="0" role="group">
                                     <article role="region" aria-labelledby="photosvideos-title-3" class="govbh-card govbh-card--with-image">
@@ -2323,6 +2488,19 @@
                                             </div>
                                         </div>
                                     </article>
+                                    <!-- Transcript Starts -->
+                                    <div class="govbh-image-block__transcript visually-hidden">
+                                        <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-3" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-3" role="button">Show Transcript</a>
+                                        <div id="video-transcript-3" style="display:none">
+                                        <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                            Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                            [Cut to an architect pointing at a blueprint of the plant]                                            
+                                            Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                            [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                            Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                                        </div>
+                                    </div>
+                                    <!-- Transcript Ends -->
                                 </div>
                             </div>
                             <!-- Pagination -->
@@ -2400,10 +2578,10 @@
     <!-- Media Section Starts -->
 
     <!-- Government App Section Starts -->
-    <section class="govbh-section govbh-section--padding-l bg--grey">
+    <section class="govbh-section govbh-section--padding-l bg--grey" aria-labelledby="section-title-11">
         <div class="container position-relative">
             <div class="row">
-                <div class="col-md-8 col-sm-8 col-12"><h2 class="m-0">تطبيقات حكومية</h2></div>
+                <div class="col-md-8 col-sm-8 col-12"><h2 id="section-title-11" class="m-0">تطبيقات حكومية</h2></div>
                 <div class="col-12">
                     <div class="govbh-carousel pt-3"
                         data-carousel="custom" 
@@ -2480,11 +2658,11 @@
 				</div>
 				<div class="govbh-user-rating__head-button">
 					<button type="button" class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon"
-						aria-label="Is this page useful to you?" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
+						aria-label="Is this page useful to you? - Yes" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
 						نعم</button>
 					<button type="button"
 						class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon govbh-toggler"
-						data-target-on="#sharethoughts" aria-label="Is this page useful to you?"><i
+						data-target-on="#sharethoughts" aria-label="Is this page useful to you? - No" aria-controls="sharethoughts" aria-expanded="false"><i
 							class="ph ph-thumbs-down" aria-hidden="true"></i>
 						لا</button><!-- The govbh-toggler and data-target-on attributes are used to target the visibility of the govbh-user-rating__body -->
 				</div>

@@ -234,16 +234,16 @@
   display: grid;
   align-items: start;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px 20px;
+  grid-gap: 20px;
   @media #{$xm}{  
     grid-template-columns: repeat(2, 1fr);
   }
   @media #{$xss}{  
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px 10px;
+    grid-gap: 10px;
   }
   @media #{$xsss}{  
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   li{
     height: 100%;
@@ -257,6 +257,11 @@
     width: 100%;
     position: relative;
     text-wrap: balance;
+    height: 100%;
+    background: var(--bh-primary-inverse);
+    border-radius: var(--bh-border-radius-xs);
+    border: 1px solid var(--bh-border-secondary);
+    padding: 10px;
     @media #{$xs}{ 
       font-size: var(--bh-fs-p-m);
     }
@@ -267,6 +272,7 @@
     }
     span{
       text-decoration: underline;
+      margin-bottom: 10px;
       &:after {
         content: "\e5de";
         font-family: "Phosphor" !important;
@@ -280,16 +286,13 @@
   }
   .govbh-partners-list__item-img{
     position: relative;
-    background: var(--bh-primary-inverse);
-    border-radius: var(--bh-border-radius-xs);
-    border: 1px solid var(--bh-border-secondary);
     overflow: hidden;
     height: 200px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:10px;
+    padding:0px;
     margin-bottom: 10px;
     @media #{$xm}{  
       height: 150px;
@@ -741,6 +744,7 @@
         }
         .govbh-popup-model-slider__content{
           padding: 0;
+          height: 100%;
           .govbh-content-block {
             padding: 65px 30px 80px;
             @media #{$xm}{
@@ -968,4 +972,7 @@
     font-weight: var(--bh-fw-bold);
     margin-bottom: 10px;
   }
+}
+.f-thumbs__viewport{
+  direction: ltr;
 }

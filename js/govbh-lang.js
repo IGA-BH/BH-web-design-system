@@ -16,6 +16,7 @@ var lang = {
     dt_view_less: 'View Less',
     dt_datatable_empty_table: 'No matching records found',
     dt_datatable_info_filtered: '(filtered from _MAX_ total entries)',
+    dt_pagination_label: 'Page {0}',
     collapse_all: 'Collapse All',
     expand_all: 'Expand All',
     govbh_show: 'Show',

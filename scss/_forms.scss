@@ -466,7 +466,17 @@
     &.form-textarea{
         height: 210px;
     }
+
+    .form-select:not(.select2) {
+        padding: 0px 15px !important;
+        min-height: 50px !important;
+        height: 50px !important;
+        border: none;
+        font-size: var(--bh-fw-bh-fs-p-l);
+    }
+    
 }
+
 .formlabel{
     font-size: var(--bh-fs-p-l);
     font-weight: var(--bh-fw-bold);

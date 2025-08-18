@@ -527,6 +527,9 @@ img{
                 position: relative;
                 overflow: hidden;
                 max-width:500px;
+                a{
+                    text-decoration: none;
+                }
             }
             &.govbh-breadcrumb__item-show-more-toggle{
                 display: none;
@@ -2246,6 +2249,12 @@ img{
   color: rgba(var(--bh-secondary-rgb), .8);
   &.govbh-date-content--small{
     font-size: var(--bh-fs-p-s);
+    gap: 15px;
+    div{
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
   }
   i{
     color: var(--bh-accent);

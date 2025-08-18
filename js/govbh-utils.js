@@ -41,6 +41,7 @@ jQuery(document).ready(function($) {
 						$(this).data('old-aria-label', old_aria_label_text);
 							
 					}
+					$(this).attr('aria-expanded',true);
 				} else {
 					toggleElement('up', data_target_on);
 					toggleElement('disable', data_target_disable);
@@ -48,8 +49,9 @@ jQuery(document).ready(function($) {
 					$(this).attr('data-toggled',0);
 					if (data_toggled_aria_expanded_text) {
 						$(this).attr('aria-label', $(this).data('old-aria-label'));
-						$(this).attr('aria-expanded',false);
+						
 					}
+					$(this).attr('aria-expanded',false);
 				}
 			}
 			
@@ -272,7 +274,6 @@ jQuery(document).ready(function($) {
 });
 
 
-
 String.prototype.format = function() {
     var formatted = this;
     for( var arg in arguments ) {
@@ -280,3 +281,12 @@ String.prototype.format = function() {
     }
     return formatted;
 };
+
+// Get the scrollbar width and height of a specific element using jQuery
+function getScrollbarWidthAndHeight(element) {
+    const $element = $(element);
+    const scrollBarWidth = $element[0].offsetWidth - $element[0].clientWidth;
+    const scrollBarHeight = $element[0].offsetHeight - $element[0].clientHeight;
+    
+    return { width: scrollBarWidth, height: scrollBarHeight };
+}

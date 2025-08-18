@@ -132,7 +132,7 @@
                     <!-- Language Switcher -->
                     <a class="govbh-head__lang-switcher" href="../html/contact-us.html" lang="en-US" aria-label="اضغط هنا للتحول للنسخة العربية من هذه الصفحة ">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                     <!-- Dark Mode -->
-                    <a href="#" class="govbh-head__darkmode d-md-flex d-sm-none d-none" data-tooltip="tooltip" title="اضغط هنا للتحول لنسخة بخلفية بيضاء" role="button" aria-label="اضغط هنا للتحول لنسخة بخلفية بيضاء"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
+                    <a href="#" class="govbh-head__darkmode d-md-flex d-sm-none d-none" data-tooltip="tooltip" title="اضغط هنا للتبديل بين الوضع الفاتح والداكن" role="button" aria-label="اضغط هنا للتبديل بين الوضع الفاتح والداكن"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
                     <!-- Text Resize -->
                     <div class="govbh-head__textsize">
                         <a href="#" id="textsize" class="govbh-head__textsize-btn" data-tooltip="tooltip" title="اضغط هنا للتحكم في حجم الخط" role="button" aria-label="Click here to resize text size."><span class="icon-resize" aria-hidden="true"></span></a>
@@ -454,7 +454,7 @@
     <section class="govbh-section govbh-breadcrumb theme--dark bg--brand">
         <div class="container">
             <div class="row g-2 align-items-center">
-                <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" aria-label="Breadcrumbs">
+                <nav class="col-12 mb-lg-4 mb-md-3 mb-3 pb-2" tabindex="0" aria-label="Breadcrumbs">
                     <ul class="govbh-breadcrumb__group">
                         <li class="govbh-breadcrumb__item-home"><a href="index.html" aria-label="Go to home"><i class="ph ph-house" aria-hidden="true"></i> الصفحة الرئيسية</a></li>
                         <li class="govbh-breadcrumb__item-last" aria-current="page">تواصل معنا</li>
@@ -464,15 +464,15 @@
                     <h1>تواصل معنا</h1>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-md-end justify-content-sm-start justify-content-start">
-                    <div class="govbh-sharethis govbh-sharethis--vertical theme--dark">
+                    <div class="govbh-sharethis govbh-sharethis--vertical theme--dark" role="region" aria-label="Share this page on Social Media" tabindex="0">
                         <div class="govbh-sharethis__title">شارك هذه الصفحة:</div>
                         <ul>
-                            <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn" rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li>
-    <li><a href="#" target="_blank" aria-label="Share this page on Facebook" rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>                        <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp" rel="noopener noreferrer"><span class="icon-whatsapp"></span></a></li>
-                            <li><a href="#" target="_blank" aria-label="Share this page on Twitter" rel="noopener noreferrer"><span class="icon-twitter"></span></a></li>
-                            <li><a href="#" target="_blank" aria-label="Share this page on Telegram" rel="noopener noreferrer"><span class="icon-telegram"></span></a></li>
-                            <li><a href="#" aria-label="Print this page"><i class="ph ph-printer"></i></a></li>
-                            <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy"></i></a></li>
+                            <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn" rel="noopener noreferrer"><span class="icon-linkedin" aria-hidden="true" role="presentation"></span></a></li>
+    <li><a href="#" target="_blank" aria-label="Share this page on Facebook" rel="noopener noreferrer"><span class="icon-facebook" aria-hidden="true" role="presentation"></span></a></li>                        <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp" rel="noopener noreferrer"><span class="icon-whatsapp" aria-hidden="true" role="presentation"></span></a></li>
+                            <li><a href="#" target="_blank" aria-label="Share this page on Twitter" rel="noopener noreferrer"><span class="icon-twitter" aria-hidden="true" role="presentation"></span></a></li>
+                            <li><a href="#" target="_blank" aria-label="Share this page on Telegram" rel="noopener noreferrer"><span class="icon-telegram" aria-hidden="true" role="presentation"></span></a></li>
+                            <li><a href="#" aria-label="Print this page"><i class="ph ph-printer" aria-hidden="true" role="presentation"></i></a></li>
+                            <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy" aria-hidden="true" role="presentation"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -482,16 +482,17 @@
     <!-- Breadcrumbs Ends -->
 
     <!-- Contact Card Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-page-title-01">
         <div class="container">
-            <div class="govbh-abstract pb-3">
-                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام.</p>
+            <div class="govbh-abstract pb-3" id="section-page-title-01">
+                <p>نرحب بتواصلكم معنا، ونسعد باستقبال استفساراتكم واقتراحاتكم عبر قنوات الاتصال المتاحة. فريقنا جاهز للرد على رسائلكم وتقديم المساعدة في أسرع وقت ممكن لضمان حصولكم على أفضل تجربة وخدمة ممكنة.
+</p>
             </div>
             <!-- Contact Details Card Starts -->
             <div class="govbh-profile-card govbh-contact-card govbh-profile-card--equal-width" role="region" aria-labelledby="contact-card-title">
                 <div class="govbh-card-profile__text">
                     <h2 class="govbh-card-profile__title govbh-title-left-border mb-3" id="contact-card-title">جهاز المساحة والتسجيل العقاري</h2>
-                    <address aria-label="معلومات الاتصال بمكتب المساحة وتسجيل الأراضي">
+                    <address>
                         <dl>
                             <dt><i class="ph ph-map-pin" aria-hidden="true"></i><span class="visually-hidden">العنوان</span></dt>
                             <dd>
@@ -520,10 +521,10 @@
             <div class="govbh-social-connect-card mt-5 mb-5">
                 <div class="govbh-social-connect-card__title govbh-fs-h6">ابقى على اتصال</div>
                 <ul class="govbh-social-connect-card__list">
-                    <li><a href="#" target="_blank" aria-label="Follow us on Facebook" rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>
+                    <li><a href="#" target="_blank" aria-label="Follow us on Facebook" rel="noopener noreferrer"><span class="icon-facebook" aria-hidden="true" role="presentation"></span></a></li>
                     <li><a href="#" target="_blank" aria-label="Follow us on Instagram" rel="noopener noreferrer"><span class="icon-instagram"></span></a></li>
-                    <li><a href="#" target="_blank" aria-label="Follow us on LinkedIn" rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li>
-                    <li><a href="#" target="_blank" aria-label="Follow us on Twitter" rel="noopener noreferrer"><span class="icon-twitter"></span></a></li>
+                    <li><a href="#" target="_blank" aria-label="Follow us on LinkedIn" rel="noopener noreferrer"><span class="icon-linkedin" aria-hidden="true" role="presentation"></span></a></li>
+                    <li><a href="#" target="_blank" aria-label="Follow us on Twitter" rel="noopener noreferrer"><span class="icon-twitter" aria-hidden="true" role="presentation"></span></a></li>
                     <li><a href="#" target="_blank" aria-label="Follow us on Youtube" rel="noopener noreferrer"><span class="icon-youtubeicon"></span></a></li>
                 </ul>
             </div>
@@ -551,12 +552,12 @@
     <!-- Contact Card Ends -->
 
     <!-- Contact form Section Starts -->
-    <div class="govbh-section bg--light-brand">
+    <section class="govbh-section bg--light-brand" aria-labelledby="section-page-title-02">
         <div class="container">
-            <h2 class="mb-2">تواصل معنا</h2>
+            <h2 id="section-page-title-02" class="mb-2">تواصل معنا</h2>
             <p class="mb-4">يسعدنا أن نستقبل استفساراتكم واقتراحاتكم. الرجاء ملء الاستمارة وسنعاود الاتصال بكم قريباً، مقدّرين اهتمامكم بنا.</p>
             <p class="govbh-text--small">( <span class="text--accent">*</span> يشير إلى حقل مطلوب )</p>
-            <form action="javascript:void(0);" method="post" id="contactForm">
+            <form action="javascript:void(0);" autocomplete="on" method="post" id="contactForm">
                 <div class="row g-3">
                     <div class="col-12">
                         <div class="govbh-form-control form-group row g-0 govbh-form-control--invalid">
@@ -602,10 +603,10 @@
                     <div class="col-12">
                         <div class="govbh-form-control form-group row g-0">
                             <div class="col-12">
-                                <label for="comments002">رسالتك <span>*</span><i class="ph-fill ph-info" data-tooltip="tooltip" title="يرجى تقديم معلومات مفصلة حول طلبك أو استفسارك"></i></label>
+                                <label for="comments002" id="ariacomments002">رسالتك<span>*</span><i tabindex="0" role="button" aria-label="يرجى تقديم معلومات مفصلة حول طلبك أو استفسارك" class="ph-fill ph-info" data-tooltip="tooltip" title="يرجى تقديم معلومات مفصلة حول طلبك أو استفسارك"></i></label>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control form-textarea" name="comments002" id="comments002" placeholder="رسالتك*" aria-label="Please enter your Message" maxlength="300" aria-labelledby="charecterlimit-form"></textarea>
+                                <textarea class="form-control form-textarea" name="comments002" id="comments002" placeholder="رسالتك*" aria-label="Enter your message" maxlength="300" aria-labelledby="ariacomments002 charecterlimit-form"></textarea>
                                 <div id="charecterlimit-form" class="form-floating__character-limit text-end" aria-live="polite" role="alert"><span class="textarea-character-limit"></span> حرف متبقي</div>
                             </div>
                         </div>
@@ -622,13 +623,13 @@
                 </div>
             </form>
         </div>
-    </div>
+    </section>
     <!-- Contact form Section Ends -->
    
     <!-- Engage with Us Section Starts -->
-    <section class="govbh-section govbh-section--padding-l bg--grey">
+    <section class="govbh-section govbh-section--padding-l bg--grey" aria-labelledby="section-page-title-03">
         <div class="container">
-            <h2>تواصل معنا</h2>
+            <h2 id="section-page-title-03">تواصل معنا</h2>
             <p>نحن هنا من أجلك، فلا تتردد في الاتصال بنا من خلال القنوات التالية:</p>
         </div>
         <div class="govbh-carousel pt-3"
@@ -687,7 +688,8 @@
     <!-- Engage with Us Section Ends -->
 
     <!-- Contact Map Section Starts -->
-    <div class="govbh-section p-0">
+    <section class="govbh-section p-0" aria-labelledby="section-page-title-04">
+        <h2 id="section-page-title-04" class="visually-hidden">خريطة الاتصال</h2>
         <div class="govbh-map">
             <div class="govbh-map__container" 
                 data-map-type="leaflet" 
@@ -723,33 +725,38 @@
                 <div id="govbh-map__render" class="govbh-map__output"></div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Contact Map Section Ends -->
 
-    <div class="govbh-section">
+    <!-- Share this & Last update Starts -->
+    <section class="govbh-section" aria-labelledby="section-page-title-05">
+        <h2 id="section-page-title-05" class="visually-hidden">المشاركة والتحديث الأخير</h2>
         <div class="container">
             <!-- Share & Last updated content Starts -->
             <div class="row g-2">
                 <div class="col-md-6 col-sm-12 col-12">
-                    <div class="govbh-sharethis">
+                    <div class="govbh-sharethis" role="region" aria-label="Share this page on Social Media" tabindex="0">
                         <div class="govbh-sharethis__title">شارك هذه الصفحة:</div>
                         <ul>
-                            <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn" rel="noopener noreferrer"><span class="icon-linkedin"></span></a></li>
-<li><a href="#" target="_blank" aria-label="Share this page on Facebook" rel="noopener noreferrer"><span class="icon-facebook"></span></a></li>                        <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp" rel="noopener noreferrer"><span class="icon-whatsapp"></span></a></li>
-                        <li><a href="#" target="_blank" aria-label="Share this page on Twitter" rel="noopener noreferrer"><span class="icon-twitter"></span></a></li>
-                        <li><a href="#" target="_blank" aria-label="Share this page on Telegram" rel="noopener noreferrer"><span class="icon-telegram"></span></a></li>
-                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer"></i></a></li>
-                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy"></i></a></li>
+                            <li><a href="#" target="_blank" aria-label="Share this page on LinkedIn" rel="noopener noreferrer"><span class="icon-linkedin" aria-hidden="true" role="presentation"></span></a></li>
+<li><a href="#" target="_blank" aria-label="Share this page on Facebook" rel="noopener noreferrer"><span class="icon-facebook" aria-hidden="true" role="presentation"></span></a></li>                        <li><a href="#" target="_blank" aria-label="Share this page on Whatsapp" rel="noopener noreferrer"><span class="icon-whatsapp" aria-hidden="true" role="presentation"></span></a></li>
+                        <li><a href="#" target="_blank" aria-label="Share this page on Twitter" rel="noopener noreferrer"><span class="icon-twitter" aria-hidden="true" role="presentation"></span></a></li>
+                        <li><a href="#" target="_blank" aria-label="Share this page on Telegram" rel="noopener noreferrer"><span class="icon-telegram" aria-hidden="true" role="presentation"></span></a></li>
+                        <li><a href="#" aria-label="Print this page"><i class="ph ph-printer" aria-hidden="true" role="presentation"></i></a></li>
+                        <li><a href="#" aria-label="Copy this page's link"><i class="ph ph-copy" aria-hidden="true" role="presentation"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-12 d-flex justify-content-md-end justify-content-sm-start justify-content-start">
-                    <p class="govbh-text--medium m-0">آخر تحديث للمحتوى: <b>29 يونيو 2025</b></p>
+                    <div class="govbh-last-updated" role="region" tabindex="0" aria-labelledby="last-updated-date">
+                    <p id="last-updated-date" class="govbh-text--medium m-0">شارك هذه الصفحة: <b>29 يونيو 2025</b></p>
+                </div>
                 </div>
             </div>
             <!-- Share & Last updated content Ends -->
         </div>
-    </div>
+    </section>
+    <!-- Share this & Last update Ends -->
 
 </main>
 <!-- Main Section Ends -->
@@ -766,11 +773,11 @@
 				</div>
 				<div class="govbh-user-rating__head-button">
 					<button type="button" class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon"
-						aria-label="Is this page useful to you?" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
+						aria-label="Is this page useful to you? - Yes" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
 						نعم</button>
 					<button type="button"
 						class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon govbh-toggler"
-						data-target-on="#sharethoughts" aria-label="Is this page useful to you?"><i
+						data-target-on="#sharethoughts" aria-label="Is this page useful to you? - No" aria-controls="sharethoughts" aria-expanded="false"><i
 							class="ph ph-thumbs-down" aria-hidden="true"></i>
 						لا</button><!-- The govbh-toggler and data-target-on attributes are used to target the visibility of the govbh-user-rating__body -->
 				</div>

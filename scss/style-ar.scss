@@ -19,8 +19,11 @@ p{
 .form-floating .form-control,.form-group .form-control,.ms-options-wrap > button:focus, .ms-options-wrap > button,.govbh-map .govbh-map__output .leaflet-popup .leaflet-popup-content-wrapper .leaflet-popup-content,.accordion-button,.govbh-map .govbh-map__wrapper .govbh-map__filter ul li button{
     text-align: right;
 }
-.iti__dial-code{
+.iti__dial-code,.f-carousel__toolbar{
     direction: ltr;
+}
+.f-carousel__toolbar{
+    direction: rtl;
 }
 .govbh-heroslider .swiper-slide .govbh-heroslider__navigation .govbh-heroslider__navigation-arrows,.govbh-general__navigation-arrow,.govbh-card .govbh-card__foot .govbh-card__foot-icon i,.govbh-newscard__swiper .govbh-newscard__navigation .govbh-newscard__navigation-arrow,.govbh-pagination ul li a i,.govbh-datatable .dt-container div.dt-paging ul.pagination li .page-link i,.govbh-footer .govbh-footer__newsletter .govbh-footer__newsletter-input button{
     transform: scaleX(-1);
@@ -29,7 +32,7 @@ p{
     right: auto;
     left:-13px;
 }
-.govbh-search form button,.govbh-heroslider .swiper-slide .govbh-heroslider__navigation,.govbh-menu,.form-floating .form-floating__character-limit,.form-group .form-floating__character-limit,.govbh-footer .govbh-footer__newsletter .govbh-footer__newsletter-input button,.govbh-map .govbh-map__wrapper .govbh-map__filter .govbh-map__filter-form .govbh-map__filter-input button,.govbh-map .govbh-map__output .leaflet-control-container .leaflet-left,.govbh-card .govbh-card__foot .govbh-card-bg-icon{
+.govbh-search form button,.govbh-heroslider .swiper-slide .govbh-heroslider__navigation,.govbh-menu,.form-floating .form-floating__character-limit,.form-group .form-floating__character-limit,.govbh-footer .govbh-footer__newsletter .govbh-footer__newsletter-input button,.govbh-map .govbh-map__wrapper .govbh-map__filter .govbh-map__filter-form .govbh-map__filter-input button,.govbh-map .govbh-map__output .leaflet-control-container .leaflet-left,.govbh-card .govbh-card__foot .govbh-card-bg-icon,.fancybox__slide .f-button[data-fancybox-close]{
     left:0;
     right:auto;
 }

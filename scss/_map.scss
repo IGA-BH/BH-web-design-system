@@ -137,6 +137,7 @@
                 left: 0;
                 width: 100%;
                 background-color: var(--bh-bg-primary);
+                z-index: 1;
                 .govbh-map__filter-input {
                     position: relative;
                     margin: 20px 15px;

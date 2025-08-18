@@ -41,6 +41,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Swiper Slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
             <!-- Leaflet Map -->
@@ -452,11 +454,11 @@
 <main id="govbh-main" aria-label="Main content">
 
     <!-- Default Hero Banner Slider Starts -->
-    <section class="govbh-heroslider theme--dark bg--brand p-0" role="banner">
-        <h1 class="visually-hidden bg--brand">Bahrain Government Guidlines Design System</h1>
+    <section class="govbh-heroslider theme--dark bg--brand p-0" role="banner" aria-labelledby="hero-banner-title">
+        <h1 id="hero-banner-title" class="visually-hidden bg--brand">Bahrain Government Guidlines Design System</h1>
         <div class="swiper govbh-heroslider__swiper" aria-roledescription="carousel" role="group" aria-label="Hero Slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide bg--brand" data-swiper-autoplay="25000" tabindex="0">
+                <div class="swiper-slide bg--brand" tabindex="0" data-swiper-autoplay="25000">
                     <div class="container allow-extend">
                         <div class="row align-items-center">
                             <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-md-2 order-2">
@@ -507,6 +509,19 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Transcript Starts -->
+                        <div class="govbh-image-block__transcript visually-hidden">
+                            <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-1" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-1" role="button">Show Transcript</a>
+                            <div id="video-transcript-1" style="display:none">
+                            <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                [Cut to an architect pointing at a blueprint of the plant]                                            
+                                Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                            </div>
+                        </div>
+                        <!-- Transcript Ends -->
                     </div>
                 </div>
                 <div class="swiper-slide bg--brand" tabindex="0">
@@ -522,7 +537,20 @@
                                     </div>
                                     <div data-swiper-parallax-x="-20%" class="d-flex align-items-center gap-3 flex-wrap">
                                         <a href="projects-detail.html" class="govbh-btn govbh-btn--outline theme--dark">Explore <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
-                                        <a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" role="button" aria-label="Click here to play video." data-fancybox="videopop" data-caption="Ambitious Initiatives for Sustainable Development (YouTube video, 82seconds, Arabic only)" class="govbh-btn govbh-btn--withoutline theme--dark">Play Video <i class="ph ph-play"></i></a>
+                                        <a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" role="button" aria-label="Click here to play video." data-fancybox="videopop" data-caption="Ambitious Initiatives for Sustainable Development (YouTube video, 82 seconds, Arabic only)" class="govbh-btn govbh-btn--withoutline theme--dark">Play Video <i class="ph ph-play"></i></a>
+                                        <!-- Transcript Starts -->
+                                        <div class="govbh-image-block__transcript visually-hidden">
+                                            <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-12" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-12" role="button">Show Transcript</a>
+                                            <div id="video-transcript-12" style="display:none">
+                                            <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                                Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                                [Cut to an architect pointing at a blueprint of the plant]                                            
+                                                Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                                [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                                Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                                            </div>
+                                        </div>
+                                        <!-- Transcript Ends -->
                                     </div>
                                 </div>
                             </div>
@@ -552,7 +580,7 @@
     <!-- Default Hero Banner Slider Ends -->
 
     <!-- About Section Starts -->
-    <section class="govbh-section bg-light-linear bg--primary govbh-bg-image-fixed" style="background:url(../images/banner-015.webp) no-repeat fixed top center / cover;">
+    <section class="govbh-section bg-light-linear bg--primary govbh-bg-image-fixed" style="background:url(../images/banner-015.webp) no-repeat fixed top center / cover;" aria-labelledby="section-title-01">
         <div class="container position-relative z-2">
              <div class="row g-lg-4 g-md-3 g-3">
                 <div class="col-12">
@@ -567,7 +595,7 @@
                         </div>
 					</div>
                     <div class="govbh-content-block">
-                        <h2>About the Ministry</h2>
+                        <h2 id="section-title-01">About the Ministry</h2>
                         <div class="govbh-abstract text--primary">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet arcu volutpat, dictum lorem sollicitudin, finibus mauris.</p>
                         </div>
@@ -583,11 +611,11 @@
     <!-- About Section Ends -->
      
     <!-- e-Services Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section"  aria-labelledby="section-title-02">
         <div class="container position-relative">
             <div class="row gy-md-3 gy-sm-2 gy-2">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <h2 class="m-0">E-Services</h2>
+                    <h2 id="section-title-02" class="m-0">E-Services</h2>
                 </div>
                 <div class="col-12">
                     <div class="govbh-tabs">
@@ -1058,11 +1086,11 @@
     <!-- e-Services Section Ends -->
      
     <!-- Statistics Section Starts -->
-    <section class="govbh-section theme--dark bg--brand bg-brand-overlay govbh-bg-image-fixed" style="background:#012E5D url(../images/statistics-banner.webp) no-repeat fixed top center / cover;">
+    <section class="govbh-section theme--dark bg--brand bg-brand-overlay govbh-bg-image-fixed" style="background:#012E5D url(../images/statistics-banner.webp) no-repeat fixed top center / cover;" aria-labelledby="section-title-03">
         <div class="container position-relative z-1">
             <div class="row gy-md-3 gy-sm-2 gy-2">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <h2 class="m-0">Statistics</h2>
+                    <h2 id="section-title-03" class="m-0">Statistics</h2>
                 </div>
                 <div class="col-12">
                     <div class="govbh-tabs govbh-tabs--vertical theme--dark">
@@ -1352,9 +1380,9 @@
     <!-- Statistics Section Ends -->
 
     <!-- We care about Section Starts -->
-    <section class="govbh-section bg--darkmode-primary bg--grey">
+    <section class="govbh-section bg--darkmode-primary bg--grey" aria-labelledby="section-title-wecare">
         <div class="container">
-            <h2>We Care About You</h2>
+            <h2 id="section-title-wecare">We Care About You</h2>
             <div class="govbh-carousel"
                 data-carousel="custom" 
                 data-slidesperview-xxxs="1" 
@@ -1454,11 +1482,11 @@
     <!-- We care about Section Starts -->
 
     <!-- Laws & Regulations Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-title-04">
         <div class="container position-relative">
             <div class="row gy-md-3 gy-sm-2 gy-2">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <h2 class="m-0">Laws & Regulations</h2>
+                    <h2 id="section-title-04" class="m-0">Laws & Regulations</h2>
                 </div>
                 <div class="col-12">
                     <div class="govbh-carousel"
@@ -1475,7 +1503,10 @@
                                     <article role="region" aria-labelledby="legislation-title-1" class="govbh-card govbh-card--card-file">
                                         <div class="govbh-card__head">
                                             <h3 id="legislation-title-1" class="govbh-card__title"><a href="legislations-detail.html" aria-label="Legislation: Resolution on Regulating the Work of Energy Efficiency Specialised Companies">Resolution on Regulating the Work of Energy Efficiency Specialised Companies</a></h3>
-                                            <div class="govbh-card__date">12 May, 2022</div>
+                                            <div class="govbh-card__date govbh-card__date--year">
+                                                <div><i class="ph ph-calendar-check" aria-hidden="true"></i> 12 May, 2022</div>
+                                                <div><i class="ph ph-globe" aria-hidden="true"></i> Arabic only</div>
+                                            </div>
                                             <div class="govbh-card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar sem at urna dapibus.</div>
                                         </div>
                                         <div class="govbh-card__foot">
@@ -1488,7 +1519,9 @@
                                     <article role="region" aria-labelledby="legislation-title-2" class="govbh-card govbh-card--card-file">
                                         <div class="govbh-card__head">
                                             <h3 id="legislation-title-2" class="govbh-card__title"><a href="legislations-detail.html" aria-label="Legislation: Resolution on Adopting Thermal Insulation Regulations for Buildings and Facilities">Resolution on Adopting Thermal Insulation Regulations for Buildings and Facilities</a></h3>
-                                            <div class="govbh-card__date">12 May, 2022</div>
+                                            <div class="govbh-card__date govbh-card__date--year">
+                                                <div><i class="ph ph-calendar-check" aria-hidden="true"></i> 12 May, 2022</div>
+                                            </div>
                                             <div class="govbh-card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar sem at urna dapibus.</div>
                                         </div>
                                         <div class="govbh-card__foot">
@@ -1501,7 +1534,9 @@
                                     <article role="region" aria-labelledby="legislation-title-3" class="govbh-card govbh-card--card-file">
                                         <div class="govbh-card__head">
                                             <h3 id="legislation-title-3" class="govbh-card__title"><a href="legislations-detail.html" aria-label="Legislation: Resolution on Electricity and Water Consumption Tariffs">Resolution on Electricity and Water Consumption Tariffs</a></h3>
-                                            <div class="govbh-card__date">12 May, 2022</div>
+                                            <div class="govbh-card__date govbh-card__date--year">
+                                                <div><i class="ph ph-calendar-check" aria-hidden="true"></i> 12 May, 2022</div>
+                                            </div>
                                             <div class="govbh-card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar sem at urna dapibus.</div>
                                         </div>
                                         <div class="govbh-card__foot">
@@ -1514,7 +1549,10 @@
                                     <article role="region" aria-labelledby="legislation-title-4" class="govbh-card govbh-card--card-file">
                                         <div class="govbh-card__head">
                                             <h3 id="legislation-title-4" class="govbh-card__title"><a href="legislations-detail.html" aria-label="Legislation: Resolution on Adopting Regulations for Non-Directional Household Lighting">Resolution on Adopting Regulations for Non-Directional Household Lighting</a></h3>
-                                            <div class="govbh-card__date">12 May, 2022</div>
+                                            <div class="govbh-card__date govbh-card__date--year">
+                                                <div><i class="ph ph-calendar-check" aria-hidden="true"></i> 12 May, 2022</div>
+                                                <div><i class="ph ph-globe" aria-hidden="true"></i> Arabic only</div>
+                                            </div>
                                             <div class="govbh-card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar sem at urna dapibus.</div>
                                         </div>
                                         <div class="govbh-card__foot">
@@ -1556,9 +1594,9 @@
     <!-- Sustainable Development Section Ends -->
 
     <!-- Success Stories Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-title-05">
         <div class="container">
-            <h2 class="d-lg-none d-md-block d-block mb-2">Success Stories</h2>
+            <h2 id="section-title-05" class="d-lg-none d-md-block d-block mb-2">Success Stories</h2>
             <div class="govbh-carousel"
                 data-carousel="custom" 
                 data-slidesperview-xxxs="1" 
@@ -1581,7 +1619,7 @@
                                             <div class="govbh-blockquote__title">Bader Sultan Jumma</div>
                                             <div class="govbh-blockquote__designation">Chief Executive Officer</div>
                                             <div class="d-flex flex-wrap gap-3 pt-4">
-                                                <a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="watchvideo" data-caption="Bader Sultan Jumma Success, YouTube video, 82seconds, Arabic only" class="govbh-btn govbh-btn--outline govbh-btn--left-icon" role="button" aria-label="Watch Video of Bader Sultan Jumma Success, YouTube video, 58 seconds, Arabic only"><i class="ph ph-video" aria-hidden="true"></i> Watch Video</a>
+                                                <a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="watchvideo" data-caption="Bader Sultan Jumma Success, YouTube video, 82 seconds, Arabic only" class="govbh-btn govbh-btn--outline govbh-btn--left-icon" role="button" aria-label="Watch Video of Bader Sultan Jumma Success, YouTube video, 58 seconds, Arabic only"><i class="ph ph-video" aria-hidden="true"></i> Watch Video</a>
                                                 <a href="success-stories-detail.html" class="govbh-btn govbh-btn--withoutline" aria-label="Read story of Bader Sultan Jumma Success">Read story <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
                                             </div>
                                         </blockquote>
@@ -1608,7 +1646,7 @@
                                             <div class="govbh-blockquote__title">Bader Sultan Jumma</div>
                                             <div class="govbh-blockquote__designation">Chief Executive Officer</div>
                                             <div class="d-flex flex-wrap gap-3 pt-4">
-                                                <a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="watchvideo" data-caption="Bader Sultan Jumma Success, YouTube video, 82seconds, Arabic only" class="govbh-btn govbh-btn--outline govbh-btn--left-icon" role="button" aria-label="Watch Video of Bader Sultan Jumma Success, YouTube video, 58 seconds, Arabic only"><i class="ph ph-video" aria-hidden="true"></i> Watch Video</a>
+                                                <a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="watchvideo" data-caption="Bader Sultan Jumma Success, YouTube video, 82 seconds, Arabic only" class="govbh-btn govbh-btn--outline govbh-btn--left-icon" role="button" aria-label="Watch Video of Bader Sultan Jumma Success, YouTube video, 58 seconds, Arabic only"><i class="ph ph-video" aria-hidden="true"></i> Watch Video</a>
                                                 <a href="success-stories-detail.html" class="govbh-btn govbh-btn--withoutline" aria-label="Read story of Bader Sultan Jumma Success">Read story <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
                                             </div>
                                         </blockquote>
@@ -1636,11 +1674,11 @@
     <!-- Success Stories Section Ends -->
 
     <!-- Events Section Starts -->
-    <section class="govbh-section theme--dark bg--brand bg-brand-overlay govbh-bg-image-fixed" style="background:url(../images/banner-010.webp) no-repeat fixed top center / cover;">
+    <section aria-labelledby="section-title-06" class="govbh-section theme--dark bg--brand bg-brand-overlay govbh-bg-image-fixed" style="background:url(../images/banner-010.webp) no-repeat fixed top center / cover;">
         <div class="container position-relative z-2">
             <div class="row gy-md-3 gy-sm-2 gy-2">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <h2 class="m-0">Calendar of Events</h2>
+                    <h2 id="section-title-06" class="m-0">Calendar of Events</h2>
                 </div>
                 <div class="col-12">
                     <div class="govbh-carousel"
@@ -1775,9 +1813,9 @@
     <!-- Events Section Ends -->
 
     <!-- Knowledge Center Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-title-07">
         <div class="container">
-            <h2>Knowledge Center</h2>
+            <h2 id="section-title-07">Knowledge Center</h2>
             <div class="govbh-tabs">
                 <div class="govbh-tabs__head">
                     <div class="govbh-tabs__head-tabs" id="nav-tab5" role="tablist">
@@ -1881,6 +1919,7 @@
                                                 <div class="govbh-card__date govbh-card__date--year">
                                                     <div><i class="ph ph-file-pdf" aria-hidden="true"></i> 13MB, 8 pages</div>
                                                     <div><i class="ph ph-calendar-check" aria-hidden="true"></i> 2024</div>
+                                                    <div><i class="ph ph-globe" aria-hidden="true"></i> Arabic only</div>
                                                 </div>
                                                 <div class="govbh-card__paragraph">Capturing high-resolution images of the land surface using drones or satellites.</div>
                                                 <div class="govbh-card__foot">
@@ -1934,6 +1973,7 @@
                                                 <div class="govbh-card__date govbh-card__date--year">
                                                     <div><i class="ph ph-file-pdf" aria-hidden="true"></i> 13MB, 8 pages</div>
                                                     <div><i class="ph ph-calendar-check" aria-hidden="true"></i> 2024</div>
+                                                    <div><i class="ph ph-globe" aria-hidden="true"></i> Arabic only</div>
                                                 </div>
                                                 <div class="govbh-card__paragraph">Capturing high-resolution images of the land surface using drones or satellites.</div>
                                                 <div class="govbh-card__foot">
@@ -1990,10 +2030,10 @@
     <!-- Knowledge Center Section Ends -->
     
     <!-- Interactive Map Section Starts -->
-    <section class="govbh-section theme--dark bg--brand">
+    <section class="govbh-section theme--dark bg--brand" aria-labelledby="section-title-08">
         <div class="container">
             <div class="row gy-md-3 gy-sm-2 gy-2">
-                <div class="col-12"><h2 class="m-0">Our Locations</h2></div>
+                <div class="col-12"><h2 id="section-title-08" class="m-0">Our Locations</h2></div>
                 <div class="col-12">
                     <div class="govbh-tabs theme--dark">
                         <div class="govbh-tabs__head">
@@ -2152,19 +2192,134 @@
                                     <div class="govbh-map__wrapper">
                                         <div class="govbh-map__filter">
                                             <div class="govbh-map__filter-close" role="button" aria-label="Click here to close list"><i class="ph-bold ph-list"></i></div>
-                                            <form class="govbh-map__filter-form">
+                                            <form class="govbh-map__filter-form" aria-labelledby="search-map-title" action="#" autocomplete="on">
+                                                <h3 id="search-map-title" class="visually-hidden">Search for a Location</h3>
                                                 <div class="govbh-map__filter-input">
-                                                    <input type="text" id="mapfilter" aria-label="Enter your keyword" placeholder="Enter your keyword">
+                                                    <input type="search" id="mapfilter" aria-label="Enter your keyword" placeholder="Enter your keyword">
                                                     <button type="button" aria-label="Click here to submit"><i class="ph-bold ph-magnifying-glass" aria-hidden="true"></i></button>
                                                 </div>
                                             </form>
                                             <ul>
-                                                <li class="active"><button type="button" aria-label="Main Branch">Main Branch<span class="govbh-map__filter--open"></span></button></li>
-                                                <li><button type="button" aria-label="Muharraq Branch">Muharraq Branch<span class="govbh-map__filter--open"></span></button></li>
-                                                <li><button type="button" aria-label="Diplomatic Area Branch">Diplomatic Area Branch<span class="govbh-map__filter--open"></span></button></li>
-                                                <li><button type="button" aria-label="Bahrain Mall Branch">Bahrain Mall Branch<span class="govbh-map__filter--open"></span></button></li>
-                                                <li><button type="button" aria-label="Isa Town Branch">Isa Town Branch<span class="govbh-map__filter--closed"></span></button></li>
-                                                <li><button type="button" aria-label="Seef Branch">Seef Branch<span class="govbh-map__filter--closed"></span></button></li>
+                                                <li class="active">
+                                                    <button type="button" aria-labelledby="map-list-01">Main Branch<span class="govbh-map__filter--open"></span></button>
+                                                    <!-- Only for screen reader purpose starts -->
+                                                    <div id="map-list-01" aria-live="polite" role="alert" class="visually-hidden">
+                                                        <h3>Main Branch - Open</h3>
+                                                        <address>
+                                                            <dl>
+                                                                <dt>Address</dt>
+                                                                <dd>
+                                                                    <p>Building 517, Road 1010, Manama 410, Capital Governorate, Kingdom of Bahrain</p>
+                                                                </dd>
+                                                                <dt>Phone</dt>
+                                                                <dd><p dir="ltr">+973 17204050</p></dd>
+                                                                <dt>Email</dt>
+                                                                <dd><p>info@slrb.gov.bh</p></dd>
+                                                            </dl>
+                                                        </address>
+                                                    </div>
+                                                    <!-- Only for screen reader purpose ends -->
+                                                </li>
+                                                <li>
+                                                    <button type="button" aria-labelledby="map-list-02">Muharraq Branch<span class="govbh-map__filter--open"></span></button>
+                                                    <!-- Only for screen reader purpose starts -->
+                                                    <div id="map-list-02" aria-live="polite" role="alert" class="visually-hidden">
+                                                        <h3>Muharraq Branch - Open</h3>
+                                                        <address>
+                                                            <dl>
+                                                                <dt>Address</dt>
+                                                                <dd>
+                                                                    <p>Building 517, Road 1010, Manama 410, Capital Governorate, Kingdom of Bahrain</p>
+                                                                </dd>
+                                                                <dt>Phone</dt>
+                                                                <dd><p dir="ltr">+973 17204050</p></dd>
+                                                                <dt>Email</dt>
+                                                                <dd><p>info@slrb.gov.bh</p></dd>
+                                                            </dl>
+                                                        </address>
+                                                    </div>
+                                                    <!-- Only for screen reader purpose ends -->
+                                                </li>
+                                                <li>
+                                                    <button type="button" aria-labelledby="map-list-03">Diplomatic Area Branch<span class="govbh-map__filter--open"></span></button>
+                                                    <!-- Only for screen reader purpose starts -->
+                                                    <div id="map-list-03" aria-live="polite" role="alert" class="visually-hidden">
+                                                        <h3>Diplomatic Area Branch - Open</h3>
+                                                        <address>
+                                                            <dl>
+                                                                <dt>Address</dt>
+                                                                <dd>
+                                                                    <p>Building 517, Road 1010, Manama 410, Capital Governorate, Kingdom of Bahrain</p>
+                                                                </dd>
+                                                                <dt>Phone</dt>
+                                                                <dd><p dir="ltr">+973 17204050</p></dd>
+                                                                <dt>Email</dt>
+                                                                <dd><p>info@slrb.gov.bh</p></dd>
+                                                            </dl>
+                                                        </address>
+                                                    </div>
+                                                    <!-- Only for screen reader purpose ends -->
+                                                </li>
+                                                <li>
+                                                    <button type="button" aria-labelledby="map-list-04">Bahrain Mall Branch<span class="govbh-map__filter--open"></span></button>
+                                                    <!-- Only for screen reader purpose starts -->
+                                                    <div id="map-list-04" aria-live="polite" role="alert" class="visually-hidden">
+                                                        <h3>Bahrain Mall Branch - Open</h3>
+                                                        <address>
+                                                            <dl>
+                                                                <dt>Address</dt>
+                                                                <dd>
+                                                                    <p>Building 517, Road 1010, Manama 410, Capital Governorate, Kingdom of Bahrain</p>
+                                                                </dd>
+                                                                <dt>Phone</dt>
+                                                                <dd><p dir="ltr">+973 17204050</p></dd>
+                                                                <dt>Email</dt>
+                                                                <dd><p>info@slrb.gov.bh</p></dd>
+                                                            </dl>
+                                                        </address>
+                                                    </div>
+                                                    <!-- Only for screen reader purpose ends -->
+                                                </li>
+                                                <li>
+                                                    <button type="button" aria-labelledby="map-list-05">Isa Town Branch<span class="govbh-map__filter--closed"></span></button>
+                                                    <!-- Only for screen reader purpose starts -->
+                                                    <div id="map-list-05" aria-live="polite" role="alert" class="visually-hidden">
+                                                        <h3>Isa Town Branch - Closed</h3>
+                                                        <address>
+                                                            <dl>
+                                                                <dt>Address</dt>
+                                                                <dd>
+                                                                    <p>Building 517, Road 1010, Manama 410, Capital Governorate, Kingdom of Bahrain</p>
+                                                                </dd>
+                                                                <dt>Phone</dt>
+                                                                <dd><p dir="ltr">+973 17204050</p></dd>
+                                                                <dt>Email</dt>
+                                                                <dd><p>info@slrb.gov.bh</p></dd>
+                                                            </dl>
+                                                        </address>
+                                                    </div>
+                                                    <!-- Only for screen reader purpose ends -->
+                                                </li>
+                                                <li>
+                                                    <button type="button" aria-labelledby="map-list-06">Seef Branch<span class="govbh-map__filter--closed"></span></button>
+                                                    <!-- Only for screen reader purpose starts -->
+                                                    <div id="map-list-06" aria-live="polite" role="alert" class="visually-hidden">
+                                                        <h3>Seef Branch - Closed</h3>
+                                                        <address>
+                                                            <dl>
+                                                                <dt>Address</dt>
+                                                                <dd>
+                                                                    <p>Building 517, Road 1010, Manama 410, Capital Governorate, Kingdom of Bahrain</p>
+                                                                </dd>
+                                                                <dt>Phone</dt>
+                                                                <dd><p dir="ltr">+973 17204050</p></dd>
+                                                                <dt>Email</dt>
+                                                                <dd><p>info@slrb.gov.bh</p></dd>
+                                                            </dl>
+                                                        </address>
+                                                    </div>
+                                                    <!-- Only for screen reader purpose ends -->
+                                                </li>
                                             </ul>
                                         </div>
                                         <div id="govbh-map__render" class="govbh-map__output">
@@ -2275,9 +2430,9 @@
     <!-- Interactive Map Section Ends -->
 
     <!-- Engage with Us Section Starts -->
-    <section class="govbh-section govbh-section--padding-l bg--grey">
+    <section class="govbh-section govbh-section--padding-l bg--grey" aria-labelledby="section-title-09">
         <div class="container">
-            <h2>Engage with Us</h2>
+            <h2 id="section-title-09">Engage with Us</h2>
             <p>We are here for you. Do not hesitate to communicate with us via the following channels:</p>
         </div>
         <div class="govbh-carousel pt-3"
@@ -2336,7 +2491,8 @@
     <!-- Engage with Us Section Ends -->
 
     <!-- Media Section Starts -->
-    <section class="govbh-section">
+    <section class="govbh-section" aria-labelledby="section-title-10">
+        <h2 id="section-title-10" class="visually-hidden">Opinion Poll, Media Center, Photos & Videos, IGA Instagram, IGA Twitter and IGA Youtube</h2>
         <div class="container">
             <!-- Polls Section Starts -->
             <div class="govbh-polls theme--dark bg--brand mb-md-5 mb-sm-4 mb-3">
@@ -2499,10 +2655,23 @@
                                             </div>
                                             <div class="govbh-card__head-content">
                                                 <div class="govbh-card__date">29 May, 2024</div>
-                                                <h3 id="photosvideos-title-2" class="govbh-card__title"><a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="video-01" data-caption="Video Caption 1, YouTube video, 82seconds, Arabic only" aria-label="Play video: Video Caption 1, YouTube video, 82seconds, Arabic only">Video Caption 1</a></h3>
+                                                <h3 id="photosvideos-title-2" class="govbh-card__title"><a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="video-01" data-caption="Video Caption 1, YouTube video, 82 seconds, Arabic only" aria-label="Play video: Video Caption 1, YouTube video, 82 seconds, Arabic only">Video Caption 1</a></h3>
                                             </div>
                                         </div>
                                     </article>
+                                    <!-- Transcript Starts -->
+                                    <div class="govbh-image-block__transcript visually-hidden">
+                                        <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-2" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-2" role="button">Show Transcript</a>
+                                        <div id="video-transcript-2" style="display:none">
+                                        <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                            Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                            [Cut to an architect pointing at a blueprint of the plant]                                            
+                                            Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                            [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                            Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                                        </div>
+                                    </div>
+                                    <!-- Transcript Ends -->
                                 </div>
                                 <div class="swiper-slide" tabindex="0" role="group">
                                     <article role="region" aria-labelledby="photosvideos-title-3" class="govbh-card govbh-card--with-image">
@@ -2514,7 +2683,7 @@
                                             </div>
                                             <div class="govbh-card__head-content">
                                                 <div class="govbh-card__date">28 May, 2024</div>
-                                                <h3 id="photosvideos-title-3" class="govbh-card__title"><a href="../images/banner-011.webp" data-fancybox="gallery-02" data-caption="Photo Caption 1, YouTube video, 82seconds, Arabic only" aria-label="Images:  Photo Caption 2, YouTube video, 82seconds, Arabic only">Photo Caption 2</a></h3>
+                                                <h3 id="photosvideos-title-3" class="govbh-card__title"><a href="../images/banner-011.webp" data-fancybox="gallery-02" data-caption="Photo Caption 1, YouTube video, 82 seconds, Arabic only" aria-label="Images:  Photo Caption 2, YouTube video, 82 seconds, Arabic only">Photo Caption 2</a></h3>
                                             </div>
                                         </div>
                                     </article>
@@ -2534,10 +2703,23 @@
                                             </div>
                                             <div class="govbh-card__head-content">
                                                 <div class="govbh-card__date">28 May, 2024</div>
-                                                <h3 id="photosvideos-title-4" class="govbh-card__title"><a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="video-02" data-caption="Video Caption 2, YouTube video, 82seconds, Arabic only" aria-label="Play video: Video Caption 2, YouTube video, 82seconds, Arabic only">Video Caption 2</a></h3>
+                                                <h3 id="photosvideos-title-4" class="govbh-card__title"><a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="video-02" data-caption="Video Caption 2, YouTube video, 82 seconds, Arabic only" aria-label="Play video: Video Caption 2, YouTube video, 82 seconds, Arabic only">Video Caption 2</a></h3>
                                             </div>
                                         </div>
                                     </article>
+                                    <!-- Transcript Starts -->
+                                    <div class="govbh-image-block__transcript visually-hidden">
+                                        <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-3" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-3" role="button">Show Transcript</a>
+                                        <div id="video-transcript-3" style="display:none">
+                                        <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                            Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                            [Cut to an architect pointing at a blueprint of the plant]                                            
+                                            Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                            [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                            Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                                        </div>
+                                    </div>
+                                    <!-- Transcript Ends -->
                                 </div>
                             </div>
                             <!-- Pagination -->
@@ -2615,10 +2797,10 @@
     <!-- Media Section Starts -->
 
     <!-- Government App Section Starts -->
-    <section class="govbh-section govbh-section--padding-l bg--grey">
+    <section class="govbh-section govbh-section--padding-l bg--grey" aria-labelledby="section-title-11">
         <div class="container position-relative">
             <div class="row">
-                <div class="col-md-8 col-sm-8 col-12"><h2 class="m-0">Government Apps</h2></div>
+                <div class="col-md-8 col-sm-8 col-12"><h2 id="section-title-11" class="m-0">Government Apps</h2></div>
                 <div class="col-12">
                     <div class="govbh-carousel pt-3"
                         data-carousel="custom" 
@@ -2649,7 +2831,7 @@
                                                 <h3 id="govapps-title-2" class="m-0">
                                                     <a href="https://services.bahrain.bh/wps/portal/en/BSP/GSX-UI-AllApps/GSX-UI-AppDetails?appID=24" class="govbh-is-external" target="_blank" rel="noopener noreferrer" aria-label="eKey 2.0 - opens in a new window">eKey 2.0</a>
                                                 </h3>
-                                                <p>A single sign-on experience enabled with a secure biometric verification with the highest levels of protection,</p>
+                                                <p>A single sign-on experience enabled with a secure biometric verification with the highest levels of protection.</p>
                                             </div>
                                         </article>
                                     </div>
