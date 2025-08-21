@@ -76,7 +76,7 @@ By leveraging the Arabic translated versions, developers can build compliant, us
 
 - **jQuery**: The design system incorporates [**jQuery**](https://jquery.com/), a fast and lightweight JavaScript library that simplifies HTML document traversal and manipulation, event handling, and animation. Many modern JavaScript libraries used in this design system depend on jQuery for their core functionalities, making it a foundational tool in web development.
 
-- **JavaScript Libraries**: The design system uses various JavaScript libraries to enhance functionality and user experience. This includes Bootstrap JS libraries for interactive components, [**Fancybox**](https://fancyapps.com/fancybox/) for image galleries, [**Dropzone**](https://www.dropzone.dev/) for file uploads, [**Select2**](https://select2.org/) for enhanced select boxes, [**DateRangePicker**](https://www.daterangepicker.com/) for date selection, [**MultiSelect**](https://github.com/nobleclem/jQuery-MultiSelect) for select's multiple item selection, [**SwiperJS**](https://swiperjs.com/) for touch sliders, [**Zebra Tooltips**](https://stefangabos.github.io/Zebra_Tooltips/) for tooltips, [**Odometer**](https://github.hubspot.com/odometer/docs/welcome/) for animated number counters, [**DataTable**](https://datatables.net/) for advanced table features, [**Leaflet Map**](https://leafletjs.com/) integration for maps, and custom JS scripts tailored to specific project needs.
+- **JavaScript Libraries**: The design system uses various JavaScript libraries to enhance functionality and user experience. This includes Bootstrap JS libraries for interactive components, [**Dropzone**](https://www.dropzone.dev/) for file uploads, [**Select2**](https://select2.org/) for enhanced select boxes, [**DateRangePicker**](https://www.daterangepicker.com/) for date selection, [**MultiSelect**](https://github.com/nobleclem/jQuery-MultiSelect) for select's multiple item selection, [**SwiperJS**](https://swiperjs.com/) for touch sliders, [**Zebra Tooltips**](https://stefangabos.github.io/Zebra_Tooltips/) for tooltips, [**Odometer**](https://github.hubspot.com/odometer/docs/welcome/) for animated number counters, [**DataTable**](https://datatables.net/) for advanced table features, [**Leaflet Map**](https://leafletjs.com/) integration for maps, and custom JS scripts tailored to specific project needs.
 
 - **Components**: The design system includes **49 components** in both English and Arabic, providing a solid foundation for building responsive and accessible websites. Each component is optimized for performance and designed to maintain consistency across different platforms.
 
@@ -142,8 +142,8 @@ The SCSS files inside the SCSS folder are organized into various partials that f
 ```bash
 ├── css/
 │   ├── icons/
+│   ├── colorbox.css
 │   ├── datatables.min.css
-│   ├── fancybox.min.css
 │   ├── jquery.multiselect.css
 │   ├── leaflet.min.css
 │   ├── style-ar.css
@@ -204,6 +204,8 @@ The JS folder contains a collection of JavaScript libraries that are downloaded 
 │   ├── govbh-utils.js
 │   ├── intlTelInput.min.js
 │   ├── jquery-3.7.1.min.js
+│   ├── jquery.colorbox-min.js
+│   ├── jquery.colorbox.js
 │   ├── jquery-scrolltofixed.js
 │   ├── jquery.multiselect.js
 │   ├── jquery.smartmenus.keyboard.min.js
@@ -366,7 +368,7 @@ First Release 2025 - Web Design System v1.0
 
 Suggestions & feedback on the website design guidelines are welcome. Any suggestion/feedback will help in enhancing/refining the guidelines further thus making this document more comprehensive and relevant.
 
-Suggestions, feedback, clarifications and queries on this guideline may be sent to [standards@pmo.gov.bh](standards@pmo.gov.bh)
+Suggestions, feedback, clarifications and queries on this guideline may be sent to [qa@iga.gov.bh](qa@iga.gov.bh)
 
 
 [Go to top ↑](#bahrain-web-design-system)
