@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="ar-BH" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Datepicker | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -47,173 +47,182 @@
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
     <link rel="stylesheet" href="../css/style-ar.min.css" media="all">
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <div class="govbh-section">
+<body>    
+    <div class="govbh-section">
         <div class="container">
-            <!--Component Datepicker:Default Floating Label Starts -->
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="govbh-form-control form-floating govbh-form-control--icon-right govbh-form-control--datefield">
+            <h5>إدخال البريد الإلكتروني</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <!--Component Datepicker:Default Floating Label Starts -->
+                <h6>عنوان عائم</h6>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--icon-right govbh-form-control--datefield">
+                            <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
+                            <input type="text" class="form-control datepicker-control" id="singledaterange-001" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
+                            <label for="singledaterange-001">تاريخ الميلاد<span>*</span></label>         
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">خطأ</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--invalid">
+                            <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
+                            <input type="text" class="form-control datepicker-control" id="singledaterange-002" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date" aria-invalid="true" aria-describedby="datepicker-error-01">
+                            <label for="singledaterange-002">تاريخ الميلاد<span>*</span></label>        
+                            <div id="datepicker-error-01" class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> نص الخطأ</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">نجاح</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--success">
                         <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
-                        <input type="text" class="form-control datepicker-control" id="singledaterange-001" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
-                        <label for="singledaterange-001">Date of Birth<span>*</span></label>         
+                            <input type="text" class="form-control datepicker-control" id="singledaterange-003" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
+                            <label for="singledaterange-003">تاريخ الميلاد<span>*</span></label>              
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--disabled">
+                            <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
+                            <input type="text" class="form-control datepicker-control" id="singledaterange-004" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date" disabled>
+                            <label for="singledaterange-004">تاريخ الميلاد<span>*</span></label>        
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">نطاق متعدد</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--icon-right govbh-form-control--datefield">
+                            <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
+                            <input type="text" class="form-control daterangepicker-control" id="singledaterange-004" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
+                            <label for="singledaterange-004">تاريخ مخصص<span>*</span></label>        
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
-                    <div class="govbh-form-control form-floating govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--invalid">
-                        <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
-                        <input type="text" class="form-control datepicker-control" id="singledaterange-002" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
-                        <label for="singledaterange-002">Date of Birth<span>*</span></label>        
-                        <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
+                <!--Component Datepicker:Default Floating Label Ends -->
+
+                <div class="hr"></div>
+
+                <!--Component Datepicker:Default Top Label Starts -->
+                <h6>أفضل علامة تجارية</h6>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield g-0">
+                            <div class="col-12">
+                                <label for="singledaterange-005">عنوان<span>*</span></label>      
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
+                                <input type="text" class="form-control datepicker-control" id="singledaterange-005" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">مع قيمة</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--invalid g-0">
+                            <div class="co-12">
+                                <label for="singledaterange-006">عنوان<span>*</span></label>      
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
+                                <input type="text" class="form-control datepicker-control" id="singledaterange-006" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date" aria-invalid="true" aria-describedby="datepicker-error-02">
+                                <div id="datepicker-error-02" class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> نص الخطأ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">نجاح</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--success g-0">
+                            <div class="col-12">
+                                <label for="singledaterange-007">عنوان<span>*</span></label>      
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
+                                <input type="text" class="form-control datepicker-control" id="singledaterange-007" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--disabled g-0">
+                            <div class="col-12">
+                            <label for="singledaterange-008">عنوان<span>*</span></label> 
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
+                                <input type="text" class="form-control datepicker-control" id="singledaterange-008" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date" disabled>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
-                    <div class="govbh-form-control form-floating govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--success">
-                    <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
-                        <input type="text" class="form-control datepicker-control" id="singledaterange-003" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
-                        <label for="singledaterange-003">Date of Birth<span>*</span></label>              
-                        <div class="govbh-form-control__validation-message"><i class="ph ph-check-circle"></i> Success Text</div>
+                <!--Component Datepicker:Default Top Label Ends -->
+
+                <div class="hr"></div>
+
+                <!--Component Datepicker:Default Side Label Starts -->
+                <h6>ملصق جانبي</h6>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="singledaterange-009">عنوان<span>*</span></label>      
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
+                                <input type="text" class="form-control datepicker-control" id="singledaterange-009" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">خطأ</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--invalid g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="singledaterange-010">عنوان<span>*</span></label>      
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
+                                <input type="text" class="form-control datepicker-control" id="singledaterange-010" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date" aria-invalid="true" aria-describedby="datepicker-error-03">
+                                <div id="datepicker-error-03" class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> نص الخطأ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">نجاح</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--success g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="singledaterange-011">عنوان<span>*</span></label>      
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
+                                <input type="text" class="form-control datepicker-control" id="singledaterange-011" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--disabled g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="singledaterange-012">عنوان<span>*</span></label>      
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
+                                <input type="text" class="form-control datepicker-control" id="singledaterange-012" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date" disabled>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <div class="govbh-form-control form-floating govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--disabled">
-                        <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
-                        <input type="text" class="form-control datepicker-control" id="singledaterange-004" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date" disabled>
-                        <label for="singledaterange-004">Date of Birth<span>*</span></label>        
-                    </div>
-                </div>
+                <!--Component Datepicker:Default Side Label Ends -->
             </div>
-            <!--Component Datepicker:Default Floating Label Ends -->
-
-            <div class="hr"></div>
-
-            <!--Component Datepicker:Default Top Label Starts -->
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield g-0">
-                        <div class="col-12">
-                            <label for="singledaterange-005">Label<span>*</span></label>      
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
-                            <input type="text" class="form-control datepicker-control" id="singledaterange-005" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">With Value</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--invalid g-0">
-                        <div class="co-12">
-                            <label for="singledaterange-006">Label<span>*</span></label>      
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
-                            <input type="text" class="form-control datepicker-control" id="singledaterange-006" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
-                            <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--success g-0">
-                        <div class="col-12">
-                            <label for="singledaterange-007">Label<span>*</span></label>      
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
-                            <input type="text" class="form-control datepicker-control" id="singledaterange-007" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
-                            <div class="govbh-form-control__validation-message"><i class="ph ph-check-circle"></i> Success Text</div>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--disabled g-0">
-                        <div class="col-12">
-                        <label for="singledaterange-008">Label<span>*</span></label> 
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
-                            <input type="text" class="form-control datepicker-control" id="singledaterange-008" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date" disabled>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Component Datepicker:Default Top Label Ends -->
-
-            <div class="hr"></div>
-
-            <!--Component Datepicker:Default Side Label Starts -->
-            <div class="row g-4">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="singledaterange-009">Label<span>*</span></label>      
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
-                            <input type="text" class="form-control datepicker-control" id="singledaterange-009" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--invalid g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="singledaterange-010">Label<span>*</span></label>      
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
-                            <input type="text" class="form-control datepicker-control" id="singledaterange-010" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
-                            <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--success g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="singledaterange-011">Label<span>*</span></label>      
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
-                            <input type="text" class="form-control datepicker-control" id="singledaterange-011" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
-                            <div class="govbh-form-control__validation-message"><i class="ph ph-check-circle"></i> Success Text</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--icon-right govbh-form-control--datefield govbh-form-control--disabled g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="singledaterange-012">Label<span>*</span></label>      
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <div class="form-floating__ico"><i class="ph ph-calendar-blank"></i></div>
-                            <input type="text" class="form-control datepicker-control" id="singledaterange-012" name="singledaterange" placeholder="DD/MM/YYYY" aria-label="select a date">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Component Datepicker:Default Side Label Ends -->
         </div>
     </div>
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -229,7 +238,7 @@
 <!-- Header Sticky -->
 <script src="../js/govbh-menu-sticky.js"></script>
 <!-- Text Localization -->
-<script src="../js/govbh-lang.js"></script>
+<script src="../js/govbh-lang-ar.js"></script>
 <!-- Library -->
 <script src="../js/govbh-library.min.js"></script>
 <!-- Utils -->

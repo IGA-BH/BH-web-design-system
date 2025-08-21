@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Blockquote | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -44,42 +44,44 @@
                     
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
 <body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Blockquote:Default Starts -->
+    <!--Component Blockquote Starts -->
     <div class="govbh-section">
         <div class="container">
-            <blockquote class="govbh-blockquote" role="region" aria-label="Quote from the Chief Executive Officer">
-                <div class="govbh-blockquote__icon"><i class="ph-fill ph-quotes" aria-hidden="true"></i></div>
-                <div class="govbh-blockquote__content">Quotes are used to display a quotation: either from a person or another outside source or to highlight a passage of the current document (a pull quote).</div>
-                <div class="govbh-blockquote__title">Bader Sultan Jumma</div>
-                <div class="govbh-blockquote__designation">Chief Executive Officer</div>
-            </blockquote>
-        </div>
-    </div>
-    <!--Component Blockquote:Default Ends --> 
+            <h6>Blockquote</h6>
+            <div class="govbh-content-box govbh-border-grey">
+                <div>
+                    <h6>Default</h6>
+                    <blockquote class="govbh-blockquote" role="region" aria-label="Quote from the Chief Executive Officer">
+                        <div class="govbh-blockquote__icon"><i class="ph-fill ph-quotes" aria-hidden="true"></i></div>
+                        <div class="govbh-blockquote__content">Quotes are used to display a quotation: either from a person or another outside source or to highlight a passage of the current document (a pull quote).</div>
+                        <div class="govbh-blockquote__title">Bader Sultan Jumma</div>
+                        <div class="govbh-blockquote__designation">Chief Executive Officer</div>
+                    </blockquote>
+                </div>
 
-    <!--Component Blockquote:Inverse Starts --> 
-    <div class="govbh-section theme--dark bg--brand">
-        <div class="container">
-            <blockquote class="govbh-blockquote theme--dark" role="region" aria-label="Quote from the Chief Executive Officer">
-                <div class="govbh-blockquote__icon"><i class="ph-fill ph-quotes" aria-hidden="true"></i></div>
-                <div class="govbh-blockquote__content">Quotes are used to display a quotation: either from a person or another outside source or to highlight a passage of the current document (a pull quote).</div>
-                <div class="govbh-blockquote__title">Bader Sultan Jumma</div>
-                <div class="govbh-blockquote__designation">Chief Executive Officer</div>
-            </blockquote>
+                <div class="theme--dark bg--brand p-3">
+                    <h6>Inverse</h6>
+                    <blockquote class="govbh-blockquote theme--dark" role="region" aria-label="Quote from the Chief Executive Officer">
+                        <div class="govbh-blockquote__icon"><i class="ph-fill ph-quotes" aria-hidden="true"></i></div>
+                        <div class="govbh-blockquote__content">Quotes are used to display a quotation: either from a person or another outside source or to highlight a passage of the current document (a pull quote).</div>
+                        <div class="govbh-blockquote__title">Bader Sultan Jumma</div>
+                        <div class="govbh-blockquote__designation">Chief Executive Officer</div>
+                    </blockquote>
+                </div>
+            </div>
         </div>
     </div>
-    <!--Component Blockquote:Inverse Ends --> 
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+    <!--Component Blockquote Ends --> 
+
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"

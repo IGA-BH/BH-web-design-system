@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>User Rating | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -44,136 +44,147 @@
                     
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
 <body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component User Rating:Default Starts -->
+    <!--Component User Rating:Default Starts -->
     <div class="govbh-section govbh-user-rating">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- User rating header section -->
-                    <div class="govbh-user-rating__head">
-                        <div class="govbh-user-rating__head-content">
-                            <div class="govbh-user-rating__head-content-title">Is this page useful to you?</div>
-                            <div class="govbh-user-rating__head-content-text">
-                                <p class="m-0">Share your feedback so we can improve your experience.</p>
-                            </div>
-                        </div>
-                        <div class="govbh-user-rating__head-button">
-                            <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon"
-                                aria-label="Is this page useful to you?"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
-                                Yes</button>
-                            <button type="button"
-                                class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon govbh-toggler"
-                                data-target-on="#sharethoughts" aria-label="Is this page useful to you?"><i
-                                    class="ph ph-thumbs-down" aria-hidden="true"></i>
-                                No</button><!-- The govbh-toggler and data-target-on attributes are used to target the visibility of the govbh-user-rating__body -->
+            <h5>User Rating</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <!-- User rating header section -->
+                <div class="govbh-user-rating__head">
+                    <div class="govbh-user-rating__head-content">
+                        <div class="govbh-user-rating__head-content-title">Is this page useful to you?</div>
+                        <div class="govbh-user-rating__head-content-text">
+                            <p class="m-0">Share your feedback so we can improve your experience.</p>
                         </div>
                     </div>
-                    <!-- User rating body section -->
-                    <div class="govbh-user-rating__body" id="sharethoughts" style="display:none;">
-                        <div class="govbh-user-rating__body-title">Help us improve Kingdom of Bahrain's National Portal</div>
-                        <div class="govbh-user-rating__body-content">
-                            <p>To help us improve Kingdom of Bahrain's National Portal, we'd like to know more about your visit
-                                today.</p>
-                        </div>
-                        <form action="#">
-                            <div class="row gy-2">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <div class="govbh-form-control form-group row g-0">
-                                        <div class="col-12">
-                                            <label for="emailaddress">Email Address<span>*</span></label>
-                                        </div>
-                                        <div class="col-12">
-                                            <input type="email" class="form-control" id="emailaddress" placeholder="Email Address *"
-                                                aria-label="Email Address">
-                                        </div>
+                    <div class="govbh-user-rating__head-button">
+                        <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon"
+                            aria-label="Is this page useful to you? - Yes" data-bs-toggle="modal" data-bs-target="#smilyfeedback"><i class="ph ph-thumbs-up" aria-hidden="true"></i>
+                            Yes</button>
+                        <button type="button"
+                            class="govbh-btn govbh-btn--outline govbh-btn--medium govbh-btn--left-icon govbh-toggler"
+                            data-target-on="#sharethoughts" aria-label="Is this page useful to you? - No" aria-controls="sharethoughts" aria-expanded="false"><i
+                                class="ph ph-thumbs-down" aria-hidden="true"></i>
+                            No</button><!-- The govbh-toggler and data-target-on attributes are used to target the visibility of the govbh-user-rating__body -->
+                    </div>
+                </div>
+                <!-- User rating body section -->
+                <div class="govbh-user-rating__body" id="sharethoughts" style="display:none;">
+                    <div class="govbh-user-rating__body-title">Help us improve Kingdom of Bahrain's Government Websites</div>
+                    <div class="govbh-user-rating__body-content">
+                        <p>To help us improve Kingdom of Bahrain's Government Websites, we'd like to know more about your visit
+                            today.</p>
+                    </div>
+                    <form action="#">
+                        <div class="row gy-2">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="govbh-form-control form-group row g-0">
+                                    <div class="col-12">
+                                        <label for="emailaddress">Email Address</label>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <div class="govbh-form-control form-group row g-0">
-                                        <div class="col-12">
-                                            <label for="phone">Phone Number<span>*</span></label>
-                                        </div>
-                                        <div class="col-12">
-                                            <input type="tel" class="form-control" id="phone" placeholder="Phone Number" value=""
-                                                aria-label="Phone number">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="govbh-form-control form-check">
-                                        <div class="form-label">What problem did you face?<span>*</span></div>
-                                        <fieldset class="form-check__group bg--grey form-check__group--padding">
-                                            <legend></legend>
-                                            <div class="form-check__item">
-                                                <input type="checkbox" id="option1" name="problemsyouface" value="1"
-                                                    aria-label="Information not up to date">
-                                                <label for="option1">Information not up to date</label>
-                                            </div>
-                                            <div class="form-check__item">
-                                                <input type="checkbox" id="option2" name="problemsyouface" value="2" checked
-                                                    aria-label="Information not complete">
-                                                <label for="option2">Information not complete</label>
-                                            </div>
-                                            <div class="form-check__item">
-                                                <input type="checkbox" id="option3" name="problemsyouface" value="3"
-                                                    aria-label="Page contains spelling/grammar mistakes">
-                                                <label for="option3">Page contains spelling/grammar mistakes</label>
-                                            </div>
-                                            <div class="form-check__item">
-                                                <input type="checkbox" id="option4" name="problemsyouface" value="4"
-                                                    aria-label="Page contains broken links">
-                                                <label for="option4">Page contains broken links</label>
-                                            </div>
-                                            <div class="form-check__item">
-                                                <input type="checkbox" id="option5" name="problemsyouface" value="5"
-                                                    aria-label="Other">
-                                                <label for="option5">Other</label>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="govbh-form-control form-group row g-0">
-                                        <div class="col-12">
-                                            <label for="comments001">Comments<span>*</span></label>
-                                        </div>
-                                        <div class="col-12">
-                                            <textarea class="form-control form-textarea" name="comments001" id="comments001"
-                                                placeholder="Please enter your comments *" aria-label="Please enter your comments"
-                                                maxlength="300"></textarea>
-                                            <div class="form-floating__character-limit text-end" aria-live="polite" role="alert">
-                                                <span class="textarea-character-limit"></span> characters remaining</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mt-4">
-                                    <div class="govbh-user-rating__body-recaptcha mb-4">
-                                        <p>This form is protected by an invisible captcha. <a href="#" target="_blank">Privacy
-                                                Policy</a> | <a href="#" target="_blank">Terms of Use</a></p>
-                                    </div>
-                                    <div class="d-flex flex-wrap gap-3">
-                                        <button type="button" class="govbh-btn govbh-btn--primary">Submit</button>
+                                    <div class="col-12">
+                                        <input type="email" class="form-control" id="emailaddress" placeholder="Enter your email address"
+                                            aria-label="Email Address">
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="govbh-form-control form-group row g-0">
+                                    <div class="col-12">
+                                        <label for="phone">Phone Number</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="tel" class="form-control" id="phone" placeholder="Phone Number" value=""
+                                            aria-label="Enter your phone number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="govbh-form-control form-check" aria-labelledby="id-checkbox-group-label" tabindex="0" role="group">
+                                    <div class="form-label" id="id-checkbox-group-label">What problem did you face?<span>*</span></div>
+                                    <fieldset class="form-check__group bg--grey form-check__group--padding">
+                                        <legend class="visually-hidden"></legend>
+                                        <div class="form-check__item">
+                                            <input type="checkbox" id="option1" name="problemsyouface" value="1"
+                                                aria-label="The information on the page is outdated">
+                                            <label for="option1">The information on the page is outdated</label>
+                                        </div>
+                                        <div class="form-check__item">
+                                            <input type="checkbox" id="option2" name="problemsyouface" value="2" checked
+                                                aria-label="This page  or eservice not functioning properly">
+                                            <label for="option2">This page  or eservice not functioning properly</label>
+                                        </div>
+                                        <div class="form-check__item">
+                                            <input type="checkbox" id="option3" name="problemsyouface" value="3"
+                                                aria-label="The process/instructions are unclear">
+                                            <label for="option3">The process/instructions are unclear</label>
+                                        </div>
+                                        <div class="form-check__item">
+                                            <input type="checkbox" id="option4" name="problemsyouface" value="4"
+                                                aria-label="I could not find what I was searching for">
+                                            <label for="option4">I could not find what I was searching for</label>
+                                        </div>
+                                        <div class="form-check__item">
+                                            <input type="checkbox" id="option5" name="problemsyouface" value="5"
+                                                aria-label="Other (please specify)">
+                                            <label for="option5">Other (please specify)</label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="govbh-form-control form-group row g-0">
+                                    <div class="col-12">
+                                        <label for="comments001" id="footertellsomethingyourself">Comments</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control form-textarea" name="comments001" id="comments001"
+                                            placeholder="Enter your comments" aria-label="Enter your comments"
+                                            maxlength="300" aria-labelledby="footertellsomethingyourself charecterlimit-usefulpage"></textarea>
+                                        <div id="charecterlimit-usefulpage" class="form-floating__character-limit text-end" aria-live="polite" role="alert">
+                                            <span class="textarea-character-limit"></span> characters remaining</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <div class="govbh-user-rating__body-recaptcha mb-4">
+                                    <p class="govbh-text--extra-small">This form is protected by an invisible captcha. <a href="https://policies.google.com/privacy?hl=en" aria-label="View google privacy policy" rel="noopener noreferrer" target="_blank" class="govbh-is-external">Privacy Policy</a> | <a href="https://policies.google.com/terms?hl=en" target="_blank" aria-label="View google terms of use" rel="noopener noreferrer" class="govbh-is-external">Terms of Use</a></p>
+                                </div>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <button type="button" class="govbh-btn govbh-btn--primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Smily Model -->
+	<div class="govbh-modal modal fade" id="smilyfeedback" tabindex="-1"
+		aria-labelledby="smilyfeedback" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-body model-body__center">
+					<div class="model-body__icon"><i class="ph ph-smiley" aria-hidden="true"></i></div>
+					<div class="model-body__title">Thank You!</div>
+					<div class="model-body__text">We are glad that you are satisfied with our services.</div>
+					<button type="button" class="govbh-btn govbh-btn--primary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
     <!--Component User Rating:Default Ends --> 
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -196,6 +207,8 @@
 <script src="../js/govbh-utils.js"></script>
 <!-- smartmenus -->
 <script src="../js/jquery.smartmenus.min.js"></script>
+<!-- Internation Telephone -->
+<script src="../js/intlTelInput.min.js"></script>
 <!-- Themes -->
 <script src="../js/govbh-themes-0.0.1.js"></script>
 <!-- Script Ends -->

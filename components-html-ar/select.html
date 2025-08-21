@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="ar-BH" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Select | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -47,348 +47,365 @@
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
     <link rel="stylesheet" href="../css/style-ar.min.css" media="all">
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <div class="govbh-section">
+<body>    
+    <div class="govbh-section">
         <div class="container">
-            <!--Component Select:Default Floating Label Starts -->
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="govbh-form-control form-floating govbh-form-control--select">
-                        <select class="form-select select2" id="select-001" name="select">
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            <option value="4">Option 4</option>
-                            <option value="5">Option 5</option>
-                            <option value="6">Option 6</option>
-                            <option value="7">Option 7</option>
-                        </select>
-                        <label for="select-001">Select Option<span>*</span></label>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Multiselect</div>
-                    <div class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
-                        <select class="with-search" data-placeholder-search="Search Options"
-                            data-placeholder="Select Multiple Values" data-columns="1" data-select-all="yes"
-                            data-select-all-text="Select All" data-unselect-all-text="Unselect All"
-                            data-selected-option-text=" selected" multiple id="select-002" name="select">
-                                <option value="1">Value 1</option>
-                                <option value="2">Value 2</option>
-                                <option value="3">Value 3</option>
-                                <option value="4">Value 4</option>
-                                <option value="5">Value 5</option>
-                                <option value="6">Value 6</option>
-                                <option value="7">Value 7</option>
+            <h5>يختار</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <!--Component Select:Default Floating Label Starts -->
+                <h6>عنوان عائم</h6>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--select" aria-labelledby="select-input-001" tabindex="0">
+                            <div class="visually-hidden" id="select-input-001">نص مخفي بصريًا لقارئات الشاشة</div>
+                            <select class="form-select select2" id="select-001" name="select">
+                                <option value="1">خيار 1</option>
+                                <option value="2">خيار 2</option>
+                                <option value="3">خيار 3</option>
+                                <option value="4">خيار 4</option>
+                                <option value="5">خيار 5</option>
+                                <option value="6">خيار 6</option>
+                                <option value="7">خيار 7</option>
                             </select>
-                        <label for="select-002">Select Option<span>*</span></label>
+                            <label for="select-001">اختر الخيار<span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">اختيار متعدد</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top" aria-labelledby="select-input-002" tabindex="0">
+                            <div class="visually-hidden" id="select-input-002">نص مخفي بصريًا لقارئات الشاشة</div>
+                            <select class="with-search" data-placeholder-search="البحث في الخيارات"
+                                data-placeholder="اختر خيارات متعددة" data-columns="1" data-select-all="yes"
+                                data-select-all-text="اختر الكل" data-unselect-all-text="إلغاء تحديد الكل"
+                                data-selected-option-text=" selected" multiple id="select-002" name="select">
+                                    <option value="1">عنوان 1</option>
+                                    <option value="2">عنوان 2</option>
+                                    <option value="3">عنوان 3</option>
+                                    <option value="4">عنوان 4</option>
+                                    <option value="5">عنوان 5</option>
+                                    <option value="6">عنوان 6</option>
+                                    <option value="7">عنوان 7</option>
+                                </select>
+                            <label for="select-002">اختر الخيار<span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">خطأ</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--select  govbh-form-control--invalid" aria-labelledby="select-input-003" tabindex="0">
+                            <div class="visually-hidden" id="select-input-003">نص مخفي بصريًا لقارئات الشاشة</div>
+                            <select class="form-select select2" id="select-003" name="select" aria-invalid="true" aria-describedby="select-error-01">
+                                <option value="1">خيار 1</option>
+                                <option value="2">خيار 2</option>
+                                <option value="3">خيار 3</option>
+                                <option value="4">خيار 4</option>
+                                <option value="5">خيار 5</option>
+                                <option value="6">خيار 6</option>
+                                <option value="7">خيار 7</option>
+                            </select>
+                            <label for="select-003">اختر الخيار<span>*</span></label>
+                            <div id="select-error-01" class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> نص الخطأ</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">نجاح</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--select  govbh-form-control--success" aria-labelledby="select-input-004" tabindex="0">
+                            <div class="visually-hidden" id="select-input-004">نص مخفي بصريًا لقارئات الشاشة</div>
+                            <select class="form-select select2" id="select-004" name="select">
+                                <option value="1">خيار 1</option>
+                                <option value="2">خيار 2</option>
+                                <option value="3">خيار 3</option>
+                                <option value="4">خيار 4</option>
+                                <option value="5">خيار 5</option>
+                                <option value="6">خيار 6</option>
+                                <option value="7">خيار 7</option>
+                            </select>
+                            <label for="select-004">اختر الخيار<span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--select  govbh-form-control--disabled" aria-labelledby="select-input-005" tabindex="0">
+                            <div class="visually-hidden" id="select-input-005">نص مخفي بصريًا لقارئات الشاشة</div>
+                            <select class="form-select select2" id="select-005" name="select">
+                                <option value="1">خيار 1</option>
+                                <option value="2">خيار 2</option>
+                                <option value="3">خيار 3</option>
+                                <option value="4">خيار 4</option>
+                                <option value="5">خيار 5</option>
+                                <option value="6">خيار 6</option>
+                                <option value="7">خيار 7</option>
+                            </select>
+                            <label for="select-005">اختر الخيار<span>*</span></label>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
-                    <div class="govbh-form-control form-floating govbh-form-control--select  govbh-form-control--invalid">
-                        <select class="form-select select2" id="select-003" name="select">
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            <option value="4">Option 4</option>
-                            <option value="5">Option 5</option>
-                            <option value="6">Option 6</option>
-                            <option value="7">Option 7</option>
-                        </select>
-                        <label for="select-003">Select Option<span>*</span></label>
-                        <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
+                <!--Component Select:Default Floating Label Ends -->
+
+                <div class="hr"></div>
+
+                <!--Component Select:Default Top Label Starts -->
+                <div class="row g-4 pb-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <div class="row form-group govbh-form-control g-0">
+                            <div class="col-12">
+                                <label for="select-006">Label <span>*</span></label> 
+                            </div>
+                            <div class="col-12">
+                                <div class="govbh-form-control--select" aria-labelledby="select-input-006" tabindex="0">
+                                    <div class="visually-hidden" id="select-input-006">نص مخفي بصريًا لقارئات الشاشة</div>
+                                    <select class="form-select select2" id="select-006" name="select">
+                                        <option value="0">اختر الخيار</option>
+                                        <option value="1">خيار 1</option>
+                                        <option value="2">خيار 2</option>
+                                        <option value="3">خيار 3</option>
+                                        <option value="4">خيار 4</option>
+                                        <option value="5">خيار 5</option>
+                                        <option value="6">خيار 6</option>
+                                        <option value="7">خيار 7</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">اختيار متعدد</div>
+                        <div class="row form-group govbh-form-control g-0">
+                            <div class="col-12">
+                                <label for="select-007">عنوان<span>*</span></label>
+                            </div>
+                            <div class="col-12">
+                                <div class="govbh-form-control--select" aria-labelledby="select-input-007" tabindex="0">
+                                    <div class="visually-hidden" id="select-input-007">نص مخفي بصريًا لقارئات الشاشة</div>
+                                    <select class="with-search" data-placeholder-search="البحث في الخيارات"
+                                    data-placeholder="اختر خيارات متعددة" data-columns="1" data-select-all="yes"
+                                    data-select-all-text="اختر الكل" data-unselect-all-text="إلغاء تحديد الكل"
+                                    data-selected-option-text=" selected" multiple id="select-007" name="select">
+                                        <option value="1">قيمة 1</option>
+                                        <option value="2">قيمة 2</option>
+                                        <option value="3">قيمة 3</option>
+                                        <option value="4">قيمة 4</option>
+                                        <option value="5">قيمة 5</option>
+                                        <option value="6">قيمة 6</option>
+                                        <option value="7">قيمة 7</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">خطأ</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--invalid g-0">
+                            <div class="col-12">
+                                <label for="select-008">عنوان <span>*</span></label> 
+                            </div>
+                            <div class="col-12">
+                                <div class="govbh-form-control--select" aria-labelledby="select-input-008" tabindex="0">
+                                    <div class="visually-hidden" id="select-input-008">نص مخفي بصريًا لقارئات الشاشة</div>
+                                    <select class="form-select select2" id="select-008" name="select" aria-invalid="true" aria-describedby="select-error-02">
+                                        <option value="0">اختر الخيار</option>
+                                        <option value="1">خيار 1</option>
+                                        <option value="2">خيار 2</option>
+                                        <option value="3">خيار 3</option>
+                                        <option value="4">خيار 4</option>
+                                        <option value="5">خيار 5</option>
+                                        <option value="6">خيار 6</option>
+                                        <option value="7">خيار 7</option>
+                                    </select>
+                                    <div id="select-error-02" class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> نص الخطأ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">نجاح</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--success g-0">
+                            <div class="col-12">
+                                <label for="select-009">عنوان <span>*</span></label> 
+                            </div>
+                            <div class="col-12">
+                                <div class="govbh-form-control--select" aria-labelledby="select-input-009" tabindex="0">
+                                    <div class="visually-hidden" id="select-input-009">نص مخفي بصريًا لقارئات الشاشة</div>
+                                    <select class="form-select select2" id="select-009" name="select">
+                                        <option value="0">اختر الخيار</option>
+                                        <option value="1">خيار 1</option>
+                                        <option value="2">خيار 2</option>
+                                        <option value="3">خيار 3</option>
+                                        <option value="4">خيار 4</option>
+                                        <option value="5">خيار 5</option>
+                                        <option value="6">خيار 6</option>
+                                        <option value="7">خيار 7</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <div class="row form-group govbh-form-control g-0 govbh-form-control--disabled">
+                            <div class="col-12">
+                                <label for="select-010">عنوان<span>*</span></label>
+                            </div>
+                            <div class="col-12">
+                                <div class="govbh-form-control--select" aria-labelledby="select-input-010" tabindex="0">
+                                    <div class="visually-hidden" id="select-input-010">نص مخفي بصريًا لقارئات الشاشة</div>
+                                    <select class="with-search" data-placeholder-search="البحث في الخيارات"
+                                    data-placeholder="اختر خيارات متعددة" data-columns="1" data-select-all="yes"
+                                    data-select-all-text="اختر الكل" data-unselect-all-text="إلغاء تحديد الكل"
+                                    data-selected-option-text=" selected" multiple id="select-010" name="select">
+                                        <option value="1">قيمة 1</option>
+                                        <option value="2">قيمة 2</option>
+                                        <option value="3">قيمة 3</option>
+                                        <option value="4">قيمة 4</option>
+                                        <option value="5">قيمة 5</option>
+                                        <option value="6">قيمة 6</option>
+                                        <option value="7">قيمة 7</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
-                    <div class="govbh-form-control form-floating govbh-form-control--select  govbh-form-control--success">
-                        <select class="form-select select2" id="select-004" name="select">
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            <option value="4">Option 4</option>
-                            <option value="5">Option 5</option>
-                            <option value="6">Option 6</option>
-                            <option value="7">Option 7</option>
-                        </select>
-                        <label for="select-004">Select Option<span>*</span></label>
+                <!--Component Select:Default Top Label Ends -->
+
+                <div class="hr"></div>
+
+                <!--Component Select:Default Side Label Starts -->
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <div class="row form-group govbh-form-control g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="input-011">عنوان<span>*</span></label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <div class="govbh-form-control--select" aria-labelledby="select-input-011" tabindex="0">
+                                    <div class="visually-hidden" id="select-input-011">نص مخفي بصريًا لقارئات الشاشة</div>
+                                    <select class="form-select select2" id="select-011" name="select">
+                                        <option value="0">اختر الخيار</option>
+                                        <option value="1">خيار 1</option>
+                                        <option value="2">خيار 2</option>
+                                        <option value="3">خيار 3</option>
+                                        <option value="4">خيار 4</option>
+                                        <option value="5">خيار 5</option>
+                                        <option value="6">خيار 6</option>
+                                        <option value="7">خيار 7</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">اختيار متعدد</div>
+                        <div class="row form-group govbh-form-control g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="input-012">عنوان<span>*</span></label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <div class="govbh-form-control--select" aria-labelledby="select-input-012" tabindex="0">
+                                    <div class="visually-hidden" id="select-input-012">نص مخفي بصريًا لقارئات الشاشة</div>
+                                    <select class="with-search" data-placeholder-search="البحث في الخيارات"
+                                    data-placeholder="اختر خيارات متعددة" data-columns="1" data-select-all="yes"
+                                    data-select-all-text="اختر الكل" data-unselect-all-text="إلغاء تحديد الكل"
+                                    data-selected-option-text=" selected" multiple id="select-012" name="select">
+                                        <option value="1">قيمة 1</option>
+                                        <option value="2">قيمة 2</option>
+                                        <option value="3">قيمة 3</option>
+                                        <option value="4">قيمة 4</option>
+                                        <option value="5">قيمة 5</option>
+                                        <option value="6">قيمة 6</option>
+                                        <option value="7">قيمة 7</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">نجاح</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--success g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="input-013">عنوان<span>*</span></label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <div class="govbh-form-control--select" aria-labelledby="select-input-013" tabindex="0">
+                                    <div class="visually-hidden" id="select-input-013">نص مخفي بصريًا لقارئات الشاشة</div>
+                                    <select class="form-select select2" id="select-013" name="select">
+                                        <option value="0">اختر الخيار</option>
+                                        <option value="1">خيار 1</option>
+                                        <option value="2">خيار 2</option>
+                                        <option value="3">خيار 3</option>
+                                        <option value="4">خيار 4</option>
+                                        <option value="5">خيار 5</option>
+                                        <option value="6">خيار 6</option>
+                                        <option value="7">خيار 7</option>
+                                    </select>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">خطأ</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--invalid g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="input-014">عنوان<span>*</span></label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <div class="govbh-form-control--select" aria-labelledby="select-input-014" tabindex="0">
+                                    <div class="visually-hidden" id="select-input-014">نص مخفي بصريًا لقارئات الشاشة</div>
+                                    <select class="form-select select2" id="select-014" name="select" aria-invalid="true" aria-describedby="select-error-03">
+                                        <option value="0">اختر الخيار</option>
+                                        <option value="1">خيار 1</option>
+                                        <option value="2">خيار 2</option>
+                                        <option value="3">خيار 3</option>
+                                        <option value="4">خيار 4</option>
+                                        <option value="5">خيار 5</option>
+                                        <option value="6">خيار 6</option>
+                                        <option value="7">خيار 7</option>
+                                    </select>
+                                    <div id="select-error-03" class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> نص الخطأ</div>
+                                </div>
+                            </div>                       
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--disabled g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="input-015">عنوان<span>*</span></label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <div class="govbh-form-control--select" aria-labelledby="select-input-015" tabindex="0">
+                                    <div class="visually-hidden" id="select-input-015">نص مخفي بصريًا لقارئات الشاشة</div>
+                                    <select class="with-search" data-placeholder-search="البحث في الخيارات"
+                                    data-placeholder="اختر خيارات متعددة" data-columns="1" data-select-all="yes"
+                                    data-select-all-text="اختر الكل" data-unselect-all-text="إلغاء تحديد الكل"
+                                    data-selected-option-text=" selected" multiple id="select-015" name="select">
+                                        <option value="1">قيمة 1</option>
+                                        <option value="2">قيمة 2</option>
+                                        <option value="3">قيمة 3</option>
+                                        <option value="4">قيمة 4</option>
+                                        <option value="5">قيمة 5</option>
+                                        <option value="6">قيمة 6</option>
+                                        <option value="7">قيمة 7</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <div class="govbh-form-control form-floating govbh-form-control--select  govbh-form-control--disabled">
-                        <select class="form-select select2" id="select-005" name="select">
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            <option value="4">Option 4</option>
-                            <option value="5">Option 5</option>
-                            <option value="6">Option 6</option>
-                            <option value="7">Option 7</option>
-                        </select>
-                        <label for="select-005">Select Option<span>*</span></label>
-                    </div>
-                </div>
+                <!--Component Select:Default Side Label Ends -->
             </div>
-            <!--Component Select:Default Floating Label Ends -->
-
-            <div class="hr"></div>
-
-            <!--Component Select:Default Top Label Starts -->
-            <div class="row g-4 pb-4">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="row form-group govbh-form-control g-0">
-                        <div class="col-12">
-                            <label for="select-006">Label <span>*</span></label> 
-                        </div>
-                        <div class="col-12">
-                            <div class="govbh-form-control--select">
-                                <select class="form-select select2" id="select-006" name="select">
-                                    <option value="0">Select Option</option>
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                    <option value="4">Option 4</option>
-                                    <option value="5">Option 5</option>
-                                    <option value="6">Option 6</option>
-                                    <option value="7">Option 7</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Multiselect</div>
-                    <div class="row form-group govbh-form-control g-0">
-                        <div class="col-12">
-                            <label for="select-007">Label<span>*</span></label>
-                        </div>
-                        <div class="col-12">
-                            <div class="govbh-form-control--select">
-                                <select class="with-search" data-placeholder-search="Search Options"
-                                data-placeholder="Select Multiple Values" data-columns="1" data-select-all="yes"
-                                data-select-all-text="Select All" data-unselect-all-text="Unselect All"
-                                data-selected-option-text=" selected" multiple id="select-007" name="select">
-                                    <option value="1">Value 1</option>
-                                    <option value="2">Value 2</option>
-                                    <option value="3">Value 3</option>
-                                    <option value="4">Value 4</option>
-                                    <option value="5">Value 5</option>
-                                    <option value="6">Value 6</option>
-                                    <option value="7">Value 7</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--invalid g-0">
-                        <div class="col-12">
-                            <label for="select-008">Label <span>*</span></label> 
-                        </div>
-                        <div class="col-12">
-                            <div class="govbh-form-control--select">
-                                <select class="form-select select2" id="select-008" name="select">
-                                    <option value="0">Select Option</option>
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                    <option value="4">Option 4</option>
-                                    <option value="5">Option 5</option>
-                                    <option value="6">Option 6</option>
-                                    <option value="7">Option 7</option>
-                                </select>
-                                <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--success g-0">
-                        <div class="col-12">
-                            <label for="select-009">Label <span>*</span></label> 
-                        </div>
-                        <div class="col-12">
-                            <div class="govbh-form-control--select">
-                                <select class="form-select select2" id="select-009" name="select">
-                                    <option value="0">Select Option</option>
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                    <option value="4">Option 4</option>
-                                    <option value="5">Option 5</option>
-                                    <option value="6">Option 6</option>
-                                    <option value="7">Option 7</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>                    
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <div class="row form-group govbh-form-control g-0 govbh-form-control--disabled">
-                        <div class="col-12">
-                            <label for="select-010">Label<span>*</span></label>
-                        </div>
-                        <div class="col-12">
-                            <div class="govbh-form-control--select">
-                                <select class="with-search" data-placeholder-search="Search Options"
-                                data-placeholder="Select Multiple Values" data-columns="1" data-select-all="yes"
-                                data-select-all-text="Select All" data-unselect-all-text="Unselect All"
-                                data-selected-option-text=" selected" multiple id="select-010" name="select">
-                                    <option value="1">Value 1</option>
-                                    <option value="2">Value 2</option>
-                                    <option value="3">Value 3</option>
-                                    <option value="4">Value 4</option>
-                                    <option value="5">Value 5</option>
-                                    <option value="6">Value 6</option>
-                                    <option value="7">Value 7</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Component Select:Default Top Label Ends -->
-
-            <div class="hr"></div>
-
-            <!--Component Select:Default Side Label Starts -->
-            <div class="row g-4">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="row form-group govbh-form-control g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="input-011">Label<span>*</span></label>
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <div class="govbh-form-control--select">
-                                <select class="form-select select2" id="select-011" name="select">
-                                    <option value="0">Select Option</option>
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                    <option value="4">Option 4</option>
-                                    <option value="5">Option 5</option>
-                                    <option value="6">Option 6</option>
-                                    <option value="7">Option 7</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Multiselect</div>
-                    <div class="row form-group govbh-form-control g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="input-012">Label<span>*</span></label>
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <div class="govbh-form-control--select">
-                                <select class="with-search" data-placeholder-search="Search Options"
-                                data-placeholder="Select Multiple Values" data-columns="1" data-select-all="yes"
-                                data-select-all-text="Select All" data-unselect-all-text="Unselect All"
-                                data-selected-option-text=" selected" multiple id="select-012" name="select">
-                                    <option value="1">Value 1</option>
-                                    <option value="2">Value 2</option>
-                                    <option value="3">Value 3</option>
-                                    <option value="4">Value 4</option>
-                                    <option value="5">Value 5</option>
-                                    <option value="6">Value 6</option>
-                                    <option value="7">Value 7</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--success g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="input-013">Label<span>*</span></label>
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                             <div class="govbh-form-control--select">
-                                <select class="form-select select2" id="select-013" name="select">
-                                    <option value="0">Select Option</option>
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                    <option value="4">Option 4</option>
-                                    <option value="5">Option 5</option>
-                                    <option value="6">Option 6</option>
-                                    <option value="7">Option 7</option>
-                                </select>
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--invalid g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="input-014">Label<span>*</span></label>
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <div class="govbh-form-control--select">
-                                <select class="form-select select2" id="select-014" name="select">
-                                    <option value="0">Select Option</option>
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                    <option value="4">Option 4</option>
-                                    <option value="5">Option 5</option>
-                                    <option value="6">Option 6</option>
-                                    <option value="7">Option 7</option>
-                                </select>
-                                <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
-                            </div>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--disabled g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="input-015">Label<span>*</span></label>
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <div class="govbh-form-control--select">
-                                <select class="with-search" data-placeholder-search="Search Options"
-                                data-placeholder="Select Multiple Values" data-columns="1" data-select-all="yes"
-                                data-select-all-text="Select All" data-unselect-all-text="Unselect All"
-                                data-selected-option-text=" selected" multiple id="select-015" name="select">
-                                    <option value="1">Value 1</option>
-                                    <option value="2">Value 2</option>
-                                    <option value="3">Value 3</option>
-                                    <option value="4">Value 4</option>
-                                    <option value="5">Value 5</option>
-                                    <option value="6">Value 6</option>
-                                    <option value="7">Value 7</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Component Select:Default Side Label Ends -->
         </div>
     </div>
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -404,7 +421,7 @@
 <!-- Header Sticky -->
 <script src="../js/govbh-menu-sticky.js"></script>
 <!-- Text Localization -->
-<script src="../js/govbh-lang.js"></script>
+<script src="../js/govbh-lang-ar.js"></script>
 <!-- Library -->
 <script src="../js/govbh-library.min.js"></script>
 <!-- Utils -->

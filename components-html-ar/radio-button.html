@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="ar-BH" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Radio Button | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -45,234 +45,249 @@
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
     <link rel="stylesheet" href="../css/style-ar.min.css" media="all">
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <div class="govbh-section">
+<body>    
+    <div class="govbh-section">
         <div class="container">
-            <!--Component Radio Button:Default Unchecked Starts -->
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="govbh-form-control form-check">      
-                        <div id="radiolabel001" class="form-check__group">                        
-                            <div class="form-check__item">
-                                <input type="radio" id="radio001" name="radio1" value="1">
-                                <label for="radio001">Text</label>
-                            </div>                 
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <div class="govbh-form-control form-check">      
-                        <div id="radiolabel002" class="form-check__group govbh-form-control--disabled">                        
-                            <div class="form-check__item">
-                                <input type="radio" id="radio002" name="radio002" value="1">
-                                <label for="radio002">Text</label>
-                            </div>                 
-                        </div>
-                    </div>     
-                </div>
-            </div>
-            <!--Component Radio Button:Default Unchecked Ends -->
-
-            <div class="hr"></div>
-
-            <!--Component Radio Button:Default Checked Starts -->
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Checked</div>
-                    <div class="govbh-form-control form-check">      
-                        <div id="radiolabel003" class="form-check__group">                        
-                            <div class="form-check__item">
-                                <input type="radio" id="radio003" name="radio003" value="1" checked>
-                                <label for="radio003">Text</label>
-                            </div>                 
-                        </div>
-                    </div>     
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <div class="govbh-form-control form-check">      
-                        <div id="radiolabel004" class="form-check__group govbh-form-control--disabled">                        
-                            <div class="form-check__item">
-                                <input type="radio" id="radio004" name="radio004" value="1" checked>
-                                <label for="radio004">Text</label>
-                            </div>                 
-                        </div>
-                    </div>     
-                </div>
-            </div>
-            <!--Component Radio Button:Default Checked Ends -->
-
-            <div class="hr"></div>
-
-            <!--Component Radio Button:Group With Top Label Vertical Starts -->
-            <div class="row g-4">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="govbh-form-control form-check">      
-                        <label for="radiolabel005">Label<span>*</span></label>                  
-                        <div id="radiolabel005" class="form-check__group bg--grey form-check__group--padding">                        
-                            <div class="form-check__item">
-                                <input type="radio" id="radio005" name="options001" value="1">
-                                <label for="radio005">Option 1</label>
-                            </div>
-                            <div class="form-check__item">
-                                <input type="radio" id="radio006" name="options001"  value="2" checked>
-                                <label for="radio006">Option 2</label>
-                            </div>
-                            <div class="form-check__item">
-                                <input type="radio" id="radio007" name="options001"  value="3">
-                                <label for="radio007">Option 3</label>
-                            </div>                         
-                        </div>
-                    </div>     
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
-                    <div class="govbh-form-control form-check">      
-                        <label for="radiolabel006">Label<span>*</span></label>                  
-                        <div id="radiolabel006" class="form-check__group bg--grey form-check__group--padding govbh-form-control--invalid">                        
-                            <div class="form-check__item">
-                                <input type="radio" id="radio008" name="options002" value="1" checked>
-                                <label for="radio008">Option 1</label>
-                            </div>
-                            <div class="form-check__item">
-                                <input type="radio" id="radio009" name="options002"  value="2">
-                                <label for="radio009">Option 2</label>
-                            </div>
-                            <div class="form-check__item">
-                                <input type="radio" id="radio010" name="options002"  value="3">
-                                <label for="radio010">Option 3</label>
-                            </div>                       
-                        </div>
-                        <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
-                    </div>                    
-                </div>
-            </div>
-            <!--Component Radio Button:Group With Top Label Vertical Ends -->
-
-            <div class="hr"></div>
-
-            <!--Component Radio Button:Group With Top Label Horizontal Starts -->
-            <div class="row g-4">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Horizontal</div>
-                    <div class="govbh-form-control form-check">      
-                        <label for="checklabel007">Label<span>*</span></label>                  
-                        <div id="checklabel007" class="form-check__group form-check__group--horizontal bg--grey form-check__group--padding">                        
-                            <div class="form-check__item">
-                                <input type="radio" id="radio011" name="options003" value="1">
-                                <label for="radio011">Option 1</label>
-                            </div>
-                            <div class="form-check__item">
-                                <input type="radio" id="radio012" name="options003"  value="2" checked>
-                                <label for="radio012">Option 2</label>
-                            </div>
-                            <div class="form-check__item">
-                                <input type="radio" id="radio013" name="options003"  value="3">
-                                <label for="radio013">Option 3</label>
-                            </div>                                 
-                        </div>
-                    </div>     
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
-                    <div class="govbh-form-control form-check">      
-                        <label for="checklabel008">Label<span>*</span></label>                  
-                        <div id="checklabel008" class="form-check__group form-check__group--horizontal bg--grey form-check__group--padding  govbh-form-control--invalid">                        
-                            <div class="form-check__item">
-                                <input type="radio" id="radio014" name="options004" value="1">
-                                <label for="radio14">Option 1</label>
-                            </div>
-                            <div class="form-check__item">
-                                <input type="radio" id="radio015" name="options004"  value="2" checked>
-                                <label for="radio15">Option 2</label>
-                            </div>
-                            <div class="form-check__item">
-                                <input type="radio" id="radio016" name="options004"  value="3">
-                                <label for="radio16">Option 3</label>
-                            </div>                       
-                        </div>
-                        <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
-                    </div>     
-                </div>
-            </div>
-            <!--Component Radio Button:Group With Top Label Horizontal Ends -->
-
-            <div class="hr"></div>
-
-            <div class="row g-4">
-                <!--Component Radio Button:Group With Side Label Vertical Starts -->
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Vertical</div>
-                    <div class="row form-group govbh-form-control g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="input-009">Label<span>*</span></label>
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">       
-                            <div class="govbh-form-control form-check">                
-                                <div id="radiolabel009" class="form-check__group bg--grey form-check__group--padding">                        
-                                    <div class="form-check__item">
-                                        <input type="radio" id="radio017" name="options005" value="1">
-                                        <label for="radio017">Option 1</label>
-                                    </div>
-                                    <div class="form-check__item">
-                                        <input type="radio" id="radio018" name="options005"  value="2" checked>
-                                        <label for="radio018">Option 2</label>
-                                    </div>
-                                    <div class="form-check__item">
-                                        <input type="radio" id="radio019" name="options005"  value="3">
-                                        <label for="radio019">Option 3</label>
-                                    </div>                         
-                                </div>
-                             </div>
-                        </div> 
+            <h5>زر الراديو</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <!--Component Radio Button:Default Unchecked Starts -->
+                <h6>غير محدد</h6>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <div class="govbh-form-control form-check">      
+                            <fieldset class="form-check__group" aria-labelledby="radiolabel001" tabindex="0">   
+                                <legend id="radiolabel001" class="visually-hidden">عنوان الراديو</legend>                     
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio001" name="radio1" value="1" aria-label="Select an option">
+                                    <label for="radio001">نص</label>
+                                </div>                 
+                            </fieldset>
+                        </div>  
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <div class="govbh-form-control form-check">      
+                            <fieldset class="form-check__group govbh-form-control--disabled" aria-labelledby="radiolabel002">
+                                <legend id="radiolabel002" class="visually-hidden">عنوان الراديو</legend>                   
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio002" name="radio002" value="1" aria-label="Select an option" disabled>
+                                    <label for="radio002">نص</label>
+                                </div>                 
+                            </fieldset>
+                        </div>     
                     </div>
                 </div>
-                <!--Component Radio Button:Group With Side Label Vertical Ends -->
+                <!--Component Radio Button:Default Unchecked Ends -->
 
-                <!--Component Radio Button:Group With Side Label horizontal Starts -->
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Horizontal</div>
-                    <div class="row form-group govbh-form-control g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="input-010">Label<span>*</span></label>
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                           <div class="govbh-form-control form-check">                       
-                                <div id="checklabel010" class="form-check__group form-check__group--horizontal bg--grey form-check__group--padding">                        
-                                    <div class="form-check__item">
-                                        <input type="radio" id="radio020" name="options006" value="1">
-                                        <label for="radio020">Option 1</label>
-                                    </div>
-                                    <div class="form-check__item">
-                                        <input type="radio" id="radio021" name="options006"  value="2" checked>
-                                        <label for="radio021">Option 2</label>
-                                    </div>
-                                    <div class="form-check__item">
-                                        <input type="radio" id="radio022" name="options006"  value="3">
-                                        <label for="radio022">Option 3</label>
-                                    </div>                                 
+                <div class="hr"></div>
+
+                <!--Component Radio Button:Default Checked Starts -->
+                <h6>مُختار</h6>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <div class="govbh-form-control form-check">      
+                            <fieldset class="form-check__group" aria-labelledby="radiolabel003" tabindex="0">
+                                <legend id="radiolabel003" class="visually-hidden">عنوان الراديو</legend>                        
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio003" name="radio003" value="1" aria-label="Select an option" checked>
+                                    <label for="radio003">نص</label>
+                                </div>                 
+                            </fieldset>
+                        </div>     
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <div class="govbh-form-control form-check">      
+                            <fieldset class="form-check__group govbh-form-control--disabled" aria-labelledby="radiolabel004">
+                                <legend id="radiolabel004" class="visually-hidden">عنوان الراديو</legend>
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio004" name="radio004" value="1" aria-label="Select an option" checked disabled>
+                                    <label for="radio004">نص</label>
+                                </div>                 
+                            </fieldset>
+                        </div>     
+                    </div>
+                </div>
+                <!--Component Radio Button:Default Checked Ends -->
+
+                <div class="hr"></div>
+
+                <!--Component Radio Button:Group With Top Label Vertical Starts -->
+                <h6>عمودي</h6>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <div class="govbh-form-control form-check">      
+                            <div class="form-toggle__label-text">عنوان<span>*</span></div>               
+                            <fieldset class="form-check__group bg--grey form-check__group--padding" aria-labelledby="radiolabel005" tabindex="0">
+                                <legend id="radiolabel005" class="visually-hidden">عنوان الراديو</legend>                        
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio005" name="options001" value="1" aria-label="Select an option 1">
+                                    <label for="radio005">خيار 1</label>
+                                </div>
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio006" name="options001"  value="2" aria-label="Select an option 2" checked>
+                                    <label for="radio006">خيار 2</label>
+                                </div>
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio007" name="options001"  value="3" aria-label="Select an option 3">
+                                    <label for="radio007">خيار 3</label>
+                                </div>                         
+                            </fieldset>
+                        </div>     
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">خطأ</div>
+                        <div class="govbh-form-control form-check">      
+                            <div class="form-toggle__label-text">عنوان<span>*</span></div>        
+                            <fieldset class="form-check__group bg--grey form-check__group--padding govbh-form-control--invalid" aria-labelledby="radiolabel006 radio-error-01" tabindex="0">                        
+                                <legend id="radiolabel006" class="visually-hidden">عنوان الراديو</legend>
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio008" name="options002" value="1" aria-label="Select an option 1" checked>
+                                    <label for="radio008">خيار 1</label>
+                                </div>
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio009" name="options002"  value="2" aria-label="Select an option 2">
+                                    <label for="radio009">خيار 2</label>
+                                </div>
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio010" name="options002"  value="3" aria-label="Select an option 3">
+                                    <label for="radio010">خيار 3</label>
+                                </div>                       
+                            </fieldset>
+                            <div id="radio-error-01" class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> نص الخطأ</div>
+                        </div>                    
+                    </div>
+                </div>
+                <!--Component Radio Button:Group With Top Label Vertical Ends -->
+
+                <div class="hr"></div>
+
+                <!--Component Radio Button:Group With Top Label Horizontal Starts -->
+                <h6>أفقي</h6>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <div class="govbh-form-control form-check">      
+                            <div class="form-toggle__label-text">عنوان<span>*</span></div>       
+                            <fieldset class="form-check__group form-check__group--horizontal bg--grey form-check__group--padding" aria-labelledby="radiolabel007" tabindex="0">     
+                                <legend id="radiolabel007" class="visually-hidden">عنوان الراديو</legend>                   
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio011" name="options003" value="1" aria-label="Select an option 1">
+                                    <label for="radio011">خيار 1</label>
+                                </div>
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio012" name="options003"  value="2" aria-label="Select an option 2" checked>
+                                    <label for="radio012">خيار 2</label>
+                                </div>
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio013" name="options003"  value="3" aria-label="Select an option 3">
+                                    <label for="radio013">خيار 3</label>
+                                </div>                                 
+                            </fieldset>
+                        </div>     
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">خطأ</div>
+                        <div class="govbh-form-control form-check">      
+                            <div class="form-toggle__label-text">عنوان<span>*</span></div>             
+                            <fieldset class="form-check__group form-check__group--horizontal bg--grey form-check__group--padding  govbh-form-control--invalid" aria-labelledby="checklabel008 radio-error-02" tabindex="0">  
+                                <legend id="checklabel008" class="visually-hidden">عنوان الراديو</legend>                      
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio014" name="options004" value="1" aria-label="Select an option 1">
+                                    <label for="radio14">خيار 1</label>
+                                </div>
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio015" name="options004"  value="2" aria-label="Select an option 2" checked>
+                                    <label for="radio15">خيار 2</label>
+                                </div>
+                                <div class="form-check__item">
+                                    <input type="radio" id="radio016" name="options004"  value="3" aria-label="Select an option 3">
+                                    <label for="radio16">خيار 3</label>
+                                </div>                       
+                            </fieldset>
+                            <div id="radio-error-02" class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> نص الخطأ</div>
+                        </div>     
+                    </div>
+                </div>
+                <!--Component Radio Button:Group With Top Label Horizontal Ends -->
+
+                <div class="hr"></div>
+
+                <div class="row g-4">
+                    <!--Component Radio Button:Group With Side Label Vertical Starts -->
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">عمودي</div>
+                        <div class="row form-group govbh-form-control g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <div class="form-toggle__label-text">عنوان<span>*</span></div>   
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">       
+                                <div class="govbh-form-control form-check">                
+                                    <fieldset class="form-check__group bg--grey form-check__group--padding" aria-labelledby="radiolabel009" tabindex="0">   
+                                        <legend id="radiolabel009" class="visually-hidden">عنوان الراديو</legend>                     
+                                        <div class="form-check__item">
+                                            <input type="radio" id="radio017" name="options005" value="1" aria-label="Select an option 1">
+                                            <label for="radio017">خيار 1</label>
+                                        </div>
+                                        <div class="form-check__item">
+                                            <input type="radio" id="radio018" name="options005"  value="2" aria-label="Select an option 2" checked>
+                                            <label for="radio018">خيار 2</label>
+                                        </div>
+                                        <div class="form-check__item">
+                                            <input type="radio" id="radio019" name="options005"  value="3" aria-label="Select an option 3">
+                                            <label for="radio019">خيار 3</label>
+                                        </div>                         
+                                    </fieldset>
                                 </div>
                             </div> 
                         </div>
                     </div>
+                    <!--Component Radio Button:Group With Side Label Vertical Ends -->
+
+                    <!--Component Radio Button:Group With Side Label horizontal Starts -->
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">أفقي</div>
+                        <div class="row form-group govbh-form-control g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <div class="form-toggle__label-text">عنوان<span>*</span></div>   
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                            <div class="govbh-form-control form-check">                       
+                                    <fieldset class="form-check__group form-check__group--horizontal bg--grey form-check__group--padding" aria-labelledby="checklabel010" tabindex="0">
+                                        <legend id="checklabel010" class="visually-hidden">عنوان الراديو</legend>                        
+                                        <div class="form-check__item">
+                                            <input type="radio" id="radio020" name="options006" value="1" aria-label="Select an option 1">
+                                            <label for="radio020">خيار 1</label>
+                                        </div>
+                                        <div class="form-check__item">
+                                            <input type="radio" id="radio021" name="options006"  value="2" aria-label="Select an option 2" checked>
+                                            <label for="radio021">خيار 2</label>
+                                        </div>
+                                        <div class="form-check__item">
+                                            <input type="radio" id="radio022" name="options006"  value="3" aria-label="Select an option 3">
+                                            <label for="radio022">خيار 3</label>
+                                        </div>                                 
+                                    </fieldset>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!--Component Radio Button:Group With Side Label horizontal Ends -->
                 </div>
-                <!--Component Radio Button:Group With Side Label horizontal Ends -->
             </div>
         </div>
     </div>
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -288,7 +303,7 @@
 <!-- Header Sticky -->
 <script src="../js/govbh-menu-sticky.js"></script>
 <!-- Text Localization -->
-<script src="../js/govbh-lang.js"></script>
+<script src="../js/govbh-lang-ar.js"></script>
 <!-- Library -->
 <script src="../js/govbh-library.min.js"></script>
 <!-- Utils -->

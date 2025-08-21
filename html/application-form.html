@@ -51,8 +51,8 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
         <!-- File Upload Dropzone -->
         <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css">
-	    <!-- Fancybox -->
-    <link rel="stylesheet" href="../css/fancybox.min.css">
+	    <!-- Colorbox -->
+    <link rel="stylesheet" href="../css/colorbox.css">
         <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
 </head>
@@ -511,7 +511,7 @@
 
         <!-- Steps Head Starts - update the "done" in govbh-steps__item once the form is filled and moved to next tab-->
         <ul class="govbh-steps govbh-no-li mb-5 d-md-flex d-sm-none d-none" role="tablist">
-            <li class="govbh-steps__item active" role="presentation">
+            <li class="govbh-steps__item" role="presentation">
                 <div class="govbh-steps__item-progress"></div>
                 <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg"
                         alt="Step 1 - Personal Information"></a>
@@ -520,7 +520,7 @@
                     <div class="govbh-steps__item-content-title">Personal Information</div>
                 </div>
             </li>
-            <li class="govbh-steps__item" role="presentation" aria-disabled="true">
+            <li class="govbh-steps__item active" role="presentation" aria-disabled="true">
                 <div class="govbh-steps__item-progress"></div>
                 <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg"
                         alt="Step 2 - Property Details"></a>
@@ -629,8 +629,8 @@
                                         <label class="form-toggle__switch" for="toggle-switch1"><!-- to update the component -->
                                             <input type="checkbox" id="toggle-switch1"
                                                 class="form-toggle__switch-check toggle-switch"
-                                                aria-label="Do you have a driving license?" aria-labelledby="switchstate">
-                                            <span id="switchstate" class="visually-hidden" aria-live="polite" role="alert">Do you have a driving license? Yes or No?</span>
+                                                aria-label="Do you have a driving license?" aria-label-one="No"  aria-label-two="Yes" aria-labelledby="switchstate" role="switch">
+                                            <span id="switchstate" class="visually-hidden" aria-live="polite" role="alert"></span>
                                             <span class="form-toggle__switch-label">No</span>
                                             <span class="form-toggle__switch-slider"></span>
                                             <span class="form-toggle__switch-label">Yes</span>
@@ -726,7 +726,7 @@
                                             <input type="file" id="files" name="files" multiple="multiple"
                                                 aria-label="Upload Certificates or Diploma"
                                                 aria-describedby="file-help file-error" aria-required="true"
-                                                accept=".pdf,.doc,.docx" class="form-group__file--upload">
+                                                accept=".pdf,.doc,.docx" class="form-group__file--upload govbh-upload">
                                         </div><br>
                                         <div class="form-group__file-required" id="file-help">
                                             <div>Max File Count: <span>2</span></div>
@@ -766,7 +766,7 @@
                                 <div class="govbh-form-control form-check">
                                     <div class="formlabel">What are your fields of interests? <span>*</span></div>
                                     <fieldset class="form-check__group bg--primary form-check__group--padding">
-                                        <legend></legend>
+                                        <legend class="visually-hidden"></legend>
                                         <div class="form-check__item">
                                             <input type="checkbox" id="fieldsofinterest1" value="1">
                                             <label for="fieldsofinterest1">Information Technology</label>
@@ -794,7 +794,7 @@
                                 <div class="govbh-form-control form-check">
                                     <div class="formlabel">How did you hear about us? <span>*</span></div>
                                     <fieldset class="form-check__group bg--primary form-check__group--padding">
-                                        <legend></legend>
+                                        <legend class="visually-hidden"></legend>
                                         <div class="form-check__item">
                                             <input type="radio" id="radio1" name="options" value="1">
                                             <label for="radio1">A Friend</label>
@@ -951,7 +951,7 @@
 							<div class="govbh-form-control form-check" aria-labelledby="id-checkbox-group-label" tabindex="0" role="group">
 								<div class="form-label" id="id-checkbox-group-label">What problem did you face?<span>*</span></div>
 								<fieldset class="form-check__group bg--grey form-check__group--padding">
-									<legend></legend>
+									<legend class="visually-hidden"></legend>
 									<div class="form-check__item">
 										<input type="checkbox" id="option1" name="problemsyouface" value="1"
 											aria-label="The information on the page is outdated">
@@ -1059,14 +1059,14 @@
 				<div class="govbh-footer__head govbh-fs-h5">Subscribe Newsletter</div>
 				<div class="govbh-footer__body">
 					<form class="govbh-footer__newsletter">
-						<div class="govbh-footer__newsletter-input">
+						<div class="govbh-footer__newsletter-input newsletter-input-is-invalid">
 							<!-- newsletter-input-is-success, newsletter-input-is-invalid -->
-							<input type="email" name="email" value="" id="enteremail" aria-label="Enter your email"
-								placeholder="Enter your email">
+							<input type="email" name="email" value="" id="enteremail" aria-label="Enter your email" placeholder="Enter your email" aria-invalid="true" aria-describedby="newsletteremail-error">
 							<button type="button" aria-label="Subscribe to Newsletter"><i class="ph ph-arrow-right"
 									aria-hidden="true"></i></button>
 						</div>
 						<p>By subscribing, I agree to the <a href="#">Privacy Policy</a></p>
+						<div id="newsletteremail-error" class="govbh-footer__newsletter--validation-message"><i class="ph ph-warning"></i> Invalid email format.</div>
 					</form>
 				</div>
 				<!-- Social WIdget Starts -->
@@ -1248,9 +1248,8 @@
 	<script src="../js/jquery.multiselect.js"></script>
 	<!-- File Upload Dropzone -->
 	<script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
-
-<!-- Fancybox -->
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+<!-- Colorbox -->
+<script src="../js/jquery.colorbox.js"></script>
 <!-- Sweetalert -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.all.min.js"></script>
 

@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Email Input | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -44,190 +44,192 @@
                     
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
 <body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <div class="govbh-section">
+    <div class="govbh-section">
         <div class="container">
-            <!--Component Email Input:Default Floating Label Starts -->
-            <div class="row g-4 pb-4">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="govbh-form-control form-floating">
-                        <input type="email" name="email" autocomplete="true" class="form-control" id="input-001" placeholder="Email Address" aria-label="Enter your email address">
-                        <label for="input-001">Email Address<span>*</span></label>                
+            <h5>Email Input</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <!--Component Email Input:Default Floating Label Starts -->
+                <h6>Floating label</h6>
+                <div class="row g-4 pb-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
+                        <div class="govbh-form-control form-floating">
+                            <input type="email" name="email" autocomplete="email" class="form-control" id="input-001" placeholder="Enter your email address" aria-label="Enter your email address">
+                            <label for="input-001">Email Address<span>*</span></label>                
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">With Value</div>
+                        <div class="govbh-form-control form-floating">
+                            <input type="email" name="email" autocomplete="email" class="form-control" id="input-002" placeholder="Enter your email address" aria-label="Enter your email address" value="email@email.com">
+                            <label for="input-002">Email Address<span>*</span></label>                
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--invalid">
+                            <input type="email" name="email" autocomplete="email" class="form-control" id="input-003" placeholder="Enter your email address" aria-label="Enter your email address" value="email@email" aria-invalid="true" aria-describedby="email-error-01">
+                            <label for="input-003">Email Address<span>*</span></label>           
+                            <div id="email-error-01" class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--success">
+                            <input type="email" name="email" autocomplete="email" class="form-control" id="input-004" placeholder="Enter your email address" aria-label="Enter your email address" value="email@email.com">
+                            <label for="input-104">Email Address<span>*</span></label>         
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
+                        <div class="govbh-form-control form-floating govbh-form-control--disabled">
+                            <input type="email" name="email" autocomplete="email" class="form-control" id="input-005" placeholder="Enter your email address" aria-label="Enter your email address" value="email@email.com" disabled>
+                            <label for="input-005">Email Address<span>*</span></label>  
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">With Value</div>
-                    <div class="govbh-form-control form-floating">
-                        <input type="email" name="email" autocomplete="true" class="form-control" id="input-002" placeholder="Email Address" aria-label="Enter your email address" value="email@email.com">
-                        <label for="input-002">Email Address<span>*</span></label>                
+                <!--Component Number Email:Default Floating Label Ends -->
+
+                <div class="hr"></div>
+
+                <!--Component Number Input:Default Top Label Starts -->
+                <h6>Top Label</h6>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
+                        <div class="row form-group govbh-form-control g-0">
+                            <div class="col-12">
+                                <label for="input-006">Email Address<span>*</span></label>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" name="email" autocomplete="email" class="form-control" id="input-006" placeholder="Enter your email address" aria-label="Enter your email address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">With Value</div>
+                        <div class="row form-group govbh-form-control g-0">
+                            <div class="col-12">
+                                <label for="input-007">Email Address<span>*</span></label>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" name="email" autocomplete="email" class="form-control" id="input-007" placeholder="Enter your email address" aria-label="Enter your email address" value="email@email.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--invalid g-0">
+                            <div class="col-12">
+                                <label for="input-008">Email Address<span>*</span></label>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" name="email" autocomplete="email" class="form-control" id="input-008" placeholder="Enter your email address" aria-label="Enter your email address" value="email@email" aria-invalid="true" aria-describedby="email-error-02">
+                                <div id="email-error-02" class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
+                            </div>                       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--success g-0">
+                            <div class="col-12">
+                                <label for="input-009">Email Address<span>*</span></label>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" name="email" autocomplete="email" class="form-control" id="input-009" placeholder="Enter your email address" aria-label="Enter your email address" value="email@email.com">
+                            </div>                         
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--disabled g-0">
+                            <div class="col-12">
+                                <label for="input-010">Email Address<span>*</span></label>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" name="email" autocomplete="email" class="form-control" id="input-010" placeholder="Enter your email address" aria-label="Enter your email address" value="email@email.com" disabled>
+                            </div>  
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
-                    <div class="govbh-form-control form-floating govbh-form-control--invalid">
-                        <input type="email" name="email" autocomplete="true" class="form-control" id="input-003" placeholder="Email Address" aria-label="Enter your email address" value="email@email.com">
-                        <label for="input-003">Email Address<span>*</span></label>           
-                        <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
+                <!--Component Number Input:Default Top Label Ends -->
+
+                <div class="hr"></div>
+
+                <!--Component Number Input:Default Side Label Starts -->
+                <h6>Side Label</h6>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
+                        <div class="row form-group govbh-form-control g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="input-011">Email Address<span>*</span></label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <input type="email" name="email" autocomplete="email" class="form-control" id="input-011" placeholder="Enter your email address" aria-label="Enter your email address">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">With Value</div>
+                        <div class="row form-group govbh-form-control g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="input-012">Email Address<span>*</span></label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <input type="email" name="email" autocomplete="email" class="form-control" id="input-012" placeholder="Enter your email address" aria-label="Enter your email address" value="email@email.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--invalid g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="input-013">Email Address<span>*</span></label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <input type="email" name="email" autocomplete="email" class="form-control" id="input-013" placeholder="Enter your email address" aria-label="Enter your email address" value="email@email" aria-invalid="true" aria-describedby="email-error-03">
+                                <div id="email-error-03" class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
+                            </div>                       
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--success g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="input-014">Email Address<span>*</span></label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <input type="email" name="email" autocomplete="email" class="form-control" id="input-014" placeholder="Enter your email address" aria-label="Enter your email address" value="email@email.com">
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
+                        <div class="row form-group govbh-form-control govbh-form-control--disabled g-0">
+                            <div class="col-lg-3 col-sm-3 col-12">
+                                <label for="input-015">Email Address<span>*</span></label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-12">
+                                <input type="email" name="email" autocomplete="email" class="form-control" id="input-015" placeholder="Enter your email address" aria-label="Enter your email address" disabled>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
-                    <div class="govbh-form-control form-floating govbh-form-control--success">
-                        <input type="email" name="email" autocomplete="true" class="form-control" id="input-004" placeholder="Email Address" aria-label="Enter your email address" value="email@email.com">
-                        <label for="input-104">Email Address<span>*</span></label>         
-                        <div class="govbh-form-control__validation-message"><i class="ph ph-check-circle"></i> Success Text</div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <div class="govbh-form-control form-floating govbh-form-control--disabled">
-                        <input type="email" name="email" autocomplete="true" class="form-control" id="input-005" placeholder="Email Address" aria-label="Enter your email address" value="email@email.com" disabled>
-                        <label for="input-005">Email Address<span>*</span></label>  
-                    </div>
-                </div>
+                <!--Component Number Input:Default Side Label Ends -->
             </div>
-            <!--Component Number Email:Default Floating Label Ends -->
-
-            <div class="hr"></div>
-
-            <!--Component Number Input:Default Top Label Starts -->
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="row form-group govbh-form-control g-0">
-                        <div class="col-12">
-                            <label for="input-006">Label<span>*</span></label>
-                        </div>
-                        <div class="col-12">
-                            <input type="email" name="email" autocomplete="ture" class="form-control" id="input-006" placeholder="Email Address" aria-label="Enter your email address">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">With Value</div>
-                    <div class="row form-group govbh-form-control g-0">
-                        <div class="col-12">
-                            <label for="input-007">Label<span>*</span></label>
-                        </div>
-                        <div class="col-12">
-                            <input type="email" name="email" autocomplete="ture" class="form-control" id="input-007" placeholder="Email Address" aria-label="Enter your email address" value="email@email.com">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--invalid g-0">
-                        <div class="col-12">
-                            <label for="input-008">Label<span>*</span></label>
-                        </div>
-                        <div class="col-12">
-                            <input type="email" name="email" autocomplete="ture" class="form-control" id="input-008" placeholder="Email Address" aria-label="Enter your email address" value="email@email.com">
-                            <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--success g-0">
-                        <div class="col-12">
-                            <label for="input-009">Label<span>*</span></label>
-                        </div>
-                        <div class="col-12">
-                            <input type="email" name="email" autocomplete="ture" class="form-control" id="input-009" placeholder="Email Address" aria-label="Enter your email address" value="email@email.com">
-                            <div class="govbh-form-control__validation-message"><i class="ph ph-check-circle"></i> Success Text</div>
-                        </div>                         
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--disabled g-0">
-                        <div class="col-12">
-                            <label for="input-010">Label<span>*</span></label>
-                        </div>
-                        <div class="col-12">
-                            <input type="email" name="email" autocomplete="ture" class="form-control" id="input-010" placeholder="Email Address" aria-label="Enter your email address" value="email@email.com" disabled>
-                        </div>  
-                    </div>
-                </div>
-            </div>
-            <!--Component Number Input:Default Top Label Ends -->
-
-            <div class="hr"></div>
-
-            <!--Component Number Input:Default Side Label Starts -->
-            <div class="row g-4">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="row form-group govbh-form-control g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="input-011">Label<span>*</span></label>
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <input type="email" name="email" autocomplete="ture" class="form-control" id="input-011" placeholder="Email Address" aria-label="Enter your email address">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">With Value</div>
-                    <div class="row form-group govbh-form-control g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="input-012">Label<span>*</span></label>
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <input type="email" name="email" autocomplete="ture" class="form-control" id="input-012" placeholder="Email Address" aria-label="Enter your email address" value="1223">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Error</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--invalid g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="input-013">Label<span>*</span></label>
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <input type="email" name="email" autocomplete="ture" class="form-control" id="input-013" placeholder="Email Address" aria-label="Enter your email address" value="123">
-                            <div class="govbh-form-control__validation-message"><i class="ph ph-warning"></i> Error Text</div>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--success g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="input-014">Label<span>*</span></label>
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <input type="email" name="email" autocomplete="ture" class="form-control" id="input-014" placeholder="Email Address" aria-label="Enter your email address" value="123">
-                            <div class="govbh-form-control__validation-message"><i class="ph ph-check-circle"></i> Success Text</div>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <div class="row form-group govbh-form-control govbh-form-control--disabled g-0">
-                        <div class="col-lg-3 col-sm-3 col-12">
-                            <label for="input-015">Label<span>*</span></label>
-                        </div>
-                        <div class="col-lg-9 col-sm-9 col-12">
-                            <input type="email" name="email" autocomplete="ture" class="form-control" id="input-015" placeholder="Email Address" aria-label="Enter your email address" disabled>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Component Number Input:Default Side Label Ends -->
         </div>
     </div> 
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+    
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"

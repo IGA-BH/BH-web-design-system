@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="ar-BH" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Progress Bar | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -45,54 +45,59 @@
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
     <link rel="stylesheet" href="../css/style-ar.min.css" media="all">
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
 <body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <div class="govbh-section">
+    <div class="govbh-section">
         <div class="container">
             <!--Component Progress Bar:Default Starts -->
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="govbh-progress govbh-progress--brand" role="progressbar" aria-label="Default example">
-                        <div class="govbh-progress__container">
-                            <div class="govbh-progress__bar" style="width: 75%">75%</div>
+            <h5>شريط التقدم</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <div class="govbh-progress govbh-progress--brand" role="progressbar" aria-label="Progress Bars 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="govbh-progress__container">
+                                <div class="govbh-progress__bar" style="width: 75%">75%</div>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Info</div>
-                    <div class="govbh-progress govbh-progress--info" role="progressbar" aria-label="Info example">
-                        <div class="govbh-progress__container">
-                            <div class="govbh-progress__bar" style="width: 25%">25%</div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">معلومات</div>
+                        <div class="govbh-progress govbh-progress--info" role="progressbar" aria-label="Progress Bars 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="govbh-progress__container">
+                                <div class="govbh-progress__bar" style="width: 25%">25%</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Warning</div>
-                    <div class="govbh-progress govbh-progress--warning" role="progressbar" aria-label="Warning example">
-                        <div class="govbh-progress__container">
-                            <div class="govbh-progress__bar" style="width: 50%">50%</div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">تحذير</div>
+                        <div class="govbh-progress govbh-progress--warning" role="progressbar" aria-label="Progress Bars 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="govbh-progress__container">
+                                <div class="govbh-progress__bar" style="width: 50%">50%</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
-                    <div class="govbh-progress govbh-progress--success" role="progressbar" aria-label="Success example">
-                        <div class="govbh-progress__container">
-                            <div class="govbh-progress__bar" style="width: 60%">60%</div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">نجاح</div>
+                        <div class="govbh-progress govbh-progress--success" role="progressbar" aria-label="Progress Bars 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <div class="govbh-progress__container">
+                                <div class="govbh-progress__bar" style="width: 60%">60%</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Danger</div>
-                    <div class="govbh-progress govbh-progress--danger" role="progressbar" aria-label="Danger example">
-                        <div class="govbh-progress__container">
-                            <div class="govbh-progress__bar" style="width: 90%">90%</div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">خطر</div>
+                        <div class="govbh-progress govbh-progress--danger" role="progressbar" aria-label="Progress Bars 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <div class="govbh-progress__container">
+                                <div class="govbh-progress__bar" style="width: 90%">90%</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,67 +107,66 @@
             <div class="hr"></div>
 
             <!--Component Progress Bar:With Time Starts -->
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <div class="govbh-progress govbh-progress--brand" role="progressbar" aria-label="Default example">
-                        <div class="govbh-progress__head">Your Progress <span>75%</span></div>
-                        <div class="govbh-progress__container">
-                            <div class="govbh-progress__bar" style="width: 75%"></div>
+            <h5>مع مرور الوقت</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <div class="govbh-progress govbh-progress--brand" role="progressbar" aria-label="Progress Bars 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="govbh-progress__head">تقدمك <span>75%</span></div>
+                            <div class="govbh-progress__container">
+                                <div class="govbh-progress__bar" style="width: 75%"></div>
+                            </div>
+                            <div class="govbh-progress__footer"><i class="ph ph-clock" aria-hidden="true"></i>تقدمك <span>00:15</span></div>
                         </div>
-                        <div class="govbh-progress__footer"><i class="ph ph-clock" aria-hidden="true"></i>Your Progress <span>00:15</span></div>
-                    </div>
 
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Info</div>
-                    <div class="govbh-progress govbh-progress--info" role="progressbar" aria-label="Info example">
-                        <div class="govbh-progress__head">Your Progress <span>25%</span></div>
-                        <div class="govbh-progress__container">
-                            <div class="govbh-progress__bar" style="width: 25%"></div>
-                        </div>
-                        <div class="govbh-progress__footer"><i class="ph ph-clock" aria-hidden="true"></i>Your Progress:<span>00:15</span></div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Warning</div>
-                    <div class="govbh-progress govbh-progress--warning" role="progressbar" aria-label="Warning example">
-                        <div class="govbh-progress__head">Your Progress <span>50%</span></div>
-                        <div class="govbh-progress__container">
-                            <div class="govbh-progress__bar" style="width: 50%"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">معلومات</div>
+                        <div class="govbh-progress govbh-progress--info" role="progressbar" aria-label="Progress Bars 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="govbh-progress__head">تقدمك <span>25%</span></div>
+                            <div class="govbh-progress__container">
+                                <div class="govbh-progress__bar" style="width: 25%"></div>
+                            </div>
+                            <div class="govbh-progress__footer"><i class="ph ph-clock" aria-hidden="true"></i>تقدمك:<span>00:15</span></div>
                         </div>
-                        <div class="govbh-progress__footer"><i class="ph ph-clock" aria-hidden="true"></i>Your Progress:<span>00:15</span></div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Success</div>
-                    <div class="govbh-progress govbh-progress--success" role="progressbar" aria-label="Success example">
-                        <div class="govbh-progress__head">Your Progress <span>60%</span></div>
-                        <div class="govbh-progress__container">
-                            <div class="govbh-progress__bar" style="width: 60%"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">تحذير</div>
+                        <div class="govbh-progress govbh-progress--warning" role="progressbar" aria-label="Progress Bars 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="govbh-progress__head">تقدمك <span>50%</span></div>
+                            <div class="govbh-progress__container">
+                                <div class="govbh-progress__bar" style="width: 50%"></div>
+                            </div>
+                            <div class="govbh-progress__footer"><i class="ph ph-clock" aria-hidden="true"></i>تقدمك:<span>00:15</span></div>
                         </div>
-                        <div class="govbh-progress__footer"><i class="ph ph-clock" aria-hidden="true"></i>Your Progress:<span>00:15</span></div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Danger</div>
-                    <div class="govbh-progress govbh-progress--danger" role="progressbar" aria-label="Danger example">
-                        <div class="govbh-progress__head">Your Progress <span>90%</span></div>
-                        <div class="govbh-progress__container">
-                            <div class="govbh-progress__bar" style="width: 90%"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">نجاح</div>
+                        <div class="govbh-progress govbh-progress--success" role="progressbar" aria-label="Progress Bars 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <div class="govbh-progress__head">تقدمك <span>60%</span></div>
+                            <div class="govbh-progress__container">
+                                <div class="govbh-progress__bar" style="width: 60%"></div>
+                            </div>
+                            <div class="govbh-progress__footer"><i class="ph ph-clock" aria-hidden="true"></i>تقدمك:<span>00:15</span></div>
                         </div>
-                        <div class="govbh-progress__footer"><i class="ph ph-clock" aria-hidden="true"></i>Your Progress:<span>00:15</span></div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">خطر</div>
+                        <div class="govbh-progress govbh-progress--danger" role="progressbar" aria-label="Progress Bars 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <div class="govbh-progress__head">تقدمك <span>90%</span></div>
+                            <div class="govbh-progress__container">
+                                <div class="govbh-progress__bar" style="width: 90%"></div>
+                            </div>
+                            <div class="govbh-progress__footer"><i class="ph ph-clock" aria-hidden="true"></i>تقدمك:<span>00:15</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!--Component Progress Bar:With Time Ends -->
         </div>
     </div>
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -178,7 +182,7 @@
 <!-- Header Sticky -->
 <script src="../js/govbh-menu-sticky.js"></script>
 <!-- Text Localization -->
-<script src="../js/govbh-lang.js"></script>
+<script src="../js/govbh-lang-ar.js"></script>
 <!-- Library -->
 <script src="../js/govbh-library.min.js"></script>
 <!-- Utils -->

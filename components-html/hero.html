@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Hero | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -44,21 +44,24 @@
         <!-- Swiper Slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
                     
-            <!-- Fancybox -->
-    <link rel="stylesheet" href="../css/fancybox.min.css"/>
+            <!-- Colorbox -->
+    <link rel="stylesheet" href="../css/colorbox.css">
             <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Hero:Default Starts -->
-    <div class="govbh-fullwidthslider bg--brand">
-        <div class="swiper govbh-fullwidthslider__swiper">
+<body>    <!--Component Hero:Default Starts -->
+    <div class="govbh-fullwidthslider bg--brand" role="banner" aria-labelledby="hero-banner-title">
+        <h1 id="hero-banner-title" class="visually-hidden bg--brand">Bahrain Government Guidlines Design System</h1>
+        <div class="swiper govbh-fullwidthslider__swiper" aria-roledescription="carousel" role="group" aria-label="Hero Slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide bg--brand" data-swiper-autoplay="25000">
+                <div class="swiper-slide bg--brand h-auto" tabindex="0" data-swiper-autoplay="25000">
                     <div class="govbh-fullwidthslider__wrapper">
                         <!-- Video Starts -->
                         <div class="govbh-fullwidthslider__video active" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="1.05">
@@ -85,7 +88,7 @@
                                     <source media="(min-width: 1200px)" srcset="../images/banner-001.webp"><!--1600*750 Default image-->
                                     <source media="(min-width: 992px)" srcset="../images/banner-001.webp"><!--1199*500-->
                                     <source media="(min-width: 768px)" srcset="../images/banner-001.webp"> <!--991*413-->
-                                    <img src="../images/barhain-mobile.webp" height="480" width="1600" alt="A Legacy of Survey and Land Registration Excellence"><!--767*320-->
+                                    <img src="../images/barhain-mobile.webp" height="480" width="1600" alt="A Legacy of Survey and Land Registration Excellence2"><!--767*320-->
                                 </picture>
                             </div>
                         </div>
@@ -105,7 +108,7 @@
                                             <a href="#" class="govbh-btn govbh-btn--outline theme--dark">Read More <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
                                             <!--  Play/Pause button -->
                                             <a href="#" class="govbh-fullwidthslider__playpause pause" role="button" aria-label="Click here to play video.">
-                                                <i class="ph ph-pause icon--pause"></i><i class="ph ph-play icon--play"></i>
+                                                <i class="ph ph-pause icon--pause" aria-hidden="true"></i><i class="ph ph-play icon--play" aria-hidden="true"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -113,9 +116,22 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Transcript Starts -->
+                        <div class="govbh-image-block__transcript visually-hidden">
+                            <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-1" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-1" role="button">Show Transcript</a>
+                            <div id="video-transcript-1" style="display:none">
+                            <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                [Cut to an architect pointing at a blueprint of the plant]                                            
+                                Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                            </div>
+                        </div>
+                        <!-- Transcript Ends -->
                     </div>
                 </div>
-                <div class="swiper-slide bg--brand">
+                <div class="swiper-slide bg--brand h-auto" tabindex="0">
                     <div class="govbh-fullwidthslider__wrapper">
                         <!-- BG Image -->
                         <div class="govbh-fullwidthslider__img" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="1.05">
@@ -123,7 +139,7 @@
                                 <source media="(min-width: 1200px)" srcset="../images/banner-002.webp"><!--1600*750 Default image-->
                                 <source media="(min-width: 992px)" srcset="../images/banner-002.webp"><!--1199*500-->
                                 <source media="(min-width: 768px)" srcset="../images/banner-002.webp"> <!--991*413-->
-                                <img loading="lazy" src="../images/banner-mobile-1.webp" height="750" width="1600" alt="A Legacy of Survey and Land Registration Excellence"><!--767*320-->
+                                <img loading="lazy" src="../images/banner-mobile-1.webp" height="750" width="1600" alt="Ambitious Initiatives for Sustainable Development"><!--767*320-->
                             </picture>
                         </div>
                         <!-- Content Section Starts -->
@@ -132,10 +148,10 @@
                                 <div class="row">
                                     <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div class="govbh-fullwidthslider__title" data-swiper-parallax-x="-10%">
-                                            A Legacy of Survey and Land Registration Excellence
+                                            Ambitious Initiatives for Sustainable Development
                                         </div>
                                         <div data-swiper-parallax-x="-15%">
-                                            <p>The Survey and Land Registration Bureau of Bahrain has been at the forefront of cadastral and hydrographic survey services.</p>
+                                            <p>The SLRB is committed to fostering sustainable economic development through strategic planning and initiatives.</p>
                                         </div>
                                         <div data-swiper-parallax-x="-20%" class="d-flex align-items-center flex-wrap gap-3">
                                             <a href="#" class="govbh-btn govbh-btn--outline theme--dark">Read More <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
@@ -148,16 +164,20 @@
                     </div>
                 </div>
             </div>
-            <div class="govbh-fullwidthslider__swiper-pagination govbh-theme__pagination govbh-align-center govbh-align-bottom"></div>
+            <div class="govbh-fullwidthslider__swiper-pagination govbh-theme__pagination govbh-align-center govbh-align-bottom" role="group" tabindex="0" aria-label="Slider Controls"></div>
         </div>
     </div>
     <!--Component Hero:Default Ends -->
 
+    <br>
+    <br>
+    
     <!--Component Hero:Full Width Starts -->
-    <div class="govbh-heroslider theme--dark bg--brand">
-        <div class="swiper govbh-heroslider__swiper">
+    <div class="govbh-heroslider theme--dark bg--brand p-0" role="banner" aria-labelledby="hero-banner-2-title">
+        <h1 id="hero-banner-2-title" class="visually-hidden bg--brand">Bahrain Government Guidlines Design System</h1>
+        <div class="swiper govbh-heroslider__swiper" aria-roledescription="carousel" role="group" aria-label="Hero Slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide bg--brand" data-swiper-autoplay="25000">
+                <div class="swiper-slide bg--brand" tabindex="0" data-swiper-autoplay="25000">
                     <div class="container allow-extend">
                         <div class="row align-items-center">
                             <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-md-2 order-2">
@@ -190,15 +210,15 @@
                                         Your browser does not support the video tag.
                                     </video>
                                     <!--  Play/Pause button -->
-                                    <div class="govbh-heroslider__playpause pause" role="button" aria-label="Click here to play video.">
+                                    <button class="govbh-heroslider__playpause pause" aria-label="Click here to play video.">
                                         <i class="ph ph-pause icon--pause"></i><i class="ph ph-play icon--play"></i>
-                                    </div>
+                                    </button>
                                     <!-- Poster img -->
                                     <picture>
-                                        <source media="(min-width: 1200px)" srcset="../images/banner-016.webp"><!--1920*800 Default image-->
-                                        <source media="(min-width: 992px)" srcset="../images/banner-016.webp"><!--1199*500-->
-                                        <source media="(min-width: 768px)" srcset="../images/banner-016.webp"><!--991*413-->
-                                        <img src="../images/banner-017.webp" height="480" width="1600" alt="A Legacy of Survey and Land Registration Excellence"><!--767*320-->
+                                        <source media="(min-width: 1200px)" srcset="../images/banner-015.webp"><!--1920*800 Default image-->
+                                        <source media="(min-width: 992px)" srcset="../images/banner-015.webp"><!--1199*500-->
+                                        <source media="(min-width: 768px)" srcset="../images/banner-015.webp"><!--991*413-->
+                                        <img src="../images/banner-mobile-1.webp" height="480" width="1600" alt="A Legacy of Survey and Land Registration Excellence"><!--767*320-->
                                     </picture>
                                 </div>
                                 <!-- Navigation -->
@@ -208,22 +228,48 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Transcript Starts -->
+                        <div class="govbh-image-block__transcript visually-hidden">
+                            <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-1" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-1" role="button">Show Transcript</a>
+                            <div id="video-transcript-1" style="display:none">
+                            <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                [Cut to an architect pointing at a blueprint of the plant]                                            
+                                Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                            </div>
+                        </div>
+                        <!-- Transcript Ends -->
                     </div>
                 </div>
-                <div class="swiper-slide bg--brand">
+                <div class="swiper-slide bg--brand" tabindex="0">
                     <div class="container allow-extend">
                         <div class="row align-items-center">
                             <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-md-2 order-2">
                                 <div class="govbh-heroslider__content">
                                     <div class="govbh-heroslider__title" data-swiper-parallax-x="-10%">
-                                        A Legacy of Survey and Land Registration Excellence
+                                        Ambitious Initiatives for Sustainable Development
                                     </div>
                                     <div data-swiper-parallax-x="-15%">
-                                        <p>The Survey and Land Registration Bureau of Bahrain has been at the forefront of cadastral and hydrographic survey services.</p>
+                                        <p>The SLRB is committed to fostering sustainable economic development through strategic planning and initiatives.</p>
                                     </div>
                                     <div data-swiper-parallax-x="-20%" class="d-flex align-items-center gap-3 flex-wrap">
                                         <a href="#" class="govbh-btn govbh-btn--outline theme--dark">Explore <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
-                                        <a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="videopop" data-caption="A Legacy of Survey and Land Registration Excellence" class="govbh-btn govbh-btn--withoutline theme--dark">Play Video <i class="ph ph-play"></i></a>
+                                        <a class="govbh-btn govbh-btn--withoutline theme--dark cbbox-01" data-cb-gallery="cbbox-01" data-cb-type="video" href="https://www.youtube.com/embed/Qp0_6AcGmCg?rel=0&amp;wmode=transparent&amp;autoplay=1" role="button" aria-label="Click here to play video." title="Ambitious Initiatives for Sustainable Development (YouTube video, 82 seconds, Arabic only)">Play Video <i class="ph ph-play"></i></a>
+                                        <!-- Transcript Starts -->
+                                        <div class="govbh-image-block__transcript visually-hidden">
+                                            <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-12" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-12" role="button">Show Transcript</a>
+                                            <div id="video-transcript-12" style="display:none">
+                                            <p>Video Transcript: [Opening shot of a construction site with workers and machinery] 
+                                                Narrator: "As part of our commitment to sustainable development, we are excited to announce the project to develop a new power and water plant in Sitra. This groundbreaking initiative aims to revolutionize the way we produce and distribute essential resources in the region."                                            
+                                                [Cut to an architect pointing at a blueprint of the plant]                                            
+                                                Architect: "The new plant will feature state-of-the-art technology to maximize efficiency and minimize environmental impact. By integrating renewable energy sources and advanced water treatment processes, we are setting a new standard for power and water infrastructure."                                            
+                                                [Scene transitions to a team of engineers inspecting the construction site]                                            
+                                                Engineer: "Our team of dedicated engineers and technicians is working tirelessly to ensure that every aspect of the project meets the highest standards of quality and safety. From design to implementation, we are committed to excellence every step of the way."</p>
+                                            </div>
+                                        </div>
+                                        <!-- Transcript Ends -->
                                     </div>
                                 </div>
                             </div>
@@ -233,7 +279,7 @@
                                         <source media="(min-width: 1200px)" srcset="../images/banner-016.webp"><!--1920*800 Default image-->
                                         <source media="(min-width: 992px)" srcset="../images/banner-016.webp"><!--1199*500-->
                                         <source media="(min-width: 768px)" srcset="../images/banner-016.webp"><!--991*413-->
-                                        <img src="../images/banner-017.webp" height="480" width="1600" alt="A Legacy of Survey and Land Registration Excellence" loading="lazy"><!--767*320-->
+                                        <img src="../images/banner-017.webp" height="480" width="1600" alt="Ambitious Initiatives for Sustainable Development" loading="lazy"><!--767*320-->
                                     </picture>
                                 </div>
                                 <!-- Navigation -->
@@ -249,13 +295,8 @@
         </div>
     </div>
     <!-- Pagination -->
-    <div class="govbh-heroslider__swiper-pagination govbh-theme__pagination govbh-align-center mt-2"></div>
+    <div class="govbh-heroslider__swiper-pagination govbh-theme__pagination govbh-align-center mt-2" role="group" tabindex="0" aria-label="Slider Controls"></div>
     <!--Component Hero:Full Width Ends -->
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -280,8 +321,8 @@
 <script src="../js/jquery.smartmenus.min.js"></script>
 <!-- Swiper Slider -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!-- Fancybox -->
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+<!-- Colorbox -->
+<script src="../js/jquery.colorbox.js"></script>
 <!-- Themes -->
 <script src="../js/govbh-themes-0.0.1.js"></script>
 <!-- Script Ends -->

@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="ar-BH" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Search | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -47,117 +47,160 @@
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
     <link rel="stylesheet" href="../css/style-ar.min.css" media="all">
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <div class="govbh-section">
+<body>    
+    <div class="govbh-section">
         <div class="container">
-            <!--Component Search:Default Starts -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="govbh-search-card p-0">
-                        <div class="govbh-search-card__head">
-                            <div class="govbh-form-control form-floating govbh-form-control--icon-left">
-                                <div class="form-floating__ico"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></div>
-                                <input type="text" class="form-control" id="floatingInput" placeholder="Text" aria-label="enter your keyword">
-                                <label for="floatingInput">Enter your keyword</label>
+            <h5>بحث</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <!--Component Search:Default Starts -->
+                <h6>الإعداد الإفتراضي</h6>
+                <div class="row">
+                    <div class="col-12">
+                        <form class="govbh-search-card p-0">
+                            <div class="govbh-search-card__title govbh-fs-h5 text--brand">البحث المتقدم</div>
+                            <div class="govbh-search-card__head">
+                                <div class="govbh-form-control form-floating govbh-form-control--icon-left">
+                                    <div class="form-floating__ico"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></div>
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="" aria-label="enter your keyword">
+                                    <label for="floatingInput">ادخل الكلمة المفتاحية</label>
+                                </div>
+                                <button type="button" class="govbh-btn govbh-btn--primary" aria-label="Click here to search">بحث <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
                             </div>
-                            <button type="button" class="govbh-btn govbh-btn--primary" aria-label="Click here to search">Search <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
-                        </div>
+                        </form>
                     </div>
                 </div>
-            </div>
-            <!--Component Search:Default Ends -->
+                <!--Component Search:Default Ends -->
 
-            <div class="hr"></div>
+                <div class="hr"></div>
 
-            <!--Component Search:With Advanced Search Starts -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="govbh-search-card p-0">
-                        <div class="govbh-search-card__head">
-                            <div class="govbh-form-control form-floating govbh-form-control--icon-left">
-                                <div class="form-floating__ico"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></div>
-                                <input type="search" class="form-control" id="floatingInput2" placeholder="Text" aria-label="Enter your keyword">
-                                <label for="floatingInput2">Enter your keyword</label>
+                <!--Component Search:With Advanced Search Starts -->
+                <h6>مع البحث المتقدم (منهار)</h6>
+                <div class="row">
+                    <div class="col-12">
+                        <form action="#" autocomplete="on" class="govbh-search-card p-0">
+                            <div class="govbh-search-card__title govbh-fs-h5 text--brand">البحث عن الخدمة الإلكترونية</div>
+                            <div class="govbh-search-card__head">
+                                <div class="govbh-form-control form-floating govbh-form-control--icon-left">
+                                    <div class="form-floating__ico"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></div>
+                                    <input type="search" class="form-control" id="floatingInput" aria-label="Enter your keyword" placeholder="">
+                                    <label for="floatingInput">ادخل الكلمة المفتاحية</label>
+                                </div>
+                                <button type="button" class="govbh-btn govbh-btn--primary" aria-label="Click here to search">بحث <i
+                                        class="ph ph-arrow-right" aria-hidden="true"></i></button>
                             </div>
-                            <button type="button" class="govbh-btn govbh-btn--primary" aria-label="Click here to search">Search <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
-                        </div>
-                        <div class="row g-2 m-0">
-                            <div class="col-12">
-                                <div class="govbh-advanced-search">
-                                    <button type="button" class="govbh-advanced-search__head govbh-toggler m-0" data-target-on="#advancesearch" aria-expanded="false">
-                                        <i class="ph-fill ph-caret-down" aria-hidden="true"></i> <span>Show</span> Advanced Search
-                                    </button>
-                                    <div class="govbh-advanced-search__body" id="advancesearch" style="display:none;">
-                                        <div class="row g-4">
-                                            <div class="col-md-6 col-sm-12 col-12">
-                                                <div class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
-                                                    <select class="with-search" 
-                                                    data-placeholder-search="Search Category" 
-                                                    data-placeholder="Category" 
-                                                    data-columns="1" 
-                                                    data-select-all="yes" 
-                                                    data-select-all-text="Select All" 
-                                                    data-unselect-all-text="Unselect All"
-                                                    data-selected-option-text=" selected" 
-                                                    multiple id="select-002">
-                                                        <option value="1">Value 1</option>
-                                                        <option value="2">Value 1</option>
-                                                        <option value="3">Value 3</option>
-                                                        <option value="4">Value 4</option>
-                                                        <option value="5">Value 5</option>
-                                                        <option value="6">Value 6</option>
-                                                        <option value="7">Value 7</option>
-                                                    </select>
-                                                    <label for="select-002">Search by</label>
+                            <div class="row g-2 m-0">
+                                <div class="col-12">
+                                    <div class="govbh-advanced-search">
+                                        <button type="button" class="govbh-advanced-search__head govbh-toggler m-0"
+                                            data-target-on="#advancesearch" aria-expanded="false">
+                                            <i class="ph-fill ph-caret-down" aria-hidden="true"></i> <span>إظهار</span> البحث المتقدم
+                                        </button>
+                                        <div class="govbh-advanced-search__body" id="advancesearch" style="display:none;">
+                                            <fieldset>
+                                                <legend class="visually-hidden">البحث المتقدم</legend>
+                                                <div class="row g-4">
+                                                    <div class="col-md-6 col-sm-12 col-12">
+                                                        <div
+                                                            class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
+                                                            <select class="with-search" data-placeholder-search="إختر فئة"
+                                                                data-placeholder="البحث حسب" data-columns="1" data-select-all="yes"
+                                                                data-select-all-text="اختر الكل" data-unselect-all-text="إلغاء تحديد الكل"
+                                                                data-selected-option-text=" selected" multiple id="select-002">
+                                                                <option value="1">القيمة 1</option>
+                                                                <option value="2">القيمة 1</option>
+                                                                <option value="3">القيمة 3</option>
+                                                                <option value="4">القيمة 4</option>
+                                                                <option value="5">القيمة 5</option>
+                                                                <option value="6">القيمة 6</option>
+                                                                <option value="7">القيمة 7</option>
+                                                            </select>
+                                                            <label for="select-002"> الفئة</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-12 col-12">
+                                                        <div
+                                                            class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
+                                                            <select class="with-search" data-placeholder-search="إختر فئة"
+                                                                data-placeholder="البحث حسب" data-columns="1" data-select-all="yes"
+                                                                data-select-all-text="اختر الكل" data-unselect-all-text="إلغاء تحديد الكل"
+                                                                data-selected-option-text="selected" multiple id="select-003">
+                                                                <option value="1">القيمة 1</option>
+                                                                <option value="2">القيمة 1</option>
+                                                                <option value="3">القيمة 3</option>
+                                                                <option value="4">القيمة 4</option>
+                                                                <option value="5">القيمة 5</option>
+                                                                <option value="6">القيمة 6</option>
+                                                                <option value="7">القيمة 7</option>
+                                                            </select>
+                                                            <label for="select-003"> الفئة</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="button" class="govbh-btn govbh-btn--primary"
+                                                            aria-label="Click here to search">بحث <i class="ph ph-arrow-right"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12 col-12">
-                                                <div class="govbh-form-control form-floating govbh-form-control--select govbh-form-control--label-top">
-                                                    <select class="with-search" 
-                                                    data-placeholder-search="Search Category" 
-                                                    data-placeholder="Categories" 
-                                                    data-columns="1" 
-                                                    data-select-all="yes"
-                                                    data-select-all-text="Select All" 
-                                                    data-unselect-all-text="Unselect All"
-                                                    data-selected-option-text="selected" 
-                                                    multiple id="select-003">
-                                                        <option value="1">Value 1</option>
-                                                        <option value="2">Value 1</option>
-                                                        <option value="3">Value 3</option>
-                                                        <option value="4">Value 4</option>
-                                                        <option value="5">Value 5</option>
-                                                        <option value="6">Value 6</option>
-                                                        <option value="7">Value 7</option>
-                                                    </select>
-                                                    <label for="select-003">Choose a Category</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="button" class="govbh-btn govbh-btn--primary" aria-label="Click here to search">Search <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
-                                            </div>
+                                            </fieldset>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </form>
+                    </div>
+                    <!--Component Search:With Advanced Search Ends -->
+                </div>
+                <!--Component Search:Default Ends --> 
+
+                <div class="hr"></div>
+
+                <!--Component Search:With Advanced Search Starts -->
+                <h6>مع الكلمات الرئيسية المستخدمة بشكل شائع</h6>
+                <div class="row">
+                    <div class="col-12">
+                        <form action="#" autocomplete="on" class="govbh-search-card p-0">
+                            <div class="govbh-search-card__title govbh-fs-h5 text--brand">البحث عن الخدمة الإلكترونية</div>
+                            <div class="govbh-search-card__head">
+                                <div class="govbh-form-control form-floating govbh-form-control--icon-left">
+                                    <div class="form-floating__ico"><i class="ph ph-magnifying-glass" aria-hidden="true"></i></div>
+                                    <input type="search" class="form-control" id="floatingInput" aria-label="أدخل كلمتك الرئيسية" placeholder="أدخل كلمتك الرئيسية" value="برنامج التوازن المالي">
+                                    <label for="floatingInput">أدخل كلمتك الرئيسية</label>
+                                </div>
+                                <button type="button" class="govbh-btn govbh-btn--primary" aria-label="Click here to search">بحث <i
+                                        class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                        <div class="row g-2">
+                            <div class="col-12">
+                                <div class="govbh-advanced-search__content mt-3 pt-2">
+                                    <p>قد ترغب في البحث في المواضيع التالية:</p>
+                                    <ul>
+                                        <li><a href="#">الهوية، جوازات السفر، والتأشيرات</a></li>
+                                        <li><a href="#">المرور، المركبات، والمواصلات</a></li>
+                                        <li><a href="#">الكهرباء، المياه، والبنية التحتية</a></li>
+                                        <li><a href="#">التعليم والطلاب</a></li>
+                                        <li><a href="#">المحاكم والتشريعات</a></li>
+                                        <li><a href="#">الصحة والرعاية الطبية</a></li>
+                                        <li><a href="#">الزواج، الولادة، والوفاة</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!--Component Search:With Advanced Search Ends -->
                 </div>
-                <!--Component Search:With Advanced Search Ends -->
+                <!--Component Search:Default Ends --> 
             </div>
-            <!--Component Search:Default Ends --> 
         </div>
     </div>
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -173,7 +216,7 @@
 <!-- Header Sticky -->
 <script src="../js/govbh-menu-sticky.js"></script>
 <!-- Text Localization -->
-<script src="../js/govbh-lang.js"></script>
+<script src="../js/govbh-lang-ar.js"></script>
 <!-- Library -->
 <script src="../js/govbh-library.min.js"></script>
 <!-- Utils -->

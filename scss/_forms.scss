@@ -390,6 +390,8 @@
 		@include transition(0.3s);
 		color: var(--bh-secondary);
         padding-block-end: 5px;
+        text-wrap: pretty;
+        text-wrap: balance;
 		span{
 			color: var(--bh-error-star);
             padding-inline-start: 2px;
@@ -796,6 +798,7 @@
 .govbh-form-control--invalid{
     .govbh-form-control__validation-message{
         color: var(--bh-error-star);
+        display: inherit;
     }
 }
 .govbh-form-control--success{
@@ -844,15 +847,35 @@
     padding-top: 5px;
     color: var(--bh-primary);
 }
+.form-toggle__label-text{
+    font-size: var(--bh-fs-p-l);
+    font-weight: var(--bh-fw-bold);
+    color: var(--bh-secondary);
+    padding-block-end: 10px;
+    margin: 0;
+    span{
+        color: var(--bh-error-star);
+        padding-inline-start: 2px;
+    }
+}
 /* Checkbox */
 .form-check{
     margin:0;
     padding:0;
     fieldset {
         & > legend{
-            display: none;
+            // position: absolute !important;
+            // width: 1px !important;
+            // height: 1px !important;
+            // padding: 0 !important;
+            // margin: -1px !important;
+            // overflow: hidden !important;
+            // clip: rect(0,0,0,0) !important;
+            // white-space: nowrap !important;
+            // border: 0 !important;
         }
     }
+    
     &.theme--dark{
         .form-check__group{
             .form-check__item{
@@ -999,6 +1022,7 @@
             border-color: var(--bh-error-star);
             & ~ .govbh-form-control__validation-message{
                 color: var(--bh-error-star);
+                
             }
         }
         &.govbh-form-control--success{

@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="ar-BH" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Table | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -42,286 +42,214 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css" integrity="sha384-Xbg45MqvDIk1e563NLpGEulpX6AvL404DP+/iCgW9eFa2BqztiwTexswJo2jLMue" crossorigin="anonymous">
                     
-            <!-- Fancybox -->
-    <link rel="stylesheet" href="../css/fancybox.min.css"/>
-            <!-- DataTable -->
+                <!-- DataTable -->
     <link rel="stylesheet" href="../css/datatables.min.css">
         <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
     <link rel="stylesheet" href="../css/style-ar.min.css" media="all">
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <div class="govbh-section">
+<body>    
+    <div class="govbh-section">
         <div class="container">
-            <!--Component Table:Default Starts -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="govbh-datatable">  
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Age</th>
-                                    <th>Birthday</th>
-                                    <th>Nationality</th>
-                                    <th>Driving License</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="govbh-datatable__table--bold">
-                                        <a href="#"><b>Bader Sultan Jumma</b></a>
-                                    </td>
-                                    <td>18</td>
-                                    <td>12/12/1981</td>
-                                    <td>Bahraini</td>
-                                    <td><div class="govbh-datatable__table--success"><i class="ph-bold ph-check"></i> Yes</div></td>                          
-                                </tr>
-                                <tr>
-                                    <td class="govbh-datatable__table--bold">
-                                        <a href="#"><b>Mohammed Ali</b></a>
-                                    </td>
-                                    <td>19</td>
-                                    <td>12/12/1965</td>
-                                    <td>Saudi</td>
-                                    <td><div class="govbh-datatable__table--failure"><i class="ph-bold ph-x-circle"></i> No</div></td>                          
-                                </tr>
-                                <tr>
-                                    <td class="govbh-datatable__table--bold">
-                                        <a href="#"><b>Hassan Sultan Jumma</b></a>
-                                    </td>
-                                    <td>22</td>
-                                    <td>12/12/1945</td>
-                                    <td>Qatar</td>
-                                    <td><div class="govbh-datatable__table--failure"><i class="ph-bold ph-x-circle"></i> No</div></td>                          
-                                </tr>
-                                <tr>
-                                    <td class="govbh-datatable__table--bold">
-                                        <a href="#"><b>Mohammed Ali</b></a>
-                                    </td>
-                                    <td>22</td>
-                                    <td>12/12/1945</td>
-                                    <td>Saudi</td>
-                                    <td><div class="govbh-datatable__table--success"><i class="ph-bold ph-check"></i> Yes</div></td>                          
-                                </tr>
-                                <tr>
-                                    <td class="govbh-datatable__table--bold">
-                                        <a href="#"><b>Bader Sultan Jumma</b></a>
-                                    </td>
-                                    <td>18</td>
-                                    <td>12/12/1981</td>
-                                    <td>Bahraini</td>
-                                    <td><div class="govbh-datatable__table--success"><i class="ph-bold ph-check"></i> Yes</div></td>                          
-                                </tr>
-                                <tr>
-                                    <td class="govbh-datatable__table--bold">
-                                        <a href="#"><b>Mohammed Ali</b></a>
-                                    </td>
-                                    <td>19</td>
-                                    <td>12/12/1965</td>
-                                    <td>Saudi</td>
-                                    <td><div class="govbh-datatable__table--failure"><i class="ph-bold ph-x-circle"></i> No</div></td>                          
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <h5>طاولة</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <!--Component Table:Default Starts -->
+                <h6>الإعداد الإفتراضي</h6>
+                <div class="govbh-datatable table-responsive">  
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>الاسم</th>
+                                <th>العمر</th>
+                                <th>تاريخ الميلاد</th>
+                                <th>الجنسية</th>
+                                <th>رخصة القيادة</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="govbh-datatable__table--bold">
+                                    <a href="#"><b>بدر سلطان جمعة</b></a>
+                                </td>
+                                <td>18</td>
+                                <td>12/12/1981</td>
+                                <td>Bahraini</td>
+                                <td><div class="govbh-datatable__table--success"><i class="ph-bold ph-check"></i> نعم</div></td>                          
+                            </tr>
+                            <tr>
+                                <td class="govbh-datatable__table--bold">
+                                    <a href="#"><b>محمد علي</b></a>
+                                </td>
+                                <td>19</td>
+                                <td>12/12/1965</td>
+                                <td>Saudi</td>
+                                <td><div class="govbh-datatable__table--failure"><i class="ph-bold ph-x-circle"></i> لا</div></td>                          
+                            </tr>
+                            <tr>
+                                <td class="govbh-datatable__table--bold">
+                                    <a href="#"><b>حسن سلطان جمعة</b></a>
+                                </td>
+                                <td>22</td>
+                                <td>12/12/1945</td>
+                                <td>Qatar</td>
+                                <td><div class="govbh-datatable__table--failure"><i class="ph-bold ph-x-circle"></i> لا</div></td>                          
+                            </tr>
+                            <tr>
+                                <td class="govbh-datatable__table--bold">
+                                    <a href="#"><b>محمد علي</b></a>
+                                </td>
+                                <td>22</td>
+                                <td>12/12/1945</td>
+                                <td>Saudi</td>
+                                <td><div class="govbh-datatable__table--success"><i class="ph-bold ph-check"></i> نعم</div></td>                          
+                            </tr>
+                            <tr>
+                                <td class="govbh-datatable__table--bold">
+                                    <a href="#"><b>حسن سلطان جمعة</b></a>
+                                </td>
+                                <td>18</td>
+                                <td>12/12/1981</td>
+                                <td>Bahraini</td>
+                                <td><div class="govbh-datatable__table--success"><i class="ph-bold ph-check"></i> نعم</div></td>                          
+                            </tr>
+                            <tr>
+                                <td class="govbh-datatable__table--bold">
+                                    <a href="#"><b>محمد علي</b></a>
+                                </td>
+                                <td>19</td>
+                                <td>12/12/1965</td>
+                                <td>Saudi</td>
+                                <td><div class="govbh-datatable__table--failure"><i class="ph-bold ph-x-circle"></i> لا</div></td>                          
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
-            <!--Component Table:Default Ends --> 
-            
-            <div class="hr"></div>
+                <!--Component Table:Default Ends --> 
+                
+                <div class="hr"></div>
 
-            <!--Component Table:Datatable Starts -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="govbh-datatable"
-                        data-target-table-id="#refOffersTable1"
-                        data-show-filter-fields="true"
-                        data-show-length-change="true"
-                        data-show-ordering="true"
-                        data-show-info="true"
-                        data-show-paging="true"
-                        data-columns-to-hide=""
-                        data-search-placeholder-text="Search..."
-                        data-pagination-info-text="Showing _START_ to _END_ of _TOTAL_ Entries"
-                        data-filter-show-menu-text="Show _MENU_ Entries"
-                        >   
+                <!--Component Table:Datatable Starts -->
+                <h6>جدول البيانات</h6>
+                <div class="govbh-datatable"
+                    data-target-table-id="#refOffersTable1"
+                    data-show-filter-fields="true"
+                    data-show-length-change="true"
+                    data-show-ordering="true"
+                    data-show-info="true"
+                    data-responsive="false"
+                    data-show-paging="true"
+                    data-columns-to-hide=""
+                    data-search-placeholder-text="البحث..."
+                    data-pagination-info-text="عرض _START_ ل _END_ ل _TOTAL_ المدخلات"
+                    data-filter-show-menu-text="عرض _MENU_ المدخلات"
+                    >   
                     <!-- .dt-filters starts -->
                     <div class="dt-filters">
                         <!-- .dt-filter-item starts -->
                         <span
                             class="dt-filter-item" 
-                            aria-label="filter-info" 
-                            data-column="4"
-                            data-label="Nationality"
-                            data-default-val="All Nationalities"
+                            data-column="3"
+                            data-label="تصفية حسب الجنسية"
+                            data-default-val="جميع الجنسيات"
                             >
                         </span>
                         <!-- .dt-filter-item ends -->
                     </div>
                     <!-- .dt-filters ends -->
                     <!-- table starts -->
-                    <table class="govbh-datatable__table table" id="refOffersTable1">
+                    <table class="govbh-datatable__table table" id="refOffersTable1" tabindex="0">
+                        <caption class="visually-hidden">الإحصائيات في تخطيط الجدول</caption>
                         <thead>
                             <tr>
-                                <th scope="col" class="no-sort">
-                                    <fieldset class="govbh-datatable__table--check">
-                                        <legend></legend>
-                                        <input class="govbh-datatable__table--checkall" type="checkbox" data-target="#refOffersTable1" name="select_sample_checkbox-0" id="select_sample_checkbox-0" value="355508-1" aria-label="Statistics in Table Layout">
-                                        <label for="select_sample_checkbox-0" aria-label="Statistics in Table Layout" aria-disabled="true"><span class="visually-hidden">Select all checkbox</span></label>
-                                    </fieldset>
-                                </th>
-                                <th>Name</th>
-                                <th>Age</th>
-                                <th>Birthday</th>
-                                <th>Nationality</th>
-                                <th>Driving License</th>
+                                <th scope="col">اسم</th>
+                                <th scope="col">عمر</th>
+                                <th scope="col">يوم الميلاد</th>
+                                <th scope="col">جنسية</th>
+                                <th scope="col">رخصة القيادة</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="no-truncate">
-                                    <fieldset class="govbh-datatable__table--check">
-                                        <legend></legend>
-                                        <input type="checkbox" name="select_sample_checkbox" id="select_sample_checkbox-1" value="355508-2">
-                                        <label for="select_sample_checkbox-1" aria-label="355508-2"><span class="visually-hidden">Select checkbox 1</span></label>
-                                    </fieldset>
-                                </td>
                                 <td class="govbh-datatable__table--bold">
-                                    <a href="#"><b>Bader Sultan Jumma</b></a>
+                                    <a href="#"><b>بدر سلطان جمعة</b></a>
                                 </td>
                                 <td>18</td>
                                 <td>12/12/1981</td>
-                                <td>Bahraini</td>
+                                <td>بحريني</td>
                                 <td>
-                                    <div class="govbh-datatable__table--button">
-                                        <button type="button" class="govbh-btn govbh-btn--primary theme--dark govbh-btn--left-icon govbh-btn--small"><i class="ph-bold ph-pencil-simple"></i> Edit</button>
-                                        <button type="button" class="govbh-btn govbh-btn--secondary govbh-btn--left-icon govbh-btn--small"><i class="ph ph-trash"></i> Delete</button>
-                                    </div>
+                                    <div class="govbh-datatable__table--success"><i class="ph-bold ph-check"></i> نعم</div>
                                 </td>                          
                             </tr>
                             <tr>
-                                <td class="no-truncate">
-                                    <fieldset class="govbh-datatable__table--check">
-                                        <legend></legend>
-                                        <input type="checkbox" name="select_sample_checkbox" id="select_sample_checkbox-2" value="355508-3" aria-label="355508-3">
-                                        <label for="select_sample_checkbox-2" aria-label="checkbox 2"><span class="visually-hidden">Select checkbox 2</span></label>
-                                    </fieldset>
-                                </td>
                                 <td class="govbh-datatable__table--bold">
-                                    <a href="#"><b>Mohammed Ali</b></a>
+                                    <a href="#"><b>محمد علي</b></a>
                                 </td>
                                 <td>19</td>
                                 <td>12/12/1965</td>
-                                <td>Saudi</td>
+                                <td>سعودي</td>
                                 <td>
-                                    <div class="govbh-datatable__table--button">
-                                        <button type="button" class="govbh-btn govbh-btn--primary theme--dark govbh-btn--left-icon govbh-btn--small"><i class="ph-bold ph-pencil-simple"></i> Edit</button>
-                                        <button type="button" class="govbh-btn govbh-btn--secondary govbh-btn--left-icon govbh-btn--small"><i class="ph ph-trash"></i> Delete</button>
-                                    </div>
+                                    <div class="govbh-datatable__table--success"><i class="ph-bold ph-check"></i> نعم</div>
                                 </td>                          
                             </tr>
                             <tr>
-                                <td class="no-truncate">
-                                    <fieldset class="govbh-datatable__table--check">
-                                        <legend></legend>
-                                        <input type="checkbox" name="select_sample_checkbox" id="select_sample_checkbox-3" value="355508-4" aria-label="355508-4">
-                                        <label for="select_sample_checkbox-3" aria-label="checkbox 3"><span class="visually-hidden">Select checkbox 3</span></label>
-                                    </fieldset>
-                                </td>
                                 <td class="govbh-datatable__table--bold">
-                                    <a href="#"><b>Hassan Sultan Jumma</b></a>
+                                    <a href="#"><b>حسن سلطان جمعة</b></a>
                                 </td>
                                 <td>22</td>
                                 <td>12/12/1945</td>
                                 <td>Qatar</td>
                                 <td>
-                                    <div class="govbh-datatable__table--button">
-                                        <button type="button" class="govbh-btn govbh-btn--primary theme--dark govbh-btn--left-icon govbh-btn--small"><i class="ph-bold ph-pencil-simple"></i> Edit</button>
-                                        <button type="button" class="govbh-btn govbh-btn--secondary govbh-btn--left-icon govbh-btn--small"><i class="ph ph-trash"></i> Delete</button>
-                                    </div>
+                                    <div class="govbh-datatable__table--failure"><i class="ph-bold ph-x-circle"></i> لا</div>
                                 </td>                          
                             </tr>
                             <tr>
-                                <td class="no-truncate">
-                                    <fieldset class="govbh-datatable__table--check">
-                                        <legend></legend>
-                                        <input type="checkbox" name="select_sample_checkbox" id="select_sample_checkbox-4" value="355508-5" aria-label="355508-5">
-                                        <label for="select_sample_checkbox-4" aria-label="checkbox 4"><span class="visually-hidden">Select checkbox 4</span></label>
-                                    </fieldset>
-                                </td>
                                 <td class="govbh-datatable__table--bold">
-                                    <a href="#"><b>Mohammed Ali</b></a>
+                                    <a href="#"><b>محمد علي</b></a>
                                 </td>
                                 <td>22</td>
                                 <td>12/12/1945</td>
-                                <td>Saudi</td>
+                                <td>سعودي</td>
                                 <td>
-                                    <div class="govbh-datatable__table--button">
-                                        <button type="button" class="govbh-btn govbh-btn--primary theme--dark govbh-btn--left-icon govbh-btn--small"><i class="ph-bold ph-pencil-simple"></i> Edit</button>
-                                        <button type="button" class="govbh-btn govbh-btn--secondary govbh-btn--left-icon govbh-btn--small"><i class="ph ph-trash"></i> Delete</button>
-                                    </div>
+                                    <div class="govbh-datatable__table--success"><i class="ph-bold ph-check"></i> نعم</div>
                                 </td>                          
                             </tr>
                             <tr>
-                                <td class="no-truncate">
-                                    <fieldset class="govbh-datatable__table--check">
-                                        <legend></legend>
-                                        <input type="checkbox" name="select_sample_checkbox" id="select_sample_checkbox-5" value="355508-6" aria-label="355508-6">
-                                        <label for="select_sample_checkbox-5" aria-label="checkbox 5"><span class="visually-hidden">Select checkbox 5</span></label>
-                                    </fieldset>
-                                </td>
                                 <td class="govbh-datatable__table--bold">
-                                    <a href="#"><b>Bader Sultan Jumma</b></a>
+                                    <a href="#"><b>بدر سلطان جمعة</b></a>
                                 </td>
                                 <td>18</td>
                                 <td>12/12/1981</td>
-                                <td>Bahraini</td>
+                                <td>بحريني</td>
                                 <td>
-                                    <div class="govbh-datatable__table--button">
-                                        <button type="button" class="govbh-btn govbh-btn--primary theme--dark govbh-btn--left-icon govbh-btn--small"><i class="ph-bold ph-pencil-simple"></i> Edit</button>
-                                        <button type="button" class="govbh-btn govbh-btn--secondary govbh-btn--left-icon govbh-btn--small"><i class="ph ph-trash"></i> Delete</button>
-                                    </div>
+                                    <div class="govbh-datatable__table--success"><i class="ph-bold ph-check"></i> نعم</div>
                                 </td>                          
                             </tr>
                             <tr>
-                                <td class="no-truncate">
-                                    <fieldset class="govbh-datatable__table--check">
-                                        <legend></legend>
-                                        <input type="checkbox" name="select_sample_checkbox" id="select_sample_checkbox-6" value="355508-7" aria-label="355508-7">
-                                        <label for="select_sample_checkbox-6" aria-label="checkbox 6"><span class="visually-hidden">Select checkbox 6</span></label>
-                                    </fieldset>
-                                </td>
                                 <td class="govbh-datatable__table--bold">
-                                    <a href="#"><b>Mohammed Ali</b></a>
+                                    <a href="#"><b>محمد علي</b></a>
                                 </td>
                                 <td>19</td>
                                 <td>12/12/1965</td>
-                                <td>Saudi</td>
+                                <td>سعودي</td>
                                 <td>
-                                    <div class="govbh-datatable__table--button">
-                                        <button type="button" class="govbh-btn govbh-btn--primary theme--dark govbh-btn--left-icon govbh-btn--small"><i class="ph-bold ph-pencil-simple"></i> Edit</button>
-                                        <button type="button" class="govbh-btn govbh-btn--secondary govbh-btn--left-icon govbh-btn--small"><i class="ph ph-trash"></i> Delete</button>
-                                    </div>
+                                <div class="govbh-datatable__table--failure"><i class="ph-bold ph-x-circle"></i> لا</div>
                                 </td>                          
                             </tr>
                         </tbody>
                     </table>
+                    <!-- table ends -->
                 </div>
-                </div>
+                <!--Component Table:Datatable Ends --> 
             </div>
-            <!--Component Table:Datatable Ends --> 
         </div>
     </div>
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -337,15 +265,13 @@
 <!-- Header Sticky -->
 <script src="../js/govbh-menu-sticky.js"></script>
 <!-- Text Localization -->
-<script src="../js/govbh-lang.js"></script>
+<script src="../js/govbh-lang-ar.js"></script>
 <!-- Library -->
 <script src="../js/govbh-library.min.js"></script>
 <!-- Utils -->
 <script src="../js/govbh-utils.js"></script>
 <!-- smartmenus -->
 <script src="../js/jquery.smartmenus.min.js"></script>
-<!-- Fancybox -->
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
 <!-- DataTable -->
 	<script src="../js/datatables.min.js"></script>
 	<script src="../js/govbh-datatable.js"></script>

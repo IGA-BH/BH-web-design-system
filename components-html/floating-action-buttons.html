@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title> Floating Action Buttons | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -44,13 +44,15 @@
                     
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Floating Action Button:Default Starts -->
+<body>    <!--Component Floating Action Button:Default Starts -->
     <div class="govbh-floatinglist-vertical">
         <ul id="myList" class="open">
             <li class="govbh-accessibility-widget">
@@ -72,17 +74,16 @@
                             </div>
                         </div>
                         <div class="hr mt-3 mb-3"></div>
-                        <!-- Dark Mode widget -->
+                        <!-- Play Speaker widget -->
                         <div class="govbh-accessibility-widget__items-list">
-                            <!-- Dark Mode -->
                             <div class="govbh-head__textsize-title">Screen Reader</div>
-                            <button data-tooltip="tooltip" title="Click here to Play/Pause speaker" role="button" aria-label="Click here to switch between light and dark mode" class="govbh-accessibility-widget__toggle-play">
+                            <a href="#" data-tooltip="tooltip" title="Click here to Play/Pause speaker" role="button" aria-label="Click here to switch between light and dark mode" class="govbh-accessibility-widget__toggle-play">
                                 <div class="toggle-play-icon">
                                     <i class="ph-fill ph-play" aria-hidden="true"></i>
                                     <i class="ph-fill ph-pause" aria-hidden="true"></i>
                                 </div>
                                 <div class="govbh-accessibility-widget__toggle-play-text">Play Speaker</div>
-                            </button>
+                            </a>
                         </div>
                         <div class="hr mt-3 mb-2"></div>
                         <!-- Text Resize widget -->
@@ -135,11 +136,6 @@
         <button type="button" aria-label="Close the floating menu" class="govbh-floatinglist-vertical__backarrow"><i class="ph ph-caret-up" aria-hidden="true"></i></button>
     </div>
     <!--Component Floating Action Button:Default Ends --> 
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"

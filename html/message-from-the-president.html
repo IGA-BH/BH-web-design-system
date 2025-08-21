@@ -51,8 +51,8 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
         <!-- File Upload Dropzone -->
         <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css">
-	    <!-- Fancybox -->
-    <link rel="stylesheet" href="../css/fancybox.min.css">
+	    <!-- Colorbox -->
+    <link rel="stylesheet" href="../css/colorbox.css">
         <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
 </head>
@@ -543,7 +543,7 @@
                                         </picture>
                                         <div class="govbh-image-block__playicon"><i class="ph-fill ph-play-circle" aria-hidden="true"></i></div>
                                         <div class="govbh-image-block__caption"><strong>About the Ministry</strong> (YouTube video, 82 seconds, Arabic only)</div>
-                                        <a href="https://www.youtube.com/watch?v=Qp0_6AcGmCg" data-fancybox="aboutvideo" data-caption="About the Ministry, YouTube video, 82 seconds, Arabic only" aria-label="About the Ministry, YouTube video, 82 seconds, Arabic only" class="govbh-image-block__playicon" role="button"><i class="ph-fill ph-play-circle" aria-hidden="true"></i></a>
+                                        <a class="govbh-image-block__playicon cbbox-01" data-cb-gallery="cbbox-01" data-cb-type="video" href="https://www.youtube.com/embed/Qp0_6AcGmCg?rel=0&amp;wmode=transparent&amp;autoplay=1" title="About the Ministry, YouTube video, 82 seconds, Arabic only" aria-label="About the Ministry, YouTube video, 82 seconds, Arabic only" role="button"><i class="ph-fill ph-play-circle" aria-hidden="true"></i></a>
                                         <!-- Transcript Starts -->
                                         <div class="govbh-image-block__transcript visually-hidden">
                                             <a href="javascript:void(0)" class="govbh-toggler" data-target-on="#video-transcript-1" aria-expanded="false" aria-label="Show Transcript" data-aria-expanded-text="Hide Transcript" data-toggled-text="Hide Transcript" aria-controls="video-transcript-1" role="button">Show Transcript</a>
@@ -749,7 +749,7 @@
 							<div class="govbh-form-control form-check" aria-labelledby="id-checkbox-group-label" tabindex="0" role="group">
 								<div class="form-label" id="id-checkbox-group-label">What problem did you face?<span>*</span></div>
 								<fieldset class="form-check__group bg--grey form-check__group--padding">
-									<legend></legend>
+									<legend class="visually-hidden"></legend>
 									<div class="form-check__item">
 										<input type="checkbox" id="option1" name="problemsyouface" value="1"
 											aria-label="The information on the page is outdated">
@@ -857,14 +857,14 @@
 				<div class="govbh-footer__head govbh-fs-h5">Subscribe Newsletter</div>
 				<div class="govbh-footer__body">
 					<form class="govbh-footer__newsletter">
-						<div class="govbh-footer__newsletter-input">
+						<div class="govbh-footer__newsletter-input newsletter-input-is-invalid">
 							<!-- newsletter-input-is-success, newsletter-input-is-invalid -->
-							<input type="email" name="email" value="" id="enteremail" aria-label="Enter your email"
-								placeholder="Enter your email">
+							<input type="email" name="email" value="" id="enteremail" aria-label="Enter your email" placeholder="Enter your email" aria-invalid="true" aria-describedby="newsletteremail-error">
 							<button type="button" aria-label="Subscribe to Newsletter"><i class="ph ph-arrow-right"
 									aria-hidden="true"></i></button>
 						</div>
 						<p>By subscribing, I agree to the <a href="#">Privacy Policy</a></p>
+						<div id="newsletteremail-error" class="govbh-footer__newsletter--validation-message"><i class="ph ph-warning"></i> Invalid email format.</div>
 					</form>
 				</div>
 				<!-- Social WIdget Starts -->
@@ -1046,9 +1046,8 @@
 	<script src="../js/jquery.multiselect.js"></script>
 	<!-- File Upload Dropzone -->
 	<script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
-
-<!-- Fancybox -->
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+<!-- Colorbox -->
+<script src="../js/jquery.colorbox.js"></script>
 <!-- Sweetalert -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.all.min.js"></script>
 

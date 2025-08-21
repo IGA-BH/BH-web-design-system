@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Statistic | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -44,86 +44,96 @@
                     
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
 <body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Statistic:Default Starts -->
+    <!--Component Statistic Starts -->
     <div class="govbh-section">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Left</div>
-                    <div class="govbh-statistic">
-                        <div class="govbh-statistic__icon"><img src="../images/utilities/presentation.svg" alt="Total Transactions"></div>
-                        <div class="govbh-statistic__content">
-                            <div class="govbh-badge govbh-badge--medium govbh-badge--danger"><i class="ph-bold ph-arrow-down" aria-hidden="true"></i> 1.9%</div>
-                            <div class="govbh-statistic__content-counter govbh-odometer" dir="ltr" aria-live="polite">
-                                <div class="odometer" data-format="" data-count="123456" data-status="yes" aria-hidden="true">0</div><div class="opendata-count-sign">BHD</div>
+            <h5>Statistic</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <!--Component Statistic:Default Starts -->
+                <h6>Default</h6>
+                <div class="row g-5">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Left</div>
+                        <div class="govbh-statistic">
+                            <div class="govbh-statistic__icon"><img src="../images/utilities/presentation.svg" alt="Total Transactions"></div>
+                            <div class="govbh-statistic__content">
+                                <div class="govbh-badge govbh-badge--medium govbh-badge--danger"><i class="ph-bold ph-arrow-down" aria-hidden="true"></i> 1.9%</div>
+                                <div class="govbh-statistic__content-counter govbh-odometer" dir="ltr" aria-live="polite">
+                                    <div class="odometer" data-format="" data-count="123456" data-status="yes" aria-hidden="true">0</div><div class="opendata-count-sign">BHD</div>
+                                    <span class="visually-hidden">123456 BHD</span>
+                                </div>
+                                <div class="govbh-statistic__content-title">Total Transactions <a href="#" role="button" data-tooltip="tooltip" title="Total Transactions" aria-label="123456 BHD - Total Transactions"><i class="ph-bold ph-info" aria-hidden="true"></i></a></div>
                             </div>
-                            <div class="govbh-statistic__content-title">Total Transactions <span data-tooltip="tooltip" title="Total Transactions"><i class="ph-bold ph-info" aria-hidden="true"></i></span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Centered</div>
+                        <div class="govbh-statistic govbh-statistic--vertical">
+                            <div class="govbh-statistic__icon"><img src="../images/utilities/infographic.svg" alt="Total Transactions"></div>
+                            <div class="govbh-statistic__content">
+                                <div class="govbh-badge govbh-badge--medium govbh-badge--success"><i class="ph-bold ph-arrow-up" aria-hidden="true"></i> 1.9%</div>
+                                <div class="govbh-statistic__content-counter govbh-odometer" dir="ltr" aria-live="polite">
+                                    <div class="odometer" data-format="" data-count="123456" data-status="yes" aria-hidden="true">0</div><div class="opendata-count-sign">BHD</div>
+                                    <span class="visually-hidden">123456 BHD</span>
+                                </div>
+                                <div class="govbh-statistic__content-title">Total Transactions <a href="#" role="button" data-tooltip="tooltip" title="Total Transactions" aria-label="123456 BHD - Total Transactions"><i class="ph-bold ph-info" aria-hidden="true"></i></a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Centered</div>
-                    <div class="govbh-statistic govbh-statistic--vertical">
-                        <div class="govbh-statistic__icon"><img src="../images/utilities/infographic.svg" alt="Total Transactions"></div>
-                        <div class="govbh-statistic__content">
-                            <div class="govbh-badge govbh-badge--medium govbh-badge--success"><i class="ph-bold ph-arrow-up" aria-hidden="true"></i> 1.9%</div>
-                            <div class="govbh-statistic__content-counter govbh-odometer" dir="ltr" aria-live="polite">
-                                <div class="odometer" data-format="" data-count="123456" data-status="yes" aria-hidden="true">0</div><div class="opendata-count-sign">BHD</div>
-                            </div>
-                            <div class="govbh-statistic__content-title">Total Transactions <span data-tooltip="tooltip" title="Total Transactions"><i class="ph-bold ph-info" aria-hidden="true"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Component Statistic:Default Ends --> 
+                <!--Component Statistic:Default Ends -->
 
-    <!--Component Statistic:Inverse Starts -->
-    <div class="govbh-section theme--dark bg--brand">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Left</div>
-                    <div class="govbh-statistic theme--dark">
-                        <div class="govbh-statistic__icon"><img src="../images/utilities/presentation-white.svg" alt="Total Transactions"></div>
-                        <div class="govbh-statistic__content">
-                            <div class="govbh-badge govbh-badge--medium govbh-badge--danger"><i class="ph-bold ph-arrow-down" aria-hidden="true"></i> 1.9%</div>
-                            <div class="govbh-statistic__content-counter govbh-odometer" dir="ltr" aria-live="polite">
-                                <div class="odometer" data-format="" data-count="123456" data-status="yes" aria-hidden="true">0</div><div class="opendata-count-sign">BHD</div>
+                <div class="hr"></div>
+
+                <!--Component Statistic:Inverse Starts -->
+                <div class="theme--dark bg--brand p-4">
+                    <h6>Inverse</h6>
+                    <div class="row g-5">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="govbh-abstract govbh-abstract--light mb-3">Left</div>
+                            <div class="govbh-statistic theme--dark">
+                                <div class="govbh-statistic__icon"><img src="../images/utilities/presentation-white.svg" alt="Total Transactions"></div>
+                                <div class="govbh-statistic__content">
+                                    <div class="govbh-badge govbh-badge--medium govbh-badge--danger"><i class="ph-bold ph-arrow-down" aria-hidden="true"></i> 1.9%</div>
+                                    <div class="govbh-statistic__content-counter govbh-odometer" dir="ltr" aria-live="polite">
+                                        <div class="odometer" data-format="" data-count="123456" data-status="yes" aria-hidden="true">0</div><div class="opendata-count-sign">BHD</div>
+                                        <span class="visually-hidden">123456 BHD</span>
+                                    </div>
+                                    <div class="govbh-statistic__content-title">Total Transactions <a href="#" role="button" data-tooltip="tooltip" title="Total Transactions" aria-label="123456 BHD - Total Transactions"><i class="ph-bold ph-info" aria-hidden="true"></i></a></div>
+                                </div>
                             </div>
-                            <div class="govbh-statistic__content-title">Total Transactions <span data-tooltip="tooltip" title="Total Transactions"><i class="ph-bold ph-info" aria-hidden="true"></i></span></div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="govbh-abstract govbh-abstract--light mb-3">Centered</div>
+                            <div class="govbh-statistic govbh-statistic--vertical theme--dark">
+                                <div class="govbh-statistic__icon"><img src="../images/utilities/presentation-white.svg" alt="Total Transactions"></div>
+                                <div class="govbh-statistic__content">
+                                    <div class="govbh-badge govbh-badge--medium govbh-badge--success"><i class="ph-bold ph-arrow-up" aria-hidden="true"></i> 1.9%</div>
+                                    <div class="govbh-statistic__content-counter govbh-odometer" dir="ltr" aria-live="polite">
+                                        <div class="odometer" data-format="" data-count="123456" data-status="yes" aria-hidden="true">0</div><div class="opendata-count-sign">BHD</div>
+                                        <span class="visually-hidden">123456 BHD</span>
+                                    </div>
+                                    <div class="govbh-statistic__content-title">Total Transactions <a href="#" role="button" data-tooltip="tooltip" title="Total Transactions" aria-label="123456 BHD - Total Transactions"><i class="ph-bold ph-info" aria-hidden="true"></i></a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Centered</div>
-                    <div class="govbh-statistic govbh-statistic--vertical theme--dark">
-                        <div class="govbh-statistic__icon"><img src="../images/utilities/infographic-white.svg" alt="Total Transactions" width="64" height="64"></div>
-                        <div class="govbh-statistic__content">
-                            <div class="govbh-badge govbh-badge--medium govbh-badge--success"><i class="ph-bold ph-arrow-up" aria-hidden="true"></i> 1.9%</div>
-                            <div class="govbh-statistic__content-counter govbh-odometer" dir="ltr" aria-live="polite">
-                                <div class="odometer" data-format="" data-count="123456" data-status="yes" aria-hidden="true">0</div><div class="opendata-count-sign">BHD</div>
-                            </div>
-                            <div class="govbh-statistic__content-title">Total Transactions <span data-tooltip="tooltip" title="Total Transactions"><i class="ph-bold ph-info" aria-hidden="true"></i></span></div>
-                        </div>
-                    </div>
-                </div>
+                <!--Component Statistic:Inverse Starts -->
             </div>
         </div>
     </div>
-    <!--Component Statistic:Inverse Ends -->
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+    <!--Component Statistic Ends --> 
+
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"

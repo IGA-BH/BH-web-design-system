@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="ar-BH" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Accordion | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -45,76 +45,76 @@
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
     <link rel="stylesheet" href="../css/style-ar.min.css" media="all">
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Accordion:Default Starts -->
+<body>    <!--Component Accordion:Default Starts -->
     <div class="govbh-section">
         <div class="container">
-            <div class="govbh-accordion" id="faqaccordion">
-                <button type="button" aria-label="Swtich to Collapse all/Expand all" role="switch" aria-checked="false" class="govbh-accordion__expand mb-0">Expand All</button>
-                <div class="govbh-accordion__item">
-                    <h3 id="flush-heading-001" class="govbh-accordion__item-head m-0">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-001" aria-expanded="false">
-                        Is this the national website of the Kingdom of Bahrain?
-                        </button>
-                    </h3>
-                    <div id="flush-001" aria-labelledby="flush-heading-001" class="govbh-accordion__item-body collapse" data-bs-parent="#faqaccordion">
-                        <div class="govbh-accordion__item-content"> bahrain.bh is the National Portal of the Kingdom of Bahrain. It provides general information about the Kingdom, and is a gateway to access public eServices, and a platform to communicate with government entities through the available eParticipation tools.</div>
+            <h5>أكورديون</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <h6>الإعداد الإفتراضي</h6>
+                <div class="govbh-accordion" id="accordion-id">
+                    <button type="button" aria-label="Swtich to Collapse all/Expand all" role="switch" aria-checked="false" class="govbh-accordion__expand mb-0">إظهار الكل</button>
+                    <div class="govbh-accordion__item">
+                        <h3 id="flush-heading-001" class="govbh-accordion__item-head m-0">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-001" aria-expanded="false">
+                            كيف يمكن التسجيل أو تحديث المعلومات في الوزارة؟
+                            </button>
+                        </h3>
+                        <div id="flush-001" aria-labelledby="flush-heading-001" class="govbh-accordion__item-body collapse" data-bs-parent="#accordion-id">
+                            <div class="govbh-accordion__item-content">يتم التسجيل والتحديث من خلال تقديم طلب عبر الجهة الحكومية المستفيدة من الخدمة إلى الوزارة.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="govbh-accordion__item">
-                    <h3 id="flush-heading-002" class="govbh-accordion__item-head m-0">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-002" aria-expanded="false">
-                        Some services have a lock icon, what does this mean? 
-                        </button>
-                    </h3>
-                    <div id="flush-002" aria-labelledby="flush-heading-002" class="govbh-accordion__item-body collapse" data-bs-parent="#faqaccordion">
-                        <div class="govbh-accordion__item-content"> The lock icon means that this eService requires login with an eKey account in order to benefit from the service.</div>
+                    <div class="govbh-accordion__item">
+                        <h3 id="flush-heading-002" class="govbh-accordion__item-head m-0">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-002" aria-expanded="false">
+                            كيف يتم تفعيل حساب في الوزارة؟
+                            </button>
+                        </h3>
+                        <div id="flush-002" aria-labelledby="flush-heading-002" class="govbh-accordion__item-body collapse" data-bs-parent="#accordion-id">
+                            <div class="govbh-accordion__item-content">يتم تفعيل الحساب في النظام بعد استكمال إجراءات التسجيل.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="govbh-accordion__item">
-                    <h3 id="flush-heading-003" class="govbh-accordion__item-head m-0">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-003" aria-expanded="false">
-                        What is eKey? 
-                        </button>
-                    </h3>
-                    <div id="flush-003" aria-labelledby="flush-heading-003" class="govbh-accordion__item-body collapse" data-bs-parent="#faqaccordion">
-                        <div class="govbh-accordion__item-content">The eKey is a login account with your personal ID number (CPR) and password used to access some eServices.</div>
+                    <div class="govbh-accordion__item">
+                        <h3 id="flush-heading-003" class="govbh-accordion__item-head m-0">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-003" aria-expanded="false">
+                            ما هي المدة التي يستغرقها تفعيل الحساب في النظام؟
+                            </button>
+                        </h3>
+                        <div id="flush-003" aria-labelledby="flush-heading-003" class="govbh-accordion__item-body collapse" data-bs-parent="#accordion-id">
+                            <div class="govbh-accordion__item-content">يتم تفعيل الحساب خلال مدة أقصاها ثلاثة أيام عمل.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="govbh-accordion__item">
-                    <h3 id="flush-heading-004" class="govbh-accordion__item-head m-0">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-004" aria-expanded="false">
-                        Why do some eServices need an eKey login?
-                        </button>
-                    </h3>
-                    <div id="flush-004" aria-labelledby="flush-heading-004" class="govbh-accordion__item-body collapse" data-bs-parent="#faqaccordion">
-                        <div class="govbh-accordion__item-content">The eKey login provides the authenticated user a single-sign-on experience on the portal. This means once the user enters their eKey credentials through the portal login (top right of the screen) all eServices that require eKey login will be unlocked. In addition, logging in with eKey in some eServices will give the user the ability to preview all the eService details & access them in one single transaction. For more details on eKey's basic level, please visit <a href="https://www.ekey.bh" target="_blank" class="govbh-is-external" aria-label="Visit our eKey Bahrain - Open in a new window">www.ekey.bh</a>.</div>
+                    <div class="govbh-accordion__item">
+                        <h3 id="flush-heading-004" class="govbh-accordion__item-head m-0">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-004" aria-expanded="false">
+                            من المخوّل بالتسجيل في الوزارة؟
+                            </button>
+                        </h3>
+                        <div id="flush-004" aria-labelledby="flush-heading-004" class="govbh-accordion__item-body collapse" data-bs-parent="#accordion-id">
+                            <div class="govbh-accordion__item-content">جميع الشركات والمؤسسات والأفراد الذين تنطبق عليهم الشروط والمعايير.</div>
+                        </div>
                     </div>
-                </div>
-                <div class="govbh-accordion__item">
-                    <h3 id="flush-heading-005" class="govbh-accordion__item-head m-0">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-005" aria-expanded="false">
-                        How do I register for an eKey account? 
-                        </button>
-                    </h3>
-                    <div id="flush-005" aria-labelledby="flush-heading-005" class="govbh-accordion__item-body collapse" data-bs-parent="#faqaccordion">
-                        <div class="govbh-accordion__item-content">There are two levels for the eKey account. The basic level is used for most of the eServices and can be obtained easily; you can do so by registering for a Standard eKey . The Advanced level of eKey ensures a higher level of security and allows access to all eServices; it requires the verification of the user's Identity Card and fingerprint. To create an advanced eKey account, visit one of our eKey centres.</div>
+                    <div class="govbh-accordion__item">
+                        <h3 id="flush-heading-005" class="govbh-accordion__item-head m-0">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-005" aria-expanded="false">
+                            ماهي الميزانية العامة للدولة؟
+                            </button>
+                        </h3>
+                        <div id="flush-005" aria-labelledby="flush-heading-005" class="govbh-accordion__item-body collapse" data-bs-parent="#accordion-id">
+                            <div class="govbh-accordion__item-content">تمثل الميزانية العامة أداة السياسة المالية للدولة، وتتضمن بيان الإيرادات المقدر تحصليها، والمصروفات المقدر إنفاقها من قبل الحكومة خلال سنة مالية معينة بما يحقق الاستقرار والنمو الاقتصادي، وذلك من خلال التخصيص العادل للموارد الوطنية ليتم استغلالها بكل كفاءة وفعالية.</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!--Component Accordion:Default Ends -->
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -130,7 +130,7 @@
 <!-- Header Sticky -->
 <script src="../js/govbh-menu-sticky.js"></script>
 <!-- Text Localization -->
-<script src="../js/govbh-lang.js"></script>
+<script src="../js/govbh-lang-ar.js"></script>
 <!-- Library -->
 <script src="../js/govbh-library.min.js"></script>
 <!-- Utils -->

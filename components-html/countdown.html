@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Countdown | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -44,53 +44,59 @@
                     
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
 <body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <div class="govbh-section">
+    <!--Component Countdown:Default Starts -->
+    <div class="govbh-section">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!--Component Countdown:Default Starts -->
-                    <div class="govbh-countdown">
-                        <div class="govbh-countdown__title">Countdown starts now!</div>
-                        <div class="govbh-countdown__timer"></div>
-                        <div class="govbh-countdown__subtitle">Mark your calendar!</div>
-                    </div>
-                    <!--Component Countdown:Default Ends -->
-
-                    <div class="hr"></div>
-
-                    <!--Component Countdown:Bordered Starts -->
-                    <div class="govbh-countdown govbh-countdown--border">
-                        <div class="govbh-countdown__title">Countdown starts now!</div>
-                        <div class="govbh-countdown__timer"></div>
-                        <div class="govbh-countdown__subtitle">Mark your calendar!</div>
-                    </div>
-                    <!--Component Countdown:Bordered Ends -->
-
-                    <div class="hr"></div>
-
-                    <!--Component Countdown:Remaining Time Starts -->
-                    <div class="govbh-countdown">
-                        <div class="govbh-countdown__remaining">
-                            <i class="ph ph-clock" aria-hidden="true"></i>Time remaining:<span>00:15</span>
+            <h5>Countdown</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <div class="row">
+                    <div class="col-12">
+                        <!--Component Countdown:Default Starts -->
+                        <h6>Default</h6>
+                        <div class="govbh-countdown">
+                            <div class="govbh-countdown__title">Countdown starts now!</div>
+                            <div class="govbh-countdown__timer"></div>
+                            <div class="govbh-countdown__subtitle">Mark your calendar!</div>
                         </div>
+                        <!--Component Countdown:Default Ends -->
+
+                        <div class="hr"></div>
+
+                        <!--Component Countdown:Bordered Starts -->
+                        <h6>Bordered</h6>
+                        <div class="govbh-countdown govbh-countdown--border">
+                            <div class="govbh-countdown__title">Countdown starts now!</div>
+                            <div class="govbh-countdown__timer"></div>
+                            <div class="govbh-countdown__subtitle">Mark your calendar!</div>
+                        </div>
+                        <!--Component Countdown:Bordered Ends -->
+
+                        <div class="hr"></div>
+
+                        <!--Component Countdown:Remaining Time Starts -->
+                        <h6>Remaining Time</h6>
+                        <div class="govbh-countdown">
+                            <div class="govbh-countdown__remaining">
+                                <i class="ph ph-clock" aria-hidden="true"></i>Time remaining:<span>00:15</span>
+                            </div>
+                        </div>
+                        <!--Component Countdown:Remaining Time Ends -->
                     </div>
-                    <!--Component Countdown:Remaining Time Ends -->
                 </div>
             </div>
         </div>
     </div>
     <!--Component Countdown:Default Ends -->
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+    
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"

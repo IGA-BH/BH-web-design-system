@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="ar-BH" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Header | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -45,13 +45,14 @@
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
     <link rel="stylesheet" href="../css/style-ar.min.css" media="all">
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Header:Default Starts -->
+<body>    <!--Component Header:Default Starts -->
     <header id="govbh-header" class="govbh-header" aria-label="Header">
         <!-- Header with Logo Starts -->
         <div class="govbh-head">
@@ -59,9 +60,10 @@
                 <div class="govbh-head__headrow">
                     <!-- Logo -->
                     <div class="govbh-head__logo">
-                        <a href="index.php">
-                            <img loading="lazy" src="../images/gov-bh-logo.svg" alt="Bahrain Government Guidlines Design System Logo" width="265" height="70" class="govbh-logo-light">
-                            <img loading="lazy" src="../images/bahrain-government-design-system-white-logo.svg" alt="Bahrain Government Guidlines Design System Logo white" width="265" height="70" class="govbh-logo-dark">
+                        <!-- <a href="#"><img loading="lazy" src="../images/silver-logo.svg" alt="Silver Jublie Logo"></a> -->
+                        <a href="#">
+                            <img loading="lazy" src="../images/bahrain-government-design-system-logo-ar.svg" alt="Bahrain Government Guidlines Design System Logo" width="265" height="70" class="govbh-logo-light">
+                            <img loading="lazy" src="../images/../images/bahrain-government-design-system-white-logo-ar.svg" alt="Bahrain Government Guidlines Design System Logo White" width="265" height="70" class="govbh-logo-dark">
                         </a>
                     </div>
                     <!-- Secondary Menu -->
@@ -69,38 +71,37 @@
                         <div class="govbh-head__secondary-menu-list d-xl-block d-lg-none d-none">
                             <ul><!-- Secondary Menu ul -->
                                 <li>
-                                    <a href="index.php">Link1</a>
+                                    <a href="#">رابط 1</a>
                                 </li>
                                 <li>
-                                    <a href="index-02.php">Link2</a>
+                                    <a href="#">رابط 2</a>
                                 </li>
                                 <li>
-                                    <a href="index-03.php" class="govbh-is-external" target="_blank" aria-label="Link3 - opens in a new window">Link3</a>
+                                    <a href="#" target="_blank">رابط 3</a>
                                 </li>
                             </ul>
                         </div>
                         <!-- Login -->
-                        <a href="#" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--medium d-lg-inline-flex d-md-none d-none" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>Login</a>
+                        <a href="#" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--medium d-lg-inline-flex d-md-none d-none" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول</a>
                         <!-- Language Switcher -->
-                        <a class="govbh-head__lang-switcher" href="#" lang="ar-BH" data-tooltip="tooltip" title="Click here to switch to the Arabic version of this page." aria-label="Click here to switch to the Arabic version of this page.">العربية <i class="ph ph-globe" aria-hidden="true"></i></a>
+                        <a class="govbh-head__lang-switcher" href="#" lang="en-US" aria-label="اضغط هنا للتحول للنسخة العربية من هذه الصفحة ">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                         <!-- Dark Mode -->
-                        <a href="#" class="govbh-head__darkmode d-md-flex d-sm-none d-none" data-tooltip="tooltip" title="Click here to switch between light and dark mode" role="button" aria-label="Click here to switch between light and dark mode"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
+                        <a href="#" class="govbh-head__darkmode d-md-flex d-sm-none d-none" data-tooltip="tooltip" title="اضغط هنا للتبديل بين الوضع الفاتح والداكن" role="button" aria-label="اضغط هنا للتبديل بين الوضع الفاتح والداكن"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
                         <!-- Text Resize -->
                         <div class="govbh-head__textsize">
-                            <a href="#" class="govbh-head__textsize-btn" data-tooltip="tooltip" title="Click here to resize text size." role="button" aria-label="Click here to resize text size."><span class="icon-resize"></span></a>
+                            <a href="#" id="textsize" class="govbh-head__textsize-btn" data-tooltip="tooltip" title="اضغط هنا للتحكم في حجم الخط" role="button" aria-label="Click here to resize text size."><span class="icon-resize" aria-hidden="true"></span></a>
                             <div class="govbh-head__textsize-body">
                                 <ul>
                                     <li class="govbh-head__textsize-small"><button type="button" aria-label="Text resize small"><i class="ph ph-text-aa" aria-hidden="true"></i></button></li>
                                     <li class="govbh-head__textsize-medium active"><button type="button" aria-label="Text resize medium"><i class="ph ph-text-aa" aria-hidden="true"></i></button></li>
                                     <li class="govbh-head__textsize-large"><button type="button" aria-label="Text resize large"><i class="ph ph-text-aa" aria-hidden="true"></i></button></li>
                                 </ul>
-                                <div class="govbh-head__textsize-title">Text Resize ( <button type="button" class="textsizereset">Reset</button> )</div>
+                                <div class="govbh-head__textsize-title">تغيير حجم النص (<button type="button" class="textsizereset">إعادة ضبط</button>)</div>
                                 <button type="button" class="govbh-head__textsize-close" aria-label="Text resize close button"><i class="ph ph-x" aria-hidden="true"></i></button>
-
                             </div>
                         </div>
                         <!-- Search -->
-                        <a href="#" id="searchbtn" class="govbh-head__search-switcher" data-tooltip="tooltip" title="Click here to search." role="button" aria-label="Click here to search."><i class="ph ph-magnifying-glass icon--active" aria-hidden="true"></i><i class="ph ph-x icon--close" aria-hidden="true"></i></a>
+                        <a href="#" id="searchbtn" class="govbh-head__search-switcher" data-tooltip="tooltip" title="اضغط هنا للبحث" role="button" aria-label="Click here to Open Search Field"><i class="ph ph-magnifying-glass icon--active" aria-hidden="true"></i><i class="ph ph-x icon--close" aria-hidden="true"></i></a>
                         <!-- Burger menu -->
                         <a href="#" id="govbhhamburger" class="govbh-hamburger d-xl-none d-lg-flex d-flex" role="button" aria-label="Click here to open the menu.">
                             <i class="ph ph-list icon--active" aria-hidden="true"></i><i class="ph ph-x icon--close" aria-hidden="true"></i>
@@ -110,22 +111,13 @@
             </div>
         </div>
         <!-- Header with Logo Ends -->
-        <!-- Accessibility Section Starts -->
-        <div id="govbh-accessibility" class="govbh-accessibility" style="display: none;">
-            <div class="container">
-                <div class="govbh-accessibility__wrapper">
-                    <div class="govbh-abstract m-0">Accessibility details goes here..</div>
-                </div>
-            </div>
-        </div>
-        <!-- Accessibility Section Ends -->
         <!-- Search Section Starts -->
         <div class="govbh-search">
             <div class="container">
-                <form action="#">
+                <form action="#" autocomplete="on">
                     <label for="txtSearch" class="visually-hidden">Search</label>
-                    <input id="txtSearch" type="text" value="" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
-                    <button type="button" onclick="SearchWeb()" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+                    <input id="txtSearch" type="search" value="" name="searchQuery" placeholder="ما الذي تبحث عنه؟" aria-label="Start typing to find what you're looking for.">
+                    <button type="button" onclick="window.location='#'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
                 </form>
             </div>
         </div>
@@ -136,9 +128,9 @@
                 <div class="govbh-menu__top">
                     <!-- Logo -->
                     <div class="govbh-menu__logo d-xl-none d-lg-block d-block">
-                        <a href="index.php">
-                            <img loading="lazy" src="../images/gov-bh-logo.svg" alt="Bahrain Government Guidlines Design System Logo" width="265" height="70" class="govbh-logo-light">
-                            <img loading="lazy" src="../images/bahrain-government-design-system-white-logo.svg" alt="Bahrain Government Guidlines Design System Logo White" width="265" height="70" class="govbh-logo-dark">
+                        <a href="#">
+                            <img loading="lazy" src="../images/bahrain-government-design-system-logo-ar.svg" alt="Bahrain Government Guidlines Design System Logo" width="265" height="70" class="govbh-logo-light">
+                            <img loading="lazy" src="../images/../images/bahrain-government-design-system-white-logo-ar.svg" alt="Bahrain Government Guidlines Design System Logo White" width="265" height="70" class="govbh-logo-dark">
                         </a>
                     </div>
                     <!-- Close Button -->
@@ -148,96 +140,96 @@
                     <div class="govbh-menu__switchers d-xl-none d-lg-flex d-flex">
                         <div class="govbh-menu__switchers-col">
                             <!-- Dark Mode -->
-                            <a href="#" class="govbh-head__darkmode" data-tooltip="tooltip" title="Click here to switch between light and dark mode" role="button" aria-label="Click here to switch between light and dark mode"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
+                            <a href="#" class="govbh-head__darkmode" data-tooltip="tooltip" title="اضغط هنا للتحول لنسخة بخلفية بيضاء" role="button" aria-label="اضغط هنا للتحول لنسخة بخلفية بيضاء"><i class="ph ph-moon dark--moon" aria-hidden="true"></i><i class="ph ph-sun-dim dark--sun" aria-hidden="true"></i></a>
                             <!-- Text Resize -->
                             <div class="govbh-head__textsize">
-                                <a href="#" id="textsize" class="govbh-head__textsize-btn" data-tooltip="tooltip" title="Click here to resize text size." role="button" aria-label="Click here to resize text size."><span class="icon-resize"></span></a>
+                                <a href="#" class="govbh-head__textsize-btn" data-tooltip="tooltip" title="اضغط هنا للتحكم في حجم الخط" role="button" aria-label="Click here to resize text size."><span class="icon-resize" aria-hidden="true"></span></a>
                                 <div class="govbh-head__textsize-body">
                                     <ul>
-                                        <li class="govbh-head__textsize-small"><button type="button" aria-label="Text resize small"><i class="ph ph-text-aa" aria-hidden="true"></i></button></li>
+                                        <li class="govbh-head__textsize-small"><button type="button" aria-label="Text resize small"><i class="ph ph-text-aa"></i></button></li>
                                         <li class="govbh-head__textsize-medium active"><button type="button" aria-label="Text resize medium"><i class="ph ph-text-aa" aria-hidden="true"></i></button></li>
                                         <li class="govbh-head__textsize-large"><button type="button" aria-label="Text resize large"><i class="ph ph-text-aa" aria-hidden="true"></i></button></li>
                                     </ul>
-                                    <div class="govbh-head__textsize-title">Text Resize ( <button type="button" class="textsizereset">Reset</button> )</div>
+                                    <div class="govbh-head__textsize-title">تغيير حجم النص (<button type="button" class="textsizereset">إعادة ضبط</button>)</div>
                                     <button type="button" class="govbh-head__textsize-close" aria-label="Text resize close button"><i class="ph ph-x" aria-hidden="true"></i></button>
                                 </div>
                             </div>
                         </div>
                         <div class="govbh-menu__switchers-col">
-                            <a href="#" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--small d-xl-none d-lg-inline-flex d-inline-flex" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>Login</a><!-- Login -->
+                            <a href="#" class="govbh-btn govbh-btn--outline govbh-btn--left-icon govbh-btn--small d-xl-none d-lg-inline-flex d-inline-flex" role="button" aria-label="Click here to log in to the portal."><i class="ph ph-lock-key" aria-hidden="true"></i>تسجيل الدخول </a><!-- Login -->
                             <!-- Mobile Language Switcher -->
-                            <a class="govbh-head__lang-switcher" href="#" lang="ar-BH" aria-label="Click here to switch to the Arabic version of this page.">العربية <i class="ph ph-globe" aria-hidden="true"></i></a>
+                            <a class="govbh-head__lang-switcher" href="#" lang="en-US" aria-label="Click here to switch to the Arabic version of this page.">English <i class="ph ph-globe" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
                 <!-- Main Navigation -->
                 <nav id="main-nav" class="govbh-menu__navmenu" aria-label="Main navigation">
                     <div class="govbh-menu__navmenu-home">
-                        <a href="index.php" aria-label="Home"><i class="ph ph-house" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Home"><i class="ph ph-house" aria-hidden="true"></i></a>
                     </div>
-                    <ul id="main-menu" class="sm">
+                    <ul id="main-menu" class="sm sm-rtl">
                         <li>
-                            <a href="javascript:void(0);" role="button" aria-label="Open dropdown for Nav Item 1">Nav Item 1</a>
+                            <a href="javascript:void(0);" role="button" aria-label="Open dropdown for Nav Item 1">خيار التنقل 1</a>
                             <ul>
-                                <li><a href="javascript:void(0);" role="button" aria-label="Open dropdown for Submenu First Level">Submenu First Level</a>
+                                <li><a href="javascript:void(0);" role="button" aria-label="Open dropdown for Submenu First Level">قائمة فرعية - المستوى الأول</a>
                                     <ul>
-                                        <li><a href="#">Submenu Second Level</a></li>
-                                        <li><a href="#">Submenu Second Level</a></li>
-                                        <li><a href="#">Submenu Second Level</a></li>
-                                        <li><a href="#">Submenu Second Level</a></li>
+                                        <li><a href="#">قائمة فرعية - المستوى الثاني</a></li>
+                                        <li><a href="#">قائمة فرعية - المستوى الثاني</a></li>
+                                        <li><a href="#">قائمة فرعية - المستوى الثاني</a></li>
+                                        <li><a href="#">قائمة فرعية - المستوى الثاني</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Submenu First Level</a></li>
-                                <li><a href="#">Submenu First Level</a></li>
-                                <li><a href="#">Submenu First Level</a></li>
-                                <li><a href="#">Submenu First Level</a></li>
-                                <li><a href="#">Submenu First Level</a></li>
+                                <li><a href="#">قائمة فرعية - المستوى الأول</a></li>
+                                <li><a href="#">قائمة فرعية - المستوى الأول</a></li>
+                                <li><a href="#">قائمة فرعية - المستوى الأول</a></li>
+                                <li><a href="#">قائمة فرعية - المستوى الأول</a></li>
+                                <li><a href="#">قائمة فرعية - المستوى الأول</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="javascript:void(0);" role="button" aria-label="Open dropdown for Nav Item 2">Nav Item 2</a>
+                            <a href="javascript:void(0);" role="button" aria-label="Open dropdown for Nav Item 2">خيار التنقل 2</a>
                             <!-- Mega Menu Starts -->
                             <ul class="govbh-menu__megamenu-container">
                                 <li>
                                     <div class="row g-xl-5 g-md-4 g-3">
                                         <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                            <div class="govbh-menu__megamenu-title">Megamenu Title 1</div>
+                                            <div class="govbh-menu__megamenu-title">خيار القائمة الرئيسية 1</div>
                                             <ol>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
                                             </ol>
                                         </div>
                                         <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                            <div class="govbh-menu__megamenu-title">Megamenu Title 2</div>
+                                            <div class="govbh-menu__megamenu-title">خيار القائمة الرئيسية 2</div>
                                             <ol>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
                                             </ol>
                                         </div>
                                         <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                            <div class="govbh-menu__megamenu-title">Megamenu Title 3</div>
+                                            <div class="govbh-menu__megamenu-title">خيار القائمة الرئيسية 3</div>
                                             <ol>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
                                             </ol>
                                         </div>
                                         <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12 col-12">
-                                            <div class="govbh-menu__megamenu-title">Megamenu Title 4</div>
+                                            <div class="govbh-menu__megamenu-title">خيار القائمة الرئيسية 4</div>
                                             <ol>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
                                             </ol>
                                         </div>
                                     </div>
@@ -246,28 +238,27 @@
                             <!-- Mega Menu Ends -->
                         </li>
                         <li>
-                            <a href="javascript:void(0);" role="button" aria-label="Open dropdown for Nav Item 3">Nav Item 3</a>
+                            <a href="javascript:void(0);" role="button" aria-label="Open dropdown for Nav Item 3">خيار التنقل 3</a>
                             <!-- Mega Menu Starts -->
                             <ul class="govbh-menu__megamenu-container">
                                 <li>
                                     <div class="row g-xl-5 g-md-4 g-3">
                                         <div class="col-xl-4 col-lg-12 col-sm-12 col-12 d-xl-block d-lg-none d-none">
                                             <div class="govbh-menu__megamenu-img">
-                                                <img loading="lazy" src="../images/img-001.webp" alt="Mega Menu layout" width="556" height="360">
+                                                <img loading="lazy" src="../images/img-001.webp" alt="Mega Menu" width="556" height="360">
                                             </div>
                                         </div>
                                         <div class="col-xl-8 col-lg-12 col-sm-12 col-12">
                                             <ol class="govbh-menu__megamenu--two-col">
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
-                                                <li><a href="#">Megamenu Item</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
+                                                <li><a href="#">خيار القائمة الرئيسية</a></li>
                                             </ol>
                                         </div>
                                     </div>
@@ -276,21 +267,21 @@
                             <!-- Mega Menu Ends -->
                         </li>
                         <li>
-                            <a href="javascript:void(0);" role="button" aria-label="Open dropdown for Nav Item 4">Nav Item 4</a>
+                            <a href="javascript:void(0);" role="button" aria-label="Open dropdown for Nav Item 4">خيار التنقل 4</a>
                             <ul>
-                                <li><a href="#">Submenu First Level</a></li>
-                                <li><a href="#">Submenu First Level</a></li>
-                                <li><a href="#">Submenu First Level</a></li>
-                                <li><a href="#">Submenu First Level</a></li>
-                                <li><a href="#">Submenu First Level</a></li>
-                                <li><a href="#">Submenu First Level</a></li>
+                                <li><a href="#">قائمة فرعية - المستوى الأول</a></li>
+                                <li><a href="#">قائمة فرعية - المستوى الأول</a></li>
+                                <li><a href="#">قائمة فرعية - المستوى الأول</a></li>
+                                <li><a href="#">قائمة فرعية - المستوى الأول</a></li>
+                                <li><a href="#">قائمة فرعية - المستوى الأول</a></li>
+                                <li><a href="#">قائمة فرعية - المستوى الأول</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Nav Item 5</a>
+                            <a href="#">خيار التنقل 5</a>
                         </li>
                         <li>
-                            <a href="#">Nav Item 6</a>
+                            <a href="#">خيار التنقل 6</a>
                         </li>
                     </ul>
                 </nav>
@@ -298,16 +289,15 @@
                 <div class="govbh-menu__secondary-menu-list d-xl-none d-lg-block d-block">
                     <ul><!-- Secondary Menu ul -->
                         <li>
-                            <a href="#">Link1</a>
+                            <a href="#">رابط 1</a>
                         </li>
                         <li>
-                            <a href="#">Link2</a>
+                            <a href="#">رابط 2</a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">Link3</a>
+                        <a href="#" target="_blank">رابط 3</a>
                         </li>
                     </ul>
-                                    
                 </div>
             </div>
         </div>
@@ -316,11 +306,6 @@
         <div class="govbh-menuclose"></div>
     </header>
     <!--Component Header:Default Ends -->
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -336,7 +321,7 @@
 <!-- Header Sticky -->
 <script src="../js/govbh-menu-sticky.js"></script>
 <!-- Text Localization -->
-<script src="../js/govbh-lang.js"></script>
+<script src="../js/govbh-lang-ar.js"></script>
 <!-- Library -->
 <script src="../js/govbh-library.min.js"></script>
 <!-- Utils -->

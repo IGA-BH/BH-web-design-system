@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Main Navigation | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -44,13 +44,16 @@
                     
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
 <body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Main Navigation:Default Starts -->
+    <!--Component Main Navigation:Default Starts -->
     <header id="govbh-header" class="govbh-header" aria-label="Header">
         <!-- Masthead Starts -->
         <div class="govbh-masthead">
@@ -59,25 +62,25 @@
                     <div class="row">
                         <div class="col-12 d-flex flex-nowrap gap-1 align-items-start">
                             <img loading="lazy" src="../images/bahrain-flag.svg" alt="Flag - Kingdom of Barhain" width="66" height="70">
-                            <p><span>Official government website of the Kingdom of Bahrain</span><button type="button" data-target-on="#privacyhead" class="privacyhead govbh-toggler">How to identify?<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
+                            <p><span>Official government website of the Kingdom of Bahrain</span><button type="button" data-target-on="#details-masthead-body" class="privacyhead govbh-toggler" aria-expanded="false" aria-controls="details-masthead-body" aria-label="Official government website of the Kingdom of Bahrain - How to identify?">How to identify?<i class="ph ph-caret-down" aria-hidden="true"></i></button></p>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Masthead Body Starts -->
-            <div class="govbh-masthead-body bg--secondary" id="privacyhead">
+            <div class="govbh-masthead-body bg--secondary" id="details-masthead-body">
                 <div class="container">
                     <div class="row gap-md-0 gap-sm-4 gap-4">
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="govbh-masthead-body__content">
                                 <div class="govbh-masthead-body__title"><i class="ph-fill ph-house" aria-hidden="true"></i>Official government websites in Bahrain end with .gov.bh</div>
-                                <p>All links to official websites of government agencies in the Kingdom of Bahrain end with .gov.bh</p>
+                                <p>All links to official websites of government entities in the Kingdom of Bahrain end with <code>.gov.bh</code>&nbsp;&nbsp;<a href="https://www.bahrain.bh/wps/portal/en/BNP/GSX-UI-AllEntities" aria-label="Trusted Government Websites page - open in a new window" target="_blank" rel="noopener noreferrer" class="govbh-is-external">Trusted Government Websites</a></p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="govbh-masthead-body__content">
                                 <div class="govbh-masthead-body__title"><i class="ph-fill ph-lock-simple" aria-hidden="true"></i>Bahraini government websites use the HTTPS protocol to ensure encrypted and secure communication</div>
-                                <p>All official websites of government entities in Bahrain use HTTPS to protect users' data and ensure secure access.</p>
+                                <p>All official websites of government entities in the Kingdom of Bahrain use HTTPS to protect users' data and ensure secure access.</p>
                             </div>
                         </div>
                     </div>
@@ -91,7 +94,8 @@
                 <div class="govbh-head__headrow">
                     <!-- Logo -->
                     <div class="govbh-head__logo">
-                        <a href="index.php">
+                        <!-- <a href="#"><img loading="lazy" src="../images/silver-logo.svg" alt="Silver Jublie Logo"></a> -->
+                        <a href="#">
                             <img loading="lazy" src="../images/gov-bh-logo.svg" alt="Bahrain Government Guidlines Design System Logo" width="265" height="70" class="govbh-logo-light">
                             <img loading="lazy" src="../images/bahrain-government-design-system-white-logo.svg" alt="Bahrain Government Guidlines Design System Logo white" width="265" height="70" class="govbh-logo-dark">
                         </a>
@@ -101,13 +105,13 @@
                         <div class="govbh-head__secondary-menu-list d-xl-block d-lg-none d-none">
                             <ul><!-- Secondary Menu ul -->
                                 <li>
-                                    <a href="index.php">Link1</a>
+                                    <a href="#">Link1</a>
                                 </li>
                                 <li>
-                                    <a href="index-02.php">Link2</a>
+                                    <a href="index-02.html">Link2</a>
                                 </li>
                                 <li>
-                                    <a href="index-03.php" class="govbh-is-external" target="_blank" aria-label="Link3 - opens in a new window">Link3</a>
+                                    <a href="index-03.html" class="govbh-is-external" target="_blank" aria-label="Link3 - open in a new window">Link3</a>
                                 </li>
                             </ul>
                         </div>
@@ -142,22 +146,13 @@
             </div>
         </div>
         <!-- Header with Logo Ends -->
-        <!-- Accessibility Section Starts -->
-        <div id="govbh-accessibility" class="govbh-accessibility" style="display: none;">
-            <div class="container">
-                <div class="govbh-accessibility__wrapper">
-                    <div class="govbh-abstract m-0">Accessibility details goes here..</div>
-                </div>
-            </div>
-        </div>
-        <!-- Accessibility Section Ends -->
         <!-- Search Section Starts -->
         <div class="govbh-search">
             <div class="container">
-                <form action="#">
+                <form action="#" autocomplete="on">
                     <label for="txtSearch" class="visually-hidden">Search</label>
-                    <input id="txtSearch" type="text" value="" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
-                    <button type="button" onclick="SearchWeb()" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+                    <input id="txtSearch" type="search" value="" name="searchQuery" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
+                    <button type="button" onclick="window.location='#'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
                 </form>
             </div>
         </div>
@@ -168,7 +163,7 @@
                 <div class="govbh-menu__top">
                     <!-- Logo -->
                     <div class="govbh-menu__logo d-xl-none d-lg-block d-block">
-                        <a href="index.php">
+                        <a href="#">
                             <img loading="lazy" src="../images/gov-bh-logo.svg" alt="Bahrain Government Guidlines Design System Logo" width="265" height="70" class="govbh-logo-light">
                             <img loading="lazy" src="../images/bahrain-government-design-system-white-logo.svg" alt="Bahrain Government Guidlines Design System Logo White" width="265" height="70" class="govbh-logo-dark">
                         </a>
@@ -205,7 +200,7 @@
                 <!-- Main Navigation -->
                 <nav id="main-nav" class="govbh-menu__navmenu" aria-label="Main navigation">
                     <div class="govbh-menu__navmenu-home">
-                        <a href="index.php" aria-label="Home"><i class="ph ph-house" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Home"><i class="ph ph-house" aria-hidden="true"></i></a>
                     </div>
                     <ul id="main-menu" class="sm">
                         <li>
@@ -336,7 +331,7 @@
                             <a href="#">Link2</a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">Link3</a>
+                            <a href="#">Link3</a>
                         </li>
                     </ul>
                                     
@@ -348,11 +343,7 @@
         <div class="govbh-menuclose"></div>
     </header>
     <!--Component Main Navigation:Default Ends -->
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"

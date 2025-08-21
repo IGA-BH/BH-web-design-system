@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Alert | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -44,76 +44,78 @@
                     
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
 <body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Alert:Default Starts -->
+    <!--Component Alert:Default Starts -->
     <div class="govbh-section">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!--Component Alert:Info Starts -->
-                    <div role="alert" class="govbh-alert govbh-alert--info">
-                        <div class="govbh-alert__icon"><i class="ph-fill ph-info"></i></div>
-                        <div class="govbh-alert__content">
-                            <div class="abstract">This is an info alert</div>
-                            <p>A way of informing the user of important changes in a prominent way.</p>
-                        </div>
-                        <button type="button" class="govbh-alert__close" data-bs-dismiss="alert" data-bs-target=".govbh-alert--info" aria-label="Close"><i class="ph ph-x"></i></button>
+            <h5>Alert</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <!--Component Alert:Info Starts -->
+                <h6>Info</h6>
+                <div class="govbh-alert govbh-alert--info" role="alert">
+                    <div class="govbh-alert__icon"><i class="ph-fill ph-info" aria-hidden="true"></i></div>
+                    <div class="govbh-alert__content">
+                        <div class="abstract">This is an info alert</div>
+                        <p>A way of informing the user of important changes in a prominent way.</p>
                     </div>
-                    <!--Component Alert:Info Ends -->
-
-                    <div class="hr"></div>
-
-                    <!--Component Alert:Success Starts -->
-                    <div role="alert" class="govbh-alert govbh-alert--success">
-                        <div class="govbh-alert__icon"><i class="ph-fill ph-check-circle"></i></div>
-                        <div class="govbh-alert__content">
-                            <div class="abstract">This is a success alert</div>
-                            <p>A way of informing the user of important changes in a prominent way.</p>
-                        </div>
-                        <button type="button" class="govbh-alert__close" data-bs-dismiss="alert" data-bs-target=".govbh-alert--success" aria-label="Close"><i class="ph ph-x"></i></button>
-                    </div>
-                    <!--Component Alert:Success Ends -->
-
-                    <div class="hr"></div>
-
-                    <!--Component Alert:Warning Starts -->
-                    <div role="alert" class="govbh-alert govbh-alert--warning">
-                        <div class="govbh-alert__icon"><i class="ph-fill ph-warning"></i></div>
-                        <div class="govbh-alert__content">
-                            <div class="abstract">This is a warning alert</div>
-                            <p>A way of informing the user of important changes in a prominent way.</p>
-                        </div>
-                        <button type="button" class="govbh-alert__close" data-bs-dismiss="alert" data-bs-target=".govbh-alert--warning" aria-label="Close"><i class="ph ph-x"></i></button>
-                    </div>
-                    <!--Component Alert:Warning Ends -->
-
-                    <div class="hr"></div>
-
-                    <!--Component Alert:Failure Starts -->
-                    <div role="alert" class="govbh-alert govbh-alert--failure">
-                        <div class="govbh-alert__icon"><i class="ph-fill ph-x-circle"></i></div>
-                        <div class="govbh-alert__content">
-                            <div class="abstract">This is a failure alert</div>
-                            <p>A way of informing the user of important changes in a prominent way.</p>
-                        </div>
-                        <button type="button" class="govbh-alert__close" data-bs-dismiss="alert" data-bs-target=".govbh-alert--failure" aria-label="Close"><i class="ph ph-x"></i></button>
-                    </div>
-                    <!--Component Alert:Failure Ends -->
+                    <button type="button" class="govbh-alert__close" data-bs-dismiss="alert" data-bs-target=".govbh-alert--info" aria-label="Close info message"><i class="ph ph-x" aria-hidden="true"></i></button>
                 </div>
+                <!--Component Alert:Info Ends -->
+
+                <div class="hr"></div>
+
+                <!--Component Alert:Success Starts -->
+                <h6>Success</h6>
+                <div class="govbh-alert govbh-alert--success" role="alert">
+                    <div class="govbh-alert__icon"><i class="ph-fill ph-check-circle" aria-hidden="true"></i></div>
+                    <div class="govbh-alert__content">
+                        <div class="abstract">This is a success alert</div>
+                        <p>A way of informing the user of important changes in a prominent way.</p>
+                    </div>
+                    <button type="button" class="govbh-alert__close" data-bs-dismiss="alert" data-bs-target=".govbh-alert--success" aria-label="Close success message"><i class="ph ph-x" aria-hidden="true"></i></button>
+                </div>
+                <!--Component Alert:Success Ends -->
+
+                <div class="hr"></div>
+
+                <!--Component Alert:Warning Starts -->
+                <h6>Warning</h6>
+                <div class="govbh-alert govbh-alert--warning" role="alert">
+                    <div class="govbh-alert__icon"><i class="ph-fill ph-warning" aria-hidden="true"></i></div>
+                    <div class="govbh-alert__content">
+                        <div class="abstract">This is a warning alert</div>
+                        <p>A way of informing the user of important changes in a prominent way.</p>
+                    </div>
+                    <button type="button" class="govbh-alert__close" data-bs-dismiss="alert" data-bs-target=".govbh-alert--warning" aria-label="Close warning message"><i class="ph ph-x" aria-hidden="true"></i></button>
+                </div>
+                <!--Component Alert:Warning Ends -->
+
+                <div class="hr"></div>
+
+                <!--Component Alert:Failure Starts -->
+                <h6>Failure</h6>
+                <div class="govbh-alert govbh-alert--failure" role="alert">
+                    <div class="govbh-alert__icon"><i class="ph-fill ph-x-circle" aria-hidden="true"></i></div>
+                    <div class="govbh-alert__content">
+                        <div class="abstract">This is a failure alert</div>
+                        <p>A way of informing the user of important changes in a prominent way.</p>
+                    </div>
+                    <button type="button" class="govbh-alert__close" data-bs-dismiss="alert" data-bs-target=".govbh-alert--failure" aria-label="Close failure message"><i class="ph ph-x" aria-hidden="true"></i></button>
+                </div>
+                <!--Component Alert:Failure Ends -->
             </div>
         </div>
     </div>
     <!--Component Alert:Default Ends -->
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"

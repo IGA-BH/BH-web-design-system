@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="ar-BH" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Breadcrumbs | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -45,54 +45,62 @@
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
     <link rel="stylesheet" href="../css/style-ar.min.css" media="all">
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Breadcrumbs:Default Starts -->
-    <div class="govbh-section govbh-breadcrumb">
+<body>    
+    <!--Component Breadcrumbs Starts -->
+    <div class="govbh-section">
         <div class="container">
-            <div class="row g-2 align-items-center">
-                <nav class="col-12" aria-label="Breadcrumbs">
-                    <ul class="govbh-breadcrumb__group">
-                        <li class="govbh-breadcrumb__item-home">
-                            <a href="index.php" aria-label="Go to home"><i class="ph ph-house" aria-hidden="true"></i><span>Home</span></a>
-                        </li>
-                        <li><a href="#">Produt & Services</a></li>
-                        <li><a href="#">Survey</a></li>
-                        <li class="govbh-breadcrumb__item-last" aria-current="page">Parent</li>
-                    </ul>
-                </nav>
+            <h5>فتات الخبز</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <div class="row g-4">
+                    <!--Component Breadcrumbs:Default Starts -->
+                    <div class="col-12">
+                        <div class="govbh-breadcrumb p-0">
+                            <h6>الإعداد الإفتراضي</h6>
+                            <nav tabindex="0" aria-label="Breadcrumbs">
+                                <ul class="govbh-breadcrumb__group">
+                                    <li class="govbh-breadcrumb__item-home">
+                                        <a href="#" aria-label="Go to home"><i class="ph ph-house" aria-hidden="true"></i><span>الصفحة الرئيسية</span></a>
+                                    </li>
+                                    <li><a href="#" aria-label="Go to services">المنتجات والخدمات</a></li>
+                                    <li><a href="#" aria-label="Go to survey">الاستبيان</a></li>
+                                    <li class="govbh-breadcrumb__item-last" aria-current="page">الأصل</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--Component Breadcrumbs:Default Ends -->
+
+                    <!--Component Breadcrumbs:Inverse Starts -->
+                    <div class="col-12">
+                        <div class="govbh-breadcrumb theme--dark bg--brand p-3">
+                            <h6>معكوس</h6>
+                            <nav tabindex="0" aria-label="Breadcrumbs">
+                                <ul class="govbh-breadcrumb__group">
+                                    <li class="govbh-breadcrumb__item-home">
+                                        <a href="#" aria-label="Go to home"><i class="ph ph-house" aria-hidden="true"></i><span>الصفحة الرئيسية</span></a>
+                                    </li>
+                                    <li><a href="#" aria-label="Go to services">المنتجات والخدمات</a></li>
+                                    <li><a href="#" aria-label="Go to survey">الاستبيان</a></li>
+                                    <li class="govbh-breadcrumb__item-last" aria-current="page">الأصل</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--Component Breadcrumbs:Inverse Ends -->
+                </div>
             </div>
+            
         </div>
     </div>
-    <!--Component Breadcrumbs:Default Ends --> 
+    <!--Component Breadcrumbs Ends --> 
 
-    <!--Component Breadcrumbs:Inverse Starts -->
-    <div class="govbh-section govbh-breadcrumb theme--dark bg--brand">
-        <div class="container">
-            <div class="row g-2 align-items-center">
-                <nav class="col-12" aria-label="Breadcrumbs">
-                    <ul class="govbh-breadcrumb__group">
-                        <li class="govbh-breadcrumb__item-home">
-                            <a href="index.php" aria-label="Go to home"><i class="ph ph-house" aria-hidden="true"></i><span>Home</span></a>
-                        </li>
-                        <li><a href="#">Produt & Services</a></li>
-                        <li><a href="#">Survey</a></li>
-                        <li class="govbh-breadcrumb__item-last" aria-current="page">Parent</li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!--Component Breadcrumbs:Inverse Ends --> 
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -108,7 +116,7 @@
 <!-- Header Sticky -->
 <script src="../js/govbh-menu-sticky.js"></script>
 <!-- Text Localization -->
-<script src="../js/govbh-lang.js"></script>
+<script src="../js/govbh-lang-ar.js"></script>
 <!-- Library -->
 <script src="../js/govbh-library.min.js"></script>
 <!-- Utils -->

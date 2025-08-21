@@ -322,6 +322,14 @@
             }
         }
     }
+    .govbh-footer__newsletter--validation-message{
+        font-size: var(--bh-fs-p-xs);
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        padding-top: 10px;
+        color: var(--bh-inverse);
+    }
     .govbh-footer__solcial-widget{
         ul{
             display: flex;
@@ -1036,6 +1044,17 @@
             right: auto;
             bottom: 50px;
             min-width: 260px;
+        }
+        @media #{$xsss}{
+            min-width: 250px;
+        }
+        &.govbh-accessibility-widget__pop--component{
+            position: relative;
+            right: auto;
+            bottom: auto;
+            max-width: 280px;
+            opacity: 1;
+            visibility: visible;
         }
         &:after {
             content: "";

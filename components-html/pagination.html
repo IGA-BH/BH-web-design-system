@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Pagination | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -44,66 +44,69 @@
                     
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
 <body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Pagination:Default Starts -->
+    <!--Component Pagination Starts -->
     <div class="govbh-section">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="govbh-pagination">
-                        <ul aria-label="Browse pages">
-                            <li class="govbh-pagination__prev"><a href="#" aria-label="First Page" rel="first"><i class="ph ph-caret-double-left"></i> <span>First</span></a></li>
-                            <li class="govbh-pagination__prev"><a href="#" aria-label="Previous Page" rel="prev"><i class="ph ph-caret-left"></i> <span>Prev</span></a></li>
-                            <li><a href="#" aria-label="Page 1">1</a></li>
-                            <li><a href="#" aria-label="Page 2">2</a></li>
-                            <li class="govbh-pagination__current" aria-current="page" title="Page 3">3</li>
-                            <li class="govbh-pagination__truncate" title="Pages">...</li>
-                            <li><a href="#" aria-label="Page 4">4</a></li>
-                            <li class="govbh-pagination__next"><a href="#" aria-label="Next Page" rel="next"><span>Next</span> <i class="ph ph-caret-right"></i></a></li>
-                            <li class="govbh-pagination__next"><a href="#" aria-label="Last Page" rel="last"><span>Last</span> <i class="ph ph-caret-double-right"></i></a></li>
-                        </ul>
-                        <div class="govbh-pagination__info">Showing 2 to 10 of 100 records</div>               
+            <h5>Pagination</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <!--Component Pagination:Default Starts -->
+                        <div class="govbh-pagination">
+                            <h6>Default</h6>
+                            <nav aria-label="Browse pages">
+                                <ul>
+                                    <li class="govbh-pagination__prev"><a href="#" aria-label="First Page" rel="first"><i class="ph ph-caret-double-left"></i> <span>First</span></a></li>
+                                    <li class="govbh-pagination__prev"><a href="#" aria-label="Previous Page" rel="prev"><i class="ph ph-caret-left"></i> <span>Prev</span></a></li>
+                                    <li><a href="#" aria-label="Page 1">1</a></li>
+                                    <li><a href="#" aria-label="Page 2">2</a></li>
+                                    <li class="govbh-pagination__current" aria-current="page" title="Page 3">3</li>
+                                    <li class="govbh-pagination__truncate" title="Pages">...</li>
+                                    <li><a href="#" aria-label="Page 4">4</a></li>
+                                    <li class="govbh-pagination__next"><a href="#" aria-label="Next Page" rel="next"><span>Next</span> <i class="ph ph-caret-right"></i></a></li>
+                                    <li class="govbh-pagination__next"><a href="#" aria-label="Last Page" rel="last"><span>Last</span> <i class="ph ph-caret-double-right"></i></a></li>
+                                </ul>
+                            </nav>
+                            <div class="govbh-pagination__info">Showing 2 to 10 of 100 records</div>
+                        </div>
+                        <!--Component Pagination:Default Starts -->
+                    </div>
+                    <div class="col-12">
+                        <!--Component Pagination:Inverse Starts -->
+                        <div class="govbh-pagination theme--dark bg--brand p-3">
+                            <h6>Inverse</h6>
+                            <nav aria-label="Browse pages">
+                                <ul>
+                                    <li class="govbh-pagination__prev"><a href="#" aria-label="First Page" rel="first"><i class="ph ph-caret-double-left"></i> <span>First</span></a></li>
+                                    <li class="govbh-pagination__prev"><a href="#" aria-label="Previous Page" rel="prev"><i class="ph ph-caret-left"></i> <span>Prev</span></a></li>
+                                    <li><a href="#" aria-label="Page 1">1</a></li>
+                                    <li><a href="#" aria-label="Page 2">2</a></li>
+                                    <li class="govbh-pagination__current" aria-current="page" title="Page 3">3</li>
+                                    <li class="govbh-pagination__truncate" title="Pages">...</li>
+                                    <li><a href="#" aria-label="Page 4">4</a></li>
+                                    <li class="govbh-pagination__next"><a href="#" aria-label="Next Page" rel="next"><span>Next</span> <i class="ph ph-caret-right"></i></a></li>
+                                    <li class="govbh-pagination__next"><a href="#" aria-label="Last Page" rel="last"><span>Last</span> <i class="ph ph-caret-double-right"></i></a></li>
+                                </ul>
+                            </nav>
+                            <div class="govbh-pagination__info">Showing 2 to 10 of 100 records</div>
+                        </div>
+                        <!--Component Pagination:Inverse Starts -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--Component Pagination:Default Ends --> 
+    <!--Component Pagination Ends --> 
 
-    <!--Component Pagination:Inverse Starts -->
-    <div class="govbh-section theme--dark bg--brand">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="govbh-pagination theme--dark">
-                        <ul aria-label="Browse pages">
-                            <li class="govbh-pagination__prev"><a href="#" aria-label="First Page" rel="first"><i class="ph ph-caret-double-left"></i> <span>First</span></a></li>
-                            <li class="govbh-pagination__prev"><a href="#" aria-label="Previous Page" rel="prev"><i class="ph ph-caret-left"></i> <span>Prev</span></a></li>
-                            <li><a href="#" aria-label="Page 1">1</a></li>
-                            <li><a href="#" aria-label="Page 2">2</a></li>
-                            <li class="govbh-pagination__current" aria-current="page" title="Page 3">3</li>
-                            <li class="govbh-pagination__truncate" title="Pages">...</li>
-                            <li><a href="#" aria-label="Page 4">4</a></li>
-                            <li class="govbh-pagination__next"><a href="#" aria-label="Next Page" rel="next"><span>Next</span> <i class="ph ph-caret-right"></i></a></li>
-                            <li class="govbh-pagination__next"><a href="#" aria-label="Last Page" rel="last"><span>Last</span> <i class="ph ph-caret-double-right"></i></a></li>
-                        </ul>
-                        <div class="govbh-pagination__info">Showing 2 to 10 of 100 records</div>               
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Component Pagination:Inverse Ends -->
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"

@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="ar-BH" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Button | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -45,237 +45,230 @@
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
     <link rel="stylesheet" href="../css/style-ar.min.css" media="all">
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Button:Primary Default Starts -->
+<body>    
+    <!--Component Button:Primary Button Starts -->
     <div class="govbh-section">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <button type="button" class="govbh-btn govbh-btn--primary">Button <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+            <h5>أساسي</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <button type="button" class="govbh-btn govbh-btn--primary" aria-label="Primary Button - Default">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الأيقونة اليسرى</div>
+                        <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--left-icon" aria-label="Primary Button - Left Icon"><i class="ph ph-lock-key" aria-hidden="true"></i> عرض المزيد</button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--disabled" aria-label="Primary Button - Disabled" disabled="disabled" aria-disabled="true">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--disabled" disabled="disabled" aria-disabled="true">Button <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                <!-- Inverse Starts -->
+                <div class="row gy-4 theme--dark bg--brand p-2 pt-0 pb-4 mt-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <button type="button" class="govbh-btn govbh-btn--secondary theme--dark" aria-label="Primary Button - Default">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الأيقونة اليسرى</div>
+                        <button type="button" class="govbh-btn govbh-btn--secondary govbh-btn--left-icon theme--dark" aria-label="Primary Button - Left Icon"><i class="ph ph-lock-key" aria-hidden="true"></i> عرض المزيد</button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <button type="button" class="govbh-btn govbh-btn--secondary govbh-btn--disabled theme--dark" aria-label="Primary Button - Disabled" disabled="disabled" aria-disabled="true">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                    </div>
                 </div>
+                <!-- Inverse Ends -->
             </div>
         </div>
     </div>
-    <!--Component Button:Primary Default Ends -->
+    <!--Component Button:Primary Button Ends -->
 
-    <!--Component Button:Primary inverse Starts -->
-    <div class="govbh-section theme--dark bg--brand">
+    <!--Component Button:Outline Button Starts -->
+    <div class="govbh-section pt-0">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <button type="button" class="govbh-btn govbh-btn--secondary theme--dark">Button <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+            <h5>مخطط تفصيلي</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <div class="row  gy-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <button type="button" class="govbh-btn govbh-btn--outline" aria-label="Outline Button - Default">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الأيقونة اليسرى</div>
+                        <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--left-icon" aria-label="Outline Button - Left Icon"><i class="ph ph-lock-key" aria-hidden="true"></i> عرض المزيد</button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--disabled" aria-label="Outline Button - Disabled" disabled="disabled" aria-disabled="true">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <button type="button" class="govbh-btn govbh-btn--primary theme--dark govbh-btn--disabled" disabled="disabled" aria-disabled="true">Button <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                <!-- Inverse Starts -->
+                <div class="row gy-4 theme--dark bg--brand p-2 pt-0 pb-4 mt-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <button type="button" class="govbh-btn govbh-btn--outline theme--dark" aria-label="Outline Button - Default">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الأيقونة اليسرى</div>
+                        <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--left-icon theme--dark" aria-label="Outline Button - Left Icon"><i class="ph ph-lock-key" aria-hidden="true"></i> عرض المزيد</button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--disabled theme--dark" aria-label="Outline Button - Disabled" disabled="disabled" aria-disabled="true">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                    </div>
                 </div>
+                <!-- Inverse Ends -->
             </div>
         </div>
     </div>
-    <!--Component Button:Primary inverse Ends -->
+    <!--Component Button:Outline Button Ends -->
 
-    <!--Component Button:Primary Left icon Starts -->
-    <div class="govbh-section">
+    <!--Component Button:Without outline Button Starts -->
+    <div class="govbh-section pt-0">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--left-icon"><i class="ph ph-lock-key"></i> Button</button>
+            <h5>نص</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <button type="button" class="govbh-btn govbh-btn--withoutline" aria-label="Text Button - Default">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الأيقونة اليسرى</div>
+                        <button type="button" class="govbh-btn govbh-btn--withoutline govbh-btn--left-icon" aria-label="Text Button - Left Icon"><i class="ph ph-lock-key" aria-hidden="true"></i> عرض المزيد</button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <button type="button" class="govbh-btn govbh-btn--withoutline govbh-btn--disabled" aria-label="Text Button - Disabled" disabled="disabled" aria-disabled="true">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-lock-key" aria-hidden="true"></i>Button </button>
+                <!-- Inverse Starts -->
+                <div class="row gy-4 theme--dark bg--brand p-2 pt-0 pb-4 mt-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <button type="button" class="govbh-btn govbh-btn--withoutline theme--dark" aria-label="Text Button - Default">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الأيقونة اليسرى</div>
+                        <button type="button" class="govbh-btn govbh-btn--withoutline govbh-btn--left-icon theme--dark" aria-label="Text Button - Left Icon"><i class="ph ph-lock-key" aria-hidden="true"></i> عرض المزيد</button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <button type="button" class="govbh-btn govbh-btn--withoutline govbh-btn--disabled theme--dark" aria-label="Text Button - Disabled" disabled="disabled" aria-disabled="true">عرض المزيد <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                    </div>
                 </div>
+                <!-- Inverse Ends -->
             </div>
         </div>
     </div>
-    <!--Component Button:Primary Left icon Ends -->
+    <!--Component Button:Without outline Button Ends -->
 
-    <!--Component Button:Outline Default Starts -->
-    <div class="govbh-section">
+    <!--Component Button:Primary with Icon Button Starts -->
+    <div class="govbh-section pt-0">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <button type="button" class="govbh-btn govbh-btn--outline">Button <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+            <h5>أساسي مع أيقونة</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--icon" aria-label="Primary with Icon Button"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--icon govbh-btn--disabled" aria-label="Primary with Icon Button - Disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--disabled" disabled="disabled" aria-disabled="true">Button <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                <!-- Inverse Starts -->
+                <div class="row gy-4 theme--dark bg--brand p-2 pt-0 pb-4 mt-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--icon theme--dark" aria-label="Primary with Icon Button"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--icon govbh-btn--disabled theme--dark" aria-label="Primary with Icon Button - Disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+                    </div>
                 </div>
+                <!-- Inverse Ends -->
             </div>
         </div>
     </div>
-    <!--Component Button:Outline Default Ends -->
+    <!--Component Button:Primary with Icon Button Ends -->
+    
+    <!--Component Button:Outlined with Icon Button Starts -->
+    <div class="govbh-section pt-0">
+        <div class="container">
+            <h5>مُخطط له باستخدام الرمز</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--icon" aria-label="Outlined with Icon Button"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--icon govbh-btn--disabled" aria-label="Outlined with Icon Button - Disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <!-- Inverse Starts -->
+                <div class="row gy-4 theme--dark bg--brand p-2 pt-0 pb-4 mt-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--icon theme--dark" aria-label="Outlined with Icon Button"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--icon govbh-btn--disabled theme--dark" aria-label="Outlined with Icon Button - Disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <!-- Inverse Ends -->
+            </div>
+        </div>
+    </div>
+    <!--Component Button:Outlined with Icon Button Ends -->
 
-    <!--Component Button:Outline inverse Starts -->
-    <div class="govbh-section theme--dark bg--brand">
+    <!--Component Button:Icon Only Button Starts -->
+    <div class="govbh-section pt-0">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <button type="button" class="govbh-btn govbh-btn--outline theme--dark">Button <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+            <h5>أيقونة فقط</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--icon-withoutline" aria-label="Icon Only Button"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--icon-withoutline govbh-btn--disabled" aria-label="Icon Only Button - Disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <button type="button" class="govbh-btn govbh-btn--outline theme--dark govbh-btn--disabled" disabled="disabled" aria-disabled="true">Button <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+                <!-- Inverse Starts -->
+                <div class="row gy-4 theme--dark bg--brand p-2 pt-0 pb-4 mt-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">الإعداد الإفتراضي</div>
+                        <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--icon-withoutline theme--dark" aria-label="Icon Only Button"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">غير مفعل</div>
+                        <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--icon-withoutline govbh-btn--disabled theme--dark" aria-label="Icon Only Button - Disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+                    </div>
                 </div>
+                <!-- Inverse Ends -->
             </div>
         </div>
     </div>
-    <!--Component Button:Outline inverse Ends -->
+    <!--Component Button:Icon Only Button Ends -->
 
-    <!--Component Button:Text and Icon Default Starts -->
-    <div class="govbh-section">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <button type="button" class="govbh-btn govbh-btn--withoutline">Button <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <button type="button" class="govbh-btn govbh-btn--withoutline govbh-btn--disabled" disabled="disabled" aria-disabled="true">Button <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Component Button:Text and Icon Default Ends -->
-
-    <!--Component Button:Text and Icon Inverse Starts -->
-    <div class="govbh-section theme--dark bg--brand">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <button type="button" class="govbh-btn govbh-btn--withoutline theme--dark">Button <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Disabled</div>
-                    <button type="button" class="govbh-btn govbh-btn--withoutline theme--dark govbh-btn--disabled" disabled="disabled" aria-disabled="true">Button <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Component Button:Text and Icon Inverse Ends -->
-
-    <!--Component Button:Primary With Icon Starts -->
-    <div class="govbh-section">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--icon"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Icon Disabled</div>
-                    <button type="button" class="govbh-btn govbh-btn--primary govbh-btn--icon govbh-btn--disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Component Button:Primary With Icon Ends -->
-
-    <!--Component Button:Primary With Icon Inverse Starts -->
-    <div class="govbh-section theme--dark bg--brand">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <button type="button" class="govbh-btn govbh-btn--primary theme--dark govbh-btn--icon"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Icon Disabled</div>
-                    <button type="button" class="govbh-btn govbh-btn--primary theme--dark govbh-btn--icon govbh-btn--disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Component Button:Primary With Icon Inverse Ends -->
-
-    <!--Component Button:Outlined With Icon Starts -->
-    <div class="govbh-section">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--icon"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Icon Outline Disabled</div>
-                    <button type="button" class="govbh-btn govbh-btn--outline govbh-btn--icon govbh-btn--disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Component Button:Outlined With Icon Ends -->
-
-    <!--Component Button:Outlined With Icon Inverse Starts -->
-    <div class="govbh-section theme--dark bg--brand">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Default</div>
-                    <button type="button" class="govbh-btn govbh-btn--outline theme--dark govbh-btn--icon"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Icon Outline Disabled</div>
-                    <button type="button" class="govbh-btn govbh-btn--outline theme--dark govbh-btn--icon govbh-btn--disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Component Button:Outlined With Icon Inverse Ends -->
-
-    <!--Component Button:Icon Only Default Starts -->
-    <div class="govbh-section">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Icon Secondary</div>
-                    <button type="button" class="govbh-btn govbh-btn--secondary govbh-btn--icon-withoutline"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Icon Secondary</div>
-                    <button type="button" class="govbh-btn govbh-btn--secondary govbh-btn--icon-withoutline govbh-btn--disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Component Button:Icon Only Default Ends -->
-
-    <!--Component Button:Icon Only Inverse Starts -->
-    <div class="govbh-section theme--dark bg--brand">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Icon Primary</div>
-                    <button type="button" class="govbh-btn govbh-btn--primary theme--dark govbh-btn--icon-withoutline"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Icon Secondary</div>
-                    <button type="button" class="govbh-btn govbh-btn--primary theme--dark govbh-btn--icon-withoutline govbh-btn--disabled" disabled="disabled" aria-disabled="true"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Component Button:Icon Only Inverse Ends -->
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -291,7 +284,7 @@
 <!-- Header Sticky -->
 <script src="../js/govbh-menu-sticky.js"></script>
 <!-- Text Localization -->
-<script src="../js/govbh-lang.js"></script>
+<script src="../js/govbh-lang-ar.js"></script>
 <!-- Library -->
 <script src="../js/govbh-library.min.js"></script>
 <!-- Utils -->

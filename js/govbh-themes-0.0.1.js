@@ -958,41 +958,52 @@ jQuery(document).ready(function ($) {
 		}
 	});
 	}	
-	if ($('#files').length > 0) {
+	if ($('.govbh-upload').length > 0) {
 
-		document.getElementById('files').addEventListener('change', function(e) {
-		const MAX_SIZE_MB = 5;
-		const MAX_FILES = 2;
-		const errorElement = document.getElementById('file-error');
-		const errorIcon = '<i class="ph ph-warning"></i>';
-		const files = e.target.files;
-		let errors = [];
+		// Select all file input elements with the class 'govbh-upload'
+	const fileInputs = document.getElementsByClassName('govbh-upload');
 
-		// Clear previous errors
-		errorElement.textContent = '';
-		this.setAttribute('aria-invalid', 'false');
+	// Loop through each file input and add an event listener
+	Array.from(fileInputs).forEach((input) => {
+		input.addEventListener('change', function(e) {
+			const MAX_SIZE_MB = 5;
+			const MAX_FILES = 2;
+			// Find the closest ancestor element with the class `.govbh-form-control`
+			let parentFormControl = input.closest('.govbh-form-control');
 
-		// Check file count
-		if (files.length > MAX_FILES) {
-			$(this).parents('.form-group').addClass('govbh-form-control--invalid');
-			errors.push(`${errorIcon} Maximum ${MAX_FILES} files allowed`);
-		}
+			// Find the `.govbh-form-control__validation-message` element within the parent `.govbh-form-control`
+			let errorElement = parentFormControl.querySelector('.govbh-form-control__validation-message');
 
-		// Check each file's size
-		Array.from(files).forEach((file, index) => {
-			if (file.size > MAX_SIZE_MB * 1024 * 1024) {
-			$(this).parents('.form-group').addClass('govbh-form-control--invalid');
-			errors.push(`${errorIcon} File #${index + 1} "${file.name}" exceeds ${MAX_SIZE_MB}MB`);
+			const errorIcon = '<i class="ph ph-warning"></i>';
+			const files = e.target.files;
+			let errors = [];
+
+			// Clear previous errors
+			errorElement.textContent = '';
+			this.setAttribute('aria-invalid', 'false');
+
+			// Check file count
+			if (files.length > MAX_FILES) {
+				$(this).parents('.form-group').addClass('govbh-form-control--invalid');
+				errors.push(`<div>${errorIcon} ${lang.govbh_max_files_allowed.format(MAX_FILES)}</div>`);
+			}
+
+			// Check each file's size
+			Array.from(files).forEach((file, index) => {
+				if (file.size > MAX_SIZE_MB * 1024 * 1024) {
+					$(this).parents('.form-group').addClass('govbh-form-control--invalid');
+					errors.push(`<div class="file-error-div">${errorIcon} ${lang.govbh_file_exceeds.format(index + 1, file.name, MAX_SIZE_MB)}</div>`);
+				}
+			});
+
+			// Display errors
+			if (errors.length > 0) {
+				errorElement.innerHTML = errors.join('');
+				this.setAttribute('aria-invalid', 'true');
+				this.value = ''; // Clear invalid selection
 			}
 		});
-
-		// Display errors
-		if (errors.length > 0) {
-			errorElement.innerHTML = errors.join('. ');
-			this.setAttribute('aria-invalid', 'true');
-			this.value = ''; // Clear invalid selection
-		}
-		});
+	});
 
 	}
 	//Standard File Upload Ends
@@ -1351,10 +1362,10 @@ if ($('.govbh-countdown').length > 0) {
 
         // Update all elements with the class "govbh-countdown__timer"
         document.querySelectorAll('.govbh-countdown__timer').forEach(function(timerElement) {
-            timerElement.innerHTML = '<div class="govbh-countdown__timer--list"><div class="govbh-countdown__numbers">' + days +'</div><div class="govbh-countdown__serial">' + "Days" +'</div></div>' +
-                '<div class="govbh-countdown__timer--list"><div class="govbh-countdown__numbers">' + hours +'</div><div class="govbh-countdown__serial">' + "Hours" +'</div></div>' +
-                '<div class="govbh-countdown__timer--list"><div class="govbh-countdown__numbers">' + minutes +'</div><div class="govbh-countdown__serial">' + "Minutes" +'</div></div>' +
-                '<div class="govbh-countdown__timer--list"><div class="govbh-countdown__numbers">' + seconds +'</div><div class="govbh-countdown__serial">' + "Seconds" +'</div></div>';
+            timerElement.innerHTML = '<div class="govbh-countdown__timer--list"><div class="govbh-countdown__numbers">' + days +'</div><div class="govbh-countdown__serial">' + langdays +'</div></div>' +
+                '<div class="govbh-countdown__timer--list"><div class="govbh-countdown__numbers">' + hours +'</div><div class="govbh-countdown__serial">' + langhours +'</div></div>' +
+                '<div class="govbh-countdown__timer--list"><div class="govbh-countdown__numbers">' + minutes +'</div><div class="govbh-countdown__serial">' + langminutes +'</div></div>' +
+                '<div class="govbh-countdown__timer--list"><div class="govbh-countdown__numbers">' + seconds +'</div><div class="govbh-countdown__serial">' + langseconds +'</div></div>';
         });
 
         // If the count down is finished, write some text
@@ -1635,7 +1646,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		toggleSwitch.addEventListener('change', function() {
 			var arialabelledby = this.getAttribute('aria-labelledby');
 			var ariaLabel = this.getAttribute('aria-label');
-			document.getElementById(arialabelledby).textContent =  this.checked ? ariaLabel + ' ' +lang.govbh_yes : ariaLabel + ' ' +lang.govbh_no;
+			var ariaLabelone = this.getAttribute('aria-label-one');
+			var ariaLabeltwo = this.getAttribute('aria-label-two');
+			document.getElementById(arialabelledby).textContent =  this.checked ? ariaLabel + ' ' +ariaLabeltwo : ariaLabel + ' ' +ariaLabelone;
 			//this.setAttribute('aria-labell', this.checked ? 'true' : 'false');
 		});
 	});
@@ -1707,3 +1720,59 @@ function activate_mobile_step(update) {
 	})
 }
 //STEPS SCRIPT ENDS
+
+//COLORBOX GALLERY STARTS
+$(document).ready(function () {	
+	//add accessibility properties to colorbox controls
+	if ($('[data-cb-gallery][data-cb-type]').length > 0) {
+		$('#cboxNext').attr('aria-label', lang.govbh_next_gallery);
+		$('#cboxPrevious').attr('aria-label', lang.govbh_prev_gallery);
+		$('#cboxClose').attr('aria-label', lang.govbh_close_gallery);
+		$('#cboxSlideshow').attr('aria-label', lang.govbh_play_gallery);
+		$('#cboxSlideshow').attr('aria-hidden', true);
+	}
+	
+	$('#cboxPrevious, #cboxNext').click(function() {
+		setTimeout(function() {
+			var cBoxTitle = $('#cboxTitle').text();
+			$('.cboxPhoto').attr('alt', cBoxTitle);
+		},1000);
+	});
+
+	$('[data-cb-gallery][data-cb-type]').each(function() {
+		var cbox = $(this),
+			cbox_gallery = cbox.data('cb-gallery'),
+			cbox_type = cbox.data('cb-type');
+
+		switch(cbox_type) {
+			case 'photo':
+				$('.' + cbox_gallery).colorbox({rel:cbox_gallery, maxWidth: "85%", maxHeight: "85%", transition:"fade"});
+				break;
+			case 'video':
+				$('.' + cbox_gallery).colorbox({rel:cbox_gallery, maxWidth: "85%", maxHeight: "85%", transition:"fade", iframe:true, innerWidth:1280, innerHeight:720,});
+				break;
+			case 'pdf':
+				$('.' + cbox_gallery).colorbox({rel:cbox_gallery, maxWidth: "85%", maxHeight: "80%", height: "80%", transition:"fade", iframe:true, innerWidth:1280, innerHeight:720,});
+				break;
+		}
+	})
+	 
+	 $('[data-cb-gallery][data-cb-type]').click(function() {
+		$('html').addClass('with-colorbox');
+		setTimeout(function() {
+			var cBoxTitle = $('#cboxTitle').text();
+			$('.cboxPhoto').attr('alt', cBoxTitle);
+		},1000);
+	 });
+	 $(document).keydown(function(event) {
+		if (event.keyCode === 27 || event.which === 27) {
+			if ($('html').hasClass('with-colorbox')) {
+				$('html').removeClass('with-colorbox');
+			}
+		}
+	});
+	 $(document).on('click', '#cboxClose, #cboxOverlay', function() {
+		$('html').removeClass('with-colorbox');
+	 });
+});
+//COLORBOX GALLERY ENDS

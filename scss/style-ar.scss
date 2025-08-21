@@ -776,6 +776,9 @@ table.dataTable thead > tr > th.dt-orderable-asc span.dt-column-order, table.dat
         @media #{$xs}{
             left: auto;
         }
+        &.govbh-accessibility-widget__pop--component{
+            left: auto;
+        }
         .govbh-accessibility-widget__pop-close {
             right: auto;
             left: 12px;
@@ -798,6 +801,14 @@ table.dataTable thead > tr > th.dt-orderable-asc span.dt-column-order, table.dat
         }
         @media #{$xs}{
             left: auto;
+        }
+    }
+}
+.govbh-accessibility-widget__pop{
+    &.govbh-accessibility-widget__pop--component{
+        .govbh-accessibility-widget__pop-close{
+            right: auto;
+            left: 12px;
         }
     }
 }
@@ -855,4 +866,38 @@ table.dataTable thead > tr > th.dt-orderable-asc span.dt-column-order, table.dat
     @media #{$xss}{
         margin-top: 5px;
     }
+}
+input[type="number"]{
+    appearance: none;
+    -moz-appearance: textfield;
+}
+.govbh-accordion__item-content ul li::before {
+    left: auto;
+    right: 0px;
+}
+
+//Colorbox Starts
+#cboxPrevious {
+    right: -40px;
+    left: auto;
+    
+}
+#cboxNext {
+    right: auto;
+    left: -40px;
+    
+}
+#cboxNext::before {
+    content: '\e138';
+}
+#cboxPrevious::before {
+    content: '\e13A';
+}
+#cboxClose {
+    right: auto;
+    left: -5px;
+}
+//Colorbox Ends
+.govbh-tabs.govbh-tabs--vertical .govbh-tabs__head .govbh-tabs__head-tabs .govbh-tabs__list{
+    text-align: left;
 }

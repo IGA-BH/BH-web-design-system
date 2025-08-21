@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="ar-BH" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Progress indicator | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -45,178 +45,179 @@
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
     <link rel="stylesheet" href="../css/style-ar.min.css" media="all">
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <div class="govbh-section">
+<body>    
+    <div class="govbh-section">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!--Component Progress Indicator:Default Horizontal Starts -->
-                    <ul class="govbh-steps mb-5">
-                        <li class="govbh-steps__item active">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 1 - Personal Information"></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 1</span>
-                                <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">Personal Information</div>
-                            </div>
-                        </li>
-                        <li class="govbh-steps__item" aria-disabled="true">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 2 - Property Details"></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 2</span>
-                                <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">Property Details</div>
-                            </div>
-                        </li>
-                        <li class="govbh-steps__item" aria-disabled="true">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 3 - Documents Upload"></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 3</span>
-                                <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">Documents Upload</div>
-                            </div>
-                        </li>
-                        <li class="govbh-steps__item" aria-disabled="true">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 4 - Review & Submit"></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 4</span>
-                                <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">Review & Submit</div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!--Component Progress Indicator:Default Horizontal Ends -->
+            <h5>مؤشر التقدم</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <!--Component Progress Indicator:Default Horizontal Starts -->
+                <h6>أفقي</h6>
+                <ul class="govbh-steps govbh-no-li mb-5 d-md-flex d-sm-none d-none" role="tablist">
+                    <li class="govbh-steps__item done" role="presentation">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 1 - Personal Information"></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 1</span>
+                            <div class="govbh-steps__item-content-title">المعلومات شخصية</div>
+                        </div>
+                    </li>
+                    <li class="govbh-steps__item active" role="presentation" aria-disabled="true">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 2 - Property Details"></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 2</span>
+                            <div class="govbh-steps__item-content-title">تفاصيل العقار</div>
+                        </div>
+                    </li>
+                    <li class="govbh-steps__item" role="presentation" aria-disabled="true">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 3 - Documents Upload"></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 3</span>
+                            <div class="govbh-steps__item-content-title">تحميل المستندات</div>
+                        </div>
+                    </li>
+                    <li class="govbh-steps__item" role="presentation" aria-disabled="true">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 4 - Review & Submit"></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 4</span>
+                            <div class="govbh-steps__item-content-title">المراجعة و الإرسال</div>
+                        </div>
+                    </li>
+                </ul>
+                <!--Component Progress Indicator:Default Horizontal Ends -->
 
-                    <div class="hr"></div>
+                <div class="hr"></div>
 
-                    <!--Component Progress Indicator:Default Vertical Starts -->
-                    <ul class="govbh-steps govbh-steps--vertical">
-                        <li class="govbh-steps__item done">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 1 - Personal Information"></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 1</span>
-                                <div class="govbh-steps__item-content-title">Personal Information</div>
-                            </div>
-                        </li>
-                        <li class="govbh-steps__item active">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 2 - Property Details"></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 2</span>
-                                <div class="govbh-steps__item-content-title">Property Details</div>
-                            </div>
-                        </li>
-                        <li class="govbh-steps__item" aria-disabled="true">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 3 - Documents Upload"></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 3</span>
-                                <div class="govbh-steps__item-content-title">Documents Upload</div>
-                            </div>
-                        </li>
-                        <li class="govbh-steps__item" aria-disabled="true">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 4 - Review & Submit"></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 4</span>
-                                <div class="govbh-steps__item-content-title">Review & Submit</div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!--Component Progress Indicator:Default Vertical Starts -->
+                <!--Component Progress Indicator:Default Vertical Starts -->
+                <h6>رَأسِيّ</h6>
+                <ul class="govbh-steps govbh-steps--vertical govbh-no-li mb-5 d-md-flex d-sm-none d-none" role="tablist">
+                    <li class="govbh-steps__item done" role="presentation">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 1 - Personal Information"></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 1</span>
+                            <div class="govbh-steps__item-content-title">المعلومات شخصية</div>
+                        </div>
+                    </li>
+                    <li class="govbh-steps__item done" role="presentation">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 2 - Property Details"></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 2</span>
+                            <div class="govbh-steps__item-content-title">تفاصيل العقار</div>
+                        </div>
+                    </li>
+                    <li class="govbh-steps__item active" role="presentation">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 3 - Documents Upload"></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 3</span>
+                            <div class="govbh-steps__item-content-title">تحميل المستندات</div>
+                        </div>
+                    </li>
+                    <li class="govbh-steps__item" role="presentation" aria-disabled="true">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><img src="../images/utilities/steps-notes.svg" alt="Step 4 - Review & Submit"></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 4</span>
+                            <div class="govbh-steps__item-content-title">المراجعة و الإرسال</div>
+                        </div>
+                    </li>
+                </ul>
+                <!--Component Progress Indicator:Default Vertical Starts -->
 
-                    <div class="hr"></div>  
-                    
-                    <!--Component Progress Indicator:Number Based Horizontal Starts -->
-                    <ul class="govbh-steps govbh-steps--number">
-                        <li class="govbh-steps__item done">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><span>1</span></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 1</span>
-                                <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">Personal Information</div>
-                            </div>
-                        </li>
-                        <li class="govbh-steps__item active">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><span>2</span></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 2</span>
-                                <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">Property Details</div>
-                            </div>
-                        </li>
-                        <li class="govbh-steps__item" aria-disabled="true">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><span>3</span></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 3</span>
-                                <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">Documents Upload</div>
-                            </div>
-                        </li>
-                        <li class="govbh-steps__item" aria-disabled="true">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><span>4</span></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 4</span>
-                                <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">Review & Submit</div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!--Component Progress Indicator:Number Based Horizontal Ends -->
+                <div class="hr"></div>  
+                
+                <!--Component Progress Indicator:Number Based Horizontal Starts -->
+                <h6>أفقي قائم على الأرقام</h6>
+                <ul class="govbh-steps govbh-steps--number govbh-no-li mb-5 d-md-flex d-sm-none d-none" role="tablist">
+                    <li class="govbh-steps__item done" role="presentation">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><span>1</span></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 1</span>
+                            <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">المعلومات شخصية</div>
+                        </div>
+                    </li>
+                    <li class="govbh-steps__item active" role="presentation">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><span>2</span></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 2</span>
+                            <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">تفاصيل العقار</div>
+                        </div>
+                    </li>
+                    <li class="govbh-steps__item" role="presentation" aria-disabled="true">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><span>3</span></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 3</span>
+                            <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">تحميل المستندات</div>
+                        </div>
+                    </li>
+                    <li class="govbh-steps__item" role="presentation" aria-disabled="true">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><span>4</span></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 4</span>
+                            <div class="govbh-steps__item-content-title d-md-block d-sm-none d-none">المراجعة و الإرسال</div>
+                        </div>
+                    </li>
+                </ul>
+                <!--Component Progress Indicator:Number Based Horizontal Ends -->
 
-                    <div class="hr"></div>
+                <div class="hr"></div>
 
-                    <!--Component Progress Indicator:Number Based Vertical Starts -->
-                    <ul class="govbh-steps govbh-steps--number govbh-steps--vertical">
-                        <li class="govbh-steps__item done">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><span>1</span></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 1</span>
-                                <div class="govbh-steps__item-content-title">Personal Information</div>
-                            </div>
-                        </li>
-                        <li class="govbh-steps__item active">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><span>2</span></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 2</span>
-                                <div class="govbh-steps__item-content-title">Property Details</div>
-                            </div>
-                        </li>
-                        <li class="govbh-steps__item" aria-disabled="true">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><span>3</span></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 3</span>
-                                <div class="govbh-steps__item-content-title">Documents Upload</div>
-                            </div>
-                        </li>
-                        <li class="govbh-steps__item" aria-disabled="true">
-                            <div class="govbh-steps__item-progress"></div>
-                            <a href="#" class="govbh-steps__item-cricle"><span>4</span></a>
-                            <div class="govbh-steps__item-content">
-                                <span>Step 4</span>
-                                <div class="govbh-steps__item-content-title">Review & Submit</div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!--Component Progress Indicator:Number Based Vertical Ends -->
-                </div>
+                <!--Component Progress Indicator:Number Based Vertical Starts -->
+                <h6>عمودي قائم على الأرقام</h6>
+                <ul class="govbh-steps govbh-steps--number govbh-steps--vertical govbh-no-li mb-5 d-md-flex d-sm-none d-none" role="tablist">
+                    <li class="govbh-steps__item done" role="presentation">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><span>1</span></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 1</span>
+                            <div class="govbh-steps__item-content-title">المعلومات شخصية</div>
+                        </div>
+                    </li>
+                    <li class="govbh-steps__item active" role="presentation">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><span>2</span></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 2</span>
+                            <div class="govbh-steps__item-content-title">تفاصيل العقار</div>
+                        </div>
+                    </li>
+                    <li class="govbh-steps__item" role="presentation" aria-disabled="true">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><span>3</span></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 3</span>
+                            <div class="govbh-steps__item-content-title">تحميل المستندات</div>
+                        </div>
+                    </li>
+                    <li class="govbh-steps__item" role="presentation" aria-disabled="true">
+                        <div class="govbh-steps__item-progress"></div>
+                        <a href="#" class="govbh-steps__item-cricle"><span>4</span></a>
+                        <div class="govbh-steps__item-content">
+                            <span>الخطوة 4</span>
+                            <div class="govbh-steps__item-content-title">المراجعة و الإرسال</div>
+                        </div>
+                    </li>
+                </ul>
+                <!--Component Progress Indicator:Number Based Vertical Ends -->
             </div>
         </div>
     </div>
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
+
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -232,7 +233,7 @@
 <!-- Header Sticky -->
 <script src="../js/govbh-menu-sticky.js"></script>
 <!-- Text Localization -->
-<script src="../js/govbh-lang.js"></script>
+<script src="../js/govbh-lang-ar.js"></script>
 <!-- Library -->
 <script src="../js/govbh-library.min.js"></script>
 <!-- Utils -->

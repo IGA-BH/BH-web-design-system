@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Header | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -44,13 +44,15 @@
                     
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
-<body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Header:Default Starts -->
+<body>    <!--Component Header:Default Starts -->
     <header id="govbh-header" class="govbh-header" aria-label="Header">
         <!-- Header with Logo Starts -->
         <div class="govbh-head">
@@ -58,7 +60,8 @@
                 <div class="govbh-head__headrow">
                     <!-- Logo -->
                     <div class="govbh-head__logo">
-                        <a href="index.php">
+                        <!-- <a href="#"><img loading="lazy" src="../images/silver-logo.svg" alt="Silver Jublie Logo"></a> -->
+                        <a href="#">
                             <img loading="lazy" src="../images/gov-bh-logo.svg" alt="Bahrain Government Guidlines Design System Logo" width="265" height="70" class="govbh-logo-light">
                             <img loading="lazy" src="../images/bahrain-government-design-system-white-logo.svg" alt="Bahrain Government Guidlines Design System Logo white" width="265" height="70" class="govbh-logo-dark">
                         </a>
@@ -68,13 +71,13 @@
                         <div class="govbh-head__secondary-menu-list d-xl-block d-lg-none d-none">
                             <ul><!-- Secondary Menu ul -->
                                 <li>
-                                    <a href="index.php">Link1</a>
+                                    <a href="#">Link1</a>
                                 </li>
                                 <li>
-                                    <a href="index-02.php">Link2</a>
+                                    <a href="index-02.html">Link2</a>
                                 </li>
                                 <li>
-                                    <a href="index-03.php" class="govbh-is-external" target="_blank" aria-label="Link3 - opens in a new window">Link3</a>
+                                    <a href="index-03.html" class="govbh-is-external" target="_blank" aria-label="Link3 - open in a new window">Link3</a>
                                 </li>
                             </ul>
                         </div>
@@ -109,22 +112,13 @@
             </div>
         </div>
         <!-- Header with Logo Ends -->
-        <!-- Accessibility Section Starts -->
-        <div id="govbh-accessibility" class="govbh-accessibility" style="display: none;">
-            <div class="container">
-                <div class="govbh-accessibility__wrapper">
-                    <div class="govbh-abstract m-0">Accessibility details goes here..</div>
-                </div>
-            </div>
-        </div>
-        <!-- Accessibility Section Ends -->
         <!-- Search Section Starts -->
         <div class="govbh-search">
             <div class="container">
-                <form action="#">
+                <form action="#" autocomplete="on">
                     <label for="txtSearch" class="visually-hidden">Search</label>
-                    <input id="txtSearch" type="text" value="" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
-                    <button type="button" onclick="SearchWeb()" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
+                    <input id="txtSearch" type="search" value="" name="searchQuery" placeholder="Enter keyword..." aria-label="Start typing to find what you're looking for.">
+                    <button type="button" onclick="window.location='#'" aria-label="Click here to start your search."><i class="ph ph-magnifying-glass" aria-hidden="true"></i></button>
                 </form>
             </div>
         </div>
@@ -135,7 +129,7 @@
                 <div class="govbh-menu__top">
                     <!-- Logo -->
                     <div class="govbh-menu__logo d-xl-none d-lg-block d-block">
-                        <a href="index.php">
+                        <a href="#">
                             <img loading="lazy" src="../images/gov-bh-logo.svg" alt="Bahrain Government Guidlines Design System Logo" width="265" height="70" class="govbh-logo-light">
                             <img loading="lazy" src="../images/bahrain-government-design-system-white-logo.svg" alt="Bahrain Government Guidlines Design System Logo White" width="265" height="70" class="govbh-logo-dark">
                         </a>
@@ -172,7 +166,7 @@
                 <!-- Main Navigation -->
                 <nav id="main-nav" class="govbh-menu__navmenu" aria-label="Main navigation">
                     <div class="govbh-menu__navmenu-home">
-                        <a href="index.php" aria-label="Home"><i class="ph ph-house" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Home"><i class="ph ph-house" aria-hidden="true"></i></a>
                     </div>
                     <ul id="main-menu" class="sm">
                         <li>
@@ -303,7 +297,7 @@
                             <a href="#">Link2</a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">Link3</a>
+                            <a href="#">Link3</a>
                         </li>
                     </ul>
                                     
@@ -315,11 +309,6 @@
         <div class="govbh-menuclose"></div>
     </header>
     <!--Component Header:Default Ends -->
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"

@@ -1,9 +1,9 @@
-<!doctype html test>
+<!doctype html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>Spinner | Bahrain Government Guidelines Design System - Components</title>
     <meta name="author" content="Bahrain Government Guidlines Design System">
@@ -44,90 +44,94 @@
                     
                 <!-- Style -->
     <link rel="stylesheet" href="../css/style.min.css" media="all">
+    <!-- Custom CSS -->
+    <style>
+        body{
+            display:block;
+            min-height: auto;
+        }
+    </style>
 </head>
 <body>
-<header>
-
-</header>
-<!-- Main Section Starts -->
-<main id="govbh-main" aria-label="Main content">    <!--Component Spinner:Default Starts -->
+    <!--Component Spinner Starts -->
     <div class="govbh-section">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Bottom Caption</div>
-                    <div class="govbh-spinner">
-                        <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
-                        <div class="govbh-spinner__text">Loading Caption...</div>
+            <h5>Spinner</h5>
+            <div class="govbh-content-box govbh-border-grey">
+                <!--Component Spinner:Default Starts -->
+                <h6>Default</h6>
+                <div class="row g-4">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Bottom Caption</div>
+                        <div class="govbh-spinner">
+                            <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
+                            <div class="govbh-spinner__text">Loading Caption...</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Right Caption</div>
+                        <div class="govbh-spinner govbh-spinner--horizontal">
+                            <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
+                            <div class="govbh-spinner__text">Loading Caption...</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Left Caption</div>
+                        <div class="govbh-spinner govbh-spinner--horizontal">
+                            <div class="govbh-spinner__text">Loading Caption...</div>
+                            <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="govbh-abstract govbh-abstract--light mb-3">Top Caption</div>
+                        <div class="govbh-spinner">
+                            <div class="govbh-spinner__text">Loading Caption...</div>
+                            <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Right Caption</div>
-                    <div class="govbh-spinner govbh-spinner--horizontal">
-                        <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
-                        <div class="govbh-spinner__text">Loading Caption...</div>
+                <!--Component Spinner:Default Ends -->
+                <div class="hr"></div>
+                <!--Component Spinner:Inverse Starts -->
+                <div class="theme--dark bg--brand p-3">
+                    <h5>Inverse</h5>
+                    <div class="row g-4">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="govbh-abstract govbh-abstract--light mb-3">Bottom Caption</div>
+                            <div class="govbh-spinner theme--dark">
+                                <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
+                                <div class="govbh-spinner__text">Loading Caption...</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="govbh-abstract govbh-abstract--light mb-3">Right Caption</div>
+                            <div class="govbh-spinner govbh-spinner--horizontal theme--dark">
+                                <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
+                                <div class="govbh-spinner__text">Loading Caption...</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="govbh-abstract govbh-abstract--light mb-3">Left Caption</div>
+                            <div class="govbh-spinner govbh-spinner--horizontal theme--dark">
+                                <div class="govbh-spinner__text">Loading Caption...</div>
+                                <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="govbh-abstract govbh-abstract--light mb-3">Top Caption</div>
+                            <div class="govbh-spinner theme--dark">
+                                <div class="govbh-spinner__text">Loading Caption...</div>
+                                <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Left Caption</div>
-                    <div class="govbh-spinner govbh-spinner--horizontal">
-                        <div class="govbh-spinner__text">Loading Caption...</div>
-                        <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Top Caption</div>
-                    <div class="govbh-spinner">
-                        <div class="govbh-spinner__text">Loading Caption...</div>
-                        <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
-                    </div>
-                </div>
+                <!--Component Spinner:Inverse Ends -->
             </div>
         </div>
     </div>
-    <!--Component Spinner:Default Ends --> 
+    <!--Component Spinner Ends --> 
 
-    <!--Component Spinner:Inverse Starts -->
-    <div class="govbh-section theme--dark bg--brand">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Bottom Caption</div>
-                    <div class="govbh-spinner theme--dark">
-                        <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
-                        <div class="govbh-spinner__text">Loading Caption...</div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Right Caption</div>
-                    <div class="govbh-spinner govbh-spinner--horizontal theme--dark">
-                        <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
-                        <div class="govbh-spinner__text">Loading Caption...</div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Left Caption</div>
-                    <div class="govbh-spinner govbh-spinner--horizontal theme--dark">
-                        <div class="govbh-spinner__text">Loading Caption...</div>
-                        <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="govbh-abstract govbh-abstract--light mb-3">Top Caption</div>
-                    <div class="govbh-spinner theme--dark">
-                        <div class="govbh-spinner__text">Loading Caption...</div>
-                        <img src="../images/utilities/spinner.svg" alt="Govbh Spinner" class="govbh-spinner__img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Component Spinner:Inverse Ends -->
-</main>
-<!-- Main Section Ends -->
- <footer>
-	
- </footer>
 
 <!-- Script Starts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"

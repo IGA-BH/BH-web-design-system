@@ -74,6 +74,11 @@ select option{
 h1,h2,h3,h4,h5,h6{
     margin-bottom: 1rem;
 }
+.theme--dark{
+    a:hover{
+        color: var(--bh-linkinverse-secondary);
+    }
+} 
 a{
     color: var(--bh-brand);
     text-decoration: underline;
@@ -426,20 +431,6 @@ img{
     @media #{$xss}{
        padding: 25px 0;
     }
-    .govbh-sharethis{
-        // @media #{$xm}{
-        //     margin-top: 10px;
-        // }
-        &--vertical{
-            flex-wrap: wrap;
-            gap: 5px;
-            flex-direction: column;
-            align-items: start;
-            .govbh-sharethis__title {
-                padding-inline-start: 5px;
-            }
-        }
-    }
     &.theme--dark{
         h1{
             color: var(--bh-light);
@@ -457,6 +448,31 @@ img{
                     color: var(--bh-linkinverse-secondary);
                 }
             }
+        }
+        .govbh-breadcrumb__group li.govbh-breadcrumb__item-show-more-toggle button {
+            color: var(--bh-light);
+        }
+    }
+    .theme--dark{
+        h1{
+            color: var(--bh-light);
+        }
+        a{
+            color: var(--bh-light);
+            &:hover{
+                color: var(--bh-linkinverse-secondary);
+            }
+        }
+        .govbh-breadcrumb__group {
+            li{
+                color: var(--bh-light);
+                &:after{
+                    color: var(--bh-linkinverse-secondary);
+                }
+            }
+        }
+        .govbh-breadcrumb__group li.govbh-breadcrumb__item-show-more-toggle button {
+            color: var(--bh-light);
         }
     }
     h1{
@@ -540,7 +556,7 @@ img{
                     border: none;
                     outline: none;
                     background-color: transparent;
-                    color: var(--bh-light);
+                    color: var(--bh-brand);
                 }
             }
             &:not(:first-child):not(:last-child):not(:nth-last-child(2)):not(.govbh-breadcrumb__item-show-more-toggle){
@@ -581,6 +597,16 @@ img{
     font-size: var(--bh-fs-p-m);
     color: var(--bh-secondary);
     gap: 5px;
+    flex-wrap: wrap;
+    &--vertical{
+        flex-wrap: wrap;
+        gap: 5px;
+        flex-direction: column;
+        align-items: start;
+        .govbh-sharethis__title {
+            padding-inline-start: 5px;
+        }
+    }
     &.theme--dark{
         color: var(--bh-inverse);
         ul{
@@ -597,6 +623,7 @@ img{
         gap: 2px 0px;
         @media #{$xs}{
             gap: 2px 0px;
+            flex-wrap: wrap;
         }
         li{
             a{
@@ -938,6 +965,9 @@ img{
                         }
                     }
                 }
+                &.govbh-pagination__truncate{
+                    color: var(--bh-light);
+                }   
                 &.govbh-pagination__current{
                     border: 1px solid var(--bh-border-tertiary);
                     color: var(--bh-brand);
@@ -1556,6 +1586,57 @@ img{
                 @media #{$xm}{
                     border-bottom: none;
                 }
+            }
+        }
+    }
+    dl{
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        dt{
+            font-size: var(--bh-fs-p-m);
+            font-weight: var(--bh-fw-bold);           
+            background-color: var(--bh-linkinverse);
+            padding: 20px;
+            border-inline-end:1px solid var(--bh-border-secondary);
+            border-block-end:1px solid var(--bh-border-secondary);
+            height: auto;
+            width: 40%;
+            min-width: 40%;
+            margin: 0;
+            @media #{$xm}{
+                padding: 15px;
+            }
+            @media #{$xs}{
+                padding: 10px;
+                width: 50%;
+                min-width: 50%;
+            }
+            &:last-of-type{
+                border-bottom: none;
+            }
+        }
+        dd{
+            padding: 20px;
+            font-size: var(--bh-fs-p-m);
+            height: auto;
+            width: 60%;
+            min-width: 60%;
+            margin: 0;
+            border-block-end:1px solid var(--bh-border-secondary);
+            @media #{$xm}{
+                padding: 15px;
+            }
+            @media #{$xs}{
+                padding: 10px;
+                width: 50%;
+                min-width: 50%;
+            }
+            a{
+                word-break: break-all;
+            }
+            &:last-of-type{
+                border-bottom: none;
             }
         }
     }
@@ -2362,3 +2443,99 @@ img{
         background-color: var(--bh-bg-accent);
     }
 }
+
+//Colorbox Starts
+html.with-colorbox {
+    overflow:hidden;
+}
+html.with-colorbox body {
+    background: rgba(1, 46, 93, .8);
+}
+#cboxOverlay {
+    background: rgba(1, 46, 93, .95);
+    opacity: 1 !important;
+}
+#cboxTitle {
+    position: fixed;
+    bottom: -15px;
+    color: var(--bh-light);
+    @media #{$xs} {
+        font-size: var(--bh-fs-p-m);
+    }
+}
+
+#colorbox, #cboxOverlay, #cboxWrapper {
+    overflow: visible;
+}
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#cboxPrevious, #cboxNext {
+    bottom: 50%;
+}
+#cboxPrevious {
+    left: -40px;
+}
+#cboxNext {
+    right: -40px;
+    left: auto;
+}
+#cboxClose {
+    background: transparent;
+    top: -31px;
+    right: -5px;
+}
+#cboxClose:hover {
+    @include transition(0.3s);
+    background: var(--bh-accent);
+}
+#cboxPrevious:hover, #cboxNext:hover {
+    @include transition(0.3s);
+    background-color: var(--bh-accent);
+    
+}
+#cboxPrevious:hover, #cboxNext:hover {
+    &::before {
+        color: var(--bh-light);
+    }
+}
+
+#cboxPrevious::before, #cboxNext::before, #cboxClose::before {
+    color: var(--bh-brand);
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    font-family: "Phosphor" !important;
+    text-indent: 0;
+    @media #{$xs} {
+        line-height: 24px;
+    }
+    
+}
+#cboxNext::before {
+    content: '\e13A';
+}
+#cboxPrevious::before {
+    content: '\e138';
+}
+#cboxClose::before {
+    content: '\E4F6';
+    color: var(--bh-light);
+}
+#cboxCurrent {
+    top: -25px;
+    left: 50%;
+    font-weight: normal;
+    color: var(--bh-light);
+    font-size: var(--bh-fs-p-s);
+    opacity: 0.9;
+}
+#cboxLoadedContent {
+    margin-bottom: 0; 
+}
+//Colorbox Ends
