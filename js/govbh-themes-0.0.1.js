@@ -840,12 +840,18 @@ jQuery(document).ready(function ($) {
 			$('.datepicker-control').daterangepicker({
 				singleDatePicker: true,
 				showDropdowns: true,
+				locale: {
+					format: 'DD/MM/YYYY',
+				}
 			});
 		}
 		if ($('.daterangepicker-control').length > 0) {
 			$('.daterangepicker-control').daterangepicker({
 				singleDatePicker: false,
 				showDropdowns: true,
+				locale: {
+					format: 'DD/MM/YYYY',
+				}
 			});
 		}
 	});

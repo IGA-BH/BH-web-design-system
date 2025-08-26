@@ -47,6 +47,7 @@
             @media #{$xsss}{
                 width: 65%;
             }
+
             .govbh-map__filter-close {
                 position: absolute;
                 top: 7px;
@@ -81,6 +82,12 @@
                         button{
                         background-color: var(--bh-bg-secondary);
                         color: var(--bh-accent);
+                        }
+                    }
+                    .visually-hidden{
+                        color: var(--bh-secondary);
+                        h3{
+                            color: var(--bh-secondary);
                         }
                     }
                     span{
@@ -138,6 +145,9 @@
                 width: 100%;
                 background-color: var(--bh-bg-primary);
                 z-index: 1;
+                h3{
+                    color:var(--bh-secondary);
+                }
                 .govbh-map__filter-input {
                     position: relative;
                     margin: 20px 15px;

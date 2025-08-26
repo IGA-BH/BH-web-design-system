@@ -13718,6 +13718,12 @@ table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order::after, t
   background-color: var(--bh-bg-secondary);
   color: var(--bh-accent);
 }
+.govbh-map .govbh-map__wrapper .govbh-map__filter ul li .visually-hidden {
+  color: var(--bh-secondary);
+}
+.govbh-map .govbh-map__wrapper .govbh-map__filter ul li .visually-hidden h3 {
+  color: var(--bh-secondary);
+}
 .govbh-map .govbh-map__wrapper .govbh-map__filter ul li span {
   position: relative;
   width: 8px;
@@ -13777,6 +13783,9 @@ table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order::after, t
   width: 100%;
   background-color: var(--bh-bg-primary);
   z-index: 1;
+}
+.govbh-map .govbh-map__wrapper .govbh-map__filter .govbh-map__filter-form h3 {
+  color: var(--bh-secondary);
 }
 .govbh-map .govbh-map__wrapper .govbh-map__filter .govbh-map__filter-form .govbh-map__filter-input {
   position: relative;
