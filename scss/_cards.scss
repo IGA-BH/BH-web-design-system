@@ -783,6 +783,11 @@
     }
     .govbh-btn{
       text-decoration: none;
+      &.govbh-btn--outline{
+        &:hover{
+          color: var(--bh-light);
+        }
+      }
     }
   }
   &:hover{
@@ -1397,7 +1402,7 @@ a.govbh-profile-card {
       min-height: 90px;
       @media #{$xs}{
         margin-bottom: 20px;
-        min-height: auto;
+        min-height: none;
       }
       img{
         width: auto;

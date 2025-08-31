@@ -1106,6 +1106,8 @@ img {
 }
 
 .govbh-sharethis {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   font-size: var(--bh-fs-p-m);
@@ -2638,12 +2640,16 @@ img {
   position: relative;
   overflow: hidden;
   margin: 12px 0;
-  display: flex;
-  align-items: start;
-  gap: 10px;
+  padding-inline-start: 32px;
+}
+@media (max-width: 767.98px) {
+  .govbh-content-block ol li, .govbh-accordion__item-content ol li {
+    padding-inline-start: 32px;
+  }
 }
 .govbh-content-block ol li::before, .govbh-accordion__item-content ol li::before {
-  min-width: 20px;
+  position: absolute;
+  left: 0;
   counter-increment: govbh-counter;
   content: counter(govbh-counter) ". ";
   font-weight: var(--bh-fw-bold);
@@ -2754,10 +2760,16 @@ img {
   display: flex;
   align-items: start;
   gap: 20px;
+  padding-inline-start: 60px !important;
 }
 @media (max-width: 991.98px) {
   .govbh-content-block__numberdlist li {
     gap: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .govbh-content-block__numberdlist li {
+    padding-inline-start: 50px !important;
   }
 }
 .govbh-content-block__numberdlist li:last-child:after {
@@ -2774,7 +2786,7 @@ img {
   border-radius: 100%;
   counter-increment: govbh-counter;
   content: counter(govbh-counter) ". ";
-  font-size: var(--bh-fs-h6);
+  font-size: var(--bh-fs-p-xl);
   font-weight: var(--bh-fw-bold);
   color: var(--bh-brand);
   z-index: 1;
@@ -6558,6 +6570,9 @@ MENU SECTION ENDS
 .govbh-newscard .govbh-newscard__content-foot .govbh-btn {
   text-decoration: none;
 }
+.govbh-newscard .govbh-newscard__content-foot .govbh-btn.govbh-btn--outline:hover {
+  color: var(--bh-light);
+}
 .govbh-newscard:hover .govbh-newscard__title {
   color: var(--bh-accent);
 }
@@ -7262,7 +7277,7 @@ a.govbh-profile-card:hover:before {
 @media (max-width: 767.98px) {
   .govbh-contact-cards .govbh-contact-cards__item .govbh-contact-cards__head {
     margin-bottom: 20px;
-    min-height: auto;
+    min-height: none;
   }
 }
 .govbh-contact-cards .govbh-contact-cards__item .govbh-contact-cards__head img {

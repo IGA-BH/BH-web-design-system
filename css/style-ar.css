@@ -1427,4 +1427,9 @@ input[type=number] {
 
 .govbh-tabs.govbh-tabs--vertical .govbh-tabs__head .govbh-tabs__head-tabs .govbh-tabs__list {
   text-align: left;
+}
+
+.govbh-content-block ol li::before, .govbh-accordion__item-content ol li::before {
+  left: auto;
+  right: 0;
 }/*# sourceMappingURL=style-ar.css.map */
