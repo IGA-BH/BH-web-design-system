@@ -1603,14 +1603,24 @@ $(document).ready(function() {
     $('.govbh-side-widget__item').removeClass('active');
     $(this).addClass('active');
   });
-  
-  function updateActiveMenuItem() {
-    var hash = window.location.hash;
-    if (hash) {
-      $('.govbh-side-widget__item').removeClass('active');
-      $(`.govbh-side-widget__item a[href="${hash}"]`).parent().addClass('active');
-    }
-  }
+
+	function updateActiveMenuItem() {
+		var rawHash = window.location.hash;
+		if (rawHash) {
+			var safeHash = sanitizeHash(rawHash); // strict whitelist
+			var selector = `.govbh-side-widget__item a[href="#${safeHash}"]`;
+
+			$('.govbh-side-widget__item').removeClass('active');
+			$(selector).parent().addClass('active');
+		}
+	}
+
+	function sanitizeHash(hash) {
+		// Strip leading "#"
+		hash = hash.replace(/^#/, '');
+		// Whitelist characters
+		return hash.replace(/[^a-zA-Z0-9\-_]/g, '');
+	}
   
   updateActiveMenuItem();
   $(window).on('hashchange', updateActiveMenuItem);
