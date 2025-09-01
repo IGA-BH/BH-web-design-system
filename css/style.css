@@ -3201,6 +3201,11 @@ html.with-colorbox body {
   margin-bottom: 0;
 }
 
+.govbh-last-updated {
+  display: flex;
+  align-items: center;
+}
+
 /*-----------------------------
 SKIPLINK SECTION STARTS
 -----------------------------*/
@@ -7277,7 +7282,7 @@ a.govbh-profile-card:hover:before {
 @media (max-width: 767.98px) {
   .govbh-contact-cards .govbh-contact-cards__item .govbh-contact-cards__head {
     margin-bottom: 20px;
-    min-height: none;
+    min-height: initial;
   }
 }
 .govbh-contact-cards .govbh-contact-cards__item .govbh-contact-cards__head img {

@@ -1402,7 +1402,7 @@ a.govbh-profile-card {
       min-height: 90px;
       @media #{$xs}{
         margin-bottom: 20px;
-        min-height: none;
+        min-height: initial;
       }
       img{
         width: auto;
