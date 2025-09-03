@@ -905,3 +905,7 @@ input[type="number"]{
     left: auto;
     right: 0;
 }
+.govbh-tabs.govbh-tabs--vertical .govbh-tabs__head::after {
+    left: 0;
+    right: auto;
+}

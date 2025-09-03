@@ -12,12 +12,25 @@
       max-width: 300px;
       min-width: 150px;
       width: 285px;
+      height: auto !important;
       @media #{$xl}{
         max-width: 200px;
       }
       @media #{$xm}{
         max-width: 100%;
         width: 100%;
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 4px;
+        background: #34587d;
+        @media #{$xm}{
+          content: none;
+        }
       }
       .govbh-tabs__head-tabs {
         flex-wrap: wrap;

@@ -4173,6 +4173,9 @@ MENU SECTION STARTS
     width: 95%;
   }
 }
+.govbh-menu .scroll-up, .govbh-menu .scroll-down {
+  display: none !important;
+}
 .govbh-menu .govbh-menu__top {
   z-index: 2;
   position: relative;
@@ -7476,6 +7479,7 @@ a.govbh-profile-card:hover:before {
   max-width: 300px;
   min-width: 150px;
   width: 285px;
+  height: auto !important;
 }
 @media (max-width: 1199.98px) {
   .govbh-tabs.govbh-tabs--vertical .govbh-tabs__head {
@@ -7486,6 +7490,20 @@ a.govbh-profile-card:hover:before {
   .govbh-tabs.govbh-tabs--vertical .govbh-tabs__head {
     max-width: 100%;
     width: 100%;
+  }
+}
+.govbh-tabs.govbh-tabs--vertical .govbh-tabs__head:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 4px;
+  background: #34587d;
+}
+@media (max-width: 991.98px) {
+  .govbh-tabs.govbh-tabs--vertical .govbh-tabs__head:after {
+    content: none;
   }
 }
 .govbh-tabs.govbh-tabs--vertical .govbh-tabs__head .govbh-tabs__head-tabs {
@@ -12262,7 +12280,7 @@ table.dataTable thead > tr > th.dt-orderable-desc span.dt-column-order::after, t
 .Zebra_Tooltip .Zebra_Tooltip_Message {
   background: var(--bh-brand);
   border-radius: 3px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 10px rgba(255, 255, 255, 0.5);
   color: var(--bh-light);
   font-size: var(--bh-fs-p-s);
   line-height: 1.4;

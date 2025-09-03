@@ -884,6 +884,9 @@ MENU SECTION STARTS
     @media #{$xsss} {
         width: 95%;
     }
+    .scroll-up,.scroll-down{
+        display: none!important;
+    }
     .govbh-menu__top {
         z-index: 2;
         position: relative;

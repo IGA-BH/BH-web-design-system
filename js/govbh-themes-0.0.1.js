@@ -1607,11 +1607,17 @@ $(document).ready(function() {
 	function updateActiveMenuItem() {
 		var rawHash = window.location.hash;
 		if (rawHash) {
+			
 			var safeHash = sanitizeHash(rawHash); // strict whitelist
-			var selector = `.govbh-side-widget__item a[href="#${safeHash}"]`;
+			var link = document.querySelector(
+			`.govbh-side-widget__item a[href="#${CSS.escape(safeHash)}"]`
+			);
 
-			$('.govbh-side-widget__item').removeClass('active');
-			$(selector).parent().addClass('active');
+			if (link) {
+				document.querySelectorAll('.govbh-side-widget__item')
+					.forEach(el => el.classList.remove('active'));
+				link.parentElement.classList.add('active');
+			}
 		}
 	}
 
